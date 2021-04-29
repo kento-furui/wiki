@@ -9,7 +9,7 @@ class Eol extends Model
 {
     use HasFactory;
     protected $keyType = 'string';
-    protected $primaryKey = 'taxonID';
+    protected $primaryKey = 'EOLid';
 
     public $timestamps = false;
     public $incrementing = false;

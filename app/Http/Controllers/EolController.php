@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Eol;
 use Illuminate\Http\Request;
 
 class EolController extends Controller
@@ -68,7 +69,14 @@ class EolController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $eol = Eol::find($id);
+        if ($eol == null) {
+            $eol = new Eol;
+            $eol->EOLid = $id;
+        }
+        $eol->img = $request->img;
+        $eol->save();
+        return response()->json($eol);
     }
 
     /**

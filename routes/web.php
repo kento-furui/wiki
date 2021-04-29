@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EolController;
 use App\Http\Controllers\TaxonController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,5 +16,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [TaxonController::class, 'index']);
-Route::resource('eol', EolController::class);
-Route::resource('taxon', TaxonController::class);
+Route::resource('/taxon', TaxonController::class);
