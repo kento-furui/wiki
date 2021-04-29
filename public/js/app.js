@@ -1,6 +1,31 @@
+get_en();
 get_images();
 get_thumbnail();
 get_wikipedia();
+
+async function get_en() {
+    const noens = document.querySelectorAll("[name=noen]");
+    noens.forEach(async (noen) => {
+        //console.log(noen.value);
+        const id = noen.value;
+        if (id == "") return false;
+        const json = await eol_names(id);
+        //console.log(json);
+        if (json.taxonConcept.vernacularNames == undefined) return false;
+        //console.log(json.taxonConcept.vernacularNames);
+        json.taxonConcept.vernacularNames.forEach(async (vn) => {
+            if (vn.eol_preferred && vn.language == "en") {
+                console.log(vn);
+                const param = {
+                    en : vn.vernacularName,
+                }
+                await eol_update(id, param);
+                noen.replaceWith(vn.vernacularName);
+                return false;
+            }
+        });
+    });
+}
 
 async function get_wikipedia() {
     const ja = document.querySelector("[name=jp]").value;
@@ -62,7 +87,7 @@ async function get_thumbnail() {
             img : json.taxonConcept.dataObjects[0].eolThumbnailURL
         };
         const response = await eol_update(id, param);
-        console.log(response);
+        //console.log(response);
         const new_img = document.createElement('img');
         new_img.src = response.img;
         new_img.style.width = "91px";
@@ -87,7 +112,13 @@ async function eol_update(id, param) {
 }
 
 async function eol_pages(id) {
-    const url = "https://eol.org/api/pages/1.0/" + id + ".json?details=true&images_per_page=1&common_names=true";
+    const url = "https://eol.org/api/pages/1.0/" + id + ".json?details=true&images_per_page=1";
+    const response = await fetch(url);
+    return await response.json();
+}
+
+async function eol_names(id) {
+    const url = "https://eol.org/api/pages/1.0/" + id + ".json?details=true&common_names=true";
     const response = await fetch(url);
     return await response.json();
 }

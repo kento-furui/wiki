@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Taxon;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 
 class TaxonController extends Controller
@@ -15,15 +16,18 @@ class TaxonController extends Controller
     public function index(Request $request)
     {
         if (isset($request->search)) {
-            $taxa = Taxon::where('canonicalName', 'LIKE', $request->search . "%")
-                ->whereIn('taxonomicStatus', ['valid', 'accepted'])
-                ->paginate(100)
-                ->withQueryString();
+            if (preg_match('/[a-zA-z]+/', $request->search)) {
+                $taxa = Taxon::where('canonicalName', 'LIKE', $request->search . "%")
+                    ->whereIn('taxonomicStatus', ['valid', 'accepted']);
+            } else {
+                $taxa = Taxon::whereHas('eol', function (Builder $query) use ($request) {
+                    $query->where('jp', 'LIKE', $request->search . "%");
+                });
+            }
         } else {
-            $taxa = Taxon::whereIn('taxonomicStatus', ['valid', 'accepted'])
-                ->paginate(100)
-                ->withQueryString();
+            $taxa = Taxon::whereIn('taxonomicStatus', ['valid', 'accepted']);
         }
+        $taxa = $taxa->paginate(100)->withQueryString();
         return view('taxon.index', compact('taxa'));
     }
 
@@ -58,11 +62,22 @@ class TaxonController extends Controller
     {
         $tree = array();
         $me = $taxon;
-        while ($me->parent)
-        {
+        while ($me->parent) {
             $me = $tree[] = $me->parent;
         }
         return view('taxon.show', compact('taxon', 'tree'));
+    }
+
+    public function represent(Taxon $taxon)
+    {
+        $img = $taxon->eol->img;
+        $me = $taxon;
+        while ($me->parent && $me->parent->eol) {
+            $me->parent->eol->img = $img;
+            $me->parent->eol->save();
+            $me = $me->parent;
+        }
+        return redirect('/taxon/' . $taxon->taxonID);
     }
 
     /**

@@ -16,4 +16,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [TaxonController::class, 'index']);
+Route::get('/taxon/represent/{taxon}', [TaxonController::class, 'represent']);
+
 Route::resource('/taxon', TaxonController::class);
