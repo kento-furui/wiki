@@ -1,4 +1,5 @@
 get_en();
+get_jp();
 get_images();
 get_thumbnail();
 get_wikipedia();
@@ -27,23 +28,48 @@ async function get_en() {
     });
 }
 
+async function get_jp() {
+    const noens = document.querySelectorAll("[name=nojp]");
+    noens.forEach(async (noen) => {
+        const id = noen.value;
+        if (id == "") return false;
+        const json = await eol_names(id);
+        if (json.taxonConcept.vernacularNames == undefined) return false;
+        json.taxonConcept.vernacularNames.forEach(async (vn) => {
+            if (vn.eol_preferred && vn.language == "jp") {
+                console.log(vn);
+                const param = {
+                    jp : vn.vernacularName,
+                }
+                await eol_update(id, param);
+                noen.replaceWith(vn.vernacularName);
+                return false;
+            }
+        });
+    });
+}
+
+
+
 async function get_wikipedia() {
-    const ja = document.querySelector("[name=jp]").value;
-    if (ja == "") return false;
+    const obj = document.querySelector("[name=jp]");
+    if (obj == undefined) return false;
     const url =
         "https://ja.wikipedia.org/w/api.php?format=json&action=parse&prop=text&page=" +
-        ja +
+        obj.value +
         "&formatversion=2&redirects&origin=*";
     const response = await fetch(url);
     const json = await response.json();
+    if (json.parse == undefined) return false;
     document
         .getElementById("wikipedia")
         .insertAdjacentHTML("afterbegin", json.parse.text);
 }
 
 async function get_images() {
-    const id = document.querySelector("#EOLid").value;
-    if (id == "") return false;
+    const obj = document.querySelector("#EOLid");
+    if (obj == undefined) return false;
+    const id = obj.value;
     const response = await eol_detail(id);
     //console.log(response);
     response.taxonConcept.dataObjects.forEach(async (element) => {
@@ -78,20 +104,18 @@ async function get_thumbnail() {
 
     noimgs.forEach(async (noimg) => {
         const id = noimg.value;
-        //console.log(id);
         if (id == "") return false;
         const json = await eol_pages(id);
         if (json.taxonConcept.dataObjects === undefined) return false;
-        //console.log(json);
         const param = {
             img : json.taxonConcept.dataObjects[0].eolThumbnailURL
         };
         const response = await eol_update(id, param);
-        //console.log(response);
         const new_img = document.createElement('img');
         new_img.src = response.img;
         new_img.style.width = "91px";
         noimg.replaceWith(new_img);
+	console.log(json.taxonConcept.dataObjects[0]);
     });
 }
 

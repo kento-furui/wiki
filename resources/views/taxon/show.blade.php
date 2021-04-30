@@ -5,7 +5,7 @@
 @section('content')
 <a href="/">index</a>
 <h1>
-    {{ $taxon->scientificName }}
+    {{ $taxon->canonicalName }}
     {{ $taxon->eol ? $taxon->eol->jp : null }}
     {{ $taxon->eol ? $taxon->eol->en : null }}
 </h1>
@@ -53,7 +53,7 @@
             <td><a href="{{ $taxon->furtherInformationURL }}">{{ $taxon->furtherInformationURL }}</a></td>
         </tr>
         <tr>
-            <th>親ノード</th>
+            <th>ツリー</th>
             <td>
                 @foreach (array_reverse($tree) as $k => $t)
                 <div style="margin-left: {{ $k*5 }}px">
