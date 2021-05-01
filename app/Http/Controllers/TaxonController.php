@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Eol;
 use App\Models\Taxon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
@@ -61,18 +62,27 @@ class TaxonController extends Controller
     public function show(Taxon $taxon)
     {
         $tree = array();
-	$me = $tree[] = $taxon;
+        $me = $taxon;
         while ($me->parent) {
             $me = $tree[] = $me->parent;
         }
         return view('taxon.show', compact('taxon', 'tree'));
     }
 
+    public function recursive(Taxon $taxon)
+    {
+        return view('taxon.recursive', compact('taxon'));
+    }
+
     public function represent(Taxon $taxon)
     {
         $img = $taxon->eol->img;
         $me = $taxon;
-        while ($me->parent && $me->parent->eol) {
+        while ($me->parent) {
+            if (!$me->parent->eol) {
+                $me->parent->eol = new Eol;
+                $me->parent->eol->EOLid = $me->parent->EOLid;
+            }
             $me->parent->eol->img = $img;
             $me->parent->eol->save();
             $me = $me->parent;
