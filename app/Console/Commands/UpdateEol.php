@@ -42,21 +42,13 @@ class UpdateEol extends Command
         $file = file('aaa.csv');
         foreach ($file as $f) {
             list($jp, $latin) = explode(',', trim($f));
+            //list($latin, $jp, $en) = explode(',', trim($f));
             $taxon = Taxon::where('canonicalName', $latin)->first();
-            if ($taxon) {
-                if ($taxon->eol) {
-                    $taxon->eol->jp = $jp;
-                    $taxon->eol->save();
-                    echo $f;
-                } else {
-                    if ($taxon->EOLid != "") {
-                        $eol = new Eol;
-                        $eol->EOLid = $taxon->EOLid;
-                        $eol->jp = $jp;
-                        $eol->save();
-                        echo $f;
-                    }
-                }
+            if ($taxon && $taxon->eol) {
+                //$taxon->eol->en = $en;
+                $taxon->eol->jp = $jp;
+                $taxon->eol->save();
+                echo $f;
             }
         }
     }

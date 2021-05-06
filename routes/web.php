@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [TaxonController::class, 'index']);
+Route::get('/taxon/rotate/{taxon}', [TaxonController::class, 'rotate']);
 Route::get('/taxon/recursive/{taxon}', [TaxonController::class, 'recursive']);
 Route::get('/taxon/represent/{taxon}', [TaxonController::class, 'represent']);
 

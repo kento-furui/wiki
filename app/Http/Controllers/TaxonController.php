@@ -90,6 +90,18 @@ class TaxonController extends Controller
         return redirect('/taxon/' . $taxon->taxonID);
     }
 
+    public function rotate(Taxon $taxon)
+    {
+        if (empty($taxon->eol->class)) {
+            $taxon->eol->class = "rotate";
+        } else {
+            $taxon->eol->class = null;
+        }
+        $taxon->eol->save();
+
+        return redirect('/taxon/' . $taxon->taxonID);
+    }
+
     /**
      * Show the form for editing the specified resource.
      *
