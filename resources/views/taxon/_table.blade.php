@@ -1,14 +1,14 @@
-<table class="table table-striped">
+<table class="table table-striped" id="taxa">
     @foreach ($taxa as $taxon)
     <tr>
         <td>
             @if ($taxon->eol && !empty($taxon->eol->img))
-            <img src="{{ $taxon->eol->img }}" class="{{ $taxon->eol->class }}">
+            <img src="{{ $taxon->eol->img }}" id="{{ $taxon->EOLid }}" class="thumb">
             @else
-            <input type="hidden" name="noimg" value="{{ $taxon->EOLid  }}" />
+            <input type="hidden" name="noimg" value="{{ $taxon->EOLid }}" />
             @endif
         </td>
-        <td><a href="/taxon/{{ $taxon->taxonID }}">{{ $taxon->taxonID}}</td>
+        <td><a href="/taxon/{{ $taxon->taxonID }}">{{ $taxon->taxonID }}</td>
         <td>{{ $taxon->EOLid }}</td>
         <td>{{ $taxon->canonicalName }}</td>
         <td>

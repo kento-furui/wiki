@@ -44,11 +44,19 @@ class UpdateEol extends Command
             list($jp, $latin) = explode(',', trim($f));
             //list($latin, $jp, $en) = explode(',', trim($f));
             $taxon = Taxon::where('canonicalName', $latin)->first();
-            if ($taxon && $taxon->eol) {
-                //$taxon->eol->en = $en;
-                $taxon->eol->jp = $jp;
-                $taxon->eol->save();
-                echo $f;
+            if ($taxon) {
+                if ($taxon->eol) {
+                    //$taxon->eol->en = $en;
+                    $taxon->eol->jp = $jp;
+                    $taxon->eol->save();
+                    echo $f;
+                } else {
+                    $eol = new Eol;
+                    $eol->EOLid = $taxon->EOLid;
+                    $eol->jp = $jp;
+                    $eol->save();
+                    echo $f;
+                }
             }
         }
     }

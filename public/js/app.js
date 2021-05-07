@@ -1,8 +1,20 @@
 get_en();
 get_jp();
 get_images();
+download_eol();
 get_thumbnail();
 get_wikipedia();
+
+async function download_eol() {
+    const image = document.querySelector(".thumb");
+    const id = image.id;
+    image.addEventListener("click", async function() {
+        const url = '/api/eol/image/' . id;
+        const response = await fetch(url);
+        const json = await response.json();
+        console.log(json);
+    });
+}
 
 async function get_en() {
     const noens = document.querySelectorAll("[name=noen]");
@@ -18,8 +30,8 @@ async function get_en() {
             if (vn.eol_preferred && vn.language == "en") {
                 console.log(vn);
                 const param = {
-                    en : vn.vernacularName,
-                }
+                    en: vn.vernacularName,
+                };
                 await eol_update(id, param);
                 noen.replaceWith(vn.vernacularName);
                 return false;
@@ -39,8 +51,8 @@ async function get_jp() {
             if (vn.eol_preferred && vn.language == "jp") {
                 console.log(vn);
                 const param = {
-                    jp : vn.vernacularName,
-                }
+                    jp: vn.vernacularName,
+                };
                 await eol_update(id, param);
                 noen.replaceWith(vn.vernacularName);
                 return false;
@@ -48,8 +60,6 @@ async function get_jp() {
         });
     });
 }
-
-
 
 async function get_wikipedia() {
     const obj = document.querySelector("[name=jp]");
@@ -78,11 +88,11 @@ async function get_images() {
         img.title = element.title;
         img.style.height = "68px";
         img.src = element.eolThumbnailURL;
-        img.addEventListener('click', async function() {
+        img.addEventListener("click", async function () {
             console.log(img);
             const param = {
-                img : img.src
-            }
+                img: img.src,
+            };
             await eol_update(id, param);
             location.reload();
         });
@@ -108,14 +118,14 @@ async function get_thumbnail() {
         const json = await eol_pages(id);
         if (json.taxonConcept.dataObjects === undefined) return false;
         const param = {
-            img : json.taxonConcept.dataObjects[0].eolThumbnailURL
+            img: json.taxonConcept.dataObjects[0].eolThumbnailURL,
         };
         const response = await eol_update(id, param);
-        const new_img = document.createElement('img');
+        const new_img = document.createElement("img");
         new_img.src = response.img;
-        new_img.style.width = "91px";
+        //new_img.style.width = "91px";
         noimg.replaceWith(new_img);
-	console.log(json.taxonConcept.dataObjects[0]);
+        console.log(json.taxonConcept.dataObjects[0]);
     });
 }
 
@@ -136,14 +146,19 @@ async function eol_update(id, param) {
 }
 
 async function eol_pages(id) {
-    const url = "https://eol.org/api/pages/1.0/" + id + ".json?details=true&images_per_page=1";
+    const url =
+        "https://eol.org/api/pages/1.0/" +
+        id +
+        ".json?details=true&images_per_page=1";
     const response = await fetch(url);
     return await response.json();
 }
 
 async function eol_names(id) {
-    const url = "https://eol.org/api/pages/1.0/" + id + ".json?details=true&common_names=true";
+    const url =
+        "https://eol.org/api/pages/1.0/" +
+        id +
+        ".json?details=true&common_names=true";
     const response = await fetch(url);
     return await response.json();
 }
-

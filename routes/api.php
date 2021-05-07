@@ -15,4 +15,5 @@ use App\Http\Controllers\EolController;
 |
 */
 
+Route::get('/eol/image/{eol}', [EolController::class, 'image']);
 Route::post('/eol/update/{eol}', [EolController::class, 'update']);

@@ -22,6 +22,10 @@
             vertical-align: middle;
         }
 
+        table#taxa tr td img {
+            width: 98px;
+        }
+
         .mw-editsection {
             display: none;
         }
