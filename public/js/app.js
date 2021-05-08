@@ -11,8 +11,8 @@ images.forEach((image) => {
         //console.log(url);
         const response = await fetch(url);
         const json = await response.json();
-        image.className = "rotate";
         console.log(json);
+        image.src = json.img;
     });
 });
 

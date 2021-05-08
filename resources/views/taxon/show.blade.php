@@ -9,7 +9,7 @@
     {{ $taxon->eol ? $taxon->eol->jp : null }}
     {{ $taxon->eol ? $taxon->eol->en : null }}
 </h1>
-<div id="images" style="overflow-x: scroll; white-space: nowrap">
+<div id="images" style="overflow-x: scroll; white-space: nowrap; height:90px">
     <input type="hidden" id="EOLid" value="{{ $taxon->EOLid }}" />
 </div>
 <table class="table" style="table-layout: fixed;">
