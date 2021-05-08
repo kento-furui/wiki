@@ -1,20 +1,20 @@
 get_en();
 get_jp();
 get_images();
-download_eol();
 get_thumbnail();
 get_wikipedia();
 
-async function download_eol() {
-    const image = document.querySelector(".thumb");
-    const id = image.id;
-    image.addEventListener("click", async function() {
-        const url = '/api/eol/image/' . id;
+const images = document.querySelectorAll(".thumb");
+images.forEach((image) => {
+    image.addEventListener("click", async () => {
+        const url = "/api/eol/image/" + image.id;
+        //console.log(url);
         const response = await fetch(url);
         const json = await response.json();
+        image.className = "rotate";
         console.log(json);
     });
-}
+});
 
 async function get_en() {
     const noens = document.querySelectorAll("[name=noen]");

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Eol;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class EolController extends Controller
 {
@@ -83,6 +84,13 @@ class EolController extends Controller
 
     public function image(Eol $eol)
     {
+        $source = imagecreatefromjpeg($eol->img);
+        $rotate = imagerotate($source, 90, 0);
+        $path = storage_path() . "/app/img/" . $eol->EOLid . ".jpg";
+        imagejpeg($rotate, $path);
+        $eol->img = '/img/' . $eol->EOLid . ".jpg";
+        $eol->save();
+
         return response()->json($eol);
     }
 
