@@ -3,7 +3,7 @@
     <tr>
         <td>
             @if ($taxon->eol && !empty($taxon->eol->img))
-            <img src="{{ $taxon->eol->img }}" id="{{ $taxon->EOLid }}" class="thumb {{ $taxon->eol->class }}">
+            <img src="{{ $taxon->eol->img }}" id="{{ $taxon->EOLid }}" class="thumb">
             @else
             <input type="hidden" name="noimg" value="{{ $taxon->EOLid }}" />
             @endif
