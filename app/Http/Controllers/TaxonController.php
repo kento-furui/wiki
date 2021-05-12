@@ -16,30 +16,28 @@ class TaxonController extends Controller
      */
     public function index(Request $request)
     {
-        if (isset($request->search)) {
-            if (preg_match('/^[a-zA-z]+$/', $request->search)) {
-                $taxa = Taxon::where('canonicalName', 'LIKE', $request->search . "%")
-                    ->whereIn('taxonomicStatus', ['valid', 'accepted']);
-            } elseif (preg_match('/=/', $request->search)) {
-                if ($request->search == "img=null") {
-                    $taxa = Taxon::whereHas('eol', function (Builder $query) {
-                        $query->whereNull('img');
-                    });
-                } elseif ($request->search == "img!=null") {
-                    $taxa = Taxon::whereHas('eol', function (Builder $query) {
-                        $query->whereNotNull('img');
-                    });
-                } else {
-                    $taxa = Taxon::whereIn('taxonomicStatus', ['valid', 'accepted']);
-                }
-            } else {
-                $taxa = Taxon::whereHas('eol', function (Builder $query) use ($request) {
-                    $query->where('jp', 'LIKE', $request->search . "%");
-                });
-            }
-        } else {
-            $taxa = Taxon::whereIn('taxonomicStatus', ['valid', 'accepted']);
+        $taxa = Taxon::whereIn('taxonomicStatus', ['valid', 'accepted']);
+
+        if (isset($request->name)) {
+            $taxa = $taxa->where('canonicalName', 'LIKE', $request->name . "%");
         }
+
+        if (isset($request->rank)) {
+            $taxa = $taxa->where('taxonRank', $request->rank);
+        }
+
+        if (isset($request->jp)) {
+            $taxa = $taxa->whereHas('eol', function (Builder $query) use ($request) {
+                $query->where('jp', 'LIKE', $request->jp . "%");
+            });
+        }
+
+        if (isset($request->en)) {
+            $taxa = $taxa->whereHas('eol', function (Builder $query) use ($request) {
+                $query->where('en', 'LIKE', $request->en . "%");
+            });
+        }
+
         $taxa = $taxa->paginate(100)->withQueryString();
         return view('taxon.index', compact('taxa'));
     }

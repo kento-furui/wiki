@@ -49,7 +49,10 @@
     <div class="container">
         <form action="/" method="GET" class="form-inline" style="margin-bottom: 1%">
             <div class="input-group">
-                <input type="text" name="search" class="form-control" />
+                <input type="text" class="form-control" name="name" placeholder="Scientific Name"/>
+                <input type="text" class="form-control" name="jp" placeholder="Japanese"/>
+                <input type="text" class="form-control" name="en" placeholder="English"/>
+                <input type="text" class="form-control" name="rank" placeholder="Taxon Rank"/>
                 <button class="btn btn-success" type="submit">find</button>
             </div>
         </form>
