@@ -64,6 +64,6 @@
 </table>
 @include('taxon._table', ['taxa' => $taxon->children])
 <div id="wikipedia">
-    <input type="hidden" name="jp" value="{{ $taxon->eol ? $taxon->eol->jp : null }}" />
+    <input type="hidden" name="title" value="{{ $taxon->eol ? $taxon->eol->jp : null }}" />
 </div>
 @endsection

@@ -19,7 +19,13 @@ class TaxonController extends Controller
         $taxa = Taxon::whereIn('taxonomicStatus', ['valid', 'accepted']);
 
         if (isset($request->name)) {
-            $taxa = $taxa->where('canonicalName', 'LIKE', $request->name . "%");
+            if ($request->name == "noeol") {
+                $taxa = $taxa->doesntHave('eol');
+            } elseif ($request->name == "haseol") {
+                $taxa = $taxa->has('eol');
+            } else {
+                $taxa = $taxa->where('canonicalName', 'LIKE', $request->name . "%");
+            }
         }
 
         if (isset($request->rank)) {
