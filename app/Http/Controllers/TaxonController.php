@@ -44,8 +44,13 @@ class TaxonController extends Controller
             });
         }
 
+        $jp = $request->jp;
+        $en = $request->en;
+        $rank = $request->rank;
+        $name = $request->name;
+
         $taxa = $taxa->paginate(100)->withQueryString();
-        return view('taxon.index', compact('taxa'));
+        return view('taxon.index', compact('taxa', 'jp', 'en', 'rank', 'name'));
     }
 
     /**

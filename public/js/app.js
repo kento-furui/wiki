@@ -63,7 +63,7 @@ async function get_jp() {
 
 async function get_wikipedia() {
     const obj = document.querySelector("[name=title]");
-    if (obj === undefined) return false;
+    if (obj === null) return false;
     const url =
         "https://ja.wikipedia.org/w/api.php?format=json&action=parse&prop=text&page=" +
         obj.value +
