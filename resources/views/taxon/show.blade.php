@@ -34,6 +34,15 @@
         </td>
     </tr>
     <tr>
+        <th>姉妹群</th>
+        <td>
+            @if ($taxon->parent)
+            @foreach ($taxon->parent->children as $c)
+            <a href="/taxon/{{ $c->taxonID }}">{{ $c->eol && !empty($c->eol->jp) ? $c->eol->jp : $c->canonicalName }}</a>&nbsp;
+            @endforeach
+            @endif
+        </td>
+    <tr>
         <th>学名</th>
         <td>{{ $taxon->scientificName }}</td>
     </tr>

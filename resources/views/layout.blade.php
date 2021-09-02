@@ -13,8 +13,6 @@
         }
 
         table tr td {
-            white-space: nowrap;
-            overflow: hidden;
             vertical-align: middle;
         }
 
