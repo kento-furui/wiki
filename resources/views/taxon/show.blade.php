@@ -25,23 +25,15 @@
             @foreach (array_reverse($tree) as $k => $t)
             <div style="margin-left: {{ $k*5 }}px">
                 <img src="{{ $t->eol ? $t->eol->img : null }}" width="20px">
-                <a href="/taxon/{{ $t->taxonID }}">
-                    {{ $t->canonicalName }}
-                    {{ $t->eol ? $t->eol->jp : null }}
-                </a>
+                @if ($t->taxonID == $taxon->taxonID)
+                {{ $t->canonicalName }} {{ $t->eol ? $t->eol->jp : null }}
+                @else
+                <a href="/taxon/{{ $t->taxonID }}"> {{ $t->canonicalName }} {{ $t->eol ? $t->eol->jp : null }} </a>
+                @endif
             </div>
             @endforeach
         </td>
     </tr>
-    <tr>
-        <th>姉妹群</th>
-        <td>
-            @if ($taxon->parent)
-            @foreach ($taxon->parent->children as $c)
-            <a href="/taxon/{{ $c->taxonID }}">{{ $c->eol && !empty($c->eol->jp) ? $c->eol->jp : $c->canonicalName }}</a>&nbsp;
-            @endforeach
-            @endif
-        </td>
     <tr>
         <th>学名</th>
         <td>{{ $taxon->scientificName }}</td>

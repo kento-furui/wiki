@@ -4,6 +4,7 @@ get_images();
 get_thumbnail();
 get_wikipedia();
 
+/*
 const images = document.querySelectorAll(".thumb");
 images.forEach((image) => {
     image.addEventListener("click", async () => {
@@ -15,6 +16,7 @@ images.forEach((image) => {
         image.src = json.img;
     });
 });
+*/
 
 async function get_en() {
     const noens = document.querySelectorAll("[name=noen]");

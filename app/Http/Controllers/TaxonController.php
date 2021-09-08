@@ -82,8 +82,8 @@ class TaxonController extends Controller
      */
     public function show(Taxon $taxon)
     {
-        $tree = array();
         $me = $taxon;
+        $tree[] = $me;
         while ($me->parent) {
             $me = $tree[] = $me->parent;
         }

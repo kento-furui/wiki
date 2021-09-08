@@ -22,6 +22,8 @@
 
         table#taxa tr td img {
             width: 98px;
+            height: 68px;
+            object-fit: cover;
         }
 
         .mw-editsection {

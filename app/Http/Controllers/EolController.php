@@ -82,6 +82,7 @@ class EolController extends Controller
         return response()->json($eol);
     }
 
+    /*
     public function image(Eol $eol)
     {
         $source = imagecreatefromjpeg($eol->img);
@@ -93,6 +94,7 @@ class EolController extends Controller
 
         return response()->json($eol);
     }
+    */
 
     /**
      * Remove the specified resource from storage.
