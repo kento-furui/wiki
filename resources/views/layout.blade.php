@@ -11,8 +11,15 @@
         .container {
             padding: 1% 0;
         }
+	
+        img.tree {
+            width: 20px;
+            height: 15px;
+            object-fit: cover;
+        }
 
         table tr td {
+            white-space: nowrap;
             vertical-align: middle;
         }
 
