@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
     <title>@yield('title')</title>
@@ -11,7 +13,7 @@
         .container {
             padding: 1% 0;
         }
-	
+
         img.tree {
             width: 20px;
             height: 15px;
@@ -56,10 +58,12 @@
     <div class="container">
         <form action="/" method="GET" class="form-inline" style="margin-bottom: 1%">
             <div class="input-group">
-                <input type="text" class="form-control" value="{{ $name ?? '' }}" name="name" placeholder="Scientific Name"/>
-                <input type="text" class="form-control" value="{{ $jp ?? '' }}" name="jp" placeholder="Japanese"/>
-                <input type="text" class="form-control" value="{{ $en ?? ''  }}" name="en" placeholder="English"/>
-                <input type="text" class="form-control" value="{{ $rank ?? '' }}" name="rank" placeholder="Taxon Rank"/>
+                <input type="text" class="form-control" value="{{ $name ?? '' }}" name="name"
+                    placeholder="Scientific Name" />
+                <input type="text" class="form-control" value="{{ $jp ?? '' }}" name="jp" placeholder="Japanese" />
+                <input type="text" class="form-control" value="{{ $en ?? ''  }}" name="en" placeholder="English" />
+                <input type="text" class="form-control" value="{{ $rank ?? '' }}" name="rank"
+                    placeholder="Taxon Rank" />
                 <button class="btn btn-success" type="submit">find</button>
             </div>
         </form>

@@ -45,7 +45,13 @@
         </tr>
         <tr>
             <th>和名</th>
-            <td>{{ $taxon->eol ? $taxon->eol->jp : null }}</td>
+            <td>
+                @if ($taxon->eol)
+                <input type="text" name="jp" class="jp" id="{{ $taxon->EOLid }}" value="{{ $taxon->eol->jp }}" />
+                @else
+                <input type="text" name="jp" class="jp" id="{{ $taxon->EOLid }}" />
+                @endif
+            </td>
         </tr>
         <tr>
             <th>英名</th>

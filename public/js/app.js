@@ -18,6 +18,19 @@ images.forEach((image) => {
 });
 */
 
+const elems = document.querySelectorAll('.jp');
+elems.forEach(elem => {
+    //console.log(elem);
+    elem.addEventListener('change', async () => {
+        const id = elem.id;
+        const param = {
+            jp: elem.value,
+        };
+        await eol_update(id, param);
+        $(elem).fadeOut().fadeIn();
+    })
+});
+
 async function get_en() {
     const noens = document.querySelectorAll("[name=noen]");
     noens.forEach(async (noen) => {
@@ -30,7 +43,7 @@ async function get_en() {
         //console.log(json.taxonConcept.vernacularNames);
         json.taxonConcept.vernacularNames.forEach(async (vn) => {
             if (vn.eol_preferred && vn.language == "en") {
-                console.log(vn);
+                //console.log(vn);
                 const param = {
                     en: vn.vernacularName,
                 };
@@ -51,7 +64,7 @@ async function get_jp() {
         if (json.taxonConcept.vernacularNames == undefined) return false;
         json.taxonConcept.vernacularNames.forEach(async (vn) => {
             if (vn.eol_preferred && vn.language == "jp") {
-                console.log(vn);
+                //console.log(vn);
                 const param = {
                     jp: vn.vernacularName,
                 };
@@ -73,9 +86,12 @@ async function get_wikipedia() {
     const response = await fetch(url);
     const json = await response.json();
     if (json.parse == undefined) return false;
+    let text = json.parse.text;
+    text = text.replaceAll('href="/wiki/', 'target="_blank" href="//ja.wikipedia.org/wiki/');
+    text = text.replaceAll('href="/w/', 'target="_blank" style="color:red" href="//ja.wikipedia.org/w/');
     document
         .getElementById("wikipedia")
-        .insertAdjacentHTML("afterbegin", json.parse.text);
+        .insertAdjacentHTML("afterbegin", text);
 }
 
 async function get_images() {
@@ -91,7 +107,7 @@ async function get_images() {
         img.style.height = "68px";
         img.src = element.eolThumbnailURL;
         img.addEventListener("click", async function () {
-            console.log(img);
+            //console.log(img);
             const param = {
                 img: img.src,
             };
