@@ -3,6 +3,7 @@ get_jp();
 get_images();
 get_thumbnail();
 get_wikipedia();
+get_wikipedia_en();
 
 /*
 const images = document.querySelectorAll(".thumb");
@@ -18,17 +19,20 @@ images.forEach((image) => {
 });
 */
 
-const elems = document.querySelectorAll('.jp');
-elems.forEach(elem => {
-    //console.log(elem);
-    elem.addEventListener('change', async () => {
-        const id = elem.id;
-        const param = {
-            jp: elem.value,
-        };
-        await eol_update(id, param);
-        $(elem).fadeOut().fadeIn();
-    })
+const jp = document.querySelector(".jp");
+jp.addEventListener("change", async () => {
+    const id = jp.id;
+    const param = { jp: jp.value };
+    await eol_update(id, param);
+    $(jp).fadeOut().fadeIn();
+});
+
+const en = document.querySelector(".en");
+en.addEventListener("change", async () => {
+    const id = en.id;
+    const param = { en: en.value };
+    await eol_update(id, param);
+    $(en).fadeOut().fadeIn();
 });
 
 async function get_en() {
@@ -87,11 +91,37 @@ async function get_wikipedia() {
     const json = await response.json();
     if (json.parse == undefined) return false;
     let text = json.parse.text;
-    text = text.replaceAll('href="/wiki/', 'target="_blank" href="//ja.wikipedia.org/wiki/');
-    text = text.replaceAll('href="/w/', 'target="_blank" style="color:red" href="//ja.wikipedia.org/w/');
-    document
-        .getElementById("wikipedia")
-        .insertAdjacentHTML("afterbegin", text);
+    text = text.replaceAll(
+        'href="/wiki/',
+        'target="_blank" href="//ja.wikipedia.org/wiki/'
+    );
+    text = text.replaceAll(
+        'href="/w/',
+        'target="_blank" style="color:red" href="//ja.wikipedia.org/w/'
+    );
+    document.getElementById("wikipedia").insertAdjacentHTML("afterbegin", text);
+}
+
+async function get_wikipedia_en() {
+    const obj = document.querySelector("[name=canonical]");
+    if (obj === null) return false;
+    const url =
+        "https://en.wikipedia.org/w/api.php?format=json&action=parse&prop=text&page=" +
+        obj.value +
+        "&formatversion=2&redirects&origin=*";
+    const response = await fetch(url);
+    const json = await response.json();
+    if (json.parse == undefined) return false;
+    let text = json.parse.text;
+    text = text.replaceAll(
+        'href="/wiki/',
+        'target="_blank" href="//en.wikipedia.org/wiki/'
+    );
+    text = text.replaceAll(
+        'href="/w/',
+        'target="_blank" style="color:red" href="//en.wikipedia.org/w/'
+    );
+    document.getElementById("wikipedia").insertAdjacentHTML("afterbegin", text);
 }
 
 async function get_images() {

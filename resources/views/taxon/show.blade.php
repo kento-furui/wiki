@@ -23,16 +23,17 @@
         <tr>
             <th>ツリー</th>
             <td>
-                @foreach (array_reverse($tree) as $k => $t)
-                <div style="margin-left: {{ $k*5 }}px">
-                    <img src="{{ $t->eol ? $t->eol->img : null }}" class="tree">
-                    @if ($t->taxonID == $taxon->taxonID)
-                    {{ $t->canonicalName }} {{ $t->eol ? $t->eol->jp : null }}
-                    @else
-                    <a href="/taxon/{{ $t->taxonID }}"> {{ $t->canonicalName }} {{ $t->eol ? $t->eol->jp : null }} </a>
-                    @endif
-                </div>
-                @endforeach
+                <table>
+                    @foreach (array_reverse($tree) as $k => $t)
+                    <tr>
+                        <td><img src="{{ $t->eol ? $t->eol->img : null }}" class="tree"></td>
+                        <th>{{ $t->taxonRank }}</th>
+                        <td><a href="/taxon/{{ $t->taxonID }}">{{ $t->canonicalName }}</a></td>
+                        <td>{{ $t->eol ? $t->eol->jp : null }}</td>
+                        <td>{{ $t->eol ? $t->eol->en : null }}</td>
+                    </tr>
+                    @endforeach
+                </table>
             </td>
         </tr>
         <tr>
@@ -46,16 +47,16 @@
         <tr>
             <th>和名</th>
             <td>
-                @if ($taxon->eol)
-                <input type="text" name="jp" class="jp" id="{{ $taxon->EOLid }}" value="{{ $taxon->eol->jp }}" />
-                @else
-                <input type="text" name="jp" class="jp" id="{{ $taxon->EOLid }}" />
-                @endif
+                <input type="text" name="jp" class="jp" size="30" id="{{ $taxon->EOLid }}"
+                    value="{{ $taxon->eol ? $taxon->eol->jp : null }}" />
             </td>
         </tr>
         <tr>
             <th>英名</th>
-            <td>{{ $taxon->eol ? $taxon->eol->en : null }}</td>
+            <td>
+                <input type="text" name="en" class="en" size="30" id="{{ $taxon->EOLid }}"
+                    value="{{ $taxon->eol ? $taxon->eol->en : null }}" />
+            </td>
         </tr>
         <tr>
             <th>ソース</th>
@@ -73,6 +74,10 @@
 </div>
 @include('taxon._table', ['taxa' => $taxon->children])
 <div id="wikipedia">
-    <input type="hidden" name="title" value="{{ $taxon->eol ? $taxon->eol->jp : null }}" />
+    @if ($taxon->eol && !empty($taxon->eol->jp))
+    <input type="hidden" name="title" value="{{ $taxon->eol->jp }}" />
+    @else
+    <input type="hidden" name="canonical" value="{{ $taxon->canonicalName }}" />
+    @endif
 </div>
 @endsection

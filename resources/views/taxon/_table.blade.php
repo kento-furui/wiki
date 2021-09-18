@@ -9,9 +9,7 @@
                 <input type="hidden" name="noimg" value="{{ $taxon->EOLid }}" />
                 @endif
             </td>
-            <td><a href="/taxon/{{ $taxon->taxonID }}">{{ $taxon->taxonID }}</td>
-            <td>{{ $taxon->EOLid }}</td>
-            <td>{{ $taxon->canonicalName }}</td>
+            <td><a href="/taxon/{{ $taxon->taxonID }}">{{ $taxon->canonicalName }}</td>
             <td>
                 @if ($taxon->eol && !empty($taxon->eol->jp))
                 {{ $taxon->eol->jp }}
