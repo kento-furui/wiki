@@ -59,16 +59,35 @@
             </td>
         </tr>
         <tr>
+            <th>保全状況</th>
+            <td>
+                <select name="status" class="status" id="{{ $taxon->EOLid }}">
+                    <option value="">--</option>
+                    <option value="EX" {{ $taxon->eol && $taxon->eol->status == "EX" ? "selected" : null }}>絶滅 (EX)</option>
+                    <option value="EW" {{ $taxon->eol && $taxon->eol->status == "EW" ? "selected" : null }}>野生絶滅 (EW)</option>
+                    <option value="CR" {{ $taxon->eol && $taxon->eol->status == "CR" ? "selected" : null }}>絶滅寸前 (CR)</option>
+                    <option value="EN" {{ $taxon->eol && $taxon->eol->status == "EN" ? "selected" : null }}>絶滅危惧 (EN)</option>
+                    <option value="VU" {{ $taxon->eol && $taxon->eol->status == "VU" ? "selected" : null }}>危急 (VU)</option>
+                    <option value="CD" {{ $taxon->eol && $taxon->eol->status == "CD" ? "selected" : null }}>保全対策依存 (CD)</option>
+                    <option value="NT" {{ $taxon->eol && $taxon->eol->status == "NT" ? "selected" : null }}>準絶滅危惧 (NT)</option>
+                    <option value="LC" {{ $taxon->eol && $taxon->eol->status == "LC" ? "selected" : null }}>低危険種 (LC)</option>
+                    <option value="DD" {{ $taxon->eol && $taxon->eol->status == "DD" ? "selected" : null }}>データ不足 (DD)</option>
+                    <option value="NE" {{ $taxon->eol && $taxon->eol->status == "NE" ? "selected" : null }}>未評価 (NE)</option>
+                </select>
+            </td>
+        <tr>
             <th>ソース</th>
             <td>{{ $taxon->source }}</td>
         </tr>
         <tr>
             <th>EOL</th>
-            <td><a href="https://eol.org/pages/{{ $taxon->EOLid }}">https://eol.org/pages/{{ $taxon->EOLid }}</a></td>
+            <td><a target="_blank"
+                    href="https://eol.org/pages/{{ $taxon->EOLid }}">https://eol.org/pages/{{ $taxon->EOLid }}</a></td>
         </tr>
         <tr>
             <th>外部URL</th>
-            <td><a href="{{ $taxon->furtherInformationURL }}">{{ $taxon->furtherInformationURL }}</a></td>
+            <td><a target="_blank" href="{{ $taxon->furtherInformationURL }}">{{ $taxon->furtherInformationURL }}</a>
+            </td>
         </tr>
     </table>
 </div>

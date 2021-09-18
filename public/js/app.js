@@ -35,6 +35,14 @@ en.addEventListener("change", async () => {
     $(en).fadeOut().fadeIn();
 });
 
+const st = document.querySelector(".status");
+st.addEventListener("change", async () => {
+    const id = st.id;
+    const param = { status: st.value };
+    await eol_update(id, param);
+    $(st).fadeOut().fadeIn();
+});
+
 async function get_en() {
     const noens = document.querySelectorAll("[name=noen]");
     noens.forEach(async (noen) => {

@@ -26,6 +26,7 @@
             </td>
             <td>{{ $taxon->taxonomicStatus }}</td>
             <td>{{ $taxon->taxonRank }}</td>
+            <td>{{ $taxon->eol ? $taxon->eol->status : null }}</td>
         </tr>
         @endforeach
     </table>
