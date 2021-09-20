@@ -47,13 +47,15 @@ class UpdateEol extends Command
             if ($taxon) {
                 if ($taxon->eol) {
                     //$taxon->eol->en = $en;
-                    $taxon->eol->jp = $jp;
+                    //$taxon->eol->jp = $jp;
+                    $taxon->eol->status = $jp;
                     $taxon->eol->save();
                     echo $f;
                 } else {
                     $eol = new Eol;
                     $eol->EOLid = $taxon->EOLid;
-                    $eol->jp = $jp;
+                    //$eol->jp = $jp;
+                    $eol->status = $jp;
                     $eol->save();
                     echo $f;
                 }

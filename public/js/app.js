@@ -107,7 +107,7 @@ async function get_wikipedia() {
         'href="/w/',
         'target="_blank" style="color:red" href="//ja.wikipedia.org/w/'
     );
-    document.getElementById("wikipedia").insertAdjacentHTML("afterbegin", text);
+    document.getElementById("japanese").insertAdjacentHTML("afterbegin", text);
 }
 
 async function get_wikipedia_en() {
@@ -129,7 +129,7 @@ async function get_wikipedia_en() {
         'href="/w/',
         'target="_blank" style="color:red" href="//en.wikipedia.org/w/'
     );
-    document.getElementById("wikipedia").insertAdjacentHTML("afterbegin", text);
+    document.getElementById("english").insertAdjacentHTML("afterbegin", text);
 }
 
 async function get_images() {

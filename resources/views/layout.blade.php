@@ -14,6 +14,47 @@
             padding: 1% 0;
         }
 
+        .EX, .EW, .CR, .EN, .VU, .CD, .NT, .LC, .DD, .NE {
+            padding: 1%;
+            color: white;
+            text-align: center;
+        }
+
+        .EX {
+            color:red;
+            background:black;
+        }
+        
+        .EW {
+            color: white;
+            background: black;
+        }
+
+        .CR {
+            background: Maroon;
+        }
+
+        .EN {
+            background: Coral;
+        }
+
+        .NT {
+            background: darkgreen;
+        }
+
+        .LC {
+            background: DarkCyan;
+        }
+
+        .VU {
+            background: GoldenRod;
+        }
+
+        .DD {
+            color: black;
+            border: grey 1px solid;
+        }
+
         img.tree {
             width: 20px;
             height: 15px;
