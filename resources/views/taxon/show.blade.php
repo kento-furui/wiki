@@ -103,23 +103,10 @@
 </div>
 @include('taxon._table', ['taxa' => $taxon->children])
 
-
 <input type="hidden" name="canonical" value="{{ $taxon->canonicalName }}" />
 <input type="hidden" name="title" value="{{ $taxon->eol ? $taxon->eol->jp : null }}" />
 
-<ul class="nav nav-tabs" id="myTab" role="tablist">
-    <li class="nav-item" role="presentation">
-        <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#japanese" role="tab" aria-controls="home"
-            aria-selected="true">Japanese</a>
-    </li>
-    <li class="nav-item" role="presentation">
-        <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#english" role="tab" aria-controls="profile"
-            aria-selected="false">English</a>
-    </li>
-</ul>
-<div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="japanese" role="tabpanel" aria-labelledby="home-tab"></div>
-    <div class="tab-pane fade" id="english" role="tabpanel" aria-labelledby="profile-tab"></div>
-</div>
+<div id="japanese"></div>
+<div id="english"></div>
 
 @endsection

@@ -1,2723 +1,3055 @@
-LC,Ilyodon whitei
-LC,Cryptocanthon brevisetosus
-LC,Membras martinica
-LC,Microgobius tabogensis
-LC,Hyporhamphus roberti
-LC,Caranx sexfasciatus
-LC,Menidia peninsulae
-LC,Strongylura marina
-LC,Hirtella zanzibarica
-LC,Coccinia grandiflora
-LC,Cryptocarya liebertiana
-LC,Ipomoea lapathifolia
-LC,Impatiens nana
-LC,Clerodendrum cephalanthum
-LC,Rotheca microphylla
-LC,Cavacoa aurea
-LC,Tetracera boiviniana
-LC,Euphorbia kilwana
-LC,Tannodia tenuifolia
-LC,Cnestis confertiflora
-LC,Psilotrichum cyathuloides
-LC,Lannea greenwayi
-LC,Euphorbia selousiana
-LC,Nectaropetalum kaessneri
-LC,Erythrococca usambarica
-LC,Microglossa hildebrandtii
-LC,Oxygonum schliebenii
-LC,Clerodendrum robustum
-LC,Vachellia etbaica
-LC,Cassia abbreviata
-LC,Lasiodiscus pervillei
-LC,Kleinia implexa
-LC,Diospyros anitae
-LC,Cordia guineensis
-LC,Premna hildebrandtii
-LC,Bothriocline pauciseta
-LC,Olea woodiana
-LC,Grandidiera boivinii
-LC,Vernonia nuxioides
-LC,Euphorbia classenii
-LC,Coccinia schliebenii
-LC,Tetracera litoralis
-LC,Balanites maughamii
-LC,Ochna mossambicensis
-LC,Capparis sepiaria
-LC,Hydnora sinandevu
-LC,Oxygonum magdalenae
-LC,Diplocyclos schliebenii
-LC,Clematis dolichopoda
-LC,Gymnosporia harveyana
-LC,Impatiens confusa
-LC,Clerodendrum hildebrandtii
-LC,Ehretia bakeri
-LC,Vernonia zanzibarensis
-LC,Meineckia uzungwaensis
-LC,Commiphora holtziana
-LC,Cucumis globosus
-LC,Heliotropium gorinii
-LC,Premna chrysoclada
-LC,Premna resinosa
-LC,Dalechampia scandens
-LC,Emilia kilwensis
-LC,Cassipourea euryoides
-LC,Bidens holstii
-LC,Rubus keniensis
-LC,Phyllanthus maderaspatensis
-LC,Elaeodendron schweinfurthianum
-LC,Vernonia muelleri
-LC,Entada stuhlmannii
-LC,Vernonia calvoana
-LC,Impatiens raphidothrix
-LC,Ancylobothrys tayloris
-LC,Begonia wakefieldii
-LC,Bothriocline argentea
-LC,Balanites rotundifolius
-LC,Ipomoea wightii
-LC,Peterodendron ovatum
-LC,Hugonia castaneifolia
-LC,Lasiodiscus usambarensis
-LC,Nectaropetalum zuluense
-LC,Heliotropium pectinatum
-LC,Impatiens eryaleia
-LC,Cassipourea celastroides
-LC,Diospyros abyssinica
-LC,Vernonia stuhlmannii
-LC,Euphorbia usambarica
-LC,Vernonia lasiopus
-LC,Pristimera graciliflora
-LC,Kalanchoe lateritia
-LC,Ethulia paucifructa
-LC,Impatiens rubromaculata
-LC,Ochna kirkii
-LC,Phyllanthus gillettianus
-LC,Impatiens pseudozombensis
-LC,Ochna holtzii
-LC,Rotheca sansibarensis
-LC,Vernonia usambarensis
-LC,Kedrostis heterophylla
-LC,Celosia hastata
-LC,Jatropha stuhlmannii
-LC,Pentarhopalopilia umbellulata
-LC,Bauhinia taitensis
-LC,Euphorbia allocarpa
-LC,Pupalia lappacea
-LC,Capparis fascicularis
-LC,Buchnerodendron lasiocalyx
-LC,Senegalia adenocalyx
-LC,Ethulia bicostata
-LC,Rubus iringanus
-LC,Vernonia vollesenii
-LC,Commiphora eminii
-LC,Dichapetalum mossambicense
-LC,Phyllanthus thulinii
-LC,Capparis viminea
-LC,Ochna thomasiana
-LC,Euchrysops osiris
-LC,Acraea nohara
-LC,Limenitis archippus
-LC,Libytheana carinenta
-LC,Danaus gilippus
-LC,Vanessa virginiensis
-LC,Chloroselas mazoensis
-LC,Ophrys melitensis
-LC,Ophisternon bengalense
-LC,Aplocheilus panchax
-LC,Polynemus dubius
-LC,Polynemus paradiseus
-LC,Rhipidolestes truncatidens
-LC,Euphaea opaca
-LC,Drepanosticta hongkongensis
-LC,Ischaemum rugosum
-LC,Sacciolepis indica
-LC,Bergia ammannioides
-LC,Bergia capensis
-LC,Melochia corchorifolia
-LC,Ludwigia adscendens
-LC,Phyllanthus reticulatus
-LC,Persicaria pulchra
-LC,Parachromis friedrichsthalii
-LC,Gobiosoma yucatanum
-LC,Goodea atripinnis
-LC,Vigna ambacensis
-LC,Vigna angivensis
-LC,Vigna antunesii
-LC,Vigna comosa
-LC,Vigna filicaulis
-LC,Vigna fischeri
-LC,Vigna friesiorum
-LC,Vigna frutescens
-LC,Vigna gazensis
-LC,Vigna gracilis
-LC,Vigna juncea
-LC,Vigna kirkii
-LC,Vigna kokii
-LC,Vigna longifolia
-LC,Vigna luteola
-LC,Vigna macrorrhyncha
-LC,Vigna marina
-LC,Vigna membranacea
-LC,Vigna monophylla
-LC,Vigna multinervis
-LC,Vigna nigritia
-LC,Vigna nyangensis
-LC,Vigna oblongifolia
-LC,Vigna parkeri
-LC,Vigna platyloba
-LC,Vigna pygmaea
-LC,Vigna racemosa
-LC,Vigna reticulata
-LC,Vigna schimperi
-LC,Vigna subterranea
-LC,Ambassis gymnocephalus
-LC,Diospyros vescoi
-LC,Diospyros calophylla
-LC,Diospyros acapulcensis
-LC,Diospyros suaveolens
-LC,Diospyros quiloensis
-LC,Diospyros monbuttensis
-LC,Euclea natalensis
-LC,Diospyros canaliculata
-LC,Diospyros humbertiana
-LC,Diospyros mangabensis
-LC,Diospyros sanza-minika
-LC,Diospyros hoyleana
-LC,Diospyros natalensis
-LC,Diospyros bernieriana
-LC,Euclea divinorum
-LC,Diospyros tropophylla
-LC,Diospyros obliquifolia
-LC,Diospyros polystemon
-LC,Diospyros lokohensis
-LC,Diospyros melocarpa
-LC,Diospyros gabunensis
-LC,Euclea racemosa
-LC,Diospyros mannii
-LC,Diospyros olacinoides
-LC,Diospyros toxicaria
-LC,Diospyros pruinosa
-LC,Diospyros gracilipes
-LC,Diospyros chevalieri
-LC,Diospyros baroniana
-LC,Diospyros elliotii
-LC,Diospyros soubreana
-LC,Diospyros inhacaensis
-LC,Diospyros physocalycina
-LC,Diospyros myriophylla
-LC,Diospyros gracilescens
-LC,Diospyros pervilleana
-LC,Diospyros danguyana
-LC,Diospyros haplostylis
-LC,Diospyros subsessilifolia
-LC,Diospyros whyteana
-LC,Diospyros aculeata
-LC,Diospyros erythrosperma
-LC,Diospyros squamosa
-LC,Diospyros preussii
-LC,Diospyros pseudomespilus
-LC,Diospyros perreticulata
-LC,Diospyros sakalavarum
-LC,Diospyros egleri
-LC,Diospyros kamerunensis
-LC,Diospyros parvifolia
-LC,Diospyros villosa
-LC,Diospyros occlusa
-LC,Diospyros senensis
-LC,Diospyros cupulifera
-LC,Diospyros consolatae
-LC,Euclea crispa
-LC,Diospyros boivinii
-LC,Diospyros mespiliformis
-LC,Diospyros truncatifolia
-LC,Diospyros matheriana
-LC,Diospyros platycalyx
-LC,Diospyros gilletii
-LC,Diospyros mapingo
-LC,Diospyros myrtifolia
-LC,Diospyros scabrida
-LC,Diospyros venosa
-LC,Phaseolus coccineus
-LC,Vicia sepium
-LC,Vicia sativa
-LC,Vicia balansae
-LC,Vicia noeana
-LC,Vicia cuspidata
-LC,Vicia bithynica
-LC,Vicia lathyroides
-LC,Vicia anatolica
-LC,Vicia abbreviata
-LC,Vicia peregrina
-LC,Rorippa madagascariensis
-LC,Scleria tessellata
-LC,Glossostigma diandrum
-LC,Echinochloa stagnina
-LC,Oryza grandiglumis
-LC,Oryza glaberrima
-LC,Oryza barthii
-LC,Oryza latifolia
-LC,Veitchia filifera
-LC,Centropomus robalito
-LC,Kraussia kirkii
-LC,Euphorbia heterochroma
-LC,Macrotyloma uniflorum
-LC,Crotalaria grandibracteata
-LC,Crotalaria becquetii
-LC,Orthosiphon cladotrichos
-LC,Pycreus hildebrandtii
-LC,Carex castanostachya
-LC,Leucas densiflora
-LC,Galium brenanii
-LC,Tragia glabrescens
-LC,Aeschynomene uniflora
-LC,Sophora inhambanensis
-LC,Euphorbia tenuispinosa
-LC,Afrocanthium pseudoverticillatum
-LC,Crotalaria muenzneri
-LC,Crotalaria lukwangulensis
-LC,Humularia drepanocephala
-LC,Bulbostylis argenteobrunnea
-LC,Endostemon camporum
-LC,Indigofera viscidissima
-LC,Indigofera oligophylla
-LC,Crotalaria pterocalyx
-LC,Acalypha engleri
-LC,Mitriostigma usambarense
-LC,Meineckia fruticans
-LC,Phyllanthus harrisii
-LC,Tephrosia pumila
-LC,Euphorbia nyikae
-LC,Warneckea sansibarica
-LC,Eriosema montanum
-LC,Euphorbia quinquecostata
-LC,Tragia ukambensis
-LC,Dormitator latifrons
-LC,Eleotris picta
-LC,Evorthodus minutus
-LC,Gobiomorus maculatus
-LC,Hyporhamphus gilli
-LC,Gobionellus microdon
-LC,Trinectes fonsecensis
-LC,Atherinella guatemalensis
-LC,Achirus mazatlanus
-LC,Oligoplites altus
-LC,Microgobius miraflorensis
-LC,Atherinella crystallina
-LC,Awaous tajasica
-LC,Pseudobunocephalus iheringii
-LC,Hoplias malabaricus
-LC,Gymnotus carapo
-LC,Catathyridium jenynsii
-LC,Psalidodon fasciatus
-LC,Bunocephalus doriae
-LC,Toxotes microlepis
-LC,Ariopsis assimilis
-LC,Atractosteus spatula
-LC,Atractosteus tropicus
-LC,Lepisosteus oculatus
-LC,Atherinella alvarezi
-LC,Atherinella marvelae
-LC,Chirostoma consocium
-LC,Chirostoma jordani
-LC,Schefflera hypoleuca
-LC,Batrachoides goldmani
-LC,Strongylura hubbsi
-LC,Astyanax aeneus
-LC,Brycon guatemalensis
-LC,Hyphessobrycon compressus
-LC,Roeboides bouchellei
-LC,Algansea tincella
-LC,Notropis braytoni
-LC,Notropis chihuahua
-LC,Tampichthys ipni
-LC,Jordanella pulchra
-LC,Fundulus parvipinnis
-LC,Liquidambar siamensis
-LC,Acer thomsonii
-LC,Acer sikkimense
-LC,Acer chienii
-LC,Acer wardii
-LC,Acer kuomeii
-LC,Acer sycopseoides
-LC,Ilyodon furcidens
-LC,Xenotoca variata
-LC,Brachyrhaphis hartwegi
-LC,Xiphophorus alvarezi
-LC,Xiphophorus birchmanni
-LC,Xiphophorus hellerii
-LC,Xiphophorus variatus
-LC,Tlaloc labialis
-LC,Gymnotus maculosus
-LC,Cribroheros robertsoni
-LC,Trichromis salvini
-LC,Cryptoheros chetumalensis
-LC,Herichthys carpintis
-LC,Herichthys deppii
-LC,Paraneetroplus bulleri
-LC,Petenia splendida
-LC,Rocio ocotal
-LC,Rocio octofasciata
-LC,Theraps irregularis
-LC,Thorichthys affinis
-LC,Thorichthys meeki
-LC,Thorichthys pasionis
-LC,Vieja maculicauda
-LC,Sicydium gymnogaster
-LC,Joturus pichardi
-LC,Acer acuminatum
-LC,Acer amplum
-LC,Acer argutum
-LC,Acer barbinerve
-LC,Acer capillipes
-LC,Acer cappadocicum
-LC,Acer carpinifolium
-LC,Acer kawakamii
-LC,Acer caudatum
-LC,Acer cissifolium
-LC,Acer cordatum
-LC,Acer crataegifolium
-LC,Acer davidii
-LC,Acer diabolicum
-LC,Acer distylum
-LC,Acer fabri
-LC,Acer henryi
-LC,Acer hyrcanum
-LC,Acer japonicum
-LC,Acer lucidum
-LC,Acer mandshuricum
-LC,Acer maximowiczianum
-LC,Acer micranthum
-LC,Acer morifolium
-LC,Acer nipponicum
-LC,Acer obtusifolium
-LC,Acer oliverianum
-LC,Acer pectinatum
-LC,Acer pentapomicum
-LC,Acer pseudosieboldianum
-LC,Acer rufinerve
-LC,Acer sempervirens
-LC,Acer shenkanense
-LC,Acer shirasawanum
-LC,Acer sieboldianum
-LC,Acer sinopurpurascens
-LC,Acer spicatum
-LC,Acer stachyophyllum
-LC,Acer sterculiaceum
-LC,Acer tataricum
-LC,Acer tegmentosum
-LC,Acer triflorum
-LC,Acer truncatum
-LC,Acer tschonoskii
-LC,Acer velutinum
-LC,Quercus acrodonta
-LC,Quercus acutissima
-LC,Quercus alba
-LC,Quercus aliena
-LC,Quercus annulata
-LC,Quercus argentata
-LC,Quercus arizonica
-LC,Quercus brantii
-LC,Quercus calophylla
-LC,Quercus castanea
-LC,Quercus coccifera
-LC,Quercus coccinea
-LC,Quercus crassifolia
-LC,Quercus elliptica
-LC,Quercus falcata
-LC,Quercus fusiformis
-LC,Quercus geminata
-LC,Quercus griffithii
-LC,Quercus helferiana
-LC,Quercus hemisphaerica
-LC,Quercus humboldtii
-LC,Quercus ithaburensis
-LC,Quercus laeta
-LC,Quercus lanata
-LC,Quercus lancifolia
-LC,Quercus libani
-LC,Quercus microphylla
-LC,Quercus mohriana
-LC,Quercus mongolica
-LC,Quercus obtusata
-LC,Quercus peduncularis
-LC,Quercus polymorpha
-LC,Quercus pumila
-LC,Quercus repanda
-LC,Quercus rugosa
-LC,Quercus segoviensis
-LC,Quercus sinuata
-LC,Quercus variabilis
-LC,Quercus vulcanica
-LC,Betula calcicola
-LC,Carpinus chuniana
-LC,Carpinus fargesiana
-LC,Corylus ferox
-LC,Carpinus henryana
-LC,Carpinus pubescens
-LC,Betula delavayi
-LC,Carpinus monbeigiana
-LC,Carpinus shensiensis
-LC,Betula schmidtii
-LC,Betula corylifolia
-LC,Corylus fargesii
-LC,Carpinus fangiana
-LC,Betula luminifera
-LC,Carpinus tsaiana
-LC,Betula pumila
-LC,Betula potaninii
-LC,Betula kwangsiensis
-LC,Acer campbellii
-LC,Acer kweilinense
-LC,Acer laevigatum
-LC,Acer tutcheri
-LC,Acer forrestii
-LC,Acer albopurpurascens
-LC,Acer laxiflorum
-LC,Acer ukurunduense
-LC,Acer acutum
-LC,Acer komarovii
-LC,Acer sinense
-LC,Acer metcalfii
-LC,Acer wilsonii
-LC,Acer serrulatum
-LC,Acer tsinglingense
-LC,Acer flabellatum
-LC,Acer chingii
-LC,Acer paxii
-LC,Quercus glauca
-LC,Quercus sapotifolia
-LC,Borassus aethiopum
-LC,Hyphaene coriacea
-LC,Cathorops melanopus
-LC,Schismatogobius deraniyagalai
-LC,Ipomoea venosa
-LC,Pentadesma reyndersii
-LC,Spirostachys africana
-LC,Aloe glabrescens
-LC,Aloe elegantissima
-LC,Aloe breviscapa
-LC,Aloe parvidens
-LC,Aloe ruspoliana
-LC,Aloe calidophila
-LC,Aloe lateritia
-LC,Aloe otallensis
-LC,Aloe camperi
-LC,Aloe wrefordii
-LC,Aloe eumassawana
-LC,Aloe labworana
-LC,Aloe trichosantha
-LC,Aloe rigens
-LC,Aloe elegans
-LC,Aloe clarkei
-LC,Aloe miskatana
-LC,Aloe megalacantha
-LC,Aloe macrocarpa
-LC,Aloe citrina
-LC,Aloe rivae
-LC,Aloe schweinfurthii
-LC,Aloe mcloughlinii
-LC,Aloe ellenbeckii
-LC,Aloe diolii
-LC,Aloe pirottae
-LC,Aloe debrana
-LC,Aloe kahinii
-LC,Aloe gilbertii
-LC,Aloe tweedieae
-LC,Aloe trigonantha
-LC,Aloe secundiflora
-LC,Leucothrinax morrisii
-LC,Thrinax radiata
-LC,Angraecopsis pusilla
-LC,Quercus depressa
-LC,Quercus hypoxantha
-LC,Quercus martinezii
-LC,Quercus uxoris
-LC,Euphorbia lividiflora
-LC,Quercus dentata
-LC,Alstonia spatulata
-LC,Stuhlmannia moavi
-LC,Corylus chinensis
-LC,Quercus rex
-LC,Quercus depressipes
-LC,Quercus germana
-LC,Quercus invaginata
-LC,Quercus sebifera
-LC,Quercus subspathulata
-LC,Trichocladus goetzei
-LC,Alsodeiopsis schumannii
-LC,Beilschmiedia kweo
-LC,Diospyros kabuyeana
-LC,Cinnamomum parthenoxylon
-LC,Quercus aucheri
-LC,Sindora siamensis
-LC,Acer laurinum
-LC,Wrightia laevis
-LC,Quercus buckleyi
-LC,Pittosporum goetzei
-LC,Aglaia tenuicaulis
-LC,Endocomia canarioides
-LC,Dialium holtzii
-LC,Quercus gravesii
-LC,Quercus xalapensis
-LC,Allanblackia stuhlmannii
-LC,Millettia bussei
-LC,Pycnocoma littoralis
-LC,Dasylepis integra
-LC,Gardenia transvenulosa
-LC,Kraussia speciosa
-LC,Liquidambar chinensis
-LC,Acer duplicatoserratum
-LC,Diospyros tessmannii
-LC,Balaka longirostris
-LC,Balaka seemannii
-LC,Clinostigma exorrhizum
-LC,Veitchia joannis
-LC,Veitchia vitiensis
-LC,Catostomus cahita
-LC,Herichthys pantostictus
-LC,Poecilia reticulata
-LC,Cyprinodon nazas
-LC,Mayaheros urophthalmus
-LC,Ilex mitis
-LC,Croton longipedicellatus
-LC,Drypetes usambarica
-LC,Mallotus oppositifolius
-LC,Cassia afrofistula
-LC,Acer buergerianum
-LC,Acer caesium
-LC,Acer longipes
-LC,Lannea welwitschii
-LC,Commiphora campestris
-LC,Shorea macroptera
-LC,Oncoba tettensis
-LC,Hemigrammopetersius barnardi
-LC,Etheostoma pottsii
-LC,Aloe vituensis
-LC,Aloe rabaiensis
-LC,Aloe microdonta
-LC,Zosteraeschna ellioti
-LC,Elaeis guineensis
-LC,Cenchrus ciliaris
-LC,Cenchrus clandestinus
-LC,Cenchrus setaceus
-LC,Ischaemum polystachyum
-LC,Agave americana
-LC,Chrysanthemoides monilifera
-LC,Sesbania sesban
-LC,Limosella africana
-LC,Hemiphlebia mirabilis
-LC,Beilschmiedia rwandensis
-LC,Angraecum panicifolium
-LC,Aspredinichthys filamentosus
-LC,Atherinella chagresi
-LC,Alepidomus evermanni
-LC,Bulbophyllum burttii
-LC,Bulbophyllum kivuense
-LC,Cynorkis symoensii
-LC,Habenaria coeloglossoides
-LC,Polystachya doggettii
-LC,Polystachya tridentata
-LC,Polystachya tenella
-LC,Polystachya virginea
-LC,Rhipidoglossum arbonnieri
-LC,Tridactyle stevartiana
-LC,Casuarina equisetifolia
-LC,Vachellia farnesiana
-LC,Acacia mangium
-LC,Adenanthera pavonina
-LC,Albizia lebbeck
-LC,Colchicum cupanii
-LC,Aphyllanthes monspeliensis
-LC,Crocus scardicus
-LC,Bellevalia nivalis
-LC,Colchicum pusillum
-LC,Trisetum tenuiforme
-LC,Trisetaria scabriuscula
-LC,Trisetaria ovata
-LC,Dioscorea orientalis
-LC,Ophrys lepida
-LC,Crocus cvijicii
-LC,Narcissus obsoletus
-LC,Allium baeticum
-LC,Aegilops columnaris
-LC,Aegilops cylindrica
-LC,Aegilops geniculata
-LC,Aegilops kotschyi
-LC,Aegilops neglecta
-LC,Aegilops peregrina
-LC,Aegilops speltoides
-LC,Aegilops tauschii
-LC,Aegilops triuncialis
-LC,Aegilops umbellulata
-LC,Brassica barrelieri
-LC,Brassica cretica
-LC,Brassica elongata
-LC,Brassica fruticulosa
-LC,Brassica nigra
-LC,Triticum monococcum
-LC,Pyrus cordata
-LC,Lathyrus tingitanus
-LC,Lathyrus sylvestris
-LC,Lathyrus ochrus
-LC,Lathyrus latifolius
-LC,Lathyrus hierosolymitanus
-LC,Lathyrus gorgoni
-LC,Lathyrus cicera
-LC,Salix caprea
-LC,Pinguicula lusitanica
-LC,Pinguicula mundi
-LC,Pinguicula vulgaris
-LC,Ilex brasiliensis
-LC,Aegilops crassa
-LC,Ilex liebmannii
-LC,Ilex opaca
-LC,Ipomoea lacunosa
-LC,Ipomoea grandifolia
-LC,Ipomoea cordatotriloba
-LC,Ilex hippocrateoides
-LC,Ilex laurina
-LC,Ilex retusa
-LC,Ilex cassine
-LC,Cucurbita argyrosperma
-LC,Cucurbita foetidissima
-LC,Cucurbita lundelliana
-LC,Cucurbita pepo
-LC,Dioscorea burkilliana
-LC,Dioscorea praehensilis
-LC,Dioscorea smilacifolia
-LC,Dioscorea transversa
-LC,Manihot aesculifolia
-LC,Manihot angustiloba
-LC,Manihot caerulescens
-LC,Manihot epruinosa
-LC,Manihot pilosa
-LC,Manihot pseudoglaziovii
-LC,Manihot tripartita
-LC,Manihot triphylla
-LC,Narcissus cavanillesii
-LC,Asparagus albus
-LC,Anacamptis sancta
-LC,Ophrys atlantica
-LC,Orchis quadripunctata
-LC,Oryza longistaminata
-LC,Oryza punctata
-LC,Oryza minuta
-LC,Oryza ridleyi
-LC,Elymus elongatus
-LC,Elymus hispidus
-LC,Oryza australiensis
-LC,Elymus farctus
-LC,Acacia alpina
-LC,Acacia betchei
-LC,Acacia confluens
-LC,Acacia gracilenta
-LC,Acacia homaloclada
-LC,Acacia longipedunculata
-LC,Acacia mitchellii
-LC,Acacia quornensis
-LC,Acacia resinicostata
-LC,Acacia ulicifolia
-LC,Archidendron brevipes
-LC,Archidendron tenuiracemosum
-LC,Carmichaelia monroi
-LC,Carmichaelia uniflora
-LC,Cassia javanica
-LC,Enterolobium timbouva
-LC,Eperua venosa
-LC,Inga barbata
-LC,Inga manabiensis
-LC,Inga venusta
-LC,Mimosa selloi
-LC,Panurea longifolia
-LC,Tachigali vulgaris
-LC,Zygia macbridii
-LC,Agave ovatifolia
-LC,Aloe wildii
-LC,Eremurus robustus
-LC,Eremurus bucharicus
-LC,Eremurus anisopterus
-LC,Burmannia foliosa
-LC,Ensete ventricosum
-LC,Musa acuminata
-LC,Freycinetia palawanensis
-LC,Freycinetia robinsonii
-LC,Zizaniopsis killipii
-LC,Typha grossheimii
-LC,Curcuma australasica
-LC,Clusia pseudomangle
-LC,Ruagea ovalis
-LC,Aegiphila ferruginea
-LC,Aphelandra acanthus
-LC,Saurauia bullosa
-LC,Oreopanax seemannianus
-LC,Baccharis latifolia
-LC,Linochilus cinerascens
-LC,Clusia sphaerocarpa
-LC,Bejaria mathewsii
-LC,Aegiphila bogotensis
-LC,Aegiphila cuatrecasasii
-LC,Meriania radula
-LC,Piper andreanum
-LC,Piper bogotense
-LC,Hesperomeles cuneata
-LC,Randia micracantha
-LC,Azara salicifolia
-LC,Buddleja coriacea
-LC,Solanum stenophyllum
-LC,Cecropia telenitida
-LC,Bhutanthera himalayana
-LC,Hetaeria pelota
-LC,Boleophthalmus boddarti
-LC,Cyprinodon variegatus
-LC,Menidia beryllina
-LC,Enteromius bifrenatus
-LC,Enteromius atkinsoni
-LC,Enteromius arcislongae
-LC,Marcusenius livingstonii
-LC,Mastacembelus shiranus
-LC,Enteromius innocens
-LC,Marcusenius macrolepidotus
-LC,Enteromius toppini
-LC,Enteromius zanzibaricus
-LC,Enteromius lineomaculatus
-LC,Hibiscus faulknerae
-LC,Ilex vomitoria
-LC,Aegilops vavilovii
-LC,Peltophorum africanum
-LC,Inga mortoniana
-LC,Anax amazili
-LC,Coryphaeschna viriditas
-LC,Gynacantha mexicana
-LC,Rhionaeschna psilus
-LC,Triacanthagyna septima
-LC,Enallagma novaehispaniae
-LC,Telebasis salva
-LC,Lestes forficula
-LC,Lestes tenuatus
-LC,Brachymesia furcata
-LC,Brechmorhoga pertinax
-LC,Erythemis attala
-LC,Erythemis peruviana
-LC,Erythrodiplax fervida
-LC,Erythrodiplax funerea
-LC,Erythrodiplax fusca
-LC,Erythrodiplax umbrata
-LC,Macrothemis imitans
-LC,Macrothemis pseudimitans
-LC,Micrathyria aequalis
-LC,Micrathyria didyma
-LC,Orthemis discolor
-LC,Tauriphila argo
-LC,Tauriphila australis
-LC,Tholymis citrina
-LC,Tramea abdominalis
-LC,Tramea binotata
-LC,Melaleuca quinquenervia
-LC,Zosteraeschna usambarica
-LC,Aciagrion dondoense
-LC,Rubus ellipticus
-LC,Mimosa pigra
-LC,Armeniaca sibirica
-LC,Monotes adenophyllus
-LC,Monotes autennei
-LC,Monotes hypoleucus
-LC,Monotes engleri
-LC,Monotes gossweileri
-LC,Monotes katangensis
-LC,Monotes magnificus
-LC,Xyliphius melanopterus
-LC,Eretmobrycon emperador
-LC,Roeboides occidentalis
-LC,Apionichthys nattereri
-LC,Bunocephalus coracoideus
-LC,Bunocephalus knerii
-LC,Sternopygus aequilabiatus
-LC,Baudouinia fluggeiformis
-LC,Bauhinia grandidieri
-LC,Bauhinia madagascariensis
-LC,Elattoneura mayombensis
-LC,Elattoneura lliba
-LC,Acisoma inflatum
-LC,Acisoma variegatum
-LC,Acisoma panorpoides
-LC,Paracostus paradoxus
-LC,Vasconcellea parviflora
-LC,Rasbora dandia
-LC,Rasbora microcephalus
-LC,Aplocheilus parvus
-LC,Narcissus hedraeanthus
-LC,Quercus infectoria
-LC,Thalia geniculata
-LC,Gasterosteus aculeatus
-LC,Lepomis cyanellus
-LC,Lepomis macrochirus
-LC,Cyphomyrus discorhynchus
-LC,Zaireichthys maravensis
-LC,Zaireichthys monomotapa
-LC,Vepris ampody
-LC,Diospyros leucocalyx
-LC,Albizia boivinii
-LC,Tambourissa religiosa
-LC,Hubertia beguei
-LC,Cyttaria exigua
-LC,Plectostoma relauensis
-LC,Plectostoma salpidomon
-LC,Plectostoma praeco
-LC,Plectostoma siphonostomum
-LC,Plectostoma kayiani
-LC,Plectostoma laemodes
-LC,Plectostoma ikanensis
-LC,Croton cuneatus
-LC,Laurembergia tetrandra
-LC,Vismia lauriformis
-LC,Hevea spruceana
-LC,Trichilia singularis
-LC,Manilkara inundata
-LC,Simaba guianensis
-LC,Stachytarpheta indica
-LC,Roystonea regia
-LC,Apocordulia macrops
-LC,Zephyrogomphus lateralis
-LC,Sabal mexicana
-LC,Washingtonia filifera
-LC,Euterpe precatoria
-LC,Eugenia uniflora
-LC,Channa punctata
-LC,Heteropneustes fossilis
-LC,Xenentodon cancila
-LC,Channa striata
-LC,Mastacembelus armatus
-LC,Devario malabaricus
-LC,Oryzias dancena
-LC,Pseudosphromenus cupanus
-LC,Lepidocephalichthys thermalis
-LC,Etroplus suratensis
-LC,Puntius dorsalis
-LC,Sicyopterus griseus
-LC,Ambassis interrupta
-LC,Oryzias carnaticus
-LC,Puntius bimaculatus
-LC,Pseudetroplus maculatus
-LC,Puntius vittatus
-LC,Esomus thermoicos
-LC,Jatropha malacophylla
-LC,Aesculus flava
-LC,Afzelia bella
-LC,Afzelia quanzensis
-LC,Albizia antunesiana
-LC,Albizia gummifera
-LC,Albizia lebbekoides
-LC,Albizia procera
-LC,Albizia versicolor
-LC,Albizia zygia
-LC,Alphitonia philippinensis
-LC,Alstonia boonei
-LC,Alstonia congensis
-LC,Liquidambar excelsa
-LC,Amblygonocarpus andongensis
-LC,Amphimas ferrugineus
-LC,Aniba canelilla
-LC,Aniba parviflora
-LC,Annickia chlorantha
-LC,Antiaris toxicaria
-LC,Apeiba glabra
-LC,Aphananthe philippinensis
-LC,Apuleia leiocarpa
-LC,Arbutus menziesii
-LC,Artocarpus hirsutus
-LC,Aspidosperma quebracho-blanco
-LC,Cyphocharax magdalenae
-LC,Oryza rufipogon
-LC,Juglans regia
-LC,Aegilops biuncialis
-LC,Saccharum spontaneum
-LC,Barringtonia acutangula
-LC,Pyrus communis
-LC,Pyrus bourgaeana
-LC,Cydonia oblonga
-LC,Pyrus regelii
-LC,Pyrus spinosa
-LC,Pyrus syriaca
-LC,Prunus fremontii
-LC,Astyanax integer
-LC,Hyphessobrycon mavro
-LC,Hyphessobrycon sweglesi
-LC,Bombax ceiba
-LC,Grewia eriocarpa
-LC,Guazuma ulmifolia
-LC,Heliocarpus americanus
-LC,Heritiera ornithocephala
-LC,Hibiscus lasiococcus
-LC,Ochroma pyramidale
-LC,Pentace adenophora
-LC,Pentace laxiflora
-LC,Pentace triptera
-LC,Pterospermum acerifolium
-LC,Pterospermum elongatum
-LC,Pterospermum javanicum
-LC,Scaphium linearicarpum
-LC,Sterculia conwentzii
-LC,Sterculia rhinopetala
-LC,Sterculia rugosa
-LC,Thespesia populnea
-LC,Tilia americana
-LC,Azadirachta excelsa
-LC,Azadirachta indica
-LC,Carapa grandiflora
-LC,Carapa procera
-LC,Toona sinensis
-LC,Chisocheton pentandrus
-LC,Dysoxylum fraserianum
-LC,Guarea guidonia
-LC,Melia azedarach
-LC,Sandoricum koetjape
-LC,Toona sureni
-LC,Tambourissa thouvenotii
-LC,Camellia crassicolumna
-LC,Camellia gymnogyna
-LC,Ficus pertusa
-LC,Moringa oleifera
-LC,Staudtia kamerunensis
-LC,Nothofagus menziesii
-LC,Nothofagus pumilio
-LC,Fraxinus mandshurica
-LC,Bischofia javanica
-LC,Bridelia grandis
-LC,Hieronyma oblonga
-LC,Androstachys johnsonii
-LC,Roupala cordifolia
-LC,Roupala montana
-LC,Frangula purshiana
-LC,Krugiodendron ferreum
-LC,Crataegus coccinea
-LC,Prunus turneriana
-LC,Breonadia salicina
-LC,Genipa americana
-LC,Nauclea orientalis
-LC,Simira salvadorensis
-LC,Zanthoxylum caribaeum
-LC,Zanthoxylum gilletii
-LC,Zanthoxylum heitzii
-LC,Zanthoxylum rhetsa
-LC,Populus ciliata
-LC,Populus deltoides
-LC,Populus tremuloides
-LC,Populus trichocarpa
-LC,Salix eleagnos
-LC,Salix humboldtiana
-LC,Salix triandra
-LC,Salix viminalis
-LC,Harpullia arborea
-LC,Hypelate trifoliata
-LC,Gambeya beguei
-LC,Gambeya gigantea
-LC,Gambeya lacourtiana
-LC,Gambeya perpulchra
-LC,Letestua durissima
-LC,Madhuca malaccensis
-LC,Manilkara zapota
-LC,Mimusops elengi
-LC,Palaquium hornei
-LC,Palaquium obovatum
-LC,Payena acuminata
-LC,Pouteria pierrei
-LC,Schima noronhae
-LC,Holoptelea grandis
-LC,Phyllostylon rhamnoides
-LC,Ulmus pumila
-LC,Musanga cecropioides
-LC,Quercus myrsinifolia
-LC,Quercus phillyreoides
-LC,Vochysia citrifolia
-LC,Vochysia diversa
-LC,Vochysia tomentosa
-LC,Liquidambar formosana
-LC,Buchanania arborescens
-LC,Campnosperma auriculatum
-LC,Campnosperma montanum
-LC,Lannea coromandelica
-LC,Rhus typhina
-LC,Schinus molle
-LC,Poga oleosa
-LC,Cleistopholis glauca
-LC,Cleistopholis patens
-LC,Duguetia confinis
-LC,Duguetia staudtii
-LC,Funtumia africana
-LC,Gonioma kamassi
-LC,Wrightia arborea
-LC,Ilex aggregata
-LC,Polyscias ornifolia
-LC,Jacaranda acutifolia
-LC,Jacaranda cuspidifolia
-LC,Jacaranda micrantha
-LC,Jacaranda obtusifolia
-LC,Bixa orellana
-LC,Cordia elaeagnoides
-LC,Bursera simaruba
-LC,Canarium indicum
-LC,Buxus macowanii
-LC,Mammea africana
-LC,Celtis adolfi-friderici
-LC,Celtis mildbraedii
-LC,Celtis philippensis
-LC,Celtis rigescens
-LC,Celtis zenkeri
-LC,Trema orientale
-LC,Caryocar glabrum
-LC,Caryocar villosum
-LC,Hymenopus divaricata
-LC,Hymenopus heteromorphus
-LC,Licania hypoleuca
-LC,Hymenopus macrophyllus
-LC,Moquilea platypus
-LC,Parinari campestris
-LC,Parinari excelsa
-LC,Calophyllum vitiense
-LC,Garcinia cowa
-LC,Terminalia bellirica
-LC,Terminalia catappa
-LC,Terminalia chebula
-LC,Terminalia complanata
-LC,Terminalia procera
-LC,Terminalia solomonensis
-LC,Brachylaena merana
-LC,Brachylaena ramiflora
-LC,Humbertia madagascariensis
-LC,Cornus florida
-LC,Nyssa aquatica
-LC,Nyssa ogeche
-LC,Nyssa sylvatica
-LC,Ceratopetalum succirubrum
-LC,Karrabina benthamiana
-LC,Dillenia indica
-LC,Dillenia papuana
-LC,Dillenia schlechteri
-LC,Elaeagnus angustifolia
-LC,Kalmia latifolia
-LC,Erythroxylum mannii
-LC,Croton megalocarpus
-LC,Endospermum diadenum
-LC,Endospermum macrophyllum
-LC,Endospermum moluccanum
-LC,Endospermum peltatum
-LC,Gymnanthes lucida
-LC,Hevea brasiliensis
-LC,Schinziophyton rautanenii
-LC,Sclerocroton integerrimus
-LC,Shirakiopsis elliptica
-LC,Castanea crenata
-LC,Castanopsis acuminatissima
-LC,Castanopsis cuspidata
-LC,Castanopsis javanica
-LC,Chrysolepis chrysophylla
-LC,Lithocarpus amygdalifolius
-LC,Lithocarpus gracilis
-LC,Lithocarpus daphnoideus
-LC,Lithocarpus henryi
-LC,Notholithocarpus densiflorus
-LC,Hamamelis virginiana
-LC,Endopleura uchi
-LC,Humiria balsamifera
-LC,Sacoglottis cydonioides
-LC,Sacoglottis guianensis
-LC,Carya illinoinensis
-LC,Carya myristiciformis
-LC,Engelhardtia roxburghiana
-LC,Juglans hindsii
-LC,Gmelina moluccana
-LC,Peronema canescens
-LC,Vitex doniana
-LC,Vitex glabrata
-LC,Vitex quinata
-LC,Alseodaphne archboldiana
-LC,Beilschmiedia mannii
-LC,Beilschmiedia velutina
-LC,Cinnamomum iners
-LC,Litsea ferruginea
-LC,Nectandra lanceolata
-LC,Nectandra megapotamica
-LC,Nothaphoebe panduriformis
-LC,Nothaphoebe umbelliflora
-LC,Dalbergia cubilquitzensis
-LC,Tamarindus indica
-LC,Bobgunnia madagascariensis
-LC,Brachystegia eurycoma
-LC,Brachystegia laurentii
-LC,Brachystegia mildbraedii
-LC,Burkea africana
-LC,Colophospermum mopane
-LC,Cordyla africana
-LC,Cynometra ananta
-LC,Cynometra ramiflora
-LC,Dalbergia brownei
-LC,Dalbergia ecastaphyllum
-LC,Dalbergia sissoo
-LC,Detarium macrocarpum
-LC,Dialium procerum
-LC,Didelotia brevipaniculata
-LC,Erythrophleum ivorense
-LC,Erythrophleum suaveolens
-LC,Falcataria moluccana
-LC,Gilbertiodendron dewevrei
-LC,Gilbertiodendron mayombense
-LC,Gilbertiodendron preussii
-LC,Gleditsia triacanthos
-LC,Guibourtia coleosperma
-LC,Guibourtia conjugata
-LC,Hardwickia binata
-LC,Hymenolobium petraeum
-LC,Inga alba
-LC,Inga pezizifera
-LC,Julbernardia pellegriniana
-LC,Leucaena trichodes
-LC,Mildbraediodendron excelsum
-LC,Millettia leucantha
-LC,Myroxylon balsamum
-LC,Newtonia buchananii
-LC,Prioria buchholzii
-LC,Prioria oxyphylla
-LC,Piptadeniastrum africanum
-LC,Pterocarpus tinctorius
-LC,Senna siamea
-LC,Sindora coriacea
-LC,Sindora leiocarpa
-LC,Sindora velutina
-LC,Sindora wallichii
-LC,Xylia xylocarpa
-LC,Camellia tachangensis
-LC,Camellia taliensis
-LC,Citrus medica
-LC,Camellia anlungensis
-LC,Camellia brevistyla
-LC,Camellia caudata
-LC,Camellia chekiangoleosa
-LC,Camellia confusa
-LC,Camellia cordifolia
-LC,Camellia costei
-LC,Camellia curryana
-LC,Camellia cuspidata
-LC,Camellia edithae
-LC,Camellia euryoides
-LC,Camellia fluviatilis
-LC,Camellia forrestii
-LC,Camellia fraterna
-LC,Camellia furfuracea
-LC,Camellia japonica
-LC,Camellia lanceolata
-LC,Camellia lawii
-LC,Camellia mairei
-LC,Camellia oleifera
-LC,Camellia pachyandra
-LC,Camellia pitardii
-LC,Camellia polyodonta
-LC,Camellia rhytidocarpa
-LC,Camellia rosthorniana
-LC,Camellia salicifolia
-LC,Camellia saluenensis
-LC,Camellia sasanqua
-LC,Camellia semiserrata
-LC,Camellia synaptica
-LC,Camellia tsaii
-LC,Camellia yunnanensis
-LC,Gordonia brenesii
-LC,Gordonia obtusa
-LC,Laplacea haematoxylon
-LC,Polyspora amboinensis
-LC,Polyspora axillaris
-LC,Polyspora borneensis
-LC,Polyspora chrysandra
-LC,Polyspora excelsa
-LC,Polyspora havilandii
-LC,Polyspora imbricata
-LC,Polyspora longicarpa
-LC,Polyspora luzonica
-LC,Polyspora papuana
-LC,Polyspora speciosa
-LC,Polyspora multinervis
-LC,Polyspora maingayi
-LC,Pyrenaria diospyricarpa
-LC,Pyrenaria hirta
-LC,Pyrenaria microcarpa
-LC,Pyrenaria sophiae
-LC,Pyrenaria spectabilis
-LC,Pyrenaria tawauensis
-LC,Pyrenaria acuminata
-LC,Pyrenaria serrata
-LC,Pyrenaria villosula
-LC,Schima khasiana
-LC,Schima crenata
-LC,Schima wallichii
-LC,Stewartia cordifolia
-LC,Stewartia monadelpha
-LC,Stewartia pseudocamellia
-LC,Stewartia pteropetiolata
-LC,Stewartia rubiginosa
-LC,Stewartia serrata
-LC,Stewartia sinensis
-LC,Stewartia villosa
-LC,Martellidendron cruciatum
-LC,Martellidendron karaka
-LC,Pandanus boivinii
-LC,Pandanus concretus
-LC,Pandanus dyckioides
-LC,Pandanus humbertii
-LC,Pandanus oligocarpus
-LC,Pandanus pervilleanus
-LC,Quercus bumelioides
-LC,Asteropeia rhopaloides
-LC,Prunus laurocerasus
-LC,Prunus apetala
-LC,Prunus lyonii
-LC,Prunus sargentii
-LC,Prunus ssiori
-LC,Prunus takesimensis
-LC,Malus rockii
-LC,Adansonia madagascariensis
-LC,Adansonia rubrostipa
-LC,Adansonia za
-LC,Schizolaena gereaui
-LC,Buxus madagascarica
-LC,Tabernaemontana crassifolia
-LC,Tabernaemontana coffeoides
-LC,Pandanus ceratophorus
-LC,Secamone uniflora
-LC,Secamone oleaefolia
-LC,Impatiens mananteninae
-LC,Impatiens messmerae
-LC,Secamone obovata
-LC,Drypetes capuronii
-LC,Sesbania madagascariensis
-LC,Ophrestia lyallii
-LC,Symphonia pauciflora
-LC,Chassalia bojeri
-LC,Hubertia bathiaei
-LC,Colea floribunda
-LC,Vepris fitoravina
-LC,Garcinia chapelieri
-LC,Polysphaeria lepidocarpa
-LC,Symphonia louvelii
-LC,Hubertia faujasioides
-LC,Tina thouarsiana
-LC,Symphonia microphylla
-LC,Hubertia myricifolia
-LC,Garcinia decipiens
-LC,Chassalia princei
-LC,Tambourissa purpurea
-LC,Dichapetalum pachypus
-LC,Dichapetalum leucosia
-LC,Jumellea stenophylla
-LC,Chassalia catatii
-LC,Hubertia hypargyrea
-LC,Impatiens lyallii
-LC,Senecio marojejyensis
-LC,Vepris nitida
-LC,Chassalia moramangensis
-LC,Senecio gossypinus
-LC,Labramia costata
-LC,Apodocephala pauciflora
-LC,Impatiens translucida
-LC,Vaccinium secundiflorum
-LC,Dichapetalum chlorinum
-LC,Gouania lineata
-LC,Symphonia nectarifera
-LC,Ficus politoria
-LC,Crotalaria laevigata
-LC,Faurea forficuliflora
-LC,Tina chapelieriana
-LC,Vepris macrophylla
-LC,Symphonia gymnoclada
-LC,Plagioscyphus jumellei
-LC,Barleria kitchingii
-LC,Fenerivia emarginata
-LC,Angraecum chermezonii
-LC,Senecio vaingaindranii
-LC,Senecio francoisii
-LC,Senecio saboureaui
-LC,Symphonia urophylla
-LC,Knodus breviceps
-LC,Hemibrycon metae
-LC,Aeshna constricta
-LC,Brachystephanus jaundensis
-LC,Bulnesia retama
-LC,Ophiogomphus anomalus
-LC,Ophiogomphus howei
-LC,Somatochlora brevicincta
-LC,Somatochlora incurvata
-LC,Neurocordulia michaeli
-LC,Pantala flavescens
-LC,Somatochlora sahlbergi
-LC,Stylurus plagiatus
-LC,Octogomphus specularis
-LC,Enallagma traviatum
-LC,Sympetrum madidum
-LC,Enallagma minusculum
-LC,Stylurus scudderi
-LC,Boyeria grafiana
-LC,Somatochlora franklini
-LC,Aeshna palmata
-LC,Ophiogomphus occidentis
-LC,Coenagrion resolutum
-LC,Ophiogomphus aspersus
-LC,Celithemis elisa
-LC,Sympetrum internum
-LC,Argia tibialis
-LC,Tramea onusta
-LC,Nasiaeschna pentacantha
-LC,Argia apicalis
-LC,Leucorrhinia glacialis
-LC,Nehalennia gracilis
-LC,Helocordulia uhleri
-LC,Amphiagrion saucium
-LC,Tramea carolina
-LC,Ischnura perparva
-LC,Calopteryx aequabilis
-LC,Aeshna clepsydra
-LC,Hagenius brevistylus
-LC,Gomphaeschna furcillata
-LC,Argia moesta
-LC,Ischnura posita
-LC,Celithemis martha
-LC,Stylurus amnicola
-LC,Aeshna umbrosa
-LC,Ophiogomphus colubrinus
-LC,Enallagma ebrium
-LC,Libellula luctuosa
-LC,Somatochlora cingulata
-LC,Stylurus spiniceps
-LC,Cordulegaster obliqua
-LC,Aeshna canadensis
-LC,Enallagma carunculatum
-LC,Anax junius
-LC,Somatochlora hudsonica
-LC,Dromogomphus spinosus
-LC,Erythemis simplicicollis
-LC,Enallagma exsulans
-LC,Leucorrhinia frigida
-LC,Sympetrum illotum
-LC,Libellula quadrimaculata
-LC,Sympetrum danae
-LC,Aeshna subarctica
-LC,Lestes dryas
-LC,Aeshna juncea
-LC,Ischnura hastata
-LC,Basiaeschna janata
-LC,Epiaeschna heros
-LC,Archilestes grandis
-LC,Enallagma civile
-LC,Erythrodiplax berenice
-LC,Pantala hymenaea
-LC,Argia translata
-LC,Aeshna eremita
-LC,Aeshna interrupta
-LC,Aeshna septentrionalis
-LC,Aeshna sitchensis
-LC,Aeshna tuberculifera
-LC,Aeshna verticalis
-LC,Boyeria vinosa
-LC,Rhionaeschna californica
-LC,Rhionaeschna multicolor
-LC,Rhionaeschna mutata
-LC,Cordulegaster diastatops
-LC,Cordulegaster dorsalis
-LC,Cordulegaster erronea
-LC,Cordulegaster maculata
-LC,Cordulia shurtleffii
-LC,Didymops transversa
-LC,Dorocordulia lepida
-LC,Dorocordulia libera
-LC,Epitheca canis
-LC,Epitheca cynosura
-LC,Epitheca princeps
-LC,Epitheca semiaquea
-LC,Epitheca spinigera
-LC,Macromia illinoiensis
-LC,Macromia magnifica
-LC,Macromia taeniolata
-LC,Neurocordulia yamaskanensis
-LC,Somatochlora albicincta
-LC,Somatochlora elongata
-LC,Somatochlora ensigera
-LC,Somatochlora forcipata
-LC,Somatochlora kennedyi
-LC,Somatochlora linearis
-LC,Somatochlora minor
-LC,Somatochlora semicircularis
-LC,Somatochlora tenebrosa
-LC,Somatochlora walshii
-LC,Somatochlora whitehousei
-LC,Somatochlora williamsoni
-LC,Williamsonia fletcheri
-LC,Arigomphus cornutus
-LC,Arigomphus furcifer
-LC,Arigomphus villosipes
-LC,Dromogomphus spoliatus
-LC,Phanogomphus lividus
-LC,Lanthus parvulus
-LC,Lanthus vernalis
-LC,Ophiogomphus carolus
-LC,Ophiogomphus mainensis
-LC,Ophiogomphus rupinsulensis
-LC,Ophiogomphus severus
-LC,Progomphus obscurus
-LC,Stylogomphus albistylus
-LC,Stylurus intricatus
-LC,Stylurus laurae
-LC,Stylurus notatus
-LC,Stylurus olivaceus
-LC,Celithemis eponina
-LC,Erythemis collocata
-LC,Ladona exusta
-LC,Ladona julia
-LC,Leucorrhinia borealis
-LC,Leucorrhinia hudsonica
-LC,Leucorrhinia intacta
-LC,Leucorrhinia patricia
-LC,Leucorrhinia proxima
-LC,Libellula forensis
-LC,Libellula incesta
-LC,Libellula pulchella
-LC,Libellula semifasciata
-LC,Libellula vibrans
-LC,Nannothemis bella
-LC,Pachydiplax longipennis
-LC,Perithemis tenera
-LC,Plathemis lydia
-LC,Sympetrum corruptum
-LC,Sympetrum costiferum
-LC,Sympetrum obtrusum
-LC,Sympetrum pallipes
-LC,Sympetrum rubicundulum
-LC,Sympetrum semicinctum
-LC,Sympetrum vicinum
-LC,Tramea lacerata
-LC,Tanypteryx hageni
-LC,Calopteryx amata
-LC,Calopteryx maculata
-LC,Hetaerina americana
-LC,Hetaerina titia
-LC,Amphiagrion abbreviatum
-LC,Argia emma
-LC,Argia fumipennis
-LC,Argia sedula
-LC,Argia vivida
-LC,Chromagrion conditum
-LC,Coenagrion angulatum
-LC,Coenagrion interrogatum
-LC,Enallagma anna
-LC,Enallagma annexum
-LC,Enallagma antennatum
-LC,Enallagma aspersum
-LC,Enallagma basidens
-LC,Enallagma boreale
-LC,Enallagma clausum
-LC,Enallagma geminatum
-LC,Enallagma hageni
-LC,Enallagma signatum
-LC,Enallagma vernale
-LC,Enallagma vesperum
-LC,Ischnura cervula
-LC,Ischnura damula
-LC,Ischnura erratica
-LC,Ischnura kellicotti
-LC,Ischnura verticalis
-LC,Nehalennia irene
-LC,Lestes congener
-LC,Lestes disjunctus
-LC,Lestes eurinus
-LC,Lestes forcipatus
-LC,Lestes inaequalis
-LC,Lestes rectangularis
-LC,Lestes unguiculatus
-LC,Lestes vigilax
-LC,Ficus reflexa
-LC,Aframomum angustifolium
-LC,Aphloia theiformis
-LC,Margaritaria anomala
-LC,Antirhea borbonica
-LC,Antidesma madagascariense
-LC,Apodytes dimidiata
-LC,Portulaca oleracea
-LC,Cnestis polyphylla
-LC,Asclepias graminifolia
-LC,Asparagus chimanimanensis
-LC,Anisopappus paucidentatus
-LC,Helichrysum africanum
-LC,Helichrysum spenceranum
-LC,Senecio aetfatensis
-LC,Vernonia nepetifolia
-LC,Cyphia alba
-LC,Lobelia cobaltica
-LC,Crassula alticola
-LC,Mesanthemum africanum
-LC,Euphorbia crebrifolia
-LC,Hesperantha ballii
-LC,Aeollanthus viscosus
-LC,Coleus caudatus
-LC,Syncolostemon flabellifolius
-LC,Aeschynomene chimanimaniensis
-LC,Aeschynomene grandistipulata
-LC,Crotalaria phylicoides
-LC,Pearsonia mesopontica
-LC,Rhynchosia stipata
-LC,Rhynchosia swynnertonii
-LC,Tephrosia chimanimaniana
-LC,Olea chimanimani
-LC,Bulbophyllum ballii
-LC,Disa chimanimaniensis
-LC,Oligophyton drummondii
-LC,Polystachya subumbellata
-LC,Polystachya valentina
-LC,Satyrium flavum
-LC,Clutia punctata
-LC,Clutia sessilifolia
-LC,Eragrostis desolata
-LC,Restio quartziticola
-LC,Anthospermum ammanioides
-LC,Anthospermum vallicola
-LC,Oldenlandia cana
-LC,Thesium chimanimaniense
-LC,Thesium dolichomeres
-LC,Vernoniopsis caudata
-LC,Monoporus spathulatus
-LC,Chassalia stenantha
-LC,Albizia jaubertiana
-LC,Liparis longipetala
-LC,Thesium pygmaeum
-LC,Buchnera chimanimaniensis
-LC,Selago anatrichota
-LC,Xerophyta argentea
-LC,Aloe hazeliana
-LC,Erica wildii
-LC,Dioscorea bosseri
-LC,Dioscorea fandra
-LC,Dioscorea heteropoda
-LC,Dioscorea hombuka
-LC,Dioscorea nako
-LC,Dioscorea ovinala
-LC,Dioscorea seriflora
-LC,Dioscorea soso
-LC,Dioscorea trichantha
-LC,Carya floridana
-LC,Carya pallida
-LC,Carya texana
-LC,Juglans major
-LC,Juglans microcarpa
-LC,Juglans mollis
-LC,Pterocarya stenoptera
-LC,Astrocaryum standleyanum
-LC,Attalea maripa
-LC,Pleurozia gigantea
-LC,Aiphanes hirsuta
-LC,Aiphanes linearis
-LC,Astrocaryum aculeatum
-LC,Attalea phalerata
-LC,Bactris glandulosa
-LC,Coccothrinax argentata
-LC,Phoenix reclinata
-LC,Socratea exorrhiza
-LC,Liquidambar styraciflua
-LC,Gluta papuana
-LC,Wrightia pubescens
-LC,Daniellia klainei
-LC,Cordia subcordata
-LC,Kokoona littoralis
-LC,Cercidiphyllum japonicum
-LC,Irvingia malayana
-LC,Gmelina arborea
-LC,Vitex gaumeri
-LC,Vitex parviflora
-LC,Acacia crassicarpa
-LC,Bacopa floribunda
-LC,Brachiaria mutica
-LC,Calophyllum inophyllum
-LC,Ludwigia perennis
-LC,Pterocarpus angolensis
-LC,Ficus mathewsii
-LC,Nothofagus alpina
-LC,Nothofagus dombeyi
-LC,Nothofagus obliqua
-LC,Nephelium lappaceum
-LC,Dendrosenecio johnstonii
-LC,Dendrosenecio meruensis
-LC,Lupinoblennius nicholsi
-LC,Mundulea barclayi
-LC,Cynometra sakalava
-LC,Mundulea micrantha
-LC,Olax thouarsii
-LC,Xyloolaena richardii
-LC,Foetidia retusa
-LC,Schizolaena elongata
-LC,Perriera madagascariensis
-LC,Polyscias maralia
-LC,Tabernaemontana phymata
-LC,Robbrechtia grandifolia
-LC,Tabernaemontana eusepala
-LC,Brachylaena microphylla
-LC,Rhopalocarpus macrorhamnifolius
-LC,Hymenodictyon perrieri
-LC,Mascarenhasia havetii
-LC,Petchia cryptophlebia
-LC,Schizolaena cauliflora
-LC,Mundulea antanossarum
-LC,Foetidia obliqua
-LC,Combretocarpus rotundatus
-LC,Ilex aquifolium
-LC,Buxus sempervirens
-LC,Calophyllum peekelii
-LC,Cotylelobium melanoxylon
-LC,Dipterocarpus validus
-LC,Dryobalanops lanceolata
-LC,Dryobalanops oblongifolia
-LC,Hopea dryobalanoides
-LC,Parashorea malaanonan
-LC,Parashorea parvifolia
-LC,Parashorea tomentella
-LC,Shorea acuminata
-LC,Shorea assamica
-LC,Shorea crassa
-LC,Shorea curtisii
-LC,Shorea havilandii
-LC,Shorea multiflora
-LC,Shorea ovalis
-LC,Shorea parvifolia
-LC,Shorea seminis
-LC,Vatica rassak
-LC,Nothaphoebe kingiana
-LC,Umbellularia californica
-LC,Tilia cordata
-LC,Aglaia spectabilis
-LC,Cabralea canjerana
-LC,Chukrasia tabularis
-LC,Dysoxylum alliaceum
-LC,Frangula alnus
-LC,Crataegus monogyna
-LC,Flindersia pimenteliana
-LC,Flindersia schottiana
-LC,Gonystylus macrophyllus
-LC,Toona ciliata
-LC,Horsfieldia irya
-LC,Myristica buchneriana
-LC,Myristica chartacea
-LC,Homalium foetidum
-LC,Carissa spinarum
-LC,Dendrolobium umbellatum
-LC,Premna serratifolia
-LC,Lycium elliotii
-LC,Ficus rubra
-LC,Gymnosporia pyria
-LC,Brachystegia spiciformis
-LC,Leucaena pulverulenta
-LC,Peltophorum dasyrachis
-LC,Madhuca neriifolia
-LC,Ipomoea littoralis
-LC,Acalypha filiformis
-LC,Horsfieldia punctatifolia
-LC,Lestes australis
-LC,Berberis libanotica
-LC,Volkameria mollis
-LC,Pachypodium lamerei
-LC,Polyscias madagascariensis
-LC,Breonia sphaerantha
-LC,Gaertnera pauciflora
-LC,Moringa drouhardii
-LC,Gaertnera raphaelii
-LC,Tricalysia orientalis
-LC,Tricalysia majungensis
-LC,Rhodolaena bakeriana
-LC,Mundulea laxiflora
-LC,Hymenodictyon septentrionale
-LC,Phyllanthus madagascariensis
-LC,Mundulea chapelieri
-LC,Aeranthes peyrotii
-LC,Tricalysia perrieri
-LC,Chadsia salicina
-LC,Mascarenhasia speciosa
-LC,Stephanodaphne pilosa
-LC,Beilschmiedia madagascariensis
-LC,Gaertnera ianthina
-LC,Polyscias aculeata
-LC,Polyscias chapelieri
-LC,Nesogordonia ambalabeensis
-LC,Pachypodium rutenbergianum
-LC,Gaertnera guillotii
-LC,Hyperacanthus talangninia
-LC,Elaeocarpus alnifolius
-LC,Petchia montana
-LC,Dicraeopetalum mahafaliense
-LC,Megistostegium nodulosum
-LC,Nesogordonia crassipes
-LC,Capitanopsis cloiselii
-LC,Albizia polyphylla
-LC,Xylopia humblotiana
-LC,Tambourissa trichophylla
-LC,Polysphaeria acuminata
-LC,Angraecum huntleyoides
-LC,Stereospermum variabile
-LC,Symphonia verrucosa
-LC,Vepris elliotii
-LC,Polysphaeria tubulosa
-LC,Xylopia buxifolia
-LC,Vepris polymorpha
-LC,Vepris aralioides
-LC,Polysphaeria grandiflora
-LC,Bathiorhamnus louvelii
-LC,Stereospermum nematocarpum
-LC,Asteropeia amblyocarpa
-LC,Asteropeia multiflora
-LC,Dupuya madagascariensis
-LC,Ormocarpopsis aspera
-LC,Phylloxylon perrieri
-LC,Xanthocercis madagascariensis
-LC,Leptolaena cuspidata
-LC,Tricalysia cryptocalyx
-LC,Indigofera perrieri
-LC,Breonia decaryana
-LC,Pentopetia elastica
-LC,Metaporana parvifolia
-LC,Tetracera rutenbergii
-LC,Polyscias myrsine
-LC,Bathiorhamnus reticulatus
-LC,Solanum erythracanthum
-LC,Eliea articulata
-LC,Pentopetia grevei
-LC,Chadsia flammea
-LC,Cordia lowryana
-LC,Ipomoea desmophylla
-LC,Olax madagascariensis
-LC,Barbeuia madagascariensis
-LC,Drypetes madagascariensis
-LC,Petchia madagascariensis
-LC,Polyscias carolorum
-LC,Maerua filiformis
-LC,Begonia madecassa
-LC,Tabernaemontana retusa
-LC,Hymenodictyon occidentale
-LC,Crotalaria cyanoxantha
-LC,Ornichia lancifolia
-LC,Decarydendron ranomafanensis
-LC,Millettia lenneoides
-LC,Solanum myoxotrichum
-LC,Aristea cladocarpa
-LC,Camptocarpus semihastatus
-LC,Breonia chinensis
-LC,Impatiens vilersii
-LC,Hymenodictyon decaryi
-LC,Talinella grevei
-LC,Polyscias ariadnes
-LC,Dioscorea maciba
-LC,Decorsea grandidieri
-LC,Tabernaemontana calcarea
-LC,Physena madagascariensis
-LC,Secamone ankarensis
-LC,Weinmannia humblotii
-LC,Bourreria bosseri
-LC,Olax emirnensis
-LC,Olax lanceolata
-LC,Mascarenhasia lanceolata
-LC,Enicostema elizabethae
-LC,Otoptera madagascariensis
-LC,Angraecum viguieri
-LC,Dilobeia thouarsii
-LC,Eriosema procumbens
-LC,Weinmannia decora
-LC,Tabernaemontana ciliata
-LC,Dioscorea antaly
-LC,Polyscias boivinii
-LC,Hymenodictyon berivotrense
-LC,Cedrelopsis trivalvis
-LC,Breonia sambiranensis
-LC,Polyscias zanthoxyloides
-LC,Polyscias tripinnata
-LC,Tricalysia boiviniana
-LC,Hyperacanthus grevei
-LC,Turbina bracteata
-LC,Mascarenhasia lisianthiflora
-LC,Breonia perrieri
-LC,Tournefortia puberula
-LC,Rapona tiliifolia
-LC,Begonia nana
-LC,Tabernaemontana sessilifolia
-LC,Physena sessiliflora
-LC,Tabernaemontana mocquerysii
-LC,Solanum batoides
-LC,Pachypodium geayi
-LC,Hyperacanthus ambovombensis
-LC,Tabernaemontana humblotii
-LC,Tachiadenus carinatus
-LC,Ehretia seyrigii
-LC,Angraecum arachnites
-LC,Drypetes ambigua
-LC,Cynometra abrahamii
-LC,Solanum antalaha
-LC,Solanum heinianum
-LC,Weinmannia lucens
-LC,Foetidia asymetrica
-LC,Gaertnera arenaria
-LC,Polyscias fraxinifolia
-LC,Cordia mairei
-LC,Abrus aureus
-LC,Clitoria lasciva
-LC,Dolichos fangitsa
-LC,Canavalia madagascariensis
-LC,Microcharis phyllogramme
-LC,Weinmannia rutenbergii
-LC,Eremolaena rotundifolia
-LC,Argyrolobium pedunculare
-LC,Breonia fragifera
-LC,Solanum madagascariense
-LC,Ormocarpum drakei
-LC,Polyscias amplifolia
-LC,Millettia richardiana
-LC,Polyscias multibracteata
-LC,Elaeocarpus hildebrandtii
-LC,Exacum marojejyense
-LC,Ixora siphonantha
-LC,Gaertnera macrostipula
-LC,Hymenodictyon louhavate
-LC,Weinmannia stenostachya
-LC,Zornia puberula
-LC,Cedrelopsis grevei
-LC,Weinmannia bojeriana
-LC,Amorphophallus hildebrandtii
-LC,Nesogordonia macrophylla
-LC,Tetradenia nervosa
-LC,Ischnolepis graminifolia
-LC,Craspidospermum verticillatum
-LC,Leptolaena gautieri
-LC,Leptolaena multiflora
-LC,Leptolaena pauciflora
-LC,Phyllarthron bojeranum
-LC,Aeshna affinis
-LC,Afroaeschna scotias
-LC,Sympetrum ambiguum
-LC,Anax longipes
-LC,Celithemis fasciata
-LC,Cenchrus violaceus
-LC,Dioscorea schimperiana
-LC,Gossypium barbadense
-LC,Gossypium ekmanianum
-LC,Ipomoea splendor-sylvae
-LC,Phaseolus lunatus
-LC,Phaseolus parvifolius
-LC,Solanum aureitomentosum
-LC,Solanum bulbocastanum
-LC,Solanum campylacanthum
-LC,Solanum cerasiferum
-LC,Solanum lichtensteinii
-LC,Solanum linnaeanum
-LC,Solanum marginatum
-LC,Sorghum arundinaceum
-LC,Triticum timopheevii
-LC,Triticum turgidum
-LC,Aegilops caudata
-LC,Hibiscus elatus
-LC,Aeshna isoceles
-LC,Anaciaeschna triangulifera
-LC,Anax chloromelas
-LC,Anax congoliath
-LC,Anax ephippiger
-LC,Anax imperator
-LC,Anax parthenope
-LC,Anax speratus
-LC,Anax tristis
-LC,Boyeria irene
-LC,Gynacantha africana
-LC,Gynacantha bullata
-LC,Gynacantha cylindrata
-LC,Gynacantha immaculifrons
-LC,Gynacantha manderica
-LC,Gynacantha nigeriensis
-LC,Gynacantha sextans
-LC,Gynacantha usambarica
-LC,Gynacantha villosa
-LC,Heliaeschna cynthiae
-LC,Heliaeschna fuliginosa
-LC,Heliaeschna sembe
-LC,Heliaeschna trinervulata
-LC,Heliaeschna ugandica
-LC,Pinheyschna meruensis
-LC,Pinheyschna rileyi
-LC,Pinheyschna subpupillata
-LC,Zosteraeschna minuscula
-LC,Quercus inopina
-LC,Quercus chapmanii
-LC,Quercus vaseyana
-LC,Calopteryx haemorrhoidalis
-LC,Calopteryx virgo
-LC,Phaon camerunensis
-LC,Phaon iridipennis
-LC,Sapho bicolor
-LC,Sapho ciliata
-LC,Sapho gloriosa
-LC,Sapho orichalcea
-LC,Umma cincta
-LC,Umma electa
-LC,Umma longistigma
-LC,Umma mesostigma
-LC,Umma saphirina
-LC,Africocypha lacuselephantum
-LC,Chlorocypha aphrodite
-LC,Chlorocypha cancellata
-LC,Chlorocypha consueta
-LC,Platycypha crocea
-LC,Chlorocypha curta
-LC,Chlorocypha cyanifrons
-LC,Chlorocypha dispar
-LC,Chlorocypha fabamacula
-LC,Chlorocypha frigida
-LC,Stenocypha gracilis
-LC,Chlorocypha luminosa
-LC,Chlorocypha pyriformosa
-LC,Chlorocypha radix
-LC,Chlorocypha rubida
-LC,Chlorocypha selysi
-LC,Chlorocypha seydeli
-LC,Stenocypha tenuis
-LC,Chlorocypha trifaria
-LC,Chlorocypha victoriae
-LC,Chlorocypha wittei
-LC,Platycypha caligata
-LC,Platycypha eliseva
-LC,Platycypha fitzsimonsi
-LC,Platycypha lacustris
-LC,Platycypha picta
-LC,Platycypha rufitibia
-LC,Aciagrion africanum
-LC,Aciagrion balachowskyi
-LC,Aciagrion brosseti
-LC,Aciagrion gracile
-LC,Aciagrion nodosum
-LC,Aciagrion steeleae
-LC,Africallagma elongatum
-LC,Africallagma glaucum
-LC,Africallagma pallidulum
-LC,Africallagma pseudelongatum
-LC,Africallagma sapphirinum
-LC,Africallagma sinuatum
-LC,Africallagma subtile
-LC,Africallagma vaginale
-LC,Agriocnemis angolensis
-LC,Agriocnemis angustirami
-LC,Agriocnemis exilis
-LC,Agriocnemis falcifera
-LC,Agriocnemis forcipata
-LC,Agriocnemis gratiosa
-LC,Agriocnemis inversa
-LC,Agriocnemis maclachlani
-LC,Agriocnemis pinheyi
-LC,Agriocnemis ruberrima
-LC,Agriocnemis sania
-LC,Agriocnemis victoria
-LC,Agriocnemis zerafica
-LC,Azuragrion buchholzi
-LC,Azuragrion nigridorsum
-LC,Azuragrion somalicum
-LC,Azuragrion vansomereni
-LC,Ceriagrion annulatum
-LC,Ceriagrion bakeri
-LC,Ceriagrion corallinum
-LC,Ceriagrion glabrum
-LC,Ceriagrion ignitum
-LC,Ceriagrion katamborae
-LC,Ceriagrion kordofanicum
-LC,Ceriagrion mourae
-LC,Ceriagrion rubellocerinum
-LC,Ceriagrion sakejii
-LC,Ceriagrion suave
-LC,Ceriagrion tenellum
-LC,Ceriagrion varians
-LC,Ceriagrion whellani
-LC,Enallagma deserti
-LC,Ischnura senegalensis
-LC,Pseudagrion coeruleipunctum
-LC,Nubiolestes diotima
-LC,Mesocnemis saralisa
-LC,Elattoneura morini
-LC,Pseudagrion grilloti
-LC,Pseudagrion thenartum
-LC,Cornigomphus guineensis
-LC,Cornigomphus mariannae
-LC,Gomphus simillimus
-LC,Libyogomphus christinae
-LC,Libyogomphus emiliae
-LC,Neurogomphus cocytius
-LC,Paragomphus kiautai
-LC,Paragomphus machadoi
-LC,Paragomphus tournieri
-LC,Cordulegaster princeps
-LC,Phyllomacromia occidentalis
-LC,Phyllomacromia villiersi
-LC,Aethiothemis mediofasciata
-LC,Eleuthemis buettikoferi
-LC,Malgassophlebia westfalli
-LC,Neodythemis fitzgeraldi
-LC,Neodythemis takamandensis
-LC,Orthetrum sagitta
-LC,Tetrathemis fraseri
-LC,Trithemis hartwigi
-LC,Trithemis osvaldae
-LC,Trithemis fumosa
-LC,Tragogomphus ellioti
-LC,Stenocnemis pachystigma
-LC,Ceriagrion tricrenaticeps
-LC,Quercus affinis
-LC,Quercus aristata
-LC,Quercus baronii
-LC,Quercus blakei
-LC,Quercus brandisiana
-LC,Quercus canbyi
-LC,Quercus championii
-LC,Quercus chungii
-LC,Quercus cornelius-mulleri
-LC,Quercus crassipes
-LC,Quercus deserticola
-LC,Quercus eduardi
-LC,Quercus faginea
-LC,Quercus floribunda
-LC,Quercus gambleana
-LC,Quercus confertifolia
-LC,Quercus glabrescens
-LC,Quercus glaucescens
-LC,Quercus glaucoides
-LC,Quercus grisea
-LC,Quercus guyavifolia
-LC,Quercus intricata
-LC,Quercus kerrii
-LC,Quercus laurina
-LC,Quercus longinux
-LC,Quercus macranthera
-LC,Quercus macrocalyx
-LC,Quercus magnoliifolia
-LC,Quercus mexicana
-LC,Quercus miyagii
-LC,Quercus morii
-LC,Quercus pachyloma
-LC,Quercus poilanei
-LC,Quercus potosina
-LC,Quercus pringlei
-LC,Quercus pyrenaica
-LC,Quercus resinosa
-LC,Quercus rotundifolia
-LC,Quercus salicifolia
-LC,Quercus scytophylla
-LC,Quercus serrata
-LC,Quercus setulosa
-LC,Quercus sideroxyla
-LC,Quercus stenophylloides
-LC,Quercus tarahumara
-LC,Quercus trojana
-LC,Quercus tuberculata
-LC,Quercus urbani
-LC,Quercus viminea
-LC,Suregada boiviniana
-LC,Ocotea grayi
-LC,Ocotea racemosa
-LC,Streblus dimepate
-LC,Syzygium emirnense
-LC,Uncarina abbreviata
-LC,Pittosporum verticillatum
-LC,Aloe capitata
-LC,Aloe deltoideodonta
-LC,Aloe macroclada
-LC,Phaseolus acutifolius
-LC,Sabal minor
-LC,Wahlenbergia ramosissima
-LC,Magnistipula butayei
-LC,Argia anceps
-LC,Progomphus alachuensis
-LC,Arigomphus submedianus
-LC,Progomphus borealis
-LC,Enallagma pollutum
-LC,Crocothemis servilia
-LC,Oplonaeschna armata
-LC,Didymops floridensis
-LC,Planiplax sanguiniventris
-LC,Erpetogomphus compositus
-LC,Stylogomphus sigmastylus
-LC,Erythrodiplax minuscula
-LC,Erpetogomphus designatus
-LC,Erpetogomphus eutainia
-LC,Argia tezpi
-LC,Erpetogomphus elaps
-LC,Argia tonto
-LC,Dythemis velox
-LC,Ischnura prognata
-LC,Erpetogomphus crotalinus
-LC,Libellula croceipennis
-LC,Argia munda
-LC,Argia tarascana
-LC,Hesperagrion heterodoxum
-LC,Argia nahuana
-LC,Argia oenea
-LC,Tauriphila azteca
-LC,Ischnura denticollis
-LC,Erythrodiplax basifusca
-LC,Enallagma pallidum
-LC,Ischnura demorsa
-LC,Aphylla angustifolia
-LC,Epitheca costalis
-LC,Epitheca petechialis
-LC,Arigomphus lentulus
-LC,Arigomphus maxwelli
-LC,Sympetrum signiferum
-LC,Arigomphus pallidus
-LC,Enallagma daeckii
-LC,Enallagma doubledayi
-LC,Orthemis ferruginea
-LC,Nehalennia integricollis
-LC,Brachymesia gravida
-LC,Cordulegaster diadema
-LC,Macromia annulata
-LC,Neurocordulia obsoleta
-LC,Erythemis vesiculosa
-LC,Coryphaeschna adnexa
-LC,Pseudoleon superbus
-LC,Argia bipunctulata
-LC,Celithemis bertha
-LC,Brachymesia herbida
-LC,Macrothemis inequiunguis
-LC,Anax walsinghami
-LC,Aphylla protracta
-LC,Apanisagrion lais
-LC,Argia barretti
-LC,Gomphurus crassus
-LC,Argia agrioides
-LC,Gomphaeschna antilope
-LC,Enallagma durum
-LC,Enallagma davisi
-LC,Tramea calverti
-LC,Telebasis digiticollis
-LC,Ischnura barberi
-LC,Enallagma semicirculare
-LC,Nehalennia minuta
-LC,Phyllogomphoides albrighti
-LC,Ophiogomphus bison
-LC,Tachopteryx thoreyi
-LC,Enallagma pictum
-LC,Miathyria marcella
-LC,Argia sabino
-LC,Argia leonorae
-LC,Argia rhoadsi
-LC,Argia immunda
-LC,Micrathyria dissocians
-LC,Ischnura ramburii
-LC,Dythemis fugax
-LC,Micrathyria hagenii
-LC,Neoneura amelia
-LC,Rhionaeschna dugesi
-LC,Argia lacrimans
-LC,Perithemis domitia
-LC,Phyllogomphoides stigmatus
-LC,Neurocordulia virginiensis
-LC,Argia alberta
-LC,Neurocordulia alabamensis
-LC,Macrothemis inacuta
-LC,Argia harknessi
-LC,Plathemis subornata
-LC,Gynacantha nervosa
-LC,Cordulegaster talaria
-LC,Enallagma praevarum
-LC,Neoerythromma cultellatum
-LC,Argia hinei
-LC,Argia extranea
-LC,Lestes alacer
-LC,Stylurus ivae
-LC,Coryphaeschna ingens
-LC,Dromogomphus armatus
-LC,Libellula cyanea
-LC,Ophiogomphus susbehcha
-LC,Argia pallens
-LC,Zoniagrion exclamationis
-LC,Ophiogomphus arizonicus
-LC,Anax concolor
-LC,Triacanthagyna trifida
-LC,Argia cuprea
-LC,Argia plana
-LC,Erythemis mithroides
-LC,Phyllocycla breviphylla
-LC,Enallagma divagans
-LC,Argia carlcooki
-LC,Enallagma dubium
-LC,Argia lugens
-LC,Hylogomphus geminatus
-LC,Archilestes californicus
-LC,Erythemis plebeja
-LC,Stenogomphurus consanguis
-LC,Hetaerina vulnerata
-LC,Gomphurus lynnae
-LC,Libellula comanche
-LC,Brechmorhoga mendax
-LC,Epitheca spinosa
-LC,Enallagma eiseni
-LC,Cordulegaster sayi
-LC,Epitheca stella
-LC,Somatochlora filosa
-LC,Helocordulia selysii
-LC,Macromia margarita
-LC,Erpetogomphus heterodon
-LC,Argia pima
-LC,Enallagma laterale
-LC,Enallagma cardenium
-LC,Macromia alleghaniensis
-LC,Lestes sigma
-LC,Macromia pacifica
-LC,Aeshna walkeri
-LC,Erpetogomphus lampropeltis
-LC,Lestes stultus
-LC,Neurocordulia molesta
-LC,Neurocordulia xanthosoma
-LC,Lestes vidua
-LC,Somatochlora provocans
-LC,Ladona deplanata
-LC,Aeshna persephone
-LC,Phanogomphus diminutus
-LC,Palaemnema domina
-LC,Gomphurus septima
-LC,Macrodiplax balteata
-LC,Enallagma sulcatum
-LC,Calopteryx dimidiata
-LC,Calopteryx angustipennis
-LC,Triacanthagyna caribbea
-LC,Neoneura aaroni
-LC,Leptobasis vacillans
-LC,Protoneura cara
-LC,Tramea insularis
-LC,Remartinia luteipennis
-LC,Acanthagrion quadratum
-LC,Epitheca sepia
-LC,Stylurus townesi
-LC,Dythemis maya
-LC,Libellula axilena
-LC,Dythemis nigrescens
-LC,Libellula auripennis
-LC,Enallagma weewa
-LC,Paltothemis lineatipes
-LC,Ophiogomphus morrisoni
-LC,Cordulegaster bilineata
-LC,Ophiogomphus westfalli
-LC,Progomphus bellei
-LC,Williamsonia lintneri
-LC,Celithemis ornata
-LC,Libellula saturata
-LC,Ophiogomphus smithi
-LC,Libellula composita
-LC,Celithemis verna
-LC,Celithemis amanda
-LC,Enallagma concisum
-LC,Cannaphila insularis
-LC,Enallagma recurvatum
-LC,Ophiogomphus incurvatus
-LC,Libellula needhami
-LC,Perithemis intensa
-LC,Libellula nodisticta
-LC,Idiataphe cubensis
-LC,Libellula flavida
-LC,Quercus greggii
-LC,Quercus albocincta
-LC,Quercus fulva
-LC,Quercus planipocula
-LC,Eriosema spicatum
-LC,Cardiospermum halicacabum
-LC,Lupinus polyphyllus
-LC,Gobionellus oceanicus
-LC,Dormitator maculatus
-LC,Eleotris amblyopsis
-LC,Evorthodus lyricus
-LC,Gobioides broussonnetii
-LC,Gobiomorus dormitor
-LC,Gobiosoma bosc
-LC,Guavina guavina
-LC,Mugil curema
-LC,Centropomus parallelus
-LC,Centropomus mexicanus
-LC,Mugil trichodon
-LC,Pittosporum deplanchei
-LC,Pittosporum obovatum
-LC,Pittosporum oreophilum
-LC,Pittosporum simsonii
-LC,Cyprinodon eximius
-LC,Cyprinodon brontotheroides
-LC,Cyprinodon dearborni
-LC,Cyprinodon desquamator
-LC,Cyprinodon nichollsi
-LC,Cyprinodon riverendi
-LC,Lyriothemis hirundo
-LC,Protorthemis coronata
-LC,Neurothemis decora
-LC,Nesoxenia mysis
-LC,Rhodothemis nigripes
-LC,Ischnura aurora
-LC,Diplacodes trivialis
-LC,Adversaeschna brevistyla
-LC,Xanthocnemis zealandica
-LC,Xanthocnemis tuanuii
-LC,Austrolestes colensonis
-LC,Tramea loewii
-LC,Diplacodes bipunctata
-LC,Procordulia grayi
-LC,Uropetala chiltoni
-LC,Orthetrum serapia
-LC,Uropetala carovei
-LC,Nesobasis campioni
-LC,Nesobasis erythrops
-LC,Nesobasis comosa
-LC,Agrionoptera insignis
-LC,Pseudagrion incisurum
-LC,Agriocnemis pygmaea
-LC,Aethriamanta brevipennis
-LC,Melanesobasis flavilabris
-LC,Tramea transmarina
-LC,Nannophya pygmaea
-LC,Hemicordulia haluco
-LC,Nesobasis flavifrons
-LC,Nesobasis heteroneura
-LC,Nesobasis telegastrum
-LC,Anaciaeschna jaspidea
-LC,Eoargiolestes ochraceus
-LC,Melanesobasis corniculata
-LC,Hemicordulia australiae
-LC,Agrionoptera sanguinolenta
-LC,Orthetrum sabina
-LC,Ceriagrion aeruginosum
-LC,Nesobasis longistyla
-LC,Camacinia othello
-LC,Nesobasis leveri
-LC,Brachydiplax duivenbodei
-LC,Nesobasis selysi
-LC,Agrionoptera similis
-LC,Antipodochlora braueri
-LC,Rhinocypha liberata
-LC,Hemicordulia hilaris
-LC,Brachydiplax denticauda
-LC,Hemicordulia pacifica
-LC,Macrodiplax cora
-LC,Hypothemis hageni
-LC,Hemicordulia lulico
-LC,Synthemis miranda
-LC,Nesobasis rufostigma
-LC,Trineuragrion percostale
-LC,Indolestes vitiensis
-LC,Isosticta robustior
-LC,Procordulia smithii
-LC,Hemicordulia fidelis
-LC,Oreaeschna dominatrix
-LC,Nesobasis brachycerca
-LC,Xiphiagrion cyanomelas
-LC,Tramea limbata
-LC,Isosticta tillyardi
-LC,Agriocnemis exsudans
-LC,Hemicordulia mindana
-LC,Tholymis tillarga
-LC,Nesobasis angulicollis
-LC,Neurothemis fluctuans
-LC,Rhyothemis regia
-LC,Rhyothemis variegata
-LC,Synthemis fenella
-LC,Synthemis montaguei
-LC,Equisetum giganteum
-LC,Paragomphus sinaiticus
-LC,Acisoma trifidum
-LC,Aethiothemis solitaria
-LC,Aethriamanta rezia
-LC,Atoconeura kenya
-LC,Allocnemis pauli
-LC,Crocothemis erythraea
-LC,Diplacodes lefebvrii
-LC,Hadrothemis camarensis
-LC,Lestes pallidus
-LC,Aethiothemis coryndoni
-LC,Nesciothemis farinosa
-LC,Orthetrum abbotti
-LC,Orthetrum caffrum
-LC,Orthetrum chrysostigma
-LC,Orthetrum julia
-LC,Orthetrum trinacria
-LC,Palpopleura deceptor
-LC,Paragomphus genei
-LC,Pseudagrion hamoni
-LC,Pseudagrion kersteni
-LC,Pseudagrion sublacteum
-LC,Pseudagrion torridum
-LC,Rhyothemis semihyalina
-LC,Tramea basilaris
-LC,Trithemis annulata
-LC,Trithemis arteriosa
-LC,Trithemis furva
-LC,Trithemis kirbyi
-LC,Urothemis edwardsii
-LC,Zygonyx torridus
-LC,Phyllomacromia unifasciata
-LC,Elattoneura vrijdaghi
-LC,Aeshna mixta
-LC,Aeshna cyanea
-LC,Diplacodes luminans
-LC,Brachythemis impartita
-LC,Limnophila indica
-LC,Dopatrium junceum
-LC,Ilex cornuta
-LC,Tribulus terrestris
-LC,Ceratophyllum muricatum
-LC,Allocnemis superba
-LC,Aciagrion bapepe
-LC,Anax gladiator
-LC,Ceriagrion banditum
-LC,Ceriagrion junceum
-LC,Chlorocypha maxima
-LC,Eleuthemis libera
-LC,Lestinogomphus venustus
-LC,Lestinogomphus calcaratus
-LC,Lestinogomphus nefrens
-LC,Malgassophlebia andzaba
-LC,Neodythemis katanga
-LC,Notogomphus bosumbuli
-LC,Notogomphus gorilla
-LC,Notogomphus intermedius
-LC,Notogomphus kimpavita
-LC,Orthetrum agaricum
-LC,Onychogomphus undecim
-LC,Orthetrum lusinga
-LC,Paragomphus cammaertsi
-LC,Paragomphus darwalli
-LC,Paragomphus clausnitzerorum
-LC,Pentaphlebia mangana
-LC,Porpax mezierei
-LC,Pseudagrion munte
-LC,Pseudagrion sarepi
-LC,Pseudagrion aureolum
-LC,Pseudagrion dactylidium
-LC,Pseudagrion tanganyicum
-LC,Trithemis legrandi
-LC,Zygonyx denticulatus
-LC,Allium rhabdotum
-LC,Papilionanthe greenii
-LC,Eriocaulon bhutanicum
-LC,Stipa bhutanica
-LC,Musa griersonii
-LC,Hedychium griersonianum
-LC,Cnidium bhutanicum
-LC,Anaphalis cooperi
-LC,Artemisia bhutanica
-LC,Lobelia nubigena
-LC,Draba sherriffii
-LC,Androsace ludlowiana
-LC,Gentiana wangchukii
-LC,Gentianella griersonii
-LC,Didymocarpus bhutanicus
-LC,Cryptocarya bhutanica
-LC,Daphne ludlowii
-LC,Corydalis aurantiaca
-LC,Corydalis calliantha
-LC,Delphinium bhutanicum
-LC,Delphinium muscosum
-LC,Sorbus longii
-LC,Elatostema longicaudatum
-LC,Atoconeura eudoxia
-LC,Allocnemis nigripes
-LC,Atoconeura pseudeudoxia
-LC,Brachythemis lacustris
-LC,Brachythemis leucosticta
-LC,Bradinopyga cornuta
-LC,Bradinopyga strachani
-LC,Chalcostephia flavifrons
-LC,Copera congolensis
-LC,Copera nyansana
-LC,Elattoneura glauca
-LC,Copera sikassoensis
-LC,Heracleum bhutanicum
-LC,Schulzia bhutanica
-LC,Maharanga bhutanica
-LC,Silene linae
-LC,Silene birgittae
-LC,Rhododendron bhutanense
-LC,Rhododendron kesangiae
-LC,Primula chasmophila
-LC,Primula umbratilis
-LC,Swertia crossoloma
-LC,Swertia grandiflora
-LC,Strobilanthes accrescens
-LC,Pedicularis bhutanomuscoides
-LC,Pedicularis cacuminidenta
-LC,Pedicularis elephantiflora
-LC,Pedicularis hicksii
-LC,Pedicularis limithangensis
-LC,Pedicularis longipedicellata
-LC,Pedicularis ludlowiana
-LC,Pedicularis melalimne
-LC,Pedicularis mucronulata
-LC,Pedicularis perpusilla
-LC,Pedicularis porriginosa
-LC,Pedicularis pseudohookeriana
-LC,Pedicularis roseialba
-LC,Pedicularis woodii
-LC,Pedicularis xylopoda
-LC,Scrophularia subsessilis
-LC,Potentilla bryoides
-LC,Rubus sengorensis
-LC,Rhodiola marginata
-LC,Saxifraga flavida
-LC,Saxifraga harry-smithii
-LC,Saxifraga saxorum
-LC,Saxifraga sherriffii
-LC,Saxifraga thiantha
-LC,Crenigomphus hartmanni
-LC,Crenigomphus renei
-LC,Gomphidia quarrei
-LC,Persea bootanica
-LC,Sorbus karchungii
-LC,Crocothemis sanguinolenta
-LC,Crocothemis divisa
-LC,Diplacodes deminuta
-LC,Alantsilodendron pilosum
-LC,Garcinia lowryi
-LC,Hadrothemis coacta
-LC,Hadrothemis defecta
-LC,Hadrothemis infesta
-LC,Hadrothemis versuta
-LC,Gynacantha vesiculata
-LC,Prochilodus mariae
-LC,Semaprochilodus kneri
-LC,Semaprochilodus laticeps
-LC,Proischnura subfurcata
-LC,Pseudagrion acaciae
-LC,Pseudagrion gamblesi
-LC,Pseudagrion glaucescens
-LC,Pseudagrion glaucum
-LC,Pseudagrion hageni
-LC,Pseudagrion kibalense
-LC,Pseudagrion massaicum
-LC,Pseudagrion melanicterum
-LC,Pseudagrion niloticum
-LC,Pseudagrion nubicum
-LC,Pseudagrion rufocinctum
-LC,Pseudagrion salisburyense
-LC,Pseudagrion sjoestedti
-LC,Pseudagrion spernatum
-LC,Pseudagrion sudanicum
-LC,Bocconia frutescens
-LC,Saccodon dariensis
-LC,Ageneiosus pardalis
-LC,Gomphidia bredoi
-LC,Hemicordulia africana
-LC,Ictinogomphus ferox
-LC,Lestes dissimulans
-LC,Lestes ictericus
-LC,Lestes ochraceus
-LC,Lestes pinheyi
-LC,Lestes plagiatus
-LC,Lestes tridens
-LC,Lestes uncifer
-LC,Lestes virgatus
-LC,Lestinogomphus angustus
-LC,Microgomphus schoutedeni
-LC,Neurogomphus featheri
-LC,Notogomphus dorsalis
-LC,Notogomphus lecythus
-LC,Notogomphus leroyi
-LC,Notogomphus lujai
-LC,Beilschmiedia bhutanica
-LC,Pedicularis imbricata
-LC,Pedicularis inconspicua
-LC,Prunus harae
-LC,Stenandrium buntingii
-LC,Paragomphus alluaudi
-LC,Paragomphus cognatus
-LC,Paragomphus elpidius
-LC,Paragomphus magnus
-LC,Paragomphus sabicus
-LC,Paragomphus viridior
-LC,Phyllogomphus selysi
-LC,Hemistigma albipunctum
-LC,Malgassophlebia bispina
-LC,Micromacromia camerunica
-LC,Notiothemis jonesi
-LC,Notiothemis robertsi
-LC,Olpogastra lugubris
-LC,Orthetrum austeni
-LC,Orthetrum brachiale
-LC,Orthetrum camerunense
-LC,Orthetrum guineense
-LC,Orthetrum hintzi
-LC,Orthetrum icteromelas
-LC,Orthetrum machadoi
-LC,Orthetrum microstigma
-LC,Orthetrum monardi
-LC,Orthetrum stemmale
-LC,Oxythemis phoenicosceles
-LC,Palpopleura jucunda
-LC,Palpopleura lucia
-LC,Palpopleura portia
-LC,Parazyxomma flavicans
-LC,Zanthoxylum delagoense
-LC,Dicerocaryum forbesii
-LC,Crassula maputensis
-LC,Krauseola mosambicina
-LC,Vangueria monteiroi
-LC,Pavetta vanwykiana
-LC,Distephanus inhacensis
-LC,Phyllomacromia africana
-LC,Phyllomacromia aureozona
-LC,Phyllomacromia contumax
-LC,Phyllomacromia kimminsi
-LC,Phyllomacromia melania
-LC,Phyllomacromia overlaeti
-LC,Phyllomacromia picta
-LC,Phyllomacromia pseudafricana
-LC,Phyllomacromia sylvatica
-LC,Rhyothemis fenestrina
-LC,Rhyothemis notata
-LC,Tetrathemis camerunensis
-LC,Tetrathemis corduliformis
-LC,Tetrathemis polleni
-LC,Thermochoria equivocata
-LC,Trithemis aconita
-LC,Trithemis dichroa
-LC,Trithemis donaldsoni
-LC,Trithemis dorsalis
-LC,Trithemis grouti
-LC,Trithemis hecate
-LC,Trithemis imitata
-LC,Trithemis integra
-LC,Trithemis nuptialis
-LC,Trithemis pluvialis
-LC,Trithemis pruinata
-LC,Trithemis stictica
-LC,Trithemis werneri
-LC,Trithetrum navasi
-LC,Lestes amicus
-LC,Fundulus grandis
-LC,Cyprinodon artifrons
-LC,Floridichthys polyommus
-LC,Fundulus similis
-LC,Oligoplites saurus
-LC,Caranx hippos
-LC,Caranx latus
-LC,Harengula jaguana
-LC,Achirus lineatus
-LC,Trinectes paulistanus
-LC,Hyporhamphus unifasciatus
-LC,Strongylura timucu
-LC,Opsanus beta
-LC,Batrachoides gilberti
-LC,Leptophilypnus fluviatilis
-LC,Artocarpus sepicanus
-LC,Bathygobius curacao
-LC,Brevoortia gunteri
-LC,Quercus similis
-LC,Quercus laceyi
-LC,Pseudagrion commoniae
-LC,Urothemis assignata
-LC,Zygonoides fuelleborni
-LC,Zygonyx flavicosta
-LC,Zygonyx natalensis
-LC,Zygonyx regisalberti
-LC,Zyxomma atlanticum
-LC,Nannophya occidentalis
-LC,Austrosynthemis cyanitincta
-LC,Eusynthemis rentziana
-LC,Sabal palmetto
-LC,Treculia africana
-LC,Crotonogyne caterviflora
-LC,Sesleria albanica
-LC,Calamagrostis varia
-LC,Allium vernale
-LC,Sambucus nigra
+EX,Tseajaiidae
+EX,Limnoscelididae
+EX,Diadectidae
+EX,Aistopoda
+EX,Pseudophlegethontiidae
+EX,Phlegethontiidae
+EX,Lethiscidae
+EX,Ophiderpetontidae
+EX,Nectridea
+EX,Urocordylidae
+EX,Scincosauridae
+EX,Keraterpetontidae
+EX,Batrachiderpetontidae
+EX,Diplocaulidae
+EX,Adelospondyli
+EX,Acherontiscidae
+EX,Adelogyrinidae
+EX,Microsauria
+EX,Hapsidopareiontidae
+EX,Trihecatontidae
+EX,Ostodolepididae
+EX,Microbrachidae
+EX,Tuditanidae
+EX,Hyloplesiontidae
+EX,Rhynchonkidae
+EX,Ostodolepidae
+EX,Brachystelechidae
+EX,Pantylidae
+EX,Gymnarthridae
+EX,Odonterpetontidae
+EX,Lysorophia
+EX,Lysorophidae
+EX,Cocytinidae
+EX,Archeriidae
+EX,Proterogyrinidae
+EX,Eoherpetontidae
+EX,Anthracosauridae
+EX,Eogyrinidae
+EX,Rhinesuchidae
+EX,Edopoidea
+EX,Edopidae
+EX,Cochleosauridae
+EX,Latiscopidae
+EX,Melosauridae
+EX,Eryopidae
+EX,Indobrachyopidae
+EX,Dvinosauria
+EX,Dvinosauridae
+EX,Eobrachyopidae
+EX,Tupilakosauridae
+EX,Laidleriidae
+EX,Trimerorhachidae
+EX,Intasuchidae
+EX,Almasauridae
+EX,Wetlugasauridae
+EX,Trematosauria
+EX,Plagiosauridae
+EX,Kourerpetidae
+EX,Chigutisauridae
+EX,Brachyopidae
+EX,Rhytidosteidae
+EX,Trematosauridae
+EX,Metoposauridae
+EX,Micromelerpetontidae
+EX,Branchiosauridae
+EX,Peltobatrachidae
+EX,Dissorophidae
+EX,Trematopsidae
+EX,Doleserpetontidae
+EX,Trematopidae
+EX,Dendrerpetontidae
+EX,Amphibamidae
+EX,Archegosauridae
+EX,Lydekkerinidae
+EX,Parioxyidae
+EX,Caerorhachidae
+EX,Capitosauria
+EX,Heylerosauridae
+EX,Sclerothoracidae
+EX,Benthosuchidae
+EX,Mastodonsauridae
+EX,Micropholidae
+EX,Zatrachydidae
+EX,Thoosuchidae
+EX,Eothyrididae
+EX,Caseidae
+EX,Burnetiidae
+EX,Hipposauridae
+EX,Biarmosuchidae
+EX,Ictidorhinidae
+EX,Crapartinellidae
+EX,Crapartinella
+EX,Crapartinella croucheri
+EX,Gorgonopsidae
+EX,Moschosauridae
+EX,Moschopidae
+EX,Mormosauridae
+EX,Styracocephalidae
+EX,Pierolapithecus catalaunicus
+EX,Sahelanthropus tchadensis
+EX,Samburupithecus kiptalami
+EX,Chororapithecus abyssinicus
+EX,Ardipithecus ramidus
+EX,Ardipithecus kadabba
+EX,Cimolomyidae
+EX,Ptilodontidae
+EX,Eucosmodontidae
+EX,Theroteinidae
+EX,Microcosmodontidae
+EX,Pinheirodontidae
+EX,Zofiabaataridae
+EX,Shuotheriidae
+EX,Chronoperatidae
+EX,Albionbaataridae
+EX,Cimolodontidae
+EX,Sloanbaataridae
+EX,Ferugliotheriidae
+EX,Kuehneotheriidae
+EX,Taeniolabididae
+EX,Kogaionidae
+EX,Polymastodontidae
+EX,Paulchoffatiidae
+EX,Eobaataridae
+EX,Bolodontidae
+EX,Haramiyidae
+EX,Djadochtatheriidae
+EX,Sudamericidae
+EX,Hahnodontidae
+EX,Arginbaataridae
+EX,Boffiidae
+EX,Corriebaataridae
+EX,Plagiaulacidae
+EX,Neoplagiaulacidae
+EX,Kollikodon
+EX,Kollikodon ritchiei
+EX,Barbereniidae
+EX,Tinodontidae
+EX,Woutersiidae
+EX,Oudenodontidae
+EX,Cistecephalidae
+EX,Eodicynodontidae
+EX,Stahleckeriidae
+EX,Dicynodontidae
+EX,Emydopidae
+EX,Pristerodontidae
+EX,Diictodontidae
+EX,Kannemeyeriidae
+EX,Otsheriidae
+EX,Venjukoviidae
+EX,Shansiodontidae
+EX,Kingoriidae
+EX,Lystrosauridae
+EX,Pappochelys rosinae
+EX,Cymbospondylidae
+EX,Mixosauridae
+EX,Wimaniidae
+EX,Wimanius
+EX,Wimanius odontopalatus
+EX,Quasianosteosauridae
+EX,Quasianosteosaurus
+EX,Quasianosteosaurus vikinghoegdai
+EX,Toretocnemidae
+EX,Ichthyosauridae
+EX,Utatsusauridae
+EX,Echmatemys depressa
+EX,Echmatemys rivalis
+EX,Echmatemys haydeni
+EX,Echmatemys uintensis
+EX,Echmatemys lativertebralis
+EX,Echmatemys wyomingensis
+EX,Echmatemys septaria
+EX,Echmatemys douglassi
+EX,Echmatemys megaulax
+EX,Syllomus crispatus
+EX,Syllomus aegyptiacus
+EX,Ctenochelys acris
+EX,Ctenochelys stenoporus
+EX,Ctenochelys tennuitesta
+EX,Ctenochelys procax
+EX,Tasbacka aldabergeni
+EX,Tasbacka ouledabdounensis
+EX,Tasbacka ruhoffi
+EX,Argillochelys subcristata
+EX,Argillochelys brachyceps
+EX,Argillochelys cuneiceps
+EX,Argillochelys africana
+EX,Argillochelys antiqua
+EX,Argillochelys convexa
+EX,Puppigerus crassicostata
+EX,Puppigerus grandaevus
+EX,Puppigerus parvisecta
+EX,Puppigerus camperi
+EX,Puppigerus breviceps
+EX,Stupendemys geographicus
+EX,Lapparentemys vilavilensis
+EX,Bauruemys brasiliensis
+EX,Bauruemys elegans
+EX,Protorosauridae
+EX,Drepanosauridae
+EX,Tanystropheidae
+EX,Noteosuchus
+EX,Noteosuchus colletti
+EX,Eohyosaurus
+EX,Eohyosaurus wolvaardti
+EX,Mesosuchus
+EX,Mesosuchus browni
+EX,Howesia
+EX,Howesia browni
+EX,Rhynchosauridae
+EX,Ammorhynchus
+EX,Ammorhynchus navajoi
+EX,Teyumbaita
+EX,Teyumbaita sulcognathus
+EX,Fodonyx
+EX,Fodonyx spenceri
+EX,Otischalkia
+EX,Otischalkia elderae
+EX,Isalorhynchus
+EX,Isalorhynchus genovefae
+EX,Rhynchosaurus
+EX,Rhynchosaurus articeps
+EX,Brasinorhynchus
+EX,Brasinorhynchus mariantensis
+EX,Mesodapedon
+EX,Mesodapedon kuttyi
+EX,Eifelosaurus
+EX,Eifelosaurus triadicus
+EX,Hyperodapedon
+EX,Hyperodapedon gordoni
+EX,Hyperodapedon huxleyi
+EX,Hyperodapedon stockleyi
+EX,Hyperodapedon sanjuanensis
+EX,Hyperodapedon mariensis
+EX,Hyperodapedon huenei
+EX,Hyperodapedon tikiensis
+EX,Bentonyx
+EX,Bentonyx sidensis
+EX,Langeronyx
+EX,Langeronyx brodiei
+EX,Stenaulorhynchus
+EX,Stenaulorhynchus stockleyi
+EX,Stenaulorhynchus major
+EX,Rhamphorhynchidae
+EX,Parapsicephalus
+EX,Parapsicephalus purdoni
+EX,Harpactognathus
+EX,Harpactognathus gentryii
+EX,Rhamphocephalus
+EX,Rhamphocephalus prestwichi
+EX,Rhamphocephalus bucklandi
+EX,Rhamphocephalus depressirostris
+EX,Cacibupteryx
+EX,Cacibupteryx caribensis
+EX,Bellubrunnus
+EX,Bellubrunnus rothgaengeri
+EX,Scaphognathus
+EX,Scaphognathus crassirostris
+EX,Scaphognathus robustus
+EX,Sericipterus
+EX,Sericipterus wucaiwanensis
+EX,Nesodactylus
+EX,Nesodactylus hesperius
+EX,Orientognathus
+EX,Orientognathus chaoyangensis
+EX,Dorygnathus
+EX,Dorygnathus banthensis
+EX,Rhamphorhynchus
+EX,Rhamphorhynchus muensteri
+EX,Rhamphorhynchus etchesi
+EX,Rhamphorhynchus jessoni
+EX,Angustinaripterus
+EX,Angustinaripterus longicephalus
+EX,Sordes
+EX,Sordes pilosus
+EX,Jianchangopterus
+EX,Jianchangopterus zhaoianus
+EX,Qinglongopterus
+EX,Qinglongopterus guoi
+EX,Pterorhynchus
+EX,Pterorhynchus wellnhoferi
+EX,Ornithocephalidae
+EX,Pterodactyloidea
+EX,Ctenochasmatoidea
+EX,Feilongus
+EX,Gallodactylidae
+EX,Unwindia
+EX,Moganopterus
+EX,Ctenochasmatidae
+EX,Lonchodectidae
+EX,Boreopteridae
+EX,Zhenyuanopterus
+EX,Boreopterus
+EX,Pterodactylidae
+EX,Pterodactylus
+EX,Prejanopterus
+EX,Tendaguripteridae
+EX,Tendaguripterus
+EX,Titanopterygiidae
+EX,Ornithocheiroidea
+EX,Ornithocheiridae
+EX,Pteranodontidae
+EX,Nyctosauridae
+EX,Chaoyangopteridae
+EX,Protazhdarchidae
+EX,Dsungaripteridae
+EX,Anhangueridae
+EX,Tapejaridae
+EX,Azhdarchidae
+EX,Lonchodraconidae
+EX,Lonchodraco
+EX,Istiodactylidae
+EX,Hongshanopterus
+EX,Archaeoistiodactylus
+EX,Liaoxipterus
+EX,Belonochasmatidae
+EX,Aussiedraco
+EX,Hamipterus
+EX,Cimoliopterus
+EX,Ikrandraco
+EX,Linlongopterus
+EX,Dimorphodontidae
+EX,Dimorphodon
+EX,Dimorphodon macronyx
+EX,Dimorphodon weintraubi
+EX,Dimorphodon banthensis
+EX,Peteinosaurus
+EX,Peteinosaurus zambelli
+EX,Scaphognathidae
+EX,Fenghuangopterus
+EX,Fenghuangopterus lii
+EX,Jianchangnathus
+EX,Jianchangnathus robustus
+EX,Austriadraconidae
+EX,Austriadraco
+EX,Austriadraco dallavecchiai
+EX,Wukongopteridae
+EX,Cuspicephalus
+EX,Cuspicephalus scarfi
+EX,Darwinopterus
+EX,Darwinopterus linglongtaensis
+EX,Darwinopterus robustodens
+EX,Darwinopterus modularis
+EX,Changchengopterus
+EX,Changchengopterus pani
+EX,Wukongopterus
+EX,Wukongopterus lii
+EX,Kunpengopterus
+EX,Kunpengopterus sinensis
+EX,Campylognathoididae
+EX,Raeticodactylus
+EX,Raeticodactylus filisurensis
+EX,Campylognathoides
+EX,Campylognathoides liasicus
+EX,Campylognathoides indicus
+EX,Campylognathoides zitteli
+EX,Eudimorphodon
+EX,Eudimorphodon rosenfeldi
+EX,Eudimorphodon ranzii
+EX,Bergamodactylus
+EX,Bergamodactylus wildi
+EX,Pteraichnidae
+EX,Purbeckopus
+EX,Purbeckopus pentadactylus
+EX,Haenamichnus
+EX,Haenamichnus uhangriensis
+EX,Pteraichnus
+EX,Pteraichnus yanguoxiaensis
+EX,Pteraichnus saltwashensis
+EX,Pteraichnus stokesi
+EX,Pteraichnus koreanensis
+EX,Pteraichnus parvus
+EX,Pteraichnus dongyangensis
+EX,Pteraichnus nipponensis
+EX,Pteraichnus longipodus
+EX,Anurognathidae
+EX,Mesadactylus
+EX,Mesadactylus ornithosphyos
+EX,Dendrorhynchoides
+EX,Dendrorhynchoides mutoudengensis
+EX,Dendrorhynchoides curvidentatus
+EX,Anurognathus
+EX,Anurognathus ammoni
+EX,Batrachognathus
+EX,Batrachognathus volans
+EX,Jeholopterus
+EX,Jeholopterus ningchengensis
+EX,Archaeopterodactyloidea
+EX,Kryptodrakon
+EX,Kryptodrakon progenitor
+EX,Caviramus
+EX,Caviramus schesaplanensis
+EX,Scleromochlus
+EX,Scleromochlus taylori
+EX,Herbstosaurus
+EX,Herbstosaurus pigmaeus
+EX,Wenupteryx
+EX,Wenupteryx uzi
+EX,Germanodactylus
+EX,Germanodactylus rhamphastinus
+EX,Germanodactylus cristatus
+EX,Utahdactylus
+EX,Utahdactylus kateae
+EX,Daohugoupterus
+EX,Daohugoupterus delicatus
+EX,Preondactylus
+EX,Preondactylus buffarinii
+EX,Antipus
+EX,Antipus bifidus
+EX,Ningchengopterus
+EX,Ningchengopterus liuae
+EX,Eosipterus
+EX,Eosipterus yangi
+EX,Osteornis
+EX,Osteornis diomedeus
+EX,Ardeadactylus
+EX,Ardeadactylus longicollum
+EX,Camposipterus
+EX,Camposipterus sedgwickii
+EX,Camposipterus nasutus
+EX,Camposipterus colorhinus
+EX,Rhamphinion
+EX,Rhamphinion jenkinsi
+EX,Arcticodactylus
+EX,Arcticodactylus cromptonellus
+EX,Haopterus
+EX,Haopterus gracilis
+EX,Eurolimnornis
+EX,Eurolimnornis corneti
+EX,Normannognathus
+EX,Normannognathus wellnhoferi
+EX,Austriadactylus
+EX,Austriadactylus cristatus
+EX,Cerapoda
+EX,Ceratopsia
+EX,Psittacosauridae
+EX,Protoceratopsidae
+EX,Archaeoceratopsidae
+EX,Turanoceratops
+EX,Chaoyoungosauroidea
+EX,Ceratopsidae
+EX,Chaoyangsauridae
+EX,Bagaceratopidae
+EX,Pachycephalosauria
+EX,Stenopelixidae
+EX,Pachycephalosauridae
+EX,Homalocephalidae
+EX,Ornithopoda
+EX,Lurdusaurus
+EX,Hadrosauroidea
+EX,Dryosauridae
+EX,Rhabdodontidae
+EX,Thescelosauridae
+EX,Protrachodontidae
+EX,Iguanodontidae
+EX,Craspedodon
+EX,Craspedodon lonzeensis
+EX,Thyreophora
+EX,Ankylosauria
+EX,Nodosauridae
+EX,Ankylosauridae
+EX,Stegosauria
+EX,Huayangosauridae
+EX,Gigantspinosaurus
+EX,Stegosauridae
+EX,Paranthodon
+EX,Heterodontosauridae
+EX,Echinodon
+EX,Echinodon becklesii
+EX,Abrictosaurus
+EX,Abrictosaurus consors
+EX,Heterodontosaurus
+EX,Heterodontosaurus tucki
+EX,Manidens
+EX,Manidens condorensis
+EX,Fruitadens
+EX,Fruitadens haagarorum
+EX,Lycorhinus
+EX,Lycorhinus parvidens
+EX,Lycorhinus angustidens
+EX,Tianyulong
+EX,Tianyulong confuciusi
+EX,Pegomastax
+EX,Pegomastax africanus
+EX,Hypsilophodon
+EX,Hypsilophodon foxii
+EX,Protarchaeopteryx robusta
+EX,Sinosauropteryx
+EX,Sinosauropteryx prima
+EX,Sinocalliopteryx
+EX,Sinocalliopteryx gigas
+EX,Compsognathus
+EX,Compsognathus longipes
+EX,Nqwebasaurus
+EX,Nqwebasaurus thwazi
+EX,Aristosuchus
+EX,Aristosuchus pusillus
+EX,Mirischia
+EX,Mirischia asymmetrica
+EX,Aniksosaurus
+EX,Aniksosaurus darwini
+EX,Huaxiagnathus
+EX,Huaxiagnathus orientalis
+EX,Ornitholestes
+EX,Ornitholestes hermanni
+EX,Scipionyx
+EX,Scipionyx samniticus
+EX,Tyrannosauridae
+EX,Tyrannosauripus
+EX,Tyrannosauripus pillmorei
+EX,Gorgosaurus
+EX,Gorgosaurus libratus
+EX,Nanuqsaurus
+EX,Nanuqsaurus hoglundi
+EX,Zhuchengtyrannus
+EX,Zhuchengtyrannus magnus
+EX,Daspletosaurus
+EX,Daspletosaurus torosus
+EX,Nanotyrannus
+EX,Nanotyrannus lancensis
+EX,Tarbosaurus
+EX,Tarbosaurus bataar
+EX,Albertosaurus
+EX,Albertosaurus sarcophagus
+EX,Yezosaurus
+EX,Yezosaurus mikasaensis
+EX,Tyrannosaurus
+EX,Tyrannosaurus rex
+EX,Lythronax
+EX,Lythronax argestes
+EX,Stokesosaurus
+EX,Stokesosaurus clevelandi
+EX,Dilong
+EX,Dilong paradoxus
+EX,Teratophoneus
+EX,Teratophoneus curriei
+EX,Eotyrannus
+EX,Eotyrannus lengi
+EX,Timurlengia
+EX,Timurlengia euotica
+EX,Yutyrannus
+EX,Yutyrannus huali
+EX,Qianzhousaurus
+EX,Qianzhousaurus sinensis
+EX,Dryptosaurus
+EX,Dryptosaurus aquilunguis
+EX,Alioramus
+EX,Alioramus altai
+EX,Alioramus remotus
+EX,Raptorex
+EX,Raptorex kriegsteini
+EX,Timimus
+EX,Timimus hermani
+EX,Juratyrant
+EX,Juratyrant langhami
+EX,Proceratosaurus
+EX,Proceratosaurus bradleyi
+EX,Xiongguanlong
+EX,Xiongguanlong baimoensis
+EX,Appalachiosaurus
+EX,Appalachiosaurus montgomeriensis
+EX,Bagaraatan
+EX,Bagaraatan ostromi
+EX,Kileskus
+EX,Kileskus aristotocus
+EX,Sinotyrannus
+EX,Sinotyrannus kazuoensis
+EX,Labocania
+EX,Labocania anomala
+EX,Guanlong
+EX,Guanlong wucaii
+EX,Bistahieversor
+EX,Bistahieversor sealeyi
+EX,Santanaraptor
+EX,Santanaraptor placidus
+EX,Alectrosaurus
+EX,Alectrosaurus olseni
+EX,Gallimimus
+EX,Gallimimus bullatus
+EX,Qiupalong
+EX,Qiupalong henanensis
+EX,Ornithomimus
+EX,Ornithomimus velox
+EX,Ornithomimus edmontonicus
+EX,Tototlmimus
+EX,Tototlmimus packardensis
+EX,Hopiichnus
+EX,Hopiichnus shingi
+EX,Anserimimus
+EX,Anserimimus planinychus
+EX,Sinornithomimus
+EX,Sinornithomimus dongi
+EX,Archaeornithomimus
+EX,Archaeornithomimus asiaticus
+EX,Archaeornithomimus bissektensis
+EX,Dendroolithidae
+EX,Placoolithus
+EX,Placoolithus taohensis
+EX,Placoolithus tiantaiensis
+EX,Therizinosauridae
+EX,Nanshiungosaurus
+EX,Nanshiungosaurus bohlini
+EX,Nanshiungosaurus brevispinus
+EX,Tiantaisaurus
+EX,Tiantaisaurus sifengensis
+EX,Suzhousaurus
+EX,Suzhousaurus megatherioides
+EX,Eshanosaurus
+EX,Eshanosaurus deguchiianus
+EX,Segnosaurus
+EX,Segnosaurus galbinensis
+EX,Nothronychus
+EX,Nothronychus mckinleyi
+EX,Nothronychus graffami
+EX,Neimongosaurus
+EX,Neimongosaurus yangi
+EX,Therizinosaurus
+EX,Therizinosaurus cheloniformis
+EX,Enigmosaurus
+EX,Enigmosaurus mongoliensis
+EX,Erliansaurus
+EX,Erliansaurus bellamanus
+EX,Alxasaurus
+EX,Alxasaurus elesitaiensis
+EX,Beipiaosaurus
+EX,Beipiaosaurus inexpectus
+EX,Martharaptor
+EX,Martharaptor greenriverensis
+EX,Elongatoolithidae
+EX,Nanhsiungoolithus
+EX,Nanhsiungoolithus chuetienensis
+EX,Trachoolithus
+EX,Trachoolithus faticanus
+EX,Continuoolithus
+EX,Continuoolithus canadensis
+EX,Macroelongatoolithus
+EX,Macroelongatoolithus zhangi
+EX,Macroelongatoolithus carlylei
+EX,Macroelongatoolithus xixiaensis
+EX,Elongatoolithus
+EX,Elongatoolithus excellens
+EX,Elongatoolithus frustrabilis
+EX,Elongatoolithus andrewsi
+EX,Elongatoolithus sigillarius
+EX,Elongatoolithus magnus
+EX,Elongatoolithus elongatus
+EX,Elongatoolithus taipinghuensis
+EX,Elongatoolithus chichengshanensis
+EX,Elongatoolithus subtitectorius
+EX,Elongatoolithus laijiaensis
+EX,Porituberoolithus
+EX,Porituberoolithus warnerensis
+EX,Macroolithus
+EX,Macroolithus yaotunensis
+EX,Macroolithus turolensis
+EX,Macroolithus rugustus
+EX,Macroolithus mutabilis
+EX,Spongioolithus
+EX,Spongioolithus hirschi
+EX,Paraelongatoolithus
+EX,Paraelongatoolithus reticulatus
+EX,Undulatoolithus
+EX,Undulatoolithus pengi
+EX,Ellipsoolithus
+EX,Ellipsoolithus khedaensis
+EX,Caudipterygidae
+EX,Caudipteryx
+EX,Caudipteryx zoui
+EX,Caudipteryx dongi
+EX,Similicaudipteryx
+EX,Similicaudipteryx yixianensis
+EX,Caenagnathoidea
+EX,Oviraptoridae
+EX,Luoyanggia
+EX,Nomingia
+EX,Conchoraptor
+EX,Shixinggia
+EX,Machairasaurus
+EX,Huanansaurus
+EX,Ganzhousaurus
+EX,Banji
+EX,Rinchenia
+EX,Jiangxisaurus
+EX,Tongtianlong
+EX,Nankangia
+EX,Oviraptor
+EX,Wulatelong
+EX,Nemegtomaia
+EX,Citipati
+EX,Yulong
+EX,Khaan
+EX,Heyuannia
+EX,Ajancingenia
+EX,Caenagnathidae
+EX,Hagryphus
+EX,Leptorhynchos
+EX,Caenagnathasia
+EX,Chirostenotes
+EX,Microvenator
+EX,Anzu
+EX,Ojoraptorsaurus
+EX,Elmisaurus
+EX,Gigantoraptor
+EX,Caenagnathus
+EX,Apatoraptor
+EX,Epichirostenotes
+EX,Arriagadoolithidae
+EX,Arriagadoolithus
+EX,Arriagadoolithus patagoniensis
+EX,Alvarezsauridae
+EX,Alvarezsaurus
+EX,Alvarezsaurus calvoi
+EX,Kol
+EX,Kol ghuva
+EX,Patagonykus
+EX,Patagonykus puertai
+EX,Achillesaurus
+EX,Achillesaurus manazzonei
+EX,Bonapartenykus
+EX,Bonapartenykus ultimus
+EX,Alnashetri
+EX,Alnashetri cerropoliciensis
+EX,Parvicursoridae
+EX,Mononykus
+EX,Mononykus olecranus
+EX,Albertonykus
+EX,Albertonykus borealis
+EX,Parvicursor
+EX,Parvicursor remotus
+EX,Xixianykus
+EX,Xixianykus zhangi
+EX,Shuvuuia
+EX,Shuvuuia deserti
+EX,Linhenykus
+EX,Linhenykus monodactylus
+EX,Ceratonykus
+EX,Ceratonykus oculatus
+EX,Albinykus
+EX,Albinykus baatar
+EX,Ambiortidae
+EX,Otogornis
+EX,Otogornis genghisi
+EX,Ambiortus
+EX,Ambiortus dementjevi
+EX,Lithornithidae
+EX,Lithornis
+EX,Lithornis celetius
+EX,Lithornis vulturinus
+EX,Lithornis hookeri
+EX,Lithornis promiscuus
+EX,Lithornis plebius
+EX,Lithornis nasi
+EX,Pseudocrypturus
+EX,Pseudocrypturus cercanaxius
+EX,Fissuravis
+EX,Fissuravis weigelti
+EX,Paracathartes
+EX,Paracathartes howardae
+EX,Patagopterygidae
+EX,Patagopteryx
+EX,Patagopteryx deferrariisi
+EX,Megalapterygidae
+EX,Megalapteryx
+EX,Megalapteryx didinus
+EX,Dinornithidae
+EX,Euryapteryx
+EX,Euryapteryx geranoides
+EX,Dinornis
+EX,Dinornis struthoides
+EX,Dinornis giganteus
+EX,Emeidae
+EX,Anomalopteryx
+EX,Anomalopteryx didiformis
+EX,Emeus
+EX,Emeus crassus
+EX,Pachyornis
+EX,Pachyornis elephantopus
+EX,Aepyornis
+EX,Aepyornis maximus
+EX,Baptornithidae
+EX,Baptornis
+EX,Baptornis advenus
+EX,Baptornis varneri
+EX,Pasquiaornis
+EX,Pasquiaornis hardiei
+EX,Pasquiaornis tankei
+EX,Hesperornithidae
+EX,Judinornis
+EX,Judinornis nogontsavensis
+EX,Hesperornis
+EX,Hesperornis crassipes
+EX,Hesperornis montana
+EX,Hesperornis gracilis
+EX,Hesperornis altus
+EX,Hesperornis rossicus
+EX,Hesperornis regalis
+EX,Enaliornis
+EX,Enaliornis segdwicki
+EX,Enaliornis barretti
+EX,Enaliornis sedgwicki
+EX,Parahesperornis
+EX,Parahesperornis alexi
+EX,Potamornis
+EX,Potamornis skutchi
+EX,Canadaga
+EX,Canadaga arctica
+EX,Asiahesperornis
+EX,Asiahesperornis bazhanovi
+EX,Brodavidae
+EX,Brodavis
+EX,Brodavis baileyi
+EX,Brodavis americanus
+EX,Brodavis mongoliensis
+EX,Ichthyornis
+EX,Ichthyornis maltshevskyi
+EX,Ichthyornis dispar
+EX,Ichthyornis minusculus
+EX,Apatornis
+EX,Apatornis retustus
+EX,Apatornis celer
+EX,Guildavis
+EX,Guildavis tener
+EX,Sapeornis
+EX,Sapeornis chaoyangensis
+EX,Omnivoropteryx
+EX,Omnivoropteryx sinousaorum
+EX,Piscivoravis
+EX,Piscivoravis lii
+EX,Yanornis
+EX,Yanornis wui
+EX,Yanornis martini
+EX,Yanornis guozhangi
+EX,Longicrusavis
+EX,Longicrusavis houi
+EX,Yixianornis
+EX,Yixianornis grabaui
+EX,Archaeornithura
+EX,Archaeornithura meemannae
+EX,Parahongshanornis
+EX,Parahongshanornis chaoyangensis
+EX,Tianyuornis
+EX,Tianyuornis cheni
+EX,Songlingornis
+EX,Songlingornis linghensis
+EX,Hongshanornis
+EX,Hongshanornis longicresta
+EX,Iberomesornithidae
+EX,Noguerornis
+EX,Noguerornis gonzalezi
+EX,Iberomesornis
+EX,Iberomesornis romerali
+EX,Cratoavis
+EX,Cratoavis cearensis
+EX,Rahonavidae
+EX,Boluochidae
+EX,Huoshanornis
+EX,Huoshanornis huji
+EX,Lectavis
+EX,Lectavis bretincola
+EX,Dalingheornis
+EX,Dalingheornis liweii
+EX,Paraprotopteryx
+EX,Paraprotopteryx gracilis
+EX,Avisauridae
+EX,Neuquenornis
+EX,Neuquenornis volans
+EX,Concornis
+EX,Concornis lacustris
+EX,Intiornis
+EX,Intiornis inexpectatus
+EX,Soroavisaurus
+EX,Soroavisaurus australis
+EX,Enantiophoenix
+EX,Enantiophoenix electrophyla
+EX,Avisaurus
+EX,Avisaurus archibaldi
+EX,Avisaurus gloriae
+EX,Halimornis
+EX,Halimornis thompsoni
+EX,Bauxitornis
+EX,Bauxitornis mindszentyae
+EX,Flexomornis
+EX,Flexomornis howei
+EX,Martinavis
+EX,Martinavis minor
+EX,Martinavis cruzyensis
+EX,Martinavis whetstonei
+EX,Martinavis saltariensis
+EX,Martinavis vincei
+EX,Enantiornithidae
+EX,Enantiornis
+EX,Enantiornis leali
+EX,Alexornithidae
+EX,Nanantius
+EX,Nanantius eos
+EX,Zhyraornis
+EX,Zhyraornis logunovi
+EX,Zhyraornis kashkarovi
+EX,Incolornis
+EX,Incolornis silvae
+EX,Incolornis martini
+EX,Abavornis
+EX,Abavornis bonaparti
+EX,Alexornis
+EX,Alexornis antecedens
+EX,Explorornis
+EX,Explorornis walkeri
+EX,Explorornis nessovi
+EX,Sazavis
+EX,Sazavis prisca
+EX,Kizylkumavis
+EX,Kizylkumavis cretacea
+EX,Gobipterygidae
+EX,Vescornis
+EX,Vescornis hebeiensis
+EX,Gobipteryx
+EX,Gobipteryx minuta
+EX,Ilerdopteryx
+EX,Ilerdopteryx viai
+EX,Cathayornithidae
+EX,Cathayornis
+EX,Cathayornis yandica
+EX,Longchengornis
+EX,Longchengornis sanyanensis
+EX,Gracilornis
+EX,Gracilornis jiufotangensis
+EX,Longipterygidae
+EX,Camptodontus
+EX,Camptodontus yangi
+EX,Boluochia
+EX,Boluochia zhengi
+EX,Longirostravis
+EX,Longirostravis hani
+EX,Shengjingornis
+EX,Shengjingornis yangi
+EX,Rapaxavis
+EX,Rapaxavis pani
+EX,Shanweiniao
+EX,Shanweiniao cooperorum
+EX,Longipteryx
+EX,Longipteryx chaoyangensis
+EX,Protopterygidae
+EX,Protopteryx
+EX,Protopteryx fengningensis
+EX,Eoalulavis
+EX,Eoalulavis hoyasi
+EX,Grabauornis
+EX,Grabauornis lingyuanensis
+EX,Mystiornithidae
+EX,Mystiornis
+EX,Mystiornis cyrili
+EX,Concornithidae
+EX,Eoenantiornithidae
+EX,Eoenantiornis
+EX,Eoenantiornis buhleri
+EX,Dapingfangornis
+EX,Dapingfangornis sentisorhinus
+EX,Eocathayornis
+EX,Eocathayornis walkeri
+EX,Fortunguavis
+EX,Fortunguavis xiaotaizicus
+EX,Alethoalaornithidae
+EX,Alethoalaornis
+EX,Alethoalaornis agitornis
+EX,Xiangornis
+EX,Xiangornis shenmi
+EX,Elsornis
+EX,Elsornis keni
+EX,Elbretornis
+EX,Elbretornis bonapartei
+EX,Bohaiornithidae
+EX,Bohaiornis
+EX,Bohaiornis guoi
+EX,Shenqiornis
+EX,Shenqiornis mengi
+EX,Zhouornis
+EX,Zhouornis hani
+EX,Parabohaiornis
+EX,Parabohaiornis martini
+EX,Longusunguis
+EX,Longusunguis kurochkini
+EX,Sulcavis
+EX,Sulcavis geeorum
+EX,Sinornis
+EX,Sinornis santensis
+EX,Pengornithidae
+EX,Pengornis
+EX,Pengornis houi
+EX,Parapengornis
+EX,Parapengornis eurycaudatus
+EX,Eopengornis
+EX,Eopengornis martini
+EX,Liaoningornis
+EX,Liaoningornis longidigitris
+EX,Longirostravisidae
+EX,Parvavis
+EX,Parvavis chuxiongensis
+EX,Jinzhouornis
+EX,Jinzhouornis yixianensis
+EX,Jinzhouornis zhangjiyingia
+EX,Confuciusornis
+EX,Confuciusornis jianchangensis
+EX,Confuciusornis dui
+EX,Confuciusornis suniae
+EX,Confuciusornis chuonzhous
+EX,Confuciusornis chuongzhous
+EX,Confuciusornis feducciai
+EX,Confuciusornis sanctus
+EX,Jibeinia
+EX,Jibeinia luanhera
+EX,Eoconfuciusornis
+EX,Eoconfuciusornis zhengi
+EX,Changchengornis
+EX,Changchengornis hengdaoziensis
+EX,Archaeopteryx
+EX,Archaeopteryx lithographica
+EX,Ostromia
+EX,Aurornis
+EX,Aurornis xui
+EX,Anchiornis
+EX,Anchiornis huxleyi
+EX,Xiaotingia
+EX,Xiaotingia zhengi
+EX,Yixianosaurus
+EX,Yixianosaurus longimanus
+EX,Eosinopteryx
+EX,Eosinopteryx brevipenna
+EX,Serikornis
+EX,Pedopenna
+EX,Pedopenna daohugouensis
+EX,Caihong
+EX,Jixiangornis
+EX,Jixiangornis orientalis
+EX,Volgavis
+EX,Volgavis marina
+EX,Zhongjianornis
+EX,Zhongjianornis yangi
+EX,Pachycorioolithidae
+EX,Pachycorioolithus
+EX,Pachycorioolithus jinyunensis
+EX,Shandongornipodidae
+EX,Shandongornipes
+EX,Shandongornipes muxiai
+EX,Yandangithidae
+EX,Yandangornis
+EX,Yandangornis longicaudus
+EX,Alamitornis
+EX,Alamitornis minutus
+EX,Gargantuavis
+EX,Gargantuavis philoinos
+EX,Stereornithidae
+EX,Avipedidae
+EX,Fuscinapeda
+EX,Fuscinapeda sirin
+EX,Aquatilavipes
+EX,Aquatilavipes izumiensis
+EX,Aquatilavipes swiboldae
+EX,Aquatilavipes curriei
+EX,Laevisoolithidae
+EX,Laevisoolithus
+EX,Laevisoolithus sochavai
+EX,Iteravis
+EX,Iteravis huchzermeyeri
+EX,Cerebavis
+EX,Cerebavis cenomanica
+EX,Apsaravidae
+EX,Apsaravis
+EX,Apsaravis ukhaana
+EX,Proornis
+EX,Proornis coreae
+EX,Limenavis
+EX,Limenavis patagonica
+EX,Jianchangornis
+EX,Jianchangornis microdonta
+EX,Koreanornipodidae
+EX,Pullornipes
+EX,Pullornipes aureus
+EX,Koreanaornis
+EX,Koreanaornis anhuiensis
+EX,Koreanaornis hamanensis
+EX,Koreanornis
+EX,Koreanornis hamanensis
+EX,Koreanornis sinensis
+EX,Koreanornis dodsoni
+EX,Jindongornipodidae
+EX,Jindongornipes
+EX,Jindongornipes kimi
+EX,Liaoningornithidae
+EX,Jeholornithidae
+EX,Jeholornis
+EX,Jeholornis prima
+EX,Jeholornis palmapenis
+EX,Jeholornis curvipes
+EX,Ignotornidae
+EX,Ignotornis
+EX,Ignotornis mcconnelli
+EX,Ignotornis yangi
+EX,Goseongornipes
+EX,Goseongornipes markjonesi
+EX,Gansuidae
+EX,Gastornithidae
+EX,Diatryma
+EX,Diatryma ajax
+EX,Diatryma cotei
+EX,Diatryma gigantea
+EX,Gastornis
+EX,Gastornis parisiensis
+EX,Gastornis russelli
+EX,Gastornis edwardsi
+EX,Qinornis
+EX,Qinornis paleocenica
+EX,Subtiliolithidae
+EX,Subtiliolithus
+EX,Subtiliolithus kachchhensis
+EX,Subtiliolithus microtuberculatus
+EX,Evgenavis
+EX,Evgenavis nobilis
+EX,Horezmavis
+EX,Horezmavis eocretacea
+EX,Urbacodon
+EX,Urbacodon itemirensis
+EX,Geminiraptor
+EX,Geminiraptor suarezarum
+EX,Talos
+EX,Talos sampsoni
+EX,Zanabazar
+EX,Zanabazar junior
+EX,Tochisaurus
+EX,Tochisaurus nemegtensis
+EX,Mei
+EX,Mei long
+EX,Troodon
+EX,Troodon formosus
+EX,Borogovia
+EX,Borogovia gracilicrus
+EX,Xixiasaurus
+EX,Xixiasaurus henanensis
+EX,Sinovenator
+EX,Sinovenator changii
+EX,Sinornithoides
+EX,Sinornithoides youngi
+EX,Gobivenator
+EX,Gobivenator mongoliensis
+EX,Byronosaurus
+EX,Byronosaurus jaffei
+EX,Linhevenator
+EX,Linhevenator tani
+EX,Archaeornithoides
+EX,Archaeornithoides deinosauriscus
+EX,Philovenator
+EX,Philovenator curriei
+EX,Saurornithoides
+EX,Saurornithoides mongoliensis
+EX,Sinusonasus
+EX,Sinusonasus magnodens
+EX,Jinfengopteryx
+EX,Jinfengopteryx elegans
+EX,Pectinodon
+EX,Pectinodon bakkeri
+EX,Palaeopteryx thompsoni
+EX,Rahonavis ostromi
+EX,Epidexipteryx
+EX,Epidexipteryx hui
+EX,Yi
+EX,Yi qi
+EX,Scansoriopteryx
+EX,Scansoriopteryx heilmanni
+EX,Luanchuanraptor
+EX,Luanchuanraptor henanensis
+EX,Nuthetes
+EX,Nuthetes destructor
+EX,Dromaeosaurus
+EX,Dromaeosaurus albertensis
+EX,Buitreraptor
+EX,Buitreraptor gonzalezorum
+EX,Changyuraptor
+EX,Changyuraptor yangi
+EX,Adasaurus
+EX,Adasaurus mongoliensis
+EX,Dakotaraptor
+EX,Dakotaraptor steini
+EX,Bambiraptor
+EX,Bambiraptor feinbergi
+EX,Acheroraptor
+EX,Acheroraptor temertyorum
+EX,Graciliraptor
+EX,Graciliraptor lujiatunensis
+EX,Deinonychus
+EX,Deinonychus antirrhopus
+EX,Unenlagia
+EX,Unenlagia comahuensis
+EX,Unenlagia paynemili
+EX,Tianyuraptor
+EX,Tianyuraptor ostromi
+EX,Dromaeosauroides
+EX,Dromaeosauroides bornholmensis
+EX,Balaur
+EX,Balaur bondoc
+EX,Zapsalis
+EX,Zapsalis abradens
+EX,Atrociraptor
+EX,Atrociraptor marshalli
+EX,Linheraptor
+EX,Linheraptor exquisitus
+EX,Richardoestesia
+EX,Richardoestesia asiatica
+EX,Richardoestesia gilmorei
+EX,Richardoestesia isosceles
+EX,Velociraptor
+EX,Velociraptor osmolskae
+EX,Velociraptor mongoliensis
+EX,Neuquenraptor
+EX,Neuquenraptor argentinus
+EX,Shanag
+EX,Shanag ashile
+EX,Yurgovuchia
+EX,Yurgovuchia doellingi
+EX,Mahakala
+EX,Mahakala omnogovae
+EX,Utahraptor
+EX,Utahraptor ostrommaysi
+EX,Boreonykus
+EX,Boreonykus certekorum
+EX,Pyroraptor
+EX,Pyroraptor olympius
+EX,Sinornithosaurus
+EX,Sinornithosaurus haoiana
+EX,Sinornithosaurus millenii
+EX,Achillobator
+EX,Achillobator giganticus
+EX,Hesperonychus
+EX,Hesperonychus elizabethae
+EX,Tsaagan
+EX,Tsaagan mangas
+EX,Variraptor
+EX,Variraptor mechinorum
+EX,Microraptor
+EX,Microraptor gui
+EX,Microraptor hanqingi
+EX,Microraptor zhaoianus
+EX,Saurornitholestes
+EX,Saurornitholestes robustus
+EX,Saurornitholestes sullivani
+EX,Saurornitholestes langstoni
+EX,Austroraptor
+EX,Austroraptor cabazai
+EX,Itemirus
+EX,Itemirus medullaris
+EX,Elopteryx
+EX,Elopteryx nopcsai
+EX,Eostega
+EX,Eostega lebedinskyi
+EX,Actiornis
+EX,Actiornis anglicus
+EX,Spinosauridae
+EX,Irritator
+EX,Irritator challengeri
+EX,Angaturama
+EX,Angaturama limai
+EX,Ostafrikasaurus
+EX,Ostafrikasaurus crassiserratus
+EX,Suchomimus
+EX,Suchomimus tenerensis
+EX,Ichthyovenator
+EX,Ichthyovenator laosensis
+EX,Baryonyx
+EX,Baryonyx walkeri
+EX,Spinosaurus
+EX,Spinosaurus aegyptiacus
+EX,Oxalaia
+EX,Oxalaia quilombensis
+EX,Piatnitzkysauridae
+EX,Marshosaurus
+EX,Marshosaurus bicentesimus
+EX,Piatnitzkysaurus
+EX,Piatnitzkysaurus floresi
+EX,Condorraptor
+EX,Condorraptor currumili
+EX,Megalosauridae
+EX,Eustreptospondylus
+EX,Eustreptospondylus oxoniensis
+EX,Afrovenator
+EX,Afrovenator abakensis
+EX,Magnosaurus
+EX,Magnosaurus nethercombensis
+EX,Dubreuillosaurus
+EX,Dubreuillosaurus valesdunensis
+EX,Leshansaurus
+EX,Leshansaurus qianweiensis
+EX,Torvosaurus
+EX,Torvosaurus gurneyi
+EX,Torvosaurus tanneri
+EX,Piveteausaurus
+EX,Piveteausaurus divesensis
+EX,Megalosaurus
+EX,Megalosaurus dapukaensis
+EX,Megalosaurus gracilis
+EX,Megalosaurus bucklandii
+EX,Megalosaurus tibetensis
+EX,Duriavenator
+EX,Duriavenator hesperis
+EX,Wiehenvenator
+EX,Wiehenvenator albati
+EX,Poekilopleuron
+EX,Poekilopleuron minor
+EX,Poekilopleuron bucklandii
+EX,Streptospondylus
+EX,Streptospondylus altdorfensis
+EX,Streptospondylus rostromajor
+EX,Sciurumimus
+EX,Sciurumimus albersdoerferi
+EX,Irenesauripus
+EX,Irenesauripus mclearni
+EX,Irenesauripus acutus
+EX,Irenesauripus occidentalis
+EX,Macropodosaurus
+EX,Macropodosaurus gravis
+EX,Eutynichnium
+EX,Eutynichnium pombali
+EX,Allosauridae
+EX,Allosaurus
+EX,Allosaurus fragilis
+EX,Allosaurus jimmadseni
+EX,Allosaurus europaeus
+EX,Allosaurus lucasi
+EX,Saurophaganax
+EX,Saurophaganax maximus
+EX,Metriacanthosauridae
+EX,Metriacanthosaurus
+EX,Metriacanthosaurus parkeri
+EX,Yangchuanosaurus
+EX,Yangchuanosaurus shangyouensis
+EX,Yangchuanosaurus zigongensis
+EX,Xuanhanosaurus
+EX,Xuanhanosaurus qilixiaensis
+EX,Shidaisaurus
+EX,Shidaisaurus jinae
+EX,Siamotyrannus
+EX,Siamotyrannus isanensis
+EX,Erectopus
+EX,Erectopus superbus
+EX,Erectopus sauvagei
+EX,Carcharodontosauridae
+EX,Acrocanthosaurus
+EX,Acrocanthosaurus atokensis
+EX,Unquillosaurus
+EX,Unquillosaurus ceibalii
+EX,Giganotosaurus
+EX,Giganotosaurus carolinii
+EX,Eocarcharia
+EX,Eocarcharia dinops
+EX,Sauroniops
+EX,Sauroniops pachytholus
+EX,Shaochilong
+EX,Shaochilong maortuensis
+EX,Taurovenator
+EX,Taurovenator violantei
+EX,Concavenator
+EX,Concavenator corcovatus
+EX,Mapusaurus
+EX,Mapusaurus roseae
+EX,Carcharodontosaurus
+EX,Carcharodontosaurus saharicus
+EX,Carcharodontosaurus brevicollis
+EX,Carcharodontosaurus iguidensis
+EX,Kelmayisaurus
+EX,Kelmayisaurus petrolicus
+EX,Tyrannotitan
+EX,Tyrannotitan chubutensis
+EX,Neovenatoridae
+EX,Fukuiraptor
+EX,Fukuiraptor kitadaniensis
+EX,Australovenator
+EX,Australovenator wintonensis
+EX,Aoniraptor
+EX,Aoniraptor libertatem
+EX,Chilantaisaurus
+EX,Chilantaisaurus zheziangensis
+EX,Chilantaisaurus tashuikouensis
+EX,Orkoraptor
+EX,Orkoraptor burkei
+EX,Megaraptor
+EX,Megaraptor namunhuaiquii
+EX,Siats
+EX,Siats meekerorum
+EX,Rapator
+EX,Rapator ornitholestoides
+EX,Murusraptor
+EX,Murusraptor barrosaensis
+EX,Sinraptor
+EX,Sinraptor dongi
+EX,Sinraptor hepingensis
+EX,Neovenator
+EX,Neovenator salerii
+EX,Aerosteon
+EX,Aerosteon riocoloradensis
+EX,Monolophosaurus
+EX,Monolophosaurus jiangi
+EX,Monolophosaurus jiangjunmiaoi
+EX,Datanglong
+EX,Datanglong guangxiensis
+EX,Zupaysaurus
+EX,Zupaysaurus rougieri
+EX,Liliensternus
+EX,Liliensternus liliensterni
+EX,Dilophosaurus
+EX,Dilophosaurus sinensis
+EX,Dilophosaurus wetherilli
+EX,Gojirasaurus
+EX,Gojirasaurus quayi
+EX,Lophostropheus
+EX,Lophostropheus airelensis
+EX,Sarcosaurus
+EX,Sarcosaurus woodi
+EX,Segisaurus
+EX,Segisaurus halli
+EX,Dracoraptor
+EX,Dracoraptor hanigani
+EX,Coelophysis
+EX,Coelophysis kayentakatae
+EX,Coelophysis holyokensis
+EX,Coelophysis bauri
+EX,Coelophysis rhodesiensis
+EX,Procompsognathus
+EX,Procompsognathus triassicus
+EX,Abelisauroidea
+EX,Noasauridae
+EX,Velocisaurus
+EX,Masiakasaurus
+EX,Laevisuchus
+EX,Ligabueino
+EX,Austrocheirus
+EX,Noasaurus
+EX,Abelisauridae
+EX,Genusaurus
+EX,Tarascosaurus
+EX,Arcovenator
+EX,Indosuchus
+EX,Abelisaurus
+EX,Majungasaurus
+EX,Xenotarsosaurus
+EX,Ekrixinatosaurus
+EX,Aucasaurus
+EX,Indosaurus
+EX,Carnotaurus
+EX,Rugops
+EX,Dahalokely
+EX,Ilokelesia
+EX,Lametasaurus
+EX,Viavenator
+EX,Rahiolisaurus
+EX,Kryptops
+EX,Skorpiovenator
+EX,Rajasaurus
+EX,Vitakridrinda
+EX,Eoabelisaurus
+EX,Samanadrinda
+EX,Ceratosauridae
+EX,Fosterovenator
+EX,Fosterovenator churei
+EX,Guaibasauridae
+EX,Guaibasaurus
+EX,Guaibasaurus candelariensis
+EX,Agnosphitys
+EX,Agnosphitys cromhallensis
+EX,Panphagia
+EX,Panphagia protos
+EX,Otozoidae
+EX,Otozoum
+EX,Otozoum moodii
+EX,Otozoum caudatum
+EX,Otozoum minus
+EX,Riojasauridae
+EX,Thecodontosauridae
+EX,Thecodontosaurus
+EX,Thecodontosaurus primus
+EX,Thecodontosaurus elisae
+EX,Thecodontosaurus antiquus
+EX,Thecodontosaurus minimus
+EX,Thecodontosaurus posthumus
+EX,Pseudotrisauropus
+EX,Pseudotrisauropus maserui
+EX,Pseudotrisauropus minusculus
+EX,Pseudotrisauropus humilis
+EX,Pseudotrisauropus molekoi
+EX,Pseudotrisauropus dieterleni
+EX,Pseudotrisauropus subengensis
+EX,Trichristolophus
+EX,Trichristolophus dubius
+EX,Mussauridae
+EX,Blikanasauridae
+EX,Yunnanosaurus
+EX,Yunnanosaurus youngi
+EX,Yunnanosaurus huangi
+EX,Yunnanosaurus robustus
+EX,Euskelesauridae
+EX,Thotobolosaurus
+EX,Thotobolosaurus mabeatae
+EX,Plateosauridae
+EX,Plateosaurus
+EX,Plateosaurus engelhardti
+EX,Plateosaurus gracilis
+EX,Plateosaurus ingens
+EX,Plateosaurus longiceps
+EX,Unaysaurus
+EX,Unaysaurus tolentinoi
+EX,Xixiposaurus
+EX,Xixiposaurus suni
+EX,Jaklapallisaurus
+EX,Jaklapallisaurus asymmetrica
+EX,Plateosauravus
+EX,Plateosauravus cullingworthi
+EX,Ruehleia
+EX,Ruehleia bedheimensis
+EX,Massospondylidae
+EX,Pradhania
+EX,Pradhania gracilis
+EX,Massospondylus
+EX,Massospondylus hislopi
+EX,Massospondylus carinatus
+EX,Massospondylus kaalae
+EX,Glacialisaurus
+EX,Glacialisaurus hammeri
+EX,Adeopapposaurus
+EX,Adeopapposaurus mognai
+EX,Coloradisaurus
+EX,Coloradisaurus brevis
+EX,Leyesaurus
+EX,Leyesaurus marayensis
+EX,Lufengosaurus
+EX,Lufengosaurus huenei
+EX,Lufengosaurus changduensis
+EX,Plateosauravidae
+EX,Anchisauridae
+EX,Kainomoyenisauropus
+EX,Kainomoyenisauropus ranivorus
+EX,Senqutrisauropus
+EX,Senqutrisauropus priscus
+EX,Qomoqomosauropus
+EX,Qomoqomosauropus acutus
+EX,Megatrisauropus
+EX,Megatrisauropus malutiensis
+EX,Tritotrisauropus
+EX,Tritotrisauropus medius
+EX,Sauropoda
+EX,Euhelopodidae
+EX,Tambatitanis
+EX,Vulcanodontidae
+EX,Tazoudasaurus
+EX,Omeisauridae
+EX,Cetiosauridae
+EX,Cetiosaurus
+EX,Patagosaurus
+EX,Chebsaurus
+EX,Neosauropoda
+EX,Diplodocoidea
+EX,Macronaria
+EX,Mamenchisauridae
+EX,Hudiesaurus
+EX,Omeisaurus
+EX,Datousaurus
+EX,Qijianglong
+EX,Yuanmousaurus
+EX,Huangshanlong
+EX,Chuanjiesaurus
+EX,Eomamenchisaurus
+EX,Xinjiangtitan
+EX,Mamenchisaurus
+EX,Tonganosaurus
+EX,Staurikosaurus
+EX,Staurikosaurus pricei
+EX,Caseosaurus
+EX,Caseosaurus crosbyensis
+EX,Chindesaurus
+EX,Chindesaurus bryansmalli
+EX,Sanjuansaurus
+EX,Sanjuansaurus gordilloi
+EX,Herrerasaurus
+EX,Herrerasaurus ischigualastensis
+EX,Parachirotheriidae
+EX,Thecodontichnus
+EX,Thecodontichnus verrucae
+EX,Sphingopus
+EX,Sphingopus ferox
+EX,Parachirotherium
+EX,Parachirotherium postchirotherioides
+EX,Banisterobates
+EX,Banisterobates boisseaui
+EX,Tetrapodosauridae
+EX,Tetrapodosaurus
+EX,Tetrapodosaurus borealis
+EX,Dictyoolithidae
+EX,Dictyoolithus
+EX,Dictyoolithus hongpoensis
+EX,Dictyoolithus jiangi
+EX,Dictyoolithus neixiangensis
+EX,Dictyoolithus lishuiensis
+EX,Grallatoridae
+EX,Dilophosauripus
+EX,Dilophosauripus williamsi
+EX,Ovaloolithidae
+EX,Ovaloolithus
+EX,Ovaloolithus monostriatus
+EX,Ovaloolithus sangpingensis
+EX,Ovaloolithus tenuisus
+EX,Ovaloolithus mixistriatus
+EX,Ovaloolithus turpanensis
+EX,Ovaloolithus chinkangkouensis
+EX,Ovaloolithus dinornithoides
+EX,Ovaloolithus tristriatus
+EX,Ovaloolithus huangtulingensis
+EX,Ovaloolithus weiqiaoensis
+EX,Ovaloolithus laminadermus
+EX,Ovaloolithus utahensis
+EX,Eubrontidae
+EX,Chapus
+EX,Chapus lockleyi
+EX,Grallator
+EX,Grallator zvierzi
+EX,Jinlijingpus
+EX,Jinlijingpus nianpanshanensis
+EX,Eubrontes
+EX,Eubrontes veillonensis
+EX,Eubrontes approximatus
+EX,Eubrontes gwyneddensis
+EX,Eubrontes damanei
+EX,Eubrontes hei
+EX,Eubrontes wyomingensis
+EX,Eubrontes ingens
+EX,Eubrontes olonensis
+EX,Eubrontes euskelosauroides
+EX,Eubrontes mokanametsongensis
+EX,Eubrontes minor
+EX,Eubrontes platypus
+EX,Eubrontes exsertus
+EX,Eubrontes morijensis
+EX,Eubrontes moshoeshoei
+EX,Eubrontes sillimani
+EX,Eubrontes australis
+EX,Eubrontes hitchcocki
+EX,Eubrontes matsiengensis
+EX,Eubrontes angustidigitus
+EX,Eubrontes leribeensis
+EX,Eubrontes declivis
+EX,Eubrontes sulcatus
+EX,Eubrontes gracilis
+EX,Eubrontes lescurei
+EX,Eubrontes robustus
+EX,Eubrontes minusculus
+EX,Eubrontes thianschanicum
+EX,Eubrontes digitigradus
+EX,Eubrontes graciosus
+EX,Eubrontes princeps
+EX,Eubrontes caudatus
+EX,Eubrontes bibractensis
+EX,Eubrontes cursorius
+EX,Eubrontes rectilineus
+EX,Eubrontes crassidigitus
+EX,Eubrontes tenuis
+EX,Eubrontes maximus
+EX,Eubrontes lyellii
+EX,Eubrontes rapidus
+EX,Eubrontes glenrosensis
+EX,Eubrontes monax
+EX,Eubrontes andeolensis
+EX,Eubrontes thomasi
+EX,Eubrontes molapoi
+EX,Eubrontes divaricatus
+EX,Eubrontes microiscus
+EX,Eubrontes expansum
+EX,Eubrontes wuhuangensis
+EX,Eubrontes giganteus
+EX,Eubrontes zigongensis
+EX,Eubrontes tuberatus
+EX,Eubrontes formosus
+EX,Eubrontes poolei
+EX,Eubrontes fieldi
+EX,Eubrontes pareschequier
+EX,Eubrontes tuberosus
+EX,Eubrontes crassus
+EX,Eubrontes magnificus
+EX,Eubrontes palustris
+EX,Eubrontes milfordensis
+EX,Eubrontes xiyangensis
+EX,Eubrontes cuneatus
+EX,Eubrontes lambereshei
+EX,Eubrontes emeiensis
+EX,Eubrontes lacunensis
+EX,Eubrontes sauclierensis
+EX,Eubrontes yemiaoxiensis
+EX,Eubrontes minimus
+EX,Eubrontes variabilis
+EX,Eubrontes ssatoi
+EX,Eubrontes deambulator
+EX,Eubrontes gardonensis
+EX,Eubrontes socialis
+EX,Anchisauripodidae
+EX,Coelurosaurichnus
+EX,Coelurosaurichnus moeni
+EX,Coelurosaurichnus toscanus
+EX,Coelurosaurichnus tatricus
+EX,Coelurosaurichnus sassendorfensis
+EX,Coelurosaurichnus sabinensis
+EX,Coelurosaurichnus ziegelangernensis
+EX,Coelurosaurichnus romanovskyi
+EX,Coelurosaurichnus palyssii
+EX,Coelurosaurichnus schlehenbergense
+EX,Coelurosaurichnus schlehenbergensis
+EX,Coelurosaurichnus grancieri
+EX,Coelurosaurichnus kehli
+EX,Coelurosaurichnus kronbergeri
+EX,Coelurosaurichnus perriauxi
+EX,Coelurosaurichnus schlauersbachense
+EX,Saltopoides
+EX,Saltopoides igalensis
+EX,Swinnertonichnus
+EX,Swinnertonichnus mapperleyensis
+EX,Talmontopus
+EX,Talmontopus tersi
+EX,Stenonyx
+EX,Stenonyx lateralis
+EX,Moyenisauropodidae
+EX,Moyenisauropus
+EX,Moyenisauropus karaszevskii
+EX,Moyenisauropus levicauda
+EX,Anomoepodidae
+EX,Corvipes
+EX,Corvipes lacertoideus
+EX,Apatichnus
+EX,Apatichnus circumagens
+EX,Shenmuichnus
+EX,Shenmuichnus youngteilhardorum
+EX,Neoanomoepus
+EX,Neoanomoepus perigrinatus
+EX,Anomoepus
+EX,Anomoepus fringilla
+EX,Anomoepus cuneatus
+EX,Anomoepus minor
+EX,Anomoepus ranivorus
+EX,Anomoepus pienkovskii
+EX,Anomoepus crassus
+EX,Anomoepus gracillimus
+EX,Anomoepus intermedius
+EX,Anomoepus dodai
+EX,Anomoepus natator
+EX,Anomoepus minimus
+EX,Anomoepus natatilis
+EX,Anomoepus tungchuanensis
+EX,Anomoepus longicauda
+EX,Anomoepus palmipes
+EX,Anomoepus turda
+EX,Anomoepus minutus
+EX,Anomoepus curvatus
+EX,Anomoepus vermivorus
+EX,Anomoepus isodactylus
+EX,Anomoepus scambus
+EX,Prismatoolithidae
+EX,Sankofa
+EX,Sankofa pyrenaica
+EX,Preprismatoolithus
+EX,Preprismatoolithus coloradensis
+EX,Protoceratopsidovum
+EX,Protoceratopsidovum minimum
+EX,Protoceratopsidovum fluxuosum
+EX,Protoceratopsidovum sincerum
+EX,Prismatoolithus
+EX,Prismatoolithus hukouensis
+EX,Prismatoolithus levis
+EX,Prismatoolithus heyuanensis
+EX,Prismatoolithus jenseni
+EX,Prismatoolithus caboti
+EX,Prismatoolithus gebiensis
+EX,Prismatoolithus matellensis
+EX,Prismatoolithus hirschi
+EX,Prismatoolithus tenuis
+EX,Prismatoolithus hanshuiensis
+EX,Spheruprismatoolithus
+EX,Spheruprismatoolithus condensus
+EX,Montanoolithidae
+EX,Montanoolithus
+EX,Montanoolithus strongorum
+EX,Youngoolithidae
+EX,Youngoolithus
+EX,Youngoolithus xiaguanensis
+EX,Sauropodidae
+EX,Sauropus
+EX,Sauropus barrattii
+EX,Navahopodidae
+EX,Navahopus
+EX,Navahopus falcipollex
+EX,Navahopus coyoteensis
+EX,Ornithomimipodidae
+EX,Ornithomimipus
+EX,Ornithomimipus yuanmuensis
+EX,Ornithomimipus angustus
+EX,Ornithomimipus gracilis
+EX,Ornithomimipus jaillardi
+EX,Magnoavipes
+EX,Magnoavipes lowei
+EX,Magnoavipes caneeri
+EX,Irenichnites
+EX,Irenichnites gracilis
+EX,Columbosauripus
+EX,Columbosauripus ungulatus
+EX,Columbosauripus amouraensis
+EX,Polyclonoolithidae
+EX,Polyclonoolithus
+EX,Polyclonoolithus yangjiagouensis
+EX,Dromaeopodidae
+EX,Velociraptorichnus
+EX,Velociraptorichnus sichuanensis
+EX,Menglongipus
+EX,Menglongipus sinensis
+EX,Dromaeosauripus
+EX,Dromaeosauripus jinjuensis
+EX,Dromaeosauripus yongjingensis
+EX,Dromaeosauripus hamanensis
+EX,Dromaeopodus
+EX,Dromaeopodus shandongensis
+EX,Parabrontopodidae
+EX,Breviparopus
+EX,Breviparopus taghbaloutensis
+EX,Faveoloolithidae
+EX,Faveoloolithus
+EX,Faveoloolithus ningxiaensis
+EX,Faveoloolithus zhangi
+EX,Parafaveoloolithus
+EX,Parafaveoloolithus microporus
+EX,Parafaveoloolithus macroporus
+EX,Parafaveoloolithus xipingensis
+EX,Parafaveoloolithus tiansicunensis
+EX,Xiuningpus
+EX,Xiuningpus xintanensis
+EX,Qiaowanlong
+EX,Qiaowanlong kangxii
+EX,Ngexisaurus
+EX,Ngexisaurus dapukaensis
+EX,Osmakasaurus
+EX,Osmakasaurus depressus
+EX,Zhongornis
+EX,Zhongornis haoae
+EX,Tuojiangosaurus
+EX,Tuojiangosaurus multispinus
+EX,Megalosauropus
+EX,Megalosauropus brionensis
+EX,Megalosauropus titanopelobatidus
+EX,Megalosauropus broomensis
+EX,Megalosauropus teutonicus
+EX,Aletopelta
+EX,Aletopelta coombsi
+EX,Pantydraco
+EX,Pantydraco caducus
+EX,Tarsodactylus
+EX,Tarsodactylus expansus
+EX,Tarsodactylus caudatus
+EX,Hexing
+EX,Hexing qingyi
+EX,Cerasinops
+EX,Cerasinops hodgskissi
+EX,Eoraptor
+EX,Eoraptor lunensis
+EX,Drusilasaura
+EX,Drusilasaura deseadensis
+EX,Beishanlong
+EX,Beishanlong grandis
+EX,Changmaornis
+EX,Changmaornis houi
+EX,Deuterotetrapous
+EX,Deuterotetrapous triassicus
+EX,Ligabuesaurus
+EX,Ligabuesaurus leanzai
+EX,Yunmenglong
+EX,Yunmenglong ruyangensis
+EX,Pampadromaeus
+EX,Pampadromaeus barberenai
+EX,Ningyuansaurus
+EX,Ningyuansaurus wangi
+EX,Saurischichnus
+EX,Saurischichnus primitivus
+EX,Saurexallopus
+EX,Saurexallopus lovei
+EX,Saurexallopus zerbsti
+EX,Turiasaurus
+EX,Turiasaurus riodevensis
+EX,Barapasaurus
+EX,Barapasaurus tagorei
+EX,Chuandongocoelurus
+EX,Chuandongocoelurus primitivus
+EX,Lonchodytes
+EX,Lonchodytes estesi
+EX,Prodeinodon
+EX,Prodeinodon tibetensis
+EX,Juehuaornis
+EX,Juehuaornis zhangi
+EX,Lanzhousaurus
+EX,Lanzhousaurus magnidens
+EX,Angolatitan
+EX,Angolatitan adamastor
+EX,Dakotadon
+EX,Dakotadon lakotaensis
+EX,Corpulentapus
+EX,Corpulentapus lilasia
+EX,Austinornis
+EX,Austinornis lentus
+EX,Delphinornis
+EX,Delphinornis arctowskii
+EX,Delphinornis larseni
+EX,Sarjeantopodus
+EX,Sarjeantopodus semipalmatus
+EX,Albalophosaurus
+EX,Albalophosaurus yamaguchiorum
+EX,Actiosaurus
+EX,Actiosaurus gaudryi
+EX,Volkheimeria
+EX,Volkheimeria chubutensis
+EX,Qingxiusaurus
+EX,Qingxiusaurus youjiangensis
+EX,Lapparentosaurus
+EX,Lapparentosaurus madagascariensis
+EX,Ornithopodichnites
+EX,Ornithopodichnites magna
+EX,Qiliania
+EX,Qiliania graffini
+EX,Huabeisaurus
+EX,Huabeisaurus allocotus
+EX,Yamaceratops
+EX,Yamaceratops dorngobiensis
+EX,Delapparentia
+EX,Delapparentia turolensis
+EX,Jainosaurus
+EX,Jainosaurus septentrionalis
+EX,Yunnanpus
+EX,Yunnanpus huangcaoensis
+EX,Dongyangosaurus
+EX,Dongyangosaurus sinensis
+EX,Argentinosaurus
+EX,Argentinosaurus huinculensis
+EX,Kaijiangosaurus
+EX,Kaijiangosaurus lini
+EX,Gobititan
+EX,Gobititan shenzhouensis
+EX,Plesiornis
+EX,Plesiornis pilulatus
+EX,Jobaria
+EX,Jobaria tiguidensis
+EX,Ouranosaurus
+EX,Ouranosaurus nigeriensis
+EX,Dolichosuchus
+EX,Dolichosuchus cristatus
+EX,Mafatrisauropus
+EX,Mafatrisauropus errans
+EX,Ponerosteus
+EX,Ponerosteus cruralis
+EX,Selenichnus
+EX,Selenichnus falcatus
+EX,Selenichnus breviusculus
+EX,Hakawai
+EX,Hakawai melvillei
+EX,Australodocus
+EX,Australodocus bohetii
+EX,Montanoceratops
+EX,Montanoceratops cerorhynchus
+EX,Jianchangosaurus
+EX,Jianchangosaurus yixianensis
+EX,Gasosaurus
+EX,Gasosaurus constructus
+EX,Korora
+EX,Korora oliveri
+EX,Futalognkosaurus
+EX,Futalognkosaurus dukei
+EX,Waimanu
+EX,Waimanu manneringi
+EX,Waimanu tuatahi
+EX,Overosaurus
+EX,Overosaurus paradasorum
+EX,Xinghaiornis
+EX,Xinghaiornis lini
+EX,Fusuisaurus
+EX,Fusuisaurus zhaoi
+EX,Deinocheirus
+EX,Deinocheirus mirificus
+EX,Ceratosaurus
+EX,Ceratosaurus nasicornis
+EX,Nyasasaurus
+EX,Nyasasaurus parringtoni
+EX,Gyrotrisauropus
+EX,Gyrotrisauropus planus
+EX,Deltapodus
+EX,Deltapodus ibericus
+EX,Deltapodus brodricki
+EX,Deltapodus curriei
+EX,Xinjiangovenator
+EX,Xinjiangovenator parvus
+EX,Tastavinsaurus
+EX,Tastavinsaurus sanzi
+EX,Elaltitan
+EX,Elaltitan lilloi
+EX,Nebulasaurus
+EX,Nebulasaurus taito
+EX,Archaeoceratops
+EX,Archaeoceratops yujingziensis
+EX,Archaeoceratops oshimai
+EX,Muyelensaurus
+EX,Muyelensaurus pecheni
+EX,Gobipipus
+EX,Gobipipus reshetovi
+EX,Changpeipus
+EX,Changpeipus carbonicus
+EX,Changpeipus bartholomaii
+EX,Rupelramphastoides
+EX,Rupelramphastoides knopfi
+EX,Petropluvialis
+EX,Petropluvialis simplex
+EX,Leonerasaurus
+EX,Leonerasaurus taquetrensis
+EX,Incisivosaurus
+EX,Incisivosaurus gauthieri
+EX,Notocolossus
+EX,Notocolossus gonzalezparejasi
+EX,Anatopus
+EX,Anatopus palmatus
+EX,Gongbusaurus
+EX,Gongbusaurus wucaiwanensis
+EX,Drinker
+EX,Drinker nisti
+EX,Abrosaurus
+EX,Abrosaurus dongpoensis
+EX,Vahiny
+EX,Vahiny depereti
+EX,Daanosaurus
+EX,Daanosaurus zhangi
+EX,Gurilynia
+EX,Gurilynia nessovi
+EX,Daxiatitan
+EX,Daxiatitan binglingi
+EX,Gasparinisaura
+EX,Gasparinisaura cincosaltensis
+EX,Saurichnium
+EX,Saurichnium damarense
+EX,Saurichnium parallelum
+EX,Saurichnium tetractis
+EX,Saurichnium anserinum
+EX,Emausaurus
+EX,Emausaurus ernsti
+EX,Eoceornis
+EX,Eoceornis ardetta
+EX,Platypterna
+EX,Platypterna gracillima
+EX,Platypterna digitigrada
+EX,Platypterna varica
+EX,Platypterna deanii
+EX,Platypterna recta
+EX,Platypterna concamerata
+EX,Platypterna tenuis
+EX,Platypterna delicatula
+EX,Platypterna lockatong
+EX,Reticuloolithus
+EX,Reticuloolithus hirschi
+EX,Liaoceratops
+EX,Liaoceratops yanzigouensis
+EX,Archaeovolans
+EX,Archaeovolans repatriatus
+EX,Iguanacolossus
+EX,Iguanacolossus fortis
+EX,Rukwatitan
+EX,Rukwatitan bisepultus
+EX,Samrukia
+EX,Samrukia nessovi
+EX,Mussaurus
+EX,Mussaurus patagonicus
+EX,Patagonichnornis
+EX,Patagonichnornis venetiorum
+EX,Notohypsilophodon
+EX,Notohypsilophodon comodorensis
+EX,Macrogryphosaurus
+EX,Macrogryphosaurus gondwanicus
+EX,Dracopelta
+EX,Dracopelta zbyszewskii
+EX,Moraesichnium
+EX,Moraesichnium barberenae
+EX,Zuolong
+EX,Zuolong salleei
+EX,Gansus
+EX,Gansus yumenensis
+EX,Huanghetitan
+EX,Huanghetitan liujiaxiaensis
+EX,Unescoceratops
+EX,Unescoceratops koppelhusae
+EX,Sarmientosaurus
+EX,Sarmientosaurus musacchioi
+EX,Adamantisaurus
+EX,Adamantisaurus mezzalirai
+EX,Epachthosaurus
+EX,Epachthosaurus sciuttoi
+EX,Bressanichnus
+EX,Bressanichnus patagonicus
+EX,Microdontosaurus
+EX,Microdontosaurus dayensis
+EX,Titanopodus
+EX,Titanopodus mendozensis
+EX,Chubutisaurus
+EX,Chubutisaurus insignis
+EX,Hwangsanipes
+EX,Hwangsanipes choughi
+EX,Buriolestes
+EX,Buriolestes schultzi
+EX,Iuticosaurus
+EX,Iuticosaurus lydekkeri
+EX,Leptoceratops
+EX,Leptoceratops gracilis
+EX,Anabisetia
+EX,Anabisetia saldiviai
+EX,Yacoraitichnus
+EX,Yacoraitichnus avis
+EX,Asianopodus
+EX,Asianopodus robustus
+EX,Asianopodus pulvinicalx
+EX,Kairuku
+EX,Kairuku waitaki
+EX,Kairuku grebneffi
+EX,Eremopezus
+EX,Eremopezus eocaenus
+EX,Karongasaurus
+EX,Karongasaurus gittelmani
+EX,Xiangxipus
+EX,Xiangxipus youngi
+EX,Xiangxipus chenxiensis
+EX,Barrosopus
+EX,Barrosopus slobodai
+EX,Amtosaurus
+EX,Amtosaurus magnus
+EX,Nanosaurus
+EX,Nanosaurus agilis
+EX,Koreaceratops
+EX,Koreaceratops hwaseongensis
+EX,Archaeorhynchus
+EX,Archaeorhynchus spathula
+EX,Cridotrisauropus
+EX,Cridotrisauropus minor
+EX,Cridotrisauropus ginsburgi
+EX,Cridotrisauropus cruentus
+EX,Cridotrisauropus unguiferus
+EX,Delatorrichnus
+EX,Delatorrichnus goyenechei
+EX,Antarctosaurus
+EX,Antarctosaurus giganteus
+EX,Antarctosaurus wichmannianus
+EX,Paludititan
+EX,Paludititan nalatzensis
+EX,Jiayinosauropus
+EX,Jiayinosauropus johnsoni
+EX,Tubercuoolithus
+EX,Tubercuoolithus tetonensis
+EX,Avimimus
+EX,Avimimus portentosus
+EX,Spinostropheus
+EX,Spinostropheus gautieri
+EX,Tethyshadros
+EX,Tethyshadros insularis
+EX,Komlosaurus
+EX,Komlosaurus carbonis
+EX,Draconyx
+EX,Draconyx loureiroi
+EX,Aegyptosaurus
+EX,Aegyptosaurus baharijensis
+EX,Feitianius
+EX,Feitianius paradisi
+EX,Efraasia
+EX,Efraasia minor
+EX,Ampelosaurus
+EX,Ampelosaurus atacis
+EX,Dreadnoughtus
+EX,Dreadnoughtus schrani
+EX,Serendipaceratops
+EX,Serendipaceratops arthurcclarkei
+EX,Xiphopeza
+EX,Xiphopeza triplex
+EX,Jingshanosaurus
+EX,Jingshanosaurus xinwaensis
+EX,Velocipes
+EX,Velocipes guerichi
+EX,Protohadros
+EX,Protohadros byrdi
+EX,Titanosaurus
+EX,Titanosaurus indicus
+EX,Titanosaurus blanfordi
+EX,Acanthopholis
+EX,Acanthopholis macrocercus
+EX,Xiaosaurus
+EX,Xiaosaurus dashanpensis
+EX,Parvicuculus
+EX,Parvicuculus minor
+EX,Britoichnium
+EX,Britoichnium coelurosauroides
+EX,Falcarius
+EX,Falcarius utahensis
+EX,Dalianraptor
+EX,Dalianraptor cuhe
+EX,Gryphoceratops
+EX,Gryphoceratops morrisoni
+EX,Sefapanosaurus
+EX,Sefapanosaurus zastronensis
+EX,Pseudotetrasauropus
+EX,Pseudotetrasauropus bipedoida
+EX,Pseudotetrasauropus andusiensis
+EX,Pseudotetrasauropus grandcombensis
+EX,Pseudotetrasauropus corbesiensis
+EX,Gannansaurus
+EX,Gannansaurus sinensis
+EX,Trimabus
+EX,Trimabus elegans
+EX,Defarrariischnium
+EX,Defarrariischnium mapuchensis
+EX,Brasilotitan
+EX,Brasilotitan nemophagus
+EX,Eretiscus
+EX,Eretiscus tonnii
+EX,Hypsiloichnus
+EX,Hypsiloichnus marylandicus
+EX,Ferganasaurus
+EX,Ferganasaurus verzilini
+EX,Chaoyangia
+EX,Chaoyangia beishanensis
+EX,Abelichnus
+EX,Abelichnus astigarrae
+EX,Homalocephale
+EX,Homalocephale calathocercos
+EX,Scelidosaurus
+EX,Scelidosaurus harrisonii
+EX,Bicentenaria
+EX,Bicentenaria argentina
+EX,Blikanasaurus
+EX,Blikanasaurus cromptoni
+EX,Limusaurus
+EX,Limusaurus inextricabilis
+EX,Becklespinax
+EX,Becklespinax altispinax
+EX,Unespichnium
+EX,Unespichnium ornithopodianus
+EX,Wildeichnus
+EX,Wildeichnus navesi
+EX,Cumnoria
+EX,Cumnoria prestwichii
+EX,Tawa
+EX,Tawa hallae
+EX,Losillasaurus
+EX,Losillasaurus giganteus
+EX,Sauropodichnus
+EX,Sauropodichnus giganteus
+EX,Lamplughsaura
+EX,Lamplughsaura dharmaramensis
+EX,Niobrarasaurus
+EX,Niobrarasaurus coleii
+EX,Ischioceratops
+EX,Ischioceratops zhuchengensis
+EX,Marambiornis
+EX,Marambiornis exilis
+EX,Tarsoplectrus
+EX,Tarsoplectrus elegans
+EX,Tarsoplectrus angustus
+EX,Apulosauripus
+EX,Apulosauripus federicianus
+EX,Fumicollis
+EX,Fumicollis hoffmani
+EX,Scolecophagus
+EX,Scolecophagus affinis
+EX,Dracovenator
+EX,Dracovenator regenti
+EX,Salfitichnus
+EX,Salfitichnus mentoor
+EX,Moguiornipes
+EX,Moguiornipes robusta
+EX,Fenestrosaurus
+EX,Fenestrosaurus philoceratops
+EX,Wintonotitan
+EX,Wintonotitan wattsi
+EX,Palaeospiza
+EX,Palaeospiza bella
+EX,Yimenosaurus
+EX,Yimenosaurus youngi
+EX,Kayentapus
+EX,Kayentapus jizhaoshiensis
+EX,Kayentapus xiaohebaensis
+EX,Kayentapus hailiutuensis
+EX,Kayentapus wumaensis
+EX,Kayentapus minor
+EX,Kayentapus otariensis
+EX,Kayentapus soltykovensis
+EX,Kayentapus nananensis
+EX,Kayentapus hopii
+EX,Parabrontopodus
+EX,Parabrontopodus distercii
+EX,Parabrontopodus mcintoshi
+EX,Ruyangosaurus
+EX,Ruyangosaurus giganteus
+EX,Tshulia
+EX,Tshulia litorea
+EX,Zuniceratops
+EX,Zuniceratops christopheri
+EX,Berberosaurus
+EX,Berberosaurus liassicus
+EX,Probactrosaurus
+EX,Probactrosaurus gobiensis
+EX,Iranosauripus
+EX,Iranosauripus zerabensis
+EX,Gideonmantellia
+EX,Gideonmantellia amosanjuanae
+EX,Lagunculapes
+EX,Lagunculapes latus
+EX,Plesiothornipos
+EX,Plesiothornipos binneyi
+EX,Shanyangosaurus
+EX,Shanyangosaurus niupanggouensis
+EX,Muttaburrasaurus
+EX,Muttaburrasaurus langdoni
+EX,Paracorpulentapus
+EX,Paracorpulentapus zhangsanfengi
+EX,Bactrosaurus
+EX,Bactrosaurus johnsoni
+EX,Othnielosaurus
+EX,Othnielosaurus consors
+EX,Garudimimus
+EX,Garudimimus brevipes
+EX,Changdusaurus
+EX,Changdusaurus laminaplacodus
+EX,Holbotia
+EX,Holbotia ponomarenkoi
+EX,Aardonyx
+EX,Aardonyx celestae
+EX,Stegopelta
+EX,Stegopelta landerensis
+EX,Altirhinus
+EX,Altirhinus kurzanovi
+EX,Scutellosaurus
+EX,Scutellosaurus lawleri
+EX,Yueosaurus
+EX,Yueosaurus tiantaiensis
+EX,Cryolophosaurus
+EX,Cryolophosaurus ellioti
+EX,Albisaurus
+EX,Albisaurus albinus
+EX,Arthrodytes
+EX,Arthrodytes andrewsi
+EX,Malakhelisaurus
+EX,Malakhelisaurus mianwali
+EX,Sillimanius
+EX,Sillimanius tetradactylus
+EX,Sillimanius rectus
+EX,Sillimanius adamsanus
+EX,Sillimanius gracilior
+EX,Plectropus
+EX,Plectropus longipes
+EX,Catenoleimus
+EX,Catenoleimus anachoretus
+EX,Vorona
+EX,Vorona berivotrensis
+EX,Wieslochia
+EX,Wieslochia weissi
+EX,Staurichnium
+EX,Staurichnium diogenis
+EX,Shenzhouraptor
+EX,Shenzhouraptor sinensis
+EX,Magyarosaurus
+EX,Magyarosaurus dacus
+EX,Eodromaeus
+EX,Eodromaeus murphi
+EX,Uteodon
+EX,Uteodon aphanoecetes
+EX,Skartopus
+EX,Skartopus australis
+EX,Hypselospinus
+EX,Hypselospinus fittoni
+EX,Pulanesaura
+EX,Pulanesaura eocollum
+EX,Micropachycephalosaurus
+EX,Micropachycephalosaurus hongtuyanensis
+EX,Puertasaurus
+EX,Puertasaurus reuili
+EX,Theiophytalia
+EX,Theiophytalia kerri
+EX,Sauroposeidon
+EX,Sauroposeidon proteles
+EX,Haplocheirus
+EX,Haplocheirus sollers
+EX,Lohuecotitan
+EX,Lohuecotitan pandafilandi
+EX,Tetrapodium
+EX,Tetrapodium elmenhorsti
+EX,Eolambia
+EX,Eolambia caroljonesa
+EX,Bosiutrisauropus
+EX,Bosiutrisauropus phuthiatsani
+EX,Xianshanosaurus
+EX,Xianshanosaurus shijiagouensis
+EX,Laquintasaura
+EX,Laquintasaura venezuelae
+EX,Kinnareemimus
+EX,Kinnareemimus khonkaenensis
+EX,Qantassaurus
+EX,Qantassaurus intrepidus
+EX,Fukuititan
+EX,Fukuititan nipponensis
+EX,Hulsanpes
+EX,Hulsanpes perlei
+EX,Hispanosauropus
+EX,Hispanosauropus hauboldi
+EX,Deltadromeus
+EX,Deltadromeus agilis
+EX,Epidendrosaurus
+EX,Epidendrosaurus ningchengensis
+EX,Oplosaurus
+EX,Oplosaurus armatus
+EX,Ratchasimasaurus
+EX,Ratchasimasaurus suranareae
+EX,Kayentavenator
+EX,Kayentavenator elysiae
+EX,Graculavus
+EX,Graculavus angustus
+EX,Graculavus velox
+EX,Lapparentichnus
+EX,Lapparentichnus oleronensis
+EX,Namaortyx
+EX,Namaortyx sperrgebietensis
+EX,Dystrophaeus
+EX,Dystrophaeus viaemalae
+EX,Uhangrichnus
+EX,Uhangrichnus chuni
+EX,Palaeopapia
+EX,Palaeopapia eous
+EX,Xuwulong
+EX,Xuwulong yueluni
+EX,Malawisaurus
+EX,Malawisaurus dixeyi
+EX,Austroposeidon
+EX,Austroposeidon magnificus
+EX,Lirainosaurus
+EX,Lirainosaurus astibiae
+EX,Yumenornis
+EX,Yumenornis huangi
+EX,Archaeodontosaurus
+EX,Archaeodontosaurus descouensi
+EX,Rapetosaurus
+EX,Rapetosaurus krausei
+EX,Melanorosaurus
+EX,Melanorosaurus readi
+EX,Procrax
+EX,Procrax brevipes
+EX,Namapsitta
+EX,Namapsitta praeruptorum
+EX,Asylosaurus
+EX,Asylosaurus yalensis
+EX,Stenopelix
+EX,Stenopelix valdensis
+EX,Duriatitan
+EX,Duriatitan humerocristatus
+EX,Sarmientichnus
+EX,Sarmientichnus scagliai
+EX,Bissektipelta
+EX,Bissektipelta archibaldi
+EX,Pneumatoraptor
+EX,Pneumatoraptor fodori
+EX,Euhelopus
+EX,Euhelopus zdanskyi
+EX,Prenoceratops
+EX,Prenoceratops pieganensis
+EX,Mosaiceratops
+EX,Mosaiceratops azumai
+EX,Paracoracias
+EX,Paracoracias occidentalis
+EX,Chuxiongosaurus
+EX,Chuxiongosaurus lufengensis
+EX,Spinophorosaurus
+EX,Spinophorosaurus nigerensis
+EX,Chromogisaurus
+EX,Chromogisaurus novasi
+EX,Ornithoides
+EX,Ornithoides oshiensis
+EX,Szechuanosaurus
+EX,Szechuanosaurus yandonensis
+EX,Divisulcus
+EX,Divisulcus demerei
+EX,Hippodraco
+EX,Hippodraco scutodens
+EX,Auroraceratops
+EX,Auroraceratops rugosus
+EX,Koreanosaurus
+EX,Koreanosaurus boseongensis
+EX,Borealosaurus
+EX,Borealosaurus wimani
+EX,Tangvayosaurus
+EX,Tangvayosaurus hoffeti
+EX,Camarillasaurus
+EX,Camarillasaurus cirugedae
+EX,Camptosaurichnus
+EX,Camptosaurichnus fasolae
+EX,Andesaurus
+EX,Andesaurus delgadoi
+EX,Protocypselomorphus
+EX,Protocypselomorphus manfredkelleri
+EX,Palaeoscincus
+EX,Palaeoscincus latus
+EX,Tenontosaurus
+EX,Tenontosaurus dossi
+EX,Tenontosaurus tilletti
+EX,Proa
+EX,Proa valdearinnoensis
+EX,Amitabha
+EX,Amitabha urbsinterdictensis
+EX,Archaeornithipus
+EX,Archaeornithipus meijidei
+EX,Mongolosaurus
+EX,Mongolosaurus haplodon
+EX,Savannasaurus
+EX,Savannasaurus elliottorum
+EX,Chinshakiangosaurus
+EX,Chinshakiangosaurus chunghoensis
+EX,Yuanjiawaornis
+EX,Yuanjiawaornis viriosus
+EX,Minisauripus
+EX,Minisauripus chuanzhuensis
+EX,Minisauripus zhenshuonani
+EX,Titanosaurimanus
+EX,Titanosaurimanus nana
+EX,Spondylosoma
+EX,Spondylosoma absconditum
+EX,Argyrosaurus
+EX,Argyrosaurus superbus
+EX,Pellegrinisaurus
+EX,Pellegrinisaurus powelli
+EX,Cetiosauriscus
+EX,Cetiosauriscus stewarti
+EX,Dispersituberoolithus
+EX,Dispersituberoolithus exilis
+EX,Ferganocephale
+EX,Ferganocephale adenticulatum
+EX,Tristraguloolithus
+EX,Tristraguloolithus cracioides
+EX,Kotasaurus
+EX,Kotasaurus yamanpalliensis
+EX,Kulindadromeus
+EX,Kulindadromeus zabaikalicus
+EX,Dunhuangia
+EX,Dunhuangia cuii
+EX,Chascacocolius
+EX,Chascacocolius cacicirostris
+EX,Kuwajimasauropus
+EX,Kuwajimasauropus shiraminensis
+EX,Saturnalia
+EX,Saturnalia tupiniquim
+EX,Boutakioutichnium
+EX,Boutakioutichnium atlasicus
+EX,Lesothosaurus
+EX,Lesothosaurus diagnosticus
+EX,Ligabueichnium
+EX,Ligabueichnium bolivianum
+EX,Leaellynasaura
+EX,Leaellynasaura amicagraphica
+EX,Iguanodontipus
+EX,Iguanodontipus burreyi
+EX,Ravatosauropus
+EX,Ravatosauropus rozhdestvenkyi
+EX,Zhuchengceratops
+EX,Zhuchengceratops inexpectus
+EX,Yungavolucris
+EX,Yungavolucris brevipedalis
+EX,Yangtzepus
+EX,Yangtzepus yipingensis
+EX,Toyamasauripus
+EX,Toyamasauripus masuiae
+EX,Pachysaurus
+EX,Pachysaurus reinigeri
+EX,Pelorosaurus
+EX,Pelorosaurus conybeari
+EX,Erketu
+EX,Erketu ellisoni
+EX,Megalosauripus
+EX,Megalosauripus uzbekistanicus
+EX,Megalosauripus maximus
+EX,Megalosauripus krimholzi
+EX,Sonidosaurus
+EX,Sonidosaurus saihangaobiensis
+EX,Bahariasaurus
+EX,Bahariasaurus ingens
+EX,Tendaguria
+EX,Tendaguria tanzaniensis
+EX,Talenkauen
+EX,Talenkauen santacrucensis
+EX,Aviatyrannis
+EX,Aviatyrannis jurassica
+EX,Kuszholia
+EX,Kuszholia mengi
+EX,Lessemsaurus
+EX,Lessemsaurus sauropoides
+EX,Tetrasauropus
+EX,Tetrasauropus unguiferus
+EX,Yongjinglong
+EX,Yongjinglong datangi
+EX,Tacuaremborum
+EX,Tacuaremborum oblongum
+EX,Wupus
+EX,Wupus agilis
+EX,Lourinhanosaurus
+EX,Lourinhanosaurus antunesi
+EX,Yaverlandia
+EX,Yaverlandia bitholus
+EX,Graciliceratops
+EX,Graciliceratops mongoliensis
+EX,Cardiodon
+EX,Cardiodon rugulosus
+EX,Plotus
+EX,Plotus laticeps
+EX,Yandusaurus
+EX,Yandusaurus hongheensis
+EX,Struthiomimus
+EX,Struthiomimus altus
+EX,Riojasaurus
+EX,Riojasaurus incertus
+EX,Seitaad
+EX,Seitaad ruessi
+EX,Jiuquanornis
+EX,Jiuquanornis niui
+EX,Klamelisaurus
+EX,Klamelisaurus gobiensis
+EX,Dinehichnus
+EX,Dinehichnus socialis
+EX,Udanoceratops
+EX,Udanoceratops tschizhovi
+EX,Hunanpus
+EX,Hunanpus jiuquwanensis
+EX,Mopsitta
+EX,Mopsitta tanta
+EX,Ageroolithus
+EX,Ageroolithus fontllongensis
+EX,Rhoetosaurus
+EX,Rhoetosaurus brownei
+EX,Steropoides
+EX,Steropoides loripes
+EX,Steropoides ingens
+EX,Steropoides elegantius
+EX,Steropoides elegans
+EX,Steropoides uncus
+EX,Steropoides divaricatus
+EX,Steropoides infelix
+EX,Steropoides diversus
+EX,Bonaparteichnium
+EX,Bonaparteichnium tali
+EX,Shenzhousaurus
+EX,Shenzhousaurus orientalis
+EX,Mendozasaurus
+EX,Mendozasaurus neguyelap
+EX,Fuscinapedis
+EX,Fuscinapedis woodbinensis
+EX,Barrancapus
+EX,Barrancapus cresapi
+EX,Wimanornis
+EX,Wimanornis seymourensis
+EX,Sarahsaurus
+EX,Sarahsaurus aurifontanalis
+EX,Alwalkeria
+EX,Alwalkeria maleriensis
+EX,Dongbeititan
+EX,Dongbeititan dongi
+EX,Kaiika
+EX,Kaiika maxwelli
+EX,Metatetrapous
+EX,Metatetrapous valdensis
+EX,Metatetrapous valdense
+EX,Tachiraptor
+EX,Tachiraptor admirabilis
+EX,Sinosaurus
+EX,Sinosaurus triassicus
+EX,Stormbergia
+EX,Stormbergia dangershoeki
+EX,Shunosaurus
+EX,Shunosaurus lii
+EX,Proplanicoxa
+EX,Proplanicoxa galtoni
+EX,Paronychodon
+EX,Paronychodon asiaticus
+EX,Rotundichnus
+EX,Rotundichnus muenchehagensis
+EX,Camelotia
+EX,Camelotia borealis
+EX,Wannanosaurus
+EX,Wannanosaurus yansiensis
+EX,Helioceratops
+EX,Helioceratops brachygnathus
+EX,Triprismatoolithus
+EX,Triprismatoolithus stephensi
+EX,Taupezia
+EX,Taupezia landeri
+EX,Hollanda
+EX,Hollanda luceria
+EX,Aquilops
+EX,Aquilops americanus
+EX,Baotianmansaurus
+EX,Baotianmansaurus henanensis
+EX,Antetonitrus
+EX,Antetonitrus ingenipes
+EX,Eociconia
+EX,Eociconia sangequanensis
+EX,Pamparaptor
+EX,Pamparaptor micros
+EX,Aletornis
+EX,Aletornis nobilis
+EX,Aletornis pernix
+EX,Aletornis venustus
+EX,Aletornis gracilis
+EX,Aletornis bellus
+EX,Gregaripus
+EX,Gregaripus bairdi
+EX,Asiaceratops
+EX,Asiaceratops salsopaludalis
+EX,Amygdalodon
+EX,Amygdalodon patagonicus
+EX,Coelurus
+EX,Coelurus fragilis
+EX,Tianchiasaurus
+EX,Tianchiasaurus nedegoapeferima
+EX,Satapliasaurus
+EX,Satapliasaurus dsocenidzei
+EX,Satapliasaurus tschabukianii
+EX,Satapliasaurus kandelakii
+EX,Quetecsaurus
+EX,Quetecsaurus rusconii
+EX,Sarcolestes
+EX,Sarcolestes leedsi
+EX,Atacamatitan
+EX,Atacamatitan chilensis
+EX,Morrosaurus
+EX,Morrosaurus antarcticus
+EX,Zby
+EX,Zby atlanticus
+EX,Liubangosaurus
+EX,Liubangosaurus hei
+EX,Barrosasaurus
+EX,Barrosasaurus casamiquelai
+EX,Schizooura
+EX,Schizooura lii
+EX,Trinisaura
+EX,Trinisaura santamartaensis
+EX,Polemarchus
+EX,Polemarchus gigas
+EX,Phuwiangosaurus
+EX,Phuwiangosaurus sirindhornae
+EX,Pitekunsaurus
+EX,Pitekunsaurus macayai
+EX,Hadrosaurichnus
+EX,Hadrosaurichnus titicacaensis
+EX,Hadrosaurichnus australis
+EX,Aragosaurus
+EX,Aragosaurus ischiaticus
+EX,Paraortyx
+EX,Paraortyx brancoi
+EX,Paraortyx lorteti
+EX,Malarguesaurus
+EX,Malarguesaurus florenciae
+EX,Ovoraptor
+EX,Ovoraptor djadochtari
+EX,Saltosauropus
+EX,Saltosauropus latus
+EX,Sanpasaurus
+EX,Sanpasaurus yaoi
+EX,Bonitasaura
+EX,Bonitasaura salgadoi
+EX,Carmelopodus
+EX,Carmelopodus untermannorum
+EX,Kalohipus
+EX,Kalohipus bretunensis
+EX,Brontopodus
+EX,Brontopodus changlingensis
+EX,Brontopodus birdi
+EX,Brontopodus oncalensis
+EX,Inkayacu
+EX,Inkayacu paracasensis
+EX,Manu
+EX,Manu antiquus
+EX,Tonniornis
+EX,Tonniornis minimum
+EX,Tonniornis mesetaensis
+EX,Itsukisauropus
+EX,Itsukisauropus izumiensis
+EX,Tatarornipes
+EX,Tatarornipes chabuensis
+EX,Eocathartes
+EX,Eocathartes robustus
+EX,Eucnemesaurus
+EX,Eucnemesaurus fortis
+EX,Eucnemesaurus entaxonis
+EX,Aorun
+EX,Aorun zhaoi
+EX,Ignavusaurus
+EX,Ignavusaurus rachelis
+EX,Vulcanodon
+EX,Vulcanodon karibaensis
+EX,Isanosaurus
+EX,Isanosaurus attavipachi
+EX,Stegopodus
+EX,Stegopodus czerkasi
+EX,Hexinlusaurus
+EX,Hexinlusaurus multidens
+EX,Ohmdenosaurus
+EX,Ohmdenosaurus liasicus
+EX,Jialingpus
+EX,Jialingpus yuechiensis
+EX,Camptosaurus
+EX,Camptosaurus dispar
+EX,Damalasaurus
+EX,Damalasaurus magnus
+EX,Juravenator
+EX,Juravenator starki
+EX,Dachongosaurus
+EX,Dachongosaurus yunnanensis
+EX,Nambalia
+EX,Nambalia roychowdhurii
+EX,Caririchnium
+EX,Caririchnium leonardii
+EX,Caririchnium protohadrosaurichnos
+EX,Caririchnium magnificum
+EX,Byakudansauropus
+EX,Byakudansauropus shiraminensis
+EX,Galvesaurus
+EX,Galvesaurus herreroi
+EX,Narambuenatitan
+EX,Narambuenatitan palomoi
+EX,Oshanosaurus
+EX,Oshanosaurus youngi
+EX,Elaphrosaurus
+EX,Elaphrosaurus bambergi
+EX,Torotix
+EX,Torotix clemensi
+EX,Harpymimus
+EX,Harpymimus okladnikovi
+EX,Pelecanimimus
+EX,Pelecanimimus polyodon
+EX,Owenodon
+EX,Owenodon hoggii
+EX,Atsinganosaurus
+EX,Atsinganosaurus velauciensis
+EX,Daemonosaurus
+EX,Daemonosaurus chauliodus
+EX,Dakotasaurus
+EX,Dakotasaurus browni
+EX,Evazoum
+EX,Evazoum sirigui
+EX,Picunichnus
+EX,Picunichnus benedettoi
+EX,Morinosaurus
+EX,Morinosaurus priscus
+EX,Erlikosaurus
+EX,Erlikosaurus andrewsi
+EX,Linyiornis
+EX,Linyiornis amoena
+EX,Siamopodus
+EX,Siamopodus khaoyaiensis
+EX,Cruxicheiros
+EX,Cruxicheiros newmanorum
+EX,Goyocephale
+EX,Goyocephale lattimorei
+EX,Uberabatitan
+EX,Uberabatitan ribeiroi
+EX,Perplexicervix
+EX,Perplexicervix microcephalon
+EX,Argoides
+EX,Argoides minimus
+EX,Argoides redfieldii
+EX,Argoides macrodactylus
+EX,Mesetaornis
+EX,Mesetaornis polaris
+EX,Eocursor
+EX,Eocursor parvus
+EX,Astrophocaudia
+EX,Astrophocaudia slaughteri
+EX,Janenschia
+EX,Janenschia robusta
+EX,Meroktenos
+EX,Meroktenos thabanensis
+EX,Dinosauropodes
+EX,Dinosauropodes wilsoni
+EX,Dinosauropodes sweetii
+EX,Dinosauropodes crawfordii
+EX,Dinosauropodes nettletoni
+EX,Dinosauropodes sternbergii
+EX,Dinosauropodes osborni
+EX,Dinosauropodes magrawii
+EX,Dinosauropodes bransfordii
+EX,Anticheiropus
+EX,Anticheiropus hamatus
+EX,Anticheiropus pilulatus
+EX,Siamodon
+EX,Siamodon nimngami
+EX,Genyodectes
+EX,Genyodectes serus
+EX,Normanniasaurus
+EX,Normanniasaurus genceyi
+EX,Polyonyx
+EX,Polyonyx gomesi
+EX,Pengxianpus
+EX,Pengxianpus cifengensis
+EX,Haestasaurus
+EX,Haestasaurus becklesii
+EX,Arcusaurus
+EX,Arcusaurus pereirabdalorum
+EX,Therangospodus
+EX,Therangospodus oncalensis
+EX,Therangospodus pandemicus
+EX,Eosauropus
+EX,Eosauropus cimarronensis
+EX,Tanycolagreus
+EX,Tanycolagreus topwilsoni
+EX,Atlasaurus
+EX,Atlasaurus imelakei
+EX,Harpedactylus
+EX,Harpedactylus tenuissimus
+EX,Harpedactylus crassus
+EX,Harpedactylus gracilior
+EX,Gongxianosaurus
+EX,Gongxianosaurus shibeiensis
+EX,Taoperdix
+EX,Taoperdix pessieti
+EX,Nedcolbertia
+EX,Nedcolbertia justinhoffmanni
+EX,Ravatichnus
+EX,Ravatichnus kotshnevi
+EX,Pisanosaurus
+EX,Pisanosaurus mertii
+EX,Anchisaurus
+EX,Anchisaurus polyzelus
+EX,Protoavis
+EX,Protoavis texensis
+EX,Traukutitan
+EX,Traukutitan eocaudata
+EX,Agilisaurus
+EX,Agilisaurus louderbacki
+EX,Tugulusaurus
+EX,Tugulusaurus faciles
+EX,Paralititan
+EX,Paralititan stromeri
+EX,Wintonopus
+EX,Wintonopus latomorum
+EX,Goseongosauripus
+EX,Goseongosauripus kimi
+EX,Chilesaurus
+EX,Chilesaurus diegosuarezi
+EX,Proterochampsidae
+EX,Gualosuchus
+EX,Gualosuchus reigi
+EX,Cerritosaurus
+EX,Cerritosaurus binsfeldi
+EX,Rhadinosuchus
+EX,Rhadinosuchus gracilis
+EX,Tropidosuchus
+EX,Tropidosuchus romeri
+EX,Pseudochampsa
+EX,Pseudochampsa ischigualastensis
+EX,Proterochampsa
+EX,Proterochampsa barrionuevoi
+EX,Proterochampsa nodosa
+EX,Chanaresuchus
+EX,Chanaresuchus bonapartei
+EX,Doswelliidae
+EX,Jaxtasuchus
+EX,Jaxtasuchus salomoni
+EX,Tarjadia
+EX,Tarjadia ruthae
+EX,Archeopelta
+EX,Archeopelta arborensis
+EX,Doswellia
+EX,Doswellia sixmilensis
+EX,Doswellia kaltenbachi
+EX,Vancleavea
+EX,Vancleavea campi
+EX,Bolosauria
+EX,Bolosauridae
+EX,Belebey
+EX,Bolosaurus
+EX,Eudibamus
+EX,Erpetonyx
+EX,Erpetonyx arsenaultorum
+EX,Millerosauria
+EX,Millerettidae
+EX,Millerinoides
+EX,Broomia
+EX,Milleropsis
+EX,Millerosaurus
+EX,Milleretta
+EX,Mesosauria
+EX,Mesosauridae
+EX,Stereosternum
+EX,Brazilosaurus
+EX,Mesosaurus
+EX,Pareiasaurida
+EX,Elginioidea
+EX,Elginiidae
+EX,Procolophonomorpha
+EX,Microleter
+EX,Microleter mckinzieorum
+EX,Seymouriidae
+EX,Leptorophidae
+EX,Discosauriscidae
+EX,Enosuchidae
+EX,Waggoneriidae
+EX,Kotlassiidae
+EX,Tokosauridae
+EX,Osteostraci
+EX,Galeaspida
+EX,Pituriaspida
+EX,Anaspida
+EX,Euphaneropidae
+EX,Birkeniidae
+EX,Thelodonti
+EX,Lanarkiidae
+EX,Eestilepididae
+EX,Furcacaudidae
+EX,Apalolepididae
+EX,Loganelliidae
+EX,Archipelepididae
+EX,Palaeodontidae
+EX,Coelolepididae
+EX,Nikoliviidae
+EX,Turiniidae
+EX,Phlebolepididae
+EX,Katoporodidae
+EX,Oeseliidae
+EX,Pteraspidomorphi
+EX,Astraspida
+EX,Astraspididae
+EX,Eriptychiidae
+EX,Heterostraci
+EX,Arandaspida
+EX,Arandaspididae
+EX,Camptodontus interstitialis
+EX,Camptodontus falcatus
+EX,Camptodontus longipennis
+EX,Camptodontus longicollis
+EX,Camptodontus obliteratus
+EX,Camptodontus cayennensis
+EX,Camptodontus amazonum
+EX,Camptodontus forcipatus
+EX,Camptodontus crenatus
+EX,Camptodontus puncticeps
+EX,Camptodontus isthmius
+EX,Camptodontus trisulcus
+EX,Camptodontus anglicanus
+EX,Camptodontus reichei
+EX,Polyonyx gibbesi
+EX,Polyonyx quadriungulatus
+EX,unclassified Pterosauria
+EX,unclassified Pterodactyloidea
+EX,unclassified Ornithocheiroidea
+EX,unclassified Tyrannosauroidea
+EX,unclassified Therizinosauroidea
+EX,unclassified Megalosauroidea
+EX,unclassified Allosauroidea
+EX,unclassified Coelophysoidea
+EX,unclassified Abelisauroidea
