@@ -1,5 +1,6 @@
 get_en();
 get_jp();
+get_status();
 get_images();
 get_thumbnail();
 get_wikipedia();
@@ -43,6 +44,28 @@ st.addEventListener("change", async () => {
     $(st).fadeOut().fadeIn();
 });
 
+async function get_status() {
+    const token = "25ef48b3629d17b58768363e36c5d7ce34130df6ca7bf81a52667ab63320471b";
+    const nostatus = document.querySelectorAll("[name=nostatus]");
+    nostatus.forEach(async (nostat) => {
+        const id = nostat.id;
+        const value = nostat.value;
+        if (id == "") return false;
+        if (value == "") return false;
+        //console.table(id, value);
+    	const url = "https://apiv3.iucnredlist.org/api/v3/species/"+ value +"?token=" + token;
+        const response = await fetch(url);
+        const json = await response.json();
+	//console.log(json);
+	if (json.result[0].category == undefined) return;
+	const param = {
+              status : json.result[0].category
+	};
+	await eol_update(id, param);
+	nostat.replaceWith(json.result[0].category);
+    });
+}
+
 async function get_en() {
     const noens = document.querySelectorAll("[name=noen]");
     noens.forEach(async (noen) => {
@@ -51,7 +74,7 @@ async function get_en() {
         if (id == "") return false;
         const json = await eol_names(id);
         //console.log(json);
-        if (json.taxonConcept.vernacularNames == undefined) return false;
+        if (json.taxonConcept.vernacularNames == undefined) return;
         //console.log(json.taxonConcept.vernacularNames);
         json.taxonConcept.vernacularNames.forEach(async (vn) => {
             if (vn.eol_preferred && vn.language == "en") {
