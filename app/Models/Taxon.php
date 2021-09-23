@@ -19,6 +19,11 @@ class Taxon extends Model
         return $this->hasOne(Eol::class, 'EOLid', 'EOLid');
     }
 
+    public function iucn()
+    {
+        return $this->hasOne(Iucn::class, 'taxonID', 'taxonID');
+    }
+
     public function parent()
     {
         return $this->belongsTo(Taxon::class, 'parentNameUsageID');

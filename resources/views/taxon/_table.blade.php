@@ -27,10 +27,10 @@
             <td>{{ $taxon->taxonomicStatus }}</td>
             <td>{{ $taxon->taxonRank }}</td>
             <td>
-                @if ($taxon->eol && !empty($taxon->eol->status))
-                <div class="{{ $taxon->eol->status }}">{{ $taxon->eol->status }}</div>
-                @elseif ($taxon->taxonRank == "species")
-                <input type="hidden" name="nostatus" value="{{ $taxon->canonicalName }}" id="{{ $taxon->EOLid }}" />
+                @if ($taxon->iucn)
+                    {!! $taxon->iucn->show() !!}
+                @elseif($taxon->taxonRank == 'species')
+                    <input type="hidden" name="nostatus" value="{{ $taxon->canonicalName }}" id="{{ $taxon->taxonID }}" />
                 @endif
             </td>
         </tr>

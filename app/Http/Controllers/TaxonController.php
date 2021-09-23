@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Eol;
+use App\Models\Iucn;
 use App\Models\Taxon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
@@ -82,8 +83,7 @@ class TaxonController extends Controller
      */
     public function show(Taxon $taxon)
     {
-        $me = $taxon;
-        $tree[] = $me;
+        $tree[] = $me = $taxon;
         while ($me->parent) {
             $me = $tree[] = $me->parent;
         }

@@ -78,7 +78,6 @@ class EolController extends Controller
         if (isset($request->jp)) $eol->jp = $request->jp;
         if (isset($request->en)) $eol->en = $request->en;
         if (isset($request->img)) $eol->img = $request->img;
-        if (isset($request->status)) $eol->status = $request->status;
         $eol->save();
         return response()->json($eol);
     }
