@@ -36,6 +36,7 @@ en.addEventListener("change", async () => {
     $(en).fadeOut().fadeIn();
 });
 
+/*
 const st = document.querySelector(".status");
 st.addEventListener("change", async () => {
     const id = st.id;
@@ -43,31 +44,33 @@ st.addEventListener("change", async () => {
     await eol_update(id, param);
     $(st).fadeOut().fadeIn();
 });
+*/
 
 async function get_status() {
-    const token = "25ef48b3629d17b58768363e36c5d7ce34130df6ca7bf81a52667ab63320471b";
-    $("[name=nostatus]").each(function(index, element) {
+    const token =
+        "25ef48b3629d17b58768363e36c5d7ce34130df6ca7bf81a52667ab63320471b";
+    $("[name=nostatus]").each(function (index, element) {
         const id = element.id;
         const value = element.value;
         //console.table(id, value);
-        const url = "https://apiv3.iucnredlist.org/api/v3/species/" + value + "?token=" + token;
-        $.get(url, function(json) {
-            console.log(json);
-            if (json.result == undefined) return;
-            $.post("/api/iucn/store", {id:id, value:json.result[0].category}, function() {
-                element.replaceWith(json.result[0].category);
-            });
-        });
-    });
-        /*
         const url =
             "https://apiv3.iucnredlist.org/api/v3/species/" +
             value +
             "?token=" +
             token;
-        //console.log(json);
-        //nostat.replaceWith(json.result[0].category);
-        */
+        $.get(url, function (json) {
+            //console.log(json);
+            if (json.result == undefined) return;
+            if (json.result[0] == undefined) return;
+            $.post(
+                "/api/iucn/store",
+                { id: id, value: json.result[0].category },
+                function () {
+                    element.replaceWith(json.result[0].category);
+                }
+            );
+        });
+    });
 }
 
 async function get_en() {

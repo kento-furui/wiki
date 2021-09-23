@@ -14,6 +14,10 @@
             padding: 1% 0;
         }
 
+        tr td span {
+            margin-right: 5px;
+            display: inline-block;
+        }
         .EX, .EW, .CR, .EN, .VU, .CD, .NT, .LC, .DD, .NE {
             padding: 1%;
             color: white;

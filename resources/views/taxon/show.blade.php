@@ -60,7 +60,11 @@
         </tr>
         <tr>
             <th>保全状況</th>
-            <td></td>
+            <td>
+                @if ($taxon->iucn)
+                    {!! $taxon->iucn->inline() !!}
+                @endif
+            </td>
         <tr>
             <th>ソース</th>
             <td>{{ $taxon->source }}</td>

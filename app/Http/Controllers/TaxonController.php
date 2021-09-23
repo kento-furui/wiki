@@ -83,11 +83,36 @@ class TaxonController extends Controller
      */
     public function show(Taxon $taxon)
     {
+        if ($taxon->taxonRank != "species") {
+            $this->sum($taxon);
+        }
+
         $tree[] = $me = $taxon;
         while ($me->parent) {
             $me = $tree[] = $me->parent;
         }
         return view('taxon.show', compact('taxon', 'tree'));
+    }
+
+    public function sum(Taxon $taxon)
+    {
+        $tmp = array('EX' => 0, 'EW' => 0, 'CR' => 0, 'EN' => 0, 'VU' => 0, 'NT' => 0, 'LC' => 0, 'DD' => 0, 'NE' => 0);
+        $keys = array_keys($tmp);
+        foreach ($taxon->children as $c) {
+            if ($c->iucn) {
+                foreach ($keys as $k) {
+                    $tmp[$k] += $c->iucn->$k;
+                }
+            }
+        }
+        if (! $taxon->iucn) {
+            $taxon->iucn = new Iucn;
+            $taxon->iucn->taxonID = $taxon->taxonID;
+        }
+        foreach ($keys as $k) {
+            $taxon->iucn->$k = $tmp[$k];
+        }
+        $taxon->iucn->save();
     }
 
     public function recursive(Taxon $taxon)
