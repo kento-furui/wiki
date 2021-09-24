@@ -47,24 +47,40 @@
         <tr>
             <th>和名</th>
             <td>
-                <input type="text" name="jp" class="jp" size="30" id="{{ $taxon->EOLid }}"
+                <input type="text" name="edit_jp" class="form-control" size="30" id="{{ $taxon->EOLid }}"
                     value="{{ $taxon->eol ? $taxon->eol->jp : null }}" />
             </td>
         </tr>
         <tr>
             <th>英名</th>
             <td>
-                <input type="text" name="en" class="en" size="30" id="{{ $taxon->EOLid }}"
+                <input type="text" name="edit_en" class="form-control" size="30" id="{{ $taxon->EOLid }}"
                     value="{{ $taxon->eol ? $taxon->eol->en : null }}" />
             </td>
         </tr>
+            <th>ステータス</th>
+            <td>
+                <select name="edit_status" class="form-control" id="{{ $taxon->taxonID }}">
+                    <option value="">--</option>
+                    <option value="EX">EX - 絶滅</option>
+                    <option value="EW">EW - 野生絶滅</option>
+                    <option value="CR">CR - 絶滅寸前</option>
+                    <option value="EN">EN - 絶滅危惧</option>
+                    <option value="VU">VU - 危急</option>
+                    <option value="CD">CD - 保全対策依存</option>
+                    <option value="NT">NT - 準絶滅危惧</option>
+                    <option value="LC">LC - 低危険種</option>
+                    <option value="DD">DD - データ不足</option>
+                    <option value="NE">NE - 未評価</option>
+                </select>
+            </td>
         <tr>
             <th>保全状況</th>
             <td>
                 @if ($taxon->iucn)
                     {!! $taxon->iucn->inline() !!}
                 @endif
-            </td>
+           </td>
         <tr>
             <th>ソース</th>
             <td>{{ $taxon->source }}</td>

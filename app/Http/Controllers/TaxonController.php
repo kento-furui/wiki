@@ -87,7 +87,8 @@ class TaxonController extends Controller
             $this->sum($taxon);
         }
 
-        $tree[] = $me = $taxon;
+        $me = $taxon;
+        $tree = array();
         while ($me->parent) {
             $me = $tree[] = $me->parent;
         }

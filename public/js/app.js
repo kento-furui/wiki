@@ -20,7 +20,7 @@ images.forEach((image) => {
 });
 */
 
-const jp = document.querySelector(".jp");
+const jp = document.querySelector("[name=edit_jp]");
 jp.addEventListener("change", async () => {
     const id = jp.id;
     const param = { jp: jp.value };
@@ -28,7 +28,7 @@ jp.addEventListener("change", async () => {
     $(jp).fadeOut().fadeIn();
 });
 
-const en = document.querySelector(".en");
+const en = document.querySelector("[name=edit_en]");
 en.addEventListener("change", async () => {
     const id = en.id;
     const param = { en: en.value };
@@ -36,39 +36,29 @@ en.addEventListener("change", async () => {
     $(en).fadeOut().fadeIn();
 });
 
-/*
-const st = document.querySelector(".status");
+const st = document.querySelector("[name=edit_status]");
 st.addEventListener("change", async () => {
     const id = st.id;
-    const param = { status: st.value };
-    await eol_update(id, param);
-    $(st).fadeOut().fadeIn();
+    const value = st.value;
+    $.post("/api/iucn/store", { id: id, value: value }, function () {
+        $(st).fadeOut().fadeIn();
+    });
 });
-*/
 
 async function get_status() {
-    const token =
-        "25ef48b3629d17b58768363e36c5d7ce34130df6ca7bf81a52667ab63320471b";
+    const token = "25ef48b3629d17b58768363e36c5d7ce34130df6ca7bf81a52667ab63320471b";
     $("[name=nostatus]").each(function (index, element) {
         const id = element.id;
         const value = element.value;
         //console.table(id, value);
-        const url =
-            "https://apiv3.iucnredlist.org/api/v3/species/" +
-            value +
-            "?token=" +
-            token;
+        const url = "https://apiv3.iucnredlist.org/api/v3/species/" + value + "?token=" + token;
         $.get(url, function (json) {
             //console.log(json);
-            if (json.result == undefined) return;
-            if (json.result[0] == undefined) return;
-            $.post(
-                "/api/iucn/store",
-                { id: id, value: json.result[0].category },
-                function () {
+            if (json.result[0].category != "") {
+                $.post("/api/iucn/store", { id: id, value: json.result[0].category }, function () {
                     element.replaceWith(json.result[0].category);
-                }
-            );
+                });
+            }
         });
     });
 }

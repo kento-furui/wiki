@@ -29,7 +29,7 @@
             <td>
                 @if ($taxon->iucn)
                     {!! $taxon->iucn->show() !!}
-                @elseif($taxon->taxonRank == 'species')
+                @elseif ($taxon->taxonRank == 'species')
                     <input type="hidden" name="nostatus" value="{{ $taxon->canonicalName }}" id="{{ $taxon->taxonID }}" />
                 @endif
             </td>
