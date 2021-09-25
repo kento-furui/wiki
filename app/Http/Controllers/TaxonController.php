@@ -97,7 +97,7 @@ class TaxonController extends Controller
 
     public function sum(Taxon $taxon)
     {
-        $tmp = array('EX' => 0, 'EW' => 0, 'CR' => 0, 'EN' => 0, 'VU' => 0, 'NT' => 0, 'LC' => 0, 'DD' => 0, 'NE' => 0);
+        $tmp = array('EX' => 0, 'EW' => 0, 'CR' => 0, 'EN' => 0, 'VU' => 0, 'NT' => 0, 'LC' => 0, 'DD' => 0);
         $keys = array_keys($tmp);
         foreach ($taxon->children as $c) {
             if ($c->iucn) {

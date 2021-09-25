@@ -6,20 +6,6 @@ get_thumbnail();
 get_wikipedia();
 get_wikipedia_en();
 
-/*
-const images = document.querySelectorAll(".thumb");
-images.forEach((image) => {
-    image.addEventListener("click", async () => {
-        const url = "/api/eol/image/" + image.id;
-        //console.log(url);
-        const response = await fetch(url);
-        const json = await response.json();
-        console.log(json);
-        image.src = json.img;
-    });
-});
-*/
-
 const jp = document.querySelector("[name=edit_jp]");
 jp.addEventListener("change", async () => {
     const id = jp.id;
@@ -53,12 +39,13 @@ async function get_status() {
         //console.table(id, value);
         const url = "https://apiv3.iucnredlist.org/api/v3/species/" + value + "?token=" + token;
         $.get(url, function (json) {
-            //console.log(json);
-            if (json.result[0].category != "") {
-                $.post("/api/iucn/store", { id: id, value: json.result[0].category }, function () {
-                    element.replaceWith(json.result[0].category);
-                });
-            }
+            console.log(json);
+            if (json.result == undefined) return;
+            if (json.result[0] == undefined) return;
+            if (json.result[0].category == undefined) return;
+            $.post("/api/iucn/store", { id: id, value: json.result[0].category }, function () {
+                element.replaceWith(json.result[0].category);
+            });
         });
     });
 }

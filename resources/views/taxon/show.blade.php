@@ -67,11 +67,9 @@
                     <option value="CR">CR - 絶滅寸前</option>
                     <option value="EN">EN - 絶滅危惧</option>
                     <option value="VU">VU - 危急</option>
-                    <option value="CD">CD - 保全対策依存</option>
                     <option value="NT">NT - 準絶滅危惧</option>
                     <option value="LC">LC - 低危険種</option>
                     <option value="DD">DD - データ不足</option>
-                    <option value="NE">NE - 未評価</option>
                 </select>
             </td>
         <tr>

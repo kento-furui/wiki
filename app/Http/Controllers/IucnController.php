@@ -15,11 +15,9 @@ class IucnController extends Controller
             $iucn->CR = null;
             $iucn->EN = null;
             $iucn->VU = null;
-            $iucn->CD = null;
             $iucn->NT = null;
             $iucn->LC = null;
             $iucn->DD = null;
-            $iucn->NE = null;
         } else {
             $iucn = new Iucn;
             $iucn->taxonID = $request->id;
@@ -31,11 +29,9 @@ class IucnController extends Controller
             case 'CR': $iucn->CR = 1; break;
             case 'EN': $iucn->EN = 1; break;
             case 'VU': $iucn->VU = 1; break;
-            case 'CD': $iucn->CD = 1; break;
             case 'NT': $iucn->NT = 1; break;
             case 'LC': $iucn->LC = 1; break;
             case 'DD': $iucn->DD = 1; break;
-            case 'NE': $iucn->NE = 1; break;
         }
         $iucn->save();
     }

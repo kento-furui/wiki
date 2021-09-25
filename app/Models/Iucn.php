@@ -17,7 +17,7 @@ class Iucn extends Model
     public function show()
     {
         $html = "";
-        foreach (['EX', 'EW', 'CR', 'EN', 'VU', 'CD', 'NT', 'LC', 'DD', 'NE'] as $key) {
+        foreach (['EX', 'EW', 'CR', 'EN', 'VU', 'NT', 'LC', 'DD'] as $key) {
             $count = $this->$key;
             if ($count == 1) {
                 $html .= "<div class=$key>$key</div>";
@@ -31,7 +31,7 @@ class Iucn extends Model
     public function inline()
     {
         $html = "";
-        foreach (['EX', 'EW', 'CR', 'EN', 'VU', 'CD', 'NT', 'LC', 'DD', 'NE'] as $key) {
+        foreach (['EX', 'EW', 'CR', 'EN', 'VU', 'NT', 'LC', 'DD'] as $key) {
             $count = $this->$key;
             if ($count == 1) {
                 $html .= "<span class=$key>$key</span>";
