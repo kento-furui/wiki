@@ -66,8 +66,8 @@
         }
 
         table tr td {
-            white-space: nowrap;
-            vertical-align: middle;
+	    white-space: nowrap;
+	    vertical-align: middle;
         }
 
         table tr th {

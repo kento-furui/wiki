@@ -1,7 +1,5 @@
 @extends('layout')
-
 @section('title', $taxon->canonicalName)
-
 @section('content')
 <a href="/">index</a>
 <h1>
@@ -9,19 +7,23 @@
     {{ $taxon->eol ? $taxon->eol->jp : null }}
     {{ $taxon->eol ? $taxon->eol->en : null }}
 </h1>
+@auth
 <div id="images" style="overflow-x: scroll; white-space: nowrap; height:90px">
     <input type="hidden" id="EOLid" value="{{ $taxon->EOLid }}" />
 </div>
+@endauth
 <div class="table-responsive">
     <table class="table" style="table-layout: fixed;">
+        @auth
         <tr>
             <th width="90px">画像</th>
             <td>
                 <img src="{{ $taxon->eol ? $taxon->eol->img : null }}" id="thumb">
             </td>
         </tr>
+        @endauth
         <tr>
-            <th>ツリー</th>
+            <th width="90px">親ノード</th>
             <td>
                 <table>
                     @foreach (array_reverse($tree) as $k => $t)
@@ -47,18 +49,26 @@
         <tr>
             <th>和名</th>
             <td>
-                <input type="text" name="edit_jp" class="form-control" size="30" id="{{ $taxon->EOLid }}"
-                    value="{{ $taxon->eol ? $taxon->eol->jp : null }}" />
+                @auth
+                    <input type="text" name="edit_jp" class="form-control" id="{{ $taxon->EOLid }}" value="{{ $taxon->eol ? $taxon->eol->jp : null }}" />
+                @else
+                    {{ $taxon->eol ? $taxon->eol->jp : null }}
+                @endauth
             </td>
         </tr>
         <tr>
             <th>英名</th>
             <td>
-                <input type="text" name="edit_en" class="form-control" size="30" id="{{ $taxon->EOLid }}"
-                    value="{{ $taxon->eol ? $taxon->eol->en : null }}" />
+                @auth
+                    <input type="text" name="edit_en" class="form-control" id="{{ $taxon->EOLid }}" value="{{ $taxon->eol ? $taxon->eol->en : null }}" />
+                @else
+                    {{ $taxon->eol ? $taxon->eol->en : null }}
+                @endauth
             </td>
         </tr>
-            <th>ステータス</th>
+        @auth
+        <tr>
+            <th>変更</th>
             <td>
                 <select name="edit_status" class="form-control" id="{{ $taxon->taxonID }}">
                     <option value="">--</option>
@@ -72,6 +82,8 @@
                     <option value="DD">DD - データ不足</option>
                 </select>
             </td>
+        </tr>
+        @endauth
         <tr>
             <th>保全状況</th>
             <td>
@@ -85,22 +97,21 @@
         </tr>
         <tr>
             <th>EOL</th>
-            <td><a target="_blank"
-                    href="https://eol.org/pages/{{ $taxon->EOLid }}">https://eol.org/pages/{{ $taxon->EOLid }}</a></td>
+            <td>
+                <a target="_blank" href="https://eol.org/pages/{{ $taxon->EOLid }}">https://eol.org/pages/{{ $taxon->EOLid }}</a>
+            </td>
         </tr>
         <tr>
             <th>外部URL</th>
-            <td><a target="_blank" href="{{ $taxon->furtherInformationURL }}">{{ $taxon->furtherInformationURL }}</a>
+            <td>
+                <a target="_blank" href="{{ $taxon->furtherInformationURL }}">{{ $taxon->furtherInformationURL }}</a>
             </td>
         </tr>
     </table>
 </div>
 @include('taxon._table', ['taxa' => $taxon->children])
-
 <input type="hidden" name="canonical" value="{{ $taxon->canonicalName }}" />
 <input type="hidden" name="title" value="{{ $taxon->eol ? $taxon->eol->jp : null }}" />
-
 <div id="japanese"></div>
 <div id="english"></div>
-
 @endsection
