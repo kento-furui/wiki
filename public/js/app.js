@@ -4,32 +4,48 @@ get_status();
 get_images();
 get_thumbnail();
 get_wikipedia();
+get_images_guest();
 get_wikipedia_en();
 
-const jp = document.querySelector("[name=edit_jp]");
-jp.addEventListener("change", async () => {
-    const id = jp.id;
-    const param = { jp: jp.value };
-    await eol_update(id, param);
-    $(jp).fadeOut().fadeIn();
-});
-
-const en = document.querySelector("[name=edit_en]");
-en.addEventListener("change", async () => {
-    const id = en.id;
-    const param = { en: en.value };
-    await eol_update(id, param);
-    $(en).fadeOut().fadeIn();
-});
-
-const st = document.querySelector("[name=edit_status]");
-st.addEventListener("change", async () => {
-    const id = st.id;
-    const value = st.value;
-    $.post("/api/iucn/store", { id: id, value: value }, function () {
-        $(st).fadeOut().fadeIn();
+$("[name=edit_jp]").change(function() {
+    const value = $(this).val();
+    const id = $(this).attr('id');
+    //console.table(id, value);
+    $.post('/api/eol/update/'+id, {jp:value}, function() {
+        $("[name=edit_jp]").fadeOut().fadeIn();
     });
 });
+
+$("[name=edit_en]").change(function() {
+    const value = $(this).val();
+    const id = $(this).attr('id');
+    //console.table(id, value);
+    $.post('/api/eol/update/'+id, {en:value}, function() {
+        $("[name=edit_en]").fadeOut().fadeIn();
+    });
+});
+
+$("[name=edit_status]").change(function() {
+    const value = $(this).val();
+    const id = $(this).attr('id');
+    console.table(id, value);
+    $.post('/api/iucn/store', {id:id, value:value}, function() {
+        $("[name=edit_status]").fadeOut().fadeIn();
+    });
+});
+
+function get_images_guest() {
+    const id = $("#guest").val();
+    if (id != undefined) {
+        const url = "https://eol.org/api/pages/1.0/" + id + ".json";
+        $.get(url, {details:true, images_per_page:30}, function(json) {
+            //console.log(json);
+            $.each(json.taxonConcept.dataObjects, function(index, data) {
+                $("#images").append("<a href="+data.eolMediaURL+"><img height=180px src="+data.eolMediaURL+"></a>");
+            });
+        });
+    }
+}
 
 async function get_status() {
     const token = "25ef48b3629d17b58768363e36c5d7ce34130df6ca7bf81a52667ab63320471b";
@@ -145,6 +161,7 @@ async function get_images() {
     const id = obj.value;
     const response = await eol_detail(id);
     //console.log(response);
+    if (response.taxonConcept.dataObjects == undefined) return;
     response.taxonConcept.dataObjects.forEach(async (element) => {
         //console.log(element);
         let img = document.createElement("img");
@@ -164,10 +181,7 @@ async function get_images() {
 }
 
 async function eol_detail(id) {
-    const url =
-        "https://eol.org/api/pages/1.0/" +
-        id +
-        ".json?details=true&images_per_page=30";
+    const url = "https://eol.org/api/pages/1.0/" + id + ".json?details=true&images_per_page=30";
     const response = await fetch(url);
     return await response.json();
 }

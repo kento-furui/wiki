@@ -11,6 +11,10 @@
 <div id="images" style="overflow-x: scroll; white-space: nowrap; height:90px">
     <input type="hidden" id="EOLid" value="{{ $taxon->EOLid }}" />
 </div>
+@else
+<div id="images" style="overflow-x: scroll; white-space: nowrap; height:200px">
+    <input type="hidden" id="guest" value="{{ $taxon->EOLid }}" />
+</div>
 @endauth
 <div class="table-responsive">
     <table class="table" style="table-layout: fixed;">

@@ -101,6 +101,11 @@
 
 <body>
     <div class="container">
+        @auth
+            <div style="text-align: right"><a href="/logout">logout</a></div>
+        @else
+            <div style="text-align: right"><a href="/login">login</a></div>
+        @endauth
         <form action="/" method="GET" class="form-inline" style="margin-bottom: 1%">
             <div class="input-group">
                 <input type="text" class="form-control" value="{{ $name ?? '' }}" name="name"

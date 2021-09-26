@@ -20,6 +20,12 @@
         <input type="hidden" name="noen" value="{{ $t->EOLid }}" />
         @endif
 
+        @if ($t->iucn)
+        {!! $t->iucn->inline() !!}
+        @elseif ($t->taxonRank == "species")
+        <input type="hidden" name="nostatus" value="{{ $t->canonicalName }}" id="{{ $t->taxonID }}" />
+        @endif
+
         @include('taxon._recurse', ['taxa' => $t->children])
     </div>
 @endforeach
