@@ -76,7 +76,8 @@ class TaxonController extends Controller
 
     public function sum(Taxon $taxon)
     {
-	if (! $taxon->children) return;
+        if (count($taxon->children) == 0) return;
+
         $tmp = array('EX' => 0, 'EW' => 0, 'CR' => 0, 'EN' => 0, 'VU' => 0, 'NT' => 0, 'LC' => 0, 'DD' => 0);
         $keys = array_keys($tmp);
         foreach ($taxon->children as $c) {
@@ -94,11 +95,6 @@ class TaxonController extends Controller
             $taxon->iucn->$k = $tmp[$k];
         }
         $taxon->iucn->save();
-    }
-
-    public function recursive(Taxon $taxon)
-    {
-        return view('taxon.recursive', compact('taxon'));
     }
 
     public function represent(Taxon $taxon)

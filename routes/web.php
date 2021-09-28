@@ -20,10 +20,8 @@ Route::get('/', [TaxonController::class, 'index']);
 Route::get('/login', [AuthController::class, 'index'])->name('login');
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::post('/login', [AuthController::class, 'login'])->name('log_user_in');
+Route::get('/taxon/represent/{taxon}', [TaxonController::class, 'represent']);
 //Route::get('/register', [AuthController::class, 'register'])->name('register');
 //Route::post('/register', [AuthController::class, 'store'])->name('store_new_user');
-
-Route::get('/taxon/recursive/{taxon}', [TaxonController::class, 'recursive']);
-Route::get('/taxon/represent/{taxon}', [TaxonController::class, 'represent']);
 
 Route::resource('taxon', TaxonController::class);
