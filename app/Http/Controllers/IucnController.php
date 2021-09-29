@@ -25,7 +25,7 @@ class IucnController extends Controller
             $iucn->taxonID = $request->id;
         }
 
-        switch($request->value) {
+        switch ($request->value) {
             case 'EX': $iucn->EX = 1; break;
             case 'EW': $iucn->EW = 1; break;
             case 'CR': $iucn->CR = 1; break;

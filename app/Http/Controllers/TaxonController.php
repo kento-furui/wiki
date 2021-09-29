@@ -74,6 +74,26 @@ class TaxonController extends Controller
         return view('taxon.show', compact('taxon', 'tree'));
     }
 
+    public function extinct(Taxon $taxon)
+    {
+        if (!$taxon->iucn) {
+            $taxon->iucn = new Iucn;
+            $taxon->iucn->taxonID = $taxon->taxonID;
+        }
+        $taxon->iucn->EX = 1;
+        $taxon->iucn->EW = null;
+        $taxon->iucn->CR = null;
+        $taxon->iucn->EN = null;
+        $taxon->iucn->VU = null;
+        $taxon->iucn->NT = null;
+        $taxon->iucn->LC = null;
+        $taxon->iucn->DD = null;
+        $taxon->iucn->save();
+        foreach ($taxon->children as $c) {
+            $this->extinct($c);
+        }
+    }
+
     public function sum(Taxon $taxon)
     {
         if (count($taxon->children) == 0) return;
@@ -87,7 +107,7 @@ class TaxonController extends Controller
                 }
             }
         }
-        if (! $taxon->iucn) {
+        if (!$taxon->iucn) {
             $taxon->iucn = new Iucn;
             $taxon->iucn->taxonID = $taxon->taxonID;
         }

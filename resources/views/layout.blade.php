@@ -18,17 +18,18 @@
             margin-right: 5px;
             display: inline-block;
         }
-        .EX, .EW, .CR, .EN, .VU, .CD, .NT, .LC, .DD, .NE {
+
+        .EX, .EW, .CR, .EN, .VU, .NT, .LC, .DD {
             padding: 1%;
             color: white;
             text-align: center;
         }
 
         .EX {
-            color:red;
-            background:black;
+            color: red;
+            background: black;
         }
-        
+
         .EW {
             color: white;
             background: black;
@@ -66,8 +67,8 @@
         }
 
         table tr td {
-	    white-space: nowrap;
-	    vertical-align: middle;
+            white-space: nowrap;
+            vertical-align: middle;
         }
 
         table tr th {
@@ -101,11 +102,13 @@
 
 <body>
     <div class="container">
-        @auth
-            <div style="text-align: right"><a href="/logout">logout</a></div>
-        @else
-            <div style="text-align: right"><a href="/login">login</a></div>
-        @endauth
+        <div style="text-align: right; margin-bottom: 5px">
+            @auth
+            <a href="/logout">logout</a>
+            @else
+            <a href="/login">login</a>
+            @endauth
+        </div>
         <form action="/" method="GET" class="form-inline" style="margin-bottom: 1%">
             <div class="input-group">
                 <input type="text" class="form-control" value="{{ $name ?? '' }}" name="name"
