@@ -10,11 +10,6 @@ use Illuminate\Http\Request;
 
 class TaxonController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index(Request $request)
     {
         $taxa = Taxon::whereIn('taxonomicStatus', ['valid', 'accepted']);
@@ -54,12 +49,11 @@ class TaxonController extends Controller
         return view('taxon.index', compact('taxa', 'jp', 'en', 'rank', 'name'));
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    public function recurse(Taxon $taxon)
+    {
+        return view('taxon.recurse', compact('taxon'));
+    }
+
     public function show(Taxon $taxon)
     {
         if ($taxon->taxonRank != "species") {
@@ -92,6 +86,14 @@ class TaxonController extends Controller
         foreach ($taxon->children as $c) {
             $this->extinct($c);
         }
+    }
+
+    public function sumall(Taxon $taxon)
+    {
+        foreach ($taxon->children as $c) {
+            $this->sum($c);
+        }
+        return redirect('/taxon/' . $taxon->taxonID);
     }
 
     public function sum(Taxon $taxon)

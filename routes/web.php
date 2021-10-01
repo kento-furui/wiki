@@ -23,6 +23,8 @@ Route::post('/login', [AuthController::class, 'login'])->name('log_user_in');
 //Route::get('/register', [AuthController::class, 'register'])->name('register');
 //Route::post('/register', [AuthController::class, 'store'])->name('store_new_user');
 
+Route::get('/taxon/sumall/{taxon}', [TaxonController::class, 'sumall']);
+Route::get('/taxon/recurse/{taxon}', [TaxonController::class, 'recurse']);
 Route::get('/taxon/extinct/{taxon}', [TaxonController::class, 'extinct']);
 Route::get('/taxon/represent/{taxon}', [TaxonController::class, 'represent']);
 
