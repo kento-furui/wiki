@@ -99,6 +99,7 @@
                     {!! $taxon->iucn->inline() !!}
                 @endif
            </td>
+        </tr>
         <tr>
             <th>ソース</th>
             <td>{{ $taxon->source }}</td>
