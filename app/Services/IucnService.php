@@ -3,7 +3,9 @@
 namespace App\Services;
 
 use App\Models\Iucn;
+use App\Models\Number;
 use App\Models\Taxon;
+use Illuminate\Support\Facades\DB;
 
 class IucnService
 {
@@ -31,8 +33,53 @@ class IucnService
         $taxon->iucn->save();
     }
 
+    public function number(Taxon $taxon)
+    {
+        if ($taxon->taxonRank == 'species') return;
+        if ($taxon->children()->count() == 0) return;
+
+        $tmp = array(
+            'kingdom' => 0,
+            'phylum' => 0,
+            'class' => 0,
+            'order' => 0,
+            'family' => 0,
+            'genus' => 0,
+            'species' => 0,
+        );
+
+        foreach ($taxon->children as $c) {
+            if (array_key_exists($c->taxonRank, $tmp)) {
+                $tmp[$c->taxonRank]++;
+            }
+            if ($c->number) {
+                foreach (array_keys($tmp) as $key) {
+                    $tmp[$key] += $c->number->$key;
+                }
+            }
+        }
+
+        if (! $taxon->number) {
+            $taxon->number = new Number;
+            $taxon->number->taxonID = $taxon->taxonID;
+        }
+
+        $taxon->number->species = $tmp['species'];
+        $taxon->number->kingdom = $tmp['kingdom'];
+        $taxon->number->phylum = $tmp['phylum'];
+        $taxon->number->family = $tmp['family'];
+        $taxon->number->class = $tmp['class'];
+        $taxon->number->order = $tmp['order'];
+        $taxon->number->genus = $tmp['genus'];
+        $taxon->number->save();
+    }
+
     public function extinct(Taxon $taxon)
     {
+        if (! $taxon->iucn) {
+            $taxon->iucn = new Iucn;
+            $taxon->iucn->taxonID = $taxon->taxonID;
+        }
         $taxon->iucn->EX = 1;
         $taxon->iucn->EW = null;
         $taxon->iucn->CR = null;
@@ -44,6 +91,10 @@ class IucnService
         $taxon->iucn->save();
 
         foreach($taxon->children as $c) {
+            if (! $c->iucn) {
+                $c->iucn = new Iucn;
+                $c->iucn->taxonID = $c->taxonID;
+            }
             $c->iucn->EX = 1;
             $c->iucn->EW = null;
             $c->iucn->CR = null;

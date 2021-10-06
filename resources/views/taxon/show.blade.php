@@ -101,6 +101,10 @@
            </td>
         </tr>
         <tr>
+            <th>ノード数</th>
+            <td>{{ $taxon->number ? $taxon->number->inline() : null }}</td>
+        </tr>
+        <tr>
             <th>ソース</th>
             <td>{{ $taxon->source }}</td>
         </tr>

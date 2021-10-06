@@ -25,6 +25,13 @@
             text-align: center;
         }
 
+        .number {
+            padding: 1%;
+            display: inline-block;
+            border: grey 1px solid;
+            margin-right: 1%;
+        }
+
         .EX {
             color: red;
             background: black;
