@@ -32,6 +32,32 @@
             margin-right: 1%;
         }
 
+        .species {
+            background-color: LightBlue;
+        }
+        .genus {
+            background-color: LemonChiffon;
+        }
+
+        .family {
+            background-color: LavenderBlush;
+        }
+
+        .order {
+            background-color: Lavender;
+        }
+
+        .class {
+            background-color: HoneyDew;
+        }
+
+        .phylum {
+            background-color: PeachPuff;
+        }
+
+        .kingdom {
+            background-color: PowderBlue;
+        }
         .EX {
             color: red;
             background: black;
