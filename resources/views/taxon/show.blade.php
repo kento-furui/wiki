@@ -7,25 +7,17 @@
     {{ $taxon->eol ? $taxon->eol->jp : null }}
     {{ $taxon->eol ? $taxon->eol->en : null }}
 </h1>
-@auth
 <div id="images" style="overflow-x: scroll; white-space: nowrap; height:90px">
     <input type="hidden" id="EOLid" value="{{ $taxon->EOLid }}" />
 </div>
-@else
-<div id="images" style="overflow-x: scroll; white-space: nowrap; height:200px">
-    <input type="hidden" id="guest" value="{{ $taxon->EOLid }}" />
-</div>
-@endauth
 <div class="table-responsive">
     <table class="table" style="table-layout: fixed;">
-        @auth
         <tr>
             <th width="90px">画像</th>
             <td>
                 <img src="{{ $taxon->eol ? $taxon->eol->img : null }}" id="thumb">
             </td>
         </tr>
-        @endauth
         <tr>
             <th width="90px">親ノード</th>
             <td>
@@ -53,24 +45,15 @@
         <tr>
             <th>和名</th>
             <td>
-                @auth
-                    <input type="text" name="edit_jp" class="form-control" id="{{ $taxon->EOLid }}" value="{{ $taxon->eol ? $taxon->eol->jp : null }}" />
-                @else
-                    {{ $taxon->eol ? $taxon->eol->jp : null }}
-                @endauth
+                <input type="text" name="edit_jp" class="form-control" id="{{ $taxon->EOLid }}" value="{{ $taxon->eol ? $taxon->eol->jp : null }}" />
             </td>
         </tr>
         <tr>
             <th>英名</th>
             <td>
-                @auth
-                    <input type="text" name="edit_en" class="form-control" id="{{ $taxon->EOLid }}" value="{{ $taxon->eol ? $taxon->eol->en : null }}" />
-                @else
-                    {{ $taxon->eol ? $taxon->eol->en : null }}
-                @endauth
+                <input type="text" name="edit_en" class="form-control" id="{{ $taxon->EOLid }}" value="{{ $taxon->eol ? $taxon->eol->en : null }}" />
             </td>
         </tr>
-        @auth
         <tr>
             <th>メンテナンス</th>
             <td>
@@ -92,7 +75,6 @@
                 </select>
             </td>
         </tr>
-        @endauth
         <tr>
             <th>保全状況</th>
             <td>

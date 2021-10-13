@@ -18,7 +18,7 @@ class Number extends Model
     {
         foreach(['kingdom', 'phylum', 'class', 'order', 'family', 'genus', 'species'] as $rank) {
             if (! empty($this->$rank)) {
-                echo "<div class=\"number $rank\">$rank " . number_format($this->$rank) . '</div>';
+                printf('<div class="number %s">%s %s</div>', $rank, $rank, number_format($this->$rank));
             }
         }
     }
