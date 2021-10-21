@@ -4,7 +4,6 @@ get_status();
 get_images();
 get_thumbnail();
 get_wikipedia();
-//get_images_guest();
 get_wikipedia_en();
 
 $("[name=edit_jp]").change(function() {
@@ -105,79 +104,59 @@ function get_jp() {
     });
 }
 
-async function get_wikipedia() {
-    const obj = document.querySelector("[name=title]");
-    if (obj === null) return false;
-    const url =
+function get_wikipedia() {
+    const obj = $("[name=title]");
+    if (obj.val() == null) return false;
+    const url = 
         "https://ja.wikipedia.org/w/api.php?format=json&action=parse&prop=text&page=" +
-        obj.value +
-        "&formatversion=2&redirects&origin=*";
-    const response = await fetch(url);
-    const json = await response.json();
-    if (json.parse == undefined) return false;
-    let text = json.parse.text;
-    text = text.replaceAll(
-        'href="/wiki/',
-        'target="_blank" href="//ja.wikipedia.org/wiki/'
-    );
-    text = text.replaceAll(
-        'href="/w/',
-        'target="_blank" style="color:red" href="//ja.wikipedia.org/w/'
-    );
-    document.getElementById("japanese").insertAdjacentHTML("afterbegin", text);
-}
-
-async function get_wikipedia_en() {
-    const obj = document.querySelector("[name=canonical]");
-    if (obj === null) return false;
-    const url =
-        "https://en.wikipedia.org/w/api.php?format=json&action=parse&prop=text&page=" +
-        obj.value +
-        "&formatversion=2&redirects&origin=*";
-    const response = await fetch(url);
-    const json = await response.json();
-    if (json.parse == undefined) return false;
-    let text = json.parse.text;
-    text = text.replaceAll(
-        'href="/wiki/',
-        'target="_blank" href="//en.wikipedia.org/wiki/'
-    );
-    text = text.replaceAll(
-        'href="/w/',
-        'target="_blank" style="color:red" href="//en.wikipedia.org/w/'
-    );
-    document.getElementById("english").insertAdjacentHTML("afterbegin", text);
-}
-
-async function get_images() {
-    const obj = document.querySelector("#EOLid");
-    if (obj == undefined) return false;
-    const id = obj.value;
-    const response = await eol_detail(id);
-    //console.log(response);
-    if (response.taxonConcept.dataObjects == undefined) return;
-    response.taxonConcept.dataObjects.forEach(async (element) => {
-        //console.log(element);
-        let img = document.createElement("img");
-        img.title = element.title;
-        img.style.height = "68px";
-        img.src = element.eolThumbnailURL;
-        img.addEventListener("click", async function () {
-            //console.log(img);
-            const param = {
-                img: img.src,
-            };
-            await eol_update(id, param);
-            location.reload();
-        });
-        document.querySelector("#images").appendChild(img);
+        obj.val() + "&formatversion=2&redirects&origin=*";
+    $.get(url, function(json) {
+        //console.log(json);
+        if (json.parse == undefined) return false;
+        let text = json.parse.text;
+        text = text.replaceAll('href="/wiki/', 'target="_blank" href="//ja.wikipedia.org/wiki/');
+        text = text.replaceAll('href="/w/', 'target="_blank" style="color:red" href="//ja.wikipedia.org/w/');
+        $("#japanese").html(text);
     });
 }
 
-async function eol_detail(id) {
-    const url = "https://eol.org/api/pages/1.0/" + id + ".json?details=true&images_per_page=30";
-    const response = await fetch(url);
-    return await response.json();
+function get_wikipedia_en() {
+    const obj = $("[name=canonical]");
+    if (obj.val() == null) return false;
+    const url =
+        "https://en.wikipedia.org/w/api.php?format=json&action=parse&prop=text&page=" +
+        obj.val() + "&formatversion=2&redirects&origin=*";
+    $.get(url, function(json) {
+        if (json.parse == undefined) return false;
+        let text = json.parse.text;
+        text = text.replaceAll('href="/wiki/', 'target="_blank" href="//en.wikipedia.org/wiki/');
+        text = text.replaceAll('href="/w/', 'target="_blank" style="color:red" href="//en.wikipedia.org/w/');
+        $("#english").html(text);
+    });
+}
+
+async function get_images() {
+    const obj = $("#EOLid");
+    if (obj === undefined) return false;
+    const url = "https://eol.org/api/pages/1.0/" + obj.val() + ".json?details=true&images_per_page=30";
+    $.get(url, function(json) {
+        //console.log(json);
+        if (json.taxonConcept.dataObjects == undefined) return;
+        $.each(json.taxonConcept.dataObjects, function(key, val) {
+            //console.log(val);
+            let img = $('<img>')
+                .css('height', '68px')
+                .attr('title', val.title)
+                .attr('src', val.eolThumbnailURL)
+                .on('click', function() {
+                    //console.log(val.eolThumbnailURL);
+                    $.post("/api/eol/update/" + obj.val() , {img : val.eolThumbnailURL}, function() {
+                        location.reload();
+                    });
+                });
+            $("#images").append(img);
+        });
+    });
 }
 
 function get_thumbnail() {
@@ -194,26 +173,4 @@ function get_thumbnail() {
             });
         });
     });
-}
-
-async function eol_update(id, param) {
-    const response = await fetch("/api/eol/update/" + id, {
-        mode: "cors",
-        method: "POST",
-        cache: "no-cache",
-        redirect: "follow",
-        credentials: "same-origin",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        referrerPolicy: "no-referrer",
-        body: JSON.stringify(param),
-    });
-    return await response.json();
-}
-
-async function eol_pages(id) {
-    const url = "https://eol.org/api/pages/1.0/" + id + ".json?details=true&images_per_page=1";
-    const response = await fetch(url);
-    return await response.json();
 }

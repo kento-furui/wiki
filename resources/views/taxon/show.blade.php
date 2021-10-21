@@ -19,6 +19,27 @@
             </td>
         </tr>
         <tr>
+            <th>メンテナンス</th>
+            <td>
+                <a href="/taxon/sumall/{{ $taxon->taxonID }}" class="btn btn-success">Sum</a>
+                <a href="/taxon/recurse/{{ $taxon->taxonID }}" class="btn btn-warning">Recurse</a>
+                <a href="/taxon/{{ $taxon->parent ? $taxon->parent->taxonID : $taxon->taxonID }}" class="btn btn-default">Parent</a>
+                <a href="/taxon/extinct/{{ $taxon->taxonID }}" class="btn btn-danger" onclick="return confirm('Extinct?')">Extinct</a>
+                <a href="/taxon/represent/{{ $taxon->taxonID }}" class="btn btn-primary" onclick="return confirm('Represent?')">Represent</a>
+                <select name="edit_status" style="display:inline-block; vertical-align: middle; width:200px" class="form-control" id="{{ $taxon->taxonID }}">
+                    <option value="">--</option>
+                    <option value="EX">EX - 絶滅</option>
+                    <option value="EW">EW - 野生絶滅</option>
+                    <option value="CR">CR - 絶滅寸前</option>
+                    <option value="EN">EN - 絶滅危惧</option>
+                    <option value="VU">VU - 危急</option>
+                    <option value="NT">NT - 準絶滅危惧</option>
+                    <option value="LC">LC - 低危険種</option>
+                    <option value="DD">DD - データ不足</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
             <th width="90px">親ノード</th>
             <td>
                 <table>
@@ -52,27 +73,6 @@
             <th>英名</th>
             <td>
                 <input type="text" name="edit_en" class="form-control" id="{{ $taxon->EOLid }}" value="{{ $taxon->eol ? $taxon->eol->en : null }}" />
-            </td>
-        </tr>
-        <tr>
-            <th>メンテナンス</th>
-            <td>
-                <a href="/taxon/sumall/{{ $taxon->taxonID }}" class="btn btn-success">Sum</a>
-                <a href="/taxon/recurse/{{ $taxon->taxonID }}" class="btn btn-warning">Recurse</a>
-                <a href="/taxon/{{ $taxon->parent ? $taxon->parent->taxonID : $taxon->taxonID }}" class="btn btn-default">Parent</a>
-                <a href="/taxon/extinct/{{ $taxon->taxonID }}" class="btn btn-danger" onclick="return confirm('Extinct?')">Extinct</a>
-                <a href="/taxon/represent/{{ $taxon->taxonID }}" class="btn btn-primary" onclick="return confirm('Represent?')">Represent</a>
-                <select name="edit_status" style="display:inline-block; vertical-align: middle; width:200px" class="form-control" id="{{ $taxon->taxonID }}">
-                    <option value="">--</option>
-                    <option value="EX">EX - 絶滅</option>
-                    <option value="EW">EW - 野生絶滅</option>
-                    <option value="CR">CR - 絶滅寸前</option>
-                    <option value="EN">EN - 絶滅危惧</option>
-                    <option value="VU">VU - 危急</option>
-                    <option value="NT">NT - 準絶滅危惧</option>
-                    <option value="LC">LC - 低危険種</option>
-                    <option value="DD">DD - データ不足</option>
-                </select>
             </td>
         </tr>
         <tr>
