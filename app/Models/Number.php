@@ -10,6 +10,7 @@ class Number extends Model
     use HasFactory;
     protected $keyType = 'string';
     protected $primaryKey = 'taxonID';
+    protected $fillable = ['taxonID', 'kingdom', 'phylum', 'class', 'order', 'family', 'genus', 'species'];
 
     public $timestamps = false;
     public $incrementing = false;

@@ -21,11 +21,11 @@
         <tr>
             <th>メンテナンス</th>
             <td>
-                <a href="/taxon/sumall/{{ $taxon->taxonID }}" class="btn btn-success">Sum</a>
-                <a href="/taxon/recurse/{{ $taxon->taxonID }}" class="btn btn-warning">Recurse</a>
-                <a href="/taxon/{{ $taxon->parent ? $taxon->parent->taxonID : $taxon->taxonID }}" class="btn btn-default">Parent</a>
-                <a href="/taxon/extinct/{{ $taxon->taxonID }}" class="btn btn-danger" onclick="return confirm('Extinct?')">Extinct</a>
-                <a href="/taxon/represent/{{ $taxon->taxonID }}" class="btn btn-primary" onclick="return confirm('Represent?')">Represent</a>
+                <a id="sum" href="/taxon/sumall/{{ $taxon->taxonID }}" class="btn btn-success">Sum</a>
+                <a id="rec" href="/taxon/recurse/{{ $taxon->taxonID }}" class="btn btn-warning">Recurse</a>
+                <a id="par" href="/taxon/{{ $taxon->parent ? $taxon->parent->taxonID : $taxon->taxonID }}" class="btn btn-secondary">Parent</a>
+                <a id="ext" href="/taxon/extinct/{{ $taxon->taxonID }}" class="btn btn-danger" onclick="return confirm('Extinct?')">Extinct</a>
+                <a id="rep" href="/taxon/represent/{{ $taxon->taxonID }}" class="btn btn-primary" onclick="return confirm('Represent?')">Represent</a>
                 <select name="edit_status" style="display:inline-block; vertical-align: middle; width:200px" class="form-control" id="{{ $taxon->taxonID }}">
                     <option value="">--</option>
                     <option value="EX">EX - 絶滅</option>

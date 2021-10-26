@@ -44,10 +44,10 @@ class UpdateEol extends Command
             list($jp, $latin) = explode(',', trim($f));
             $taxon = Taxon::where('canonicalName', $latin)->first();
             if ($taxon) {
-                if (! $taxon->eol) {
+                if (!$taxon->eol) {
                     $eol = new Eol;
                     $eol->EOLid = $taxon->EOLid;
-		}
+                }
                 $eol->jp = $jp;
                 $eol->save();
                 echo $f;

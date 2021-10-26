@@ -10,6 +10,7 @@ class Iucn extends Model
     use HasFactory;
     protected $keyType = 'string';
     protected $primaryKey = 'taxonID';
+    protected $fillable = ['taxonID', 'EX', 'EW', 'CR', 'EN', 'VU', 'NT', 'LC', 'DD'];
 
     public $timestamps = false;
     public $incrementing = false;

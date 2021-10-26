@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Eol;
-use App\Models\Iucn;
-use App\Models\Number;
 use App\Models\Taxon;
 use App\Services\IucnService;
 use Illuminate\Database\Eloquent\Builder;
@@ -54,7 +52,6 @@ class TaxonController extends Controller
     {
         // sum iucn status
         $service->sum($taxon);
-        $service->number($taxon);
 
         $me = $taxon;
         $tree = array();
@@ -74,7 +71,6 @@ class TaxonController extends Controller
     {
         foreach ($taxon->children as $c) {
             $service->sum($c);
-            $service->number($c);
         }
         return redirect('/taxon/' . $taxon->taxonID);
     }
