@@ -87,6 +87,8 @@
             <th>ノード数</th>
             <td>{{ $taxon->number ? $taxon->number->inline() : null }}</td>
         </tr>
+            <th>データ数</th>
+            <td>{{ $taxon->number ? $taxon->number->names() : null }}</td>
         <tr>
             <th>ソース</th>
             <td>{{ $taxon->source }}</td>

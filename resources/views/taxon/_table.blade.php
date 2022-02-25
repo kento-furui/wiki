@@ -1,7 +1,7 @@
 <div class="table-responsive">
-    <table class="table table-striped" id="taxa">
+    <table class="table table-hover" id="taxa">
         @foreach ($taxa as $taxon)
-        <tr>
+        <tr onclick="location.href='/taxon/{{ $taxon->taxonID }}'">
             <td>
                 @if ($taxon->eol && !empty($taxon->eol->img))
                 <img src="{{ $taxon->eol->img }}" id="{{ $taxon->EOLid }}" class="thumb">
@@ -27,12 +27,12 @@
                 @endif
             </td>
             <td>{{ $taxon->taxonomicStatus }}</td>
-            <td>{{ $taxon->taxonRank }}</td>
+            <td><div class='number {{ $taxon->taxonRank }}'>{{ $taxon->taxonRank }}</div></td>
             <td>
                 @if ($taxon->iucn)
-                    {!! $taxon->iucn->show() !!}
+                {!! $taxon->iucn->show() !!}
                 @elseif ($taxon->taxonRank == 'species')
-                    <input type="hidden" name="nostatus" value="{{ $taxon->canonicalName }}" id="{{ $taxon->taxonID }}" />
+                <input type="hidden" name="nostatus" value="{{ $taxon->canonicalName }}" id="{{ $taxon->taxonID }}" />
                 @endif
             </td>
         </tr>
