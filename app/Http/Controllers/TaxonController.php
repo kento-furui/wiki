@@ -50,8 +50,8 @@ class TaxonController extends Controller
 
     public function show(Taxon $taxon, IucnService $service)
     {
-        // sum iucn status
         $service->sum($taxon);
+        $service->number($taxon);
 
         $me = $taxon;
         $tree = array();

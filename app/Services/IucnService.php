@@ -33,6 +33,29 @@ class IucnService
         $taxon->iucn->save();
     }
 
+    public function number(Taxon $taxon)
+    {
+        if ($taxon->taxonRank == 'species') return;
+        if ($taxon->children()->count() == 0) return;
+
+        $tmp = array('jp' => 0, 'en' => 0, 'img' => 0) ;
+        foreach ($taxon->children as $c) {
+            if ($c->taxonRank == 'species' && $c->eol) {
+                if (!empty($c->eol->jp))  $tmp['jp']++;
+                if (!empty($c->eol->en))  $tmp['en']++;
+                if (!empty($c->eol->img)) $tmp['img']++;
+            } elseif($c->number) {
+                $tmp['jp']  += $c->number->jp;
+                $tmp['en']  += $c->number->en;
+                $tmp['img'] += $c->number->img;
+            }
+        }
+        $taxon->number->jp  = $tmp['jp'];
+        $taxon->number->en  = $tmp['en'];
+        $taxon->number->img = $tmp['img'];
+        $taxon->number->save();
+    }
+
     public function extinct(Taxon $taxon)
     {
         if (! $taxon->iucn) {

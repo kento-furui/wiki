@@ -18,6 +18,8 @@
                 @else
                 <input type="hidden" name="nojp" value="{{ $taxon->EOLid }}" />
                 @endif
+                <br>
+                {!! $taxon->number ? $taxon->number->names() : null !!}
             </td>
             <td>
                 @if ($taxon->eol && !empty($taxon->eol->en))
