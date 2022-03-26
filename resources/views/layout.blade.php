@@ -8,10 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
     <title>@yield('title')</title>
     <style>
-        .container {
-            padding: 1% 0;
-        }
-
         tr td span {
             margin-right: 5px;
             display: inline-block;
@@ -132,7 +128,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid" style="padding: 1%">
         <form action="/" method="GET" class="form-inline" style="margin-bottom: 1%">
             <div class="input-group">
                 <input type="text" class="form-control" value="{{ $name ?? '' }}" name="name" placeholder="Scientific Name" />

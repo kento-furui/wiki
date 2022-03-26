@@ -26,11 +26,11 @@ class Number extends Model
 
     public function names()
     {
+        if (! empty($this->img))
+            printf('<div class="number">画像 %s</div>', number_format($this->img));
         if (! empty($this->jp))
             printf('<div class="number">和名 %s</div>', number_format($this->jp));
         if (! empty($this->en))
             printf('<div class="number">英名 %s</div>', number_format($this->en));
-        if (! empty($this->img))
-            printf('<div class="number">画像 %s</div>', number_format($this->img));
-    }
+   }
 }

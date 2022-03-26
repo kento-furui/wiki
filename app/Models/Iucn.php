@@ -19,7 +19,7 @@ class Iucn extends Model
     {
         $html = "";
         foreach (['EX', 'EW', 'CR', 'EN', 'VU', 'NT', 'LC', 'DD'] as $key) {
-            $count = $this->$key;
+            $count = number_format($this->$key);
             if ($count == 1) {
                 $html .= "<div class=$key>$key</div>";
             } elseif ($count > 1) {
@@ -33,7 +33,7 @@ class Iucn extends Model
     {
         $html = "";
         foreach (['EX', 'EW', 'CR', 'EN', 'VU', 'NT', 'LC', 'DD'] as $key) {
-            $count = $this->$key;
+            $count = number_format($this->$key);
             if ($count == 1) {
                 $html .= "<span class=$key>$key</span>";
             } elseif ($count > 1) {
