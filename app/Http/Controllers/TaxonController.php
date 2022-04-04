@@ -50,7 +50,6 @@ class TaxonController extends Controller
 
     public function show(Taxon $taxon, IucnService $service)
     {
-        $service->sum($taxon);
         $service->number($taxon);
 
         $me = $taxon;
@@ -59,20 +58,6 @@ class TaxonController extends Controller
             $me = $tree[] = $me->parent;
         }
         return view('taxon.show', compact('taxon', 'tree'));
-    }
-
-    public function extinct(Taxon $taxon, IucnService $service)
-    {
-        $service->extinct($taxon);
-        return redirect('/taxon/' . $taxon->taxonID);
-    }
-
-    public function sumall(Taxon $taxon, IucnService $service)
-    {
-        foreach ($taxon->children as $c) {
-            $service->sum($c);
-        }
-        return redirect('/taxon/' . $taxon->taxonID);
     }
 
     public function represent(Taxon $taxon)

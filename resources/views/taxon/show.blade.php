@@ -75,14 +75,16 @@
                 <input type="text" name="edit_en" class="form-control" id="{{ $taxon->EOLid }}" value="{{ $taxon->eol ? $taxon->eol->en : null }}" />
             </td>
         </tr>
+        @if ($taxon->taxonRank == 'species')
         <tr>
             <th>保全状況</th>
             <td>
                 @if ($taxon->iucn)
-                    {!! $taxon->iucn->inline() !!}
+                    <div class="{{ $taxon->iucn->status }}">{{ $taxon->iucn->status }}</div>
                 @endif
            </td>
         </tr>
+        @endif
         <tr>
             <th>ノード数</th>
             <td>{{ $taxon->number ? $taxon->number->inline() : null }}</td>

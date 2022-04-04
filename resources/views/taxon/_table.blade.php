@@ -32,7 +32,7 @@
             <td><div class='number {{ $taxon->taxonRank }}'>{{ $taxon->taxonRank }}</div></td>
             <td>
                 @if ($taxon->iucn)
-                {!! $taxon->iucn->show() !!}
+                <div class="{{ $taxon->iucn->status }}">{{ $taxon->iucn->status }}</div>
                 @elseif ($taxon->taxonRank == 'species')
                 <input type="hidden" name="nostatus" value="{{ $taxon->canonicalName }}" id="{{ $taxon->taxonID }}" />
                 @endif

@@ -32,5 +32,7 @@ class Number extends Model
             printf('<div class="number">和名 %s</div>', number_format($this->jp));
         if (! empty($this->en))
             printf('<div class="number">英名 %s</div>', number_format($this->en));
+        if (! empty($this->iucn))
+            printf('<div class="number">保全状況 %s</div>', number_format($this->iucn));
    }
 }

@@ -11,15 +11,11 @@ class IucnController extends Controller
 {
     public function store(Request $request)
     {
-        $taxonID = $request->id;
+        $iucn = new Iucn;
+        $iucn->taxonID = $request->id;
+        $iucn->status = $request->value;
+        $iucn->save();
 
-        $tmp = array();
-        $tmp[$request->value] = 1;
-
-        Iucn::updateOrCreate(
-            ['taxonID' => $taxonID], $tmp
-        );
         
-        return response()->json(Iucn::find($taxonID));
     }
 }
