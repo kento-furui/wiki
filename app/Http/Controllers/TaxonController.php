@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Eol;
+use App\Models\Iucn;
 use App\Models\Taxon;
 use App\Services\IucnService;
 use Illuminate\Database\Eloquent\Builder;
@@ -58,6 +59,40 @@ class TaxonController extends Controller
             $me = $tree[] = $me->parent;
         }
         return view('taxon.show', compact('taxon', 'tree'));
+    }
+
+    public function sumall(Taxon $taxon, IucnService $service)
+    {
+        if ($taxon->children) {
+            foreach ($taxon->children as $c) {
+                $service->number($c);
+            }
+        }
+
+        $service->number($taxon);
+        return redirect('/taxon/' . $taxon->taxonID);
+    }
+
+    public function extinct(Taxon $taxon)
+    {
+        $this->_extinct($taxon);
+        return redirect('/taxon/' . $taxon->taxonID);
+    }
+
+    private function _extinct(Taxon $taxon)
+    {
+        foreach ($taxon->children as $c) {
+            if ($c->taxonRank == 'species') {
+                if (! $c->iucn) {
+                    $c->iucn = new Iucn;
+                    $c->iucn->taxonID = $c->taxonID;
+                }
+                $c->iucn->status = 'EX';
+                $c->iucn->save();
+            } else {
+                $this->_extinct($c);
+            }
+        }
     }
 
     public function represent(Taxon $taxon)

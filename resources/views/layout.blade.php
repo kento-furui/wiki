@@ -14,16 +14,16 @@
         }
 
         .EX, .EW, .CR, .EN, .VU, .NT, .LC, .DD {
-            padding: 1%;
             color: white;
+            padding: 5px 10px;
             text-align: center;
         }
 
         .number {
-            padding: 1%;
+            margin-right: 5px;
+            padding: 5px 10px;
             display: inline-block;
             border: grey 1px solid;
-            margin-right: 1%;
         }
 
         .species {

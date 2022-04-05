@@ -26,7 +26,7 @@
         <td>{{ $taxon->taxonRank }}</td>
         <td>
             @if ($taxon->iucn)
-                {!! $taxon->iucn->show() !!}
+                <div class="{{ $taxon->iucn->status }}">{{ $taxon->iucn->status }}</div>
             @elseif ($taxon->taxonRank == 'species')
                 <input type="hidden" name="nostatus" value="{{ $taxon->canonicalName }}"
                     id="{{ $taxon->taxonID }}" />
