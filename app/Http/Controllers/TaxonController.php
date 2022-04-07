@@ -81,17 +81,15 @@ class TaxonController extends Controller
 
     private function _extinct(Taxon $taxon)
     {
+        if (! $taxon->iucn) {
+            $taxon->iucn = new Iucn;
+            $taxon->iucn->taxonID = $taxon->taxonID;
+        }
+        $taxon->iucn->status = 'EX';
+        $taxon->iucn->save();
+
         foreach ($taxon->children as $c) {
-            if ($c->taxonRank == 'species') {
-                if (! $c->iucn) {
-                    $c->iucn = new Iucn;
-                    $c->iucn->taxonID = $c->taxonID;
-                }
-                $c->iucn->status = 'EX';
-                $c->iucn->save();
-            } else {
-                $this->_extinct($c);
-            }
+            $this->_extinct($c);
         }
     }
 

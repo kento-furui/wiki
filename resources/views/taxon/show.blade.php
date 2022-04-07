@@ -23,11 +23,15 @@
             <td>
                 <a id="sum" href="/taxon/sumall/{{ $taxon->taxonID }}" class="btn btn-success">Sum</a>
                 <a id="rec" href="/taxon/recurse/{{ $taxon->taxonID }}" class="btn btn-warning">Recurse</a>
-                <a id="par" href="/taxon/{{ $taxon->parent ? $taxon->parent->taxonID : $taxon->taxonID }}" class="btn btn-secondary">Parent</a>
-                <a id="rep" href="/taxon/represent/{{ $taxon->taxonID }}" class="btn btn-primary" onclick="return confirm('Represent?')">Represent</a>
-                <a id="rep" href="/taxon/extinct/{{ $taxon->taxonID }}" class="btn btn-danger" onclick="return confirm('Extinct?')">Extinct</a>
-                @if ($taxon->taxonRank == 'species') 
-                <select name="edit_status" style="display:inline-block; vertical-align: middle; width:200px" class="form-control" id="{{ $taxon->taxonID }}">
+                <a id="par" href="/taxon/{{ $taxon->parent ? $taxon->parent->taxonID : $taxon->taxonID }}"
+                    class="btn btn-secondary">Parent</a>
+                <a id="rep" href="/taxon/represent/{{ $taxon->taxonID }}" class="btn btn-primary"
+                    onclick="return confirm('Represent?')">Represent</a>
+                <a id="rep" href="/taxon/extinct/{{ $taxon->taxonID }}" class="btn btn-danger"
+                    onclick="return confirm('Extinct?')">Extinct</a>
+                @if ($taxon->taxonRank == 'species')
+                <select name="edit_status" style="display:inline-block; vertical-align: middle; width:200px"
+                    class="form-control" id="{{ $taxon->taxonID }}">
                     <option value="">--</option>
                     <option value="EX">EX - 絶滅</option>
                     <option value="EW">EW - 野生絶滅</option>
@@ -40,6 +44,14 @@
                 </select>
                 @endif
             </td>
+        </tr>
+        <tr>
+            <th>ノード数</th>
+            <td>{{ $taxon->number ? $taxon->number->nodes() : null }}</td>
+        </tr>
+        <tr>
+            <th>データ数</th>
+            <td>{{ $taxon->number ? $taxon->number->names() : null }}</td>
         </tr>
         <tr>
             <th width="90px">親ノード</th>
@@ -68,29 +80,25 @@
         <tr>
             <th>和名</th>
             <td>
-                <input type="text" name="edit_jp" class="form-control" id="{{ $taxon->EOLid }}" value="{{ $taxon->eol ? $taxon->eol->jp : null }}" />
+                <input type="text" name="edit_jp" class="form-control" id="{{ $taxon->EOLid }}"
+                    value="{{ $taxon->eol ? $taxon->eol->jp : null }}" />
             </td>
         </tr>
         <tr>
             <th>英名</th>
             <td>
-                <input type="text" name="edit_en" class="form-control" id="{{ $taxon->EOLid }}" value="{{ $taxon->eol ? $taxon->eol->en : null }}" />
+                <input type="text" name="edit_en" class="form-control" id="{{ $taxon->EOLid }}"
+                    value="{{ $taxon->eol ? $taxon->eol->en : null }}" />
             </td>
         </tr>
         <tr>
             <th>保全状況</th>
             <td>
-                @if ($taxon->taxonRank == 'species' && $taxon->iucn)
-                    <div class="{{ $taxon->iucn->status }}">{{ $taxon->iucn->status }}</div>
+                @if ($taxon->iucn)
+                <div class="{{ $taxon->iucn->status }}">{{ $taxon->iucn->status }}</div>
                 @endif
-           </td>
+            </td>
         </tr>
-        <tr>
-            <th>ノード数</th>
-            <td>{{ $taxon->number ? $taxon->number->inline() : null }}</td>
-        </tr>
-            <th>データ数</th>
-            <td>{{ $taxon->number ? $taxon->number->names() : null }}</td>
         <tr>
             <th>ソース</th>
             <td>{{ $taxon->source }}</td>
@@ -98,7 +106,8 @@
         <tr>
             <th>EOL</th>
             <td>
-                <a target="_blank" href="https://eol.org/pages/{{ $taxon->EOLid }}">https://eol.org/pages/{{ $taxon->EOLid }}</a>
+                <a target="_blank" href="https://eol.org/pages/{{ $taxon->EOLid }}">https://eol.org/pages/{{
+                    $taxon->EOLid }}</a>
             </td>
         </tr>
         <tr>

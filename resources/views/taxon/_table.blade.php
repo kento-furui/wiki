@@ -10,7 +10,7 @@
                 @endif
             </td>
             <td><a href="/taxon/{{ $taxon->taxonID }}">{{ $taxon->canonicalName }}</a><br>
-                {!! $taxon->number ? $taxon->number->inline() : null !!}
+                {!! $taxon->number ? $taxon->number->nodes() : null !!}
             </td>
             <td>
                 @if ($taxon->eol && !empty($taxon->eol->jp))

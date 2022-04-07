@@ -15,7 +15,7 @@ class Number extends Model
     public $timestamps = false;
     public $incrementing = false;
 
-    public function inline()
+    public function nodes()
     {
         foreach(['kingdom', 'phylum', 'class', 'order', 'family', 'genus', 'species'] as $rank) {
             if (! empty($this->$rank)) {
