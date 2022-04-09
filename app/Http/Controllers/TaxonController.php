@@ -58,7 +58,19 @@ class TaxonController extends Controller
         while ($me->parent) {
             $me = $tree[] = $me->parent;
         }
-        return view('taxon.show', compact('taxon', 'tree'));
+
+        $status = array();
+        foreach ($taxon->children as $c) {
+            if ($c->iucn) {
+                if (array_key_exists($c->iucn->status, $status)) {
+                    $status[$c->iucn->status]++;
+                } else {
+                    $status[$c->iucn->status] = 1;
+                }
+            }
+        }
+
+        return view('taxon.show', compact('taxon', 'tree', 'status'));
     }
 
     public function sumall(Taxon $taxon, IucnService $service)

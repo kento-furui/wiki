@@ -17,6 +17,7 @@
             color: white;
             padding: 5px 10px;
             text-align: center;
+            display: inline-block;
         }
 
         .number {
@@ -64,22 +65,27 @@
 
         .CR {
             background: Maroon;
+            border: maroon 1px solid;
         }
 
         .EN {
             background: Coral;
+            border: coral 1px solid;
         }
 
         .NT {
             background: darkgreen;
+            border: darkgreen 1px solid;
         }
 
         .LC {
             background: DarkCyan;
+            border: darkcyan 1px solid;
         }
 
         .VU {
             background: GoldenRod;
+            border: goldenrod 1px solid;
         }
 
         .DD {

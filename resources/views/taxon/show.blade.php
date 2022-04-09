@@ -95,7 +95,11 @@
             <th>保全状況</th>
             <td>
                 @if ($taxon->iucn)
-                <div class="{{ $taxon->iucn->status }}">{{ $taxon->iucn->status }}</div>
+                    <div class="{{ $taxon->iucn->status }}">{{ $taxon->iucn->status }}</div>
+                @elseif (!empty($status))
+                    @foreach($status as $key => $val)
+                        <div class="{{ $key }}">{{$key}} {{ $val }}</div>
+                    @endforeach
                 @endif
             </td>
         </tr>
