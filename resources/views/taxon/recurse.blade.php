@@ -7,7 +7,5 @@
     {{ $taxon->eol ? $taxon->eol->jp : null }}
     {{ $taxon->eol ? $taxon->eol->en : null }}
 </h1>
-<table class="table" id="taxa">
-    @include('taxon._recurse', ['taxa' => $taxon->children])
-</table>
+@include('taxon._table', ['taxa' => $taxa])
 @endsection

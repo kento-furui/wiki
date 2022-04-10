@@ -11,6 +11,8 @@ use Illuminate\Http\Request;
 
 class TaxonController extends Controller
 {
+    public $taxa;
+
     public function index(Request $request)
     {
         $taxa = Taxon::whereIn('taxonomicStatus', ['valid', 'accepted']);
@@ -44,9 +46,30 @@ class TaxonController extends Controller
         return view('taxon.index', compact('taxa', 'jp', 'en', 'rank', 'name'));
     }
 
+    public function rand()
+    {
+        $taxa = Taxon::whereIn('taxonomicStatus', ['valid', 'accepted'])
+            ->where('taxonRank', 'species')
+            ->inRandomOrder()
+            ->limit(100)
+            ->get();
+    
+        return view('taxon.rand', compact('taxa'));
+    }
+
     public function recurse(Taxon $taxon)
     {
-        return view('taxon.recurse', compact('taxon'));
+        $this->taxa = array();
+        $this->_recurse($taxon);
+        return view('taxon.recurse', ['taxon' => $taxon, 'taxa' => $this->taxa]);
+    }
+    
+    private function _recurse(Taxon $taxon)
+    {
+        foreach ($taxon->children as $c) {
+            array_push($this->taxa, $c);
+            $this->_recurse($c);
+        }
     }
 
     public function show(Taxon $taxon, IucnService $service)

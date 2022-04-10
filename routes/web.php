@@ -17,12 +17,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [TaxonController::class, 'index']);
-Route::get('/login', [AuthController::class, 'index'])->name('login');
-Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
-Route::post('/login', [AuthController::class, 'login'])->name('log_user_in');
+//Route::get('/login', [AuthController::class, 'index'])->name('login');
+//Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+//Route::post('/login', [AuthController::class, 'login'])->name('log_user_in');
 //Route::get('/register', [AuthController::class, 'register'])->name('register');
 //Route::post('/register', [AuthController::class, 'store'])->name('store_new_user');
 
+Route::get('/taxon/rand', [TaxonController::class, 'rand']);
 Route::get('/taxon/sumall/{taxon}', [TaxonController::class, 'sumall']);
 Route::get('/taxon/recurse/{taxon}', [TaxonController::class, 'recurse']);
 Route::get('/taxon/extinct/{taxon}', [TaxonController::class, 'extinct']);
