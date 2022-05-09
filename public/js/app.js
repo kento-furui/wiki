@@ -1,10 +1,10 @@
-get_en();
-get_jp();
+//get_en();
+//get_jp();
 get_status();
-get_images();
-get_thumbnail();
-get_wikipedia();
-get_wikipedia_en();
+//get_images();
+//get_thumbnail();
+//get_wikipedia();
+//get_wikipedia_en();
 
 $("[name=edit_jp]").change(function() {
     const value = $(this).val();
@@ -137,7 +137,7 @@ function get_wikipedia_en() {
 
 async function get_images() {
     const obj = $("#EOLid");
-    if (obj === undefined) return false;
+    if (obj.val() == undefined) return false;
     const url = "https://eol.org/api/pages/1.0/" + obj.val() + ".json?details=true&images_per_page=30";
     $.get(url, function(json) {
         //console.log(json);

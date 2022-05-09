@@ -50,10 +50,11 @@ class TaxonController extends Controller
     {
         $taxa = Taxon::whereIn('taxonomicStatus', ['valid', 'accepted'])
             ->where('taxonRank', 'species')
+            ->doesntHave('iucn')
             ->inRandomOrder()
             ->limit(100)
             ->get();
-    
+
         return view('taxon.rand', compact('taxa'));
     }
 

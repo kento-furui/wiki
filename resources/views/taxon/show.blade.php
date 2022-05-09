@@ -33,14 +33,14 @@
                 <select name="edit_status" style="display:inline-block; vertical-align: middle; width:200px"
                     class="form-control" id="{{ $taxon->taxonID }}">
                     <option value="">--</option>
-                    <option value="EX">EX - 絶滅</option>
-                    <option value="EW">EW - 野生絶滅</option>
-                    <option value="CR">CR - 絶滅寸前</option>
-                    <option value="EN">EN - 絶滅危惧</option>
-                    <option value="VU">VU - 危急</option>
-                    <option value="NT">NT - 準絶滅危惧</option>
-                    <option value="LC">LC - 低危険種</option>
-                    <option value="DD">DD - データ不足</option>
+                    <option value="EX" @if ($taxon->iucn && $taxon->iucn->status == 'EX')selected @endif>EX - 絶滅</option>
+                    <option value="EW" @if ($taxon->iucn && $taxon->iucn->status == 'EW')selected @endif>EW - 野生絶滅</option>
+                    <option value="CR" @if ($taxon->iucn && $taxon->iucn->status == 'CR')selected @endif>CR - 絶滅寸前</option>
+                    <option value="EN" @if ($taxon->iucn && $taxon->iucn->status == 'EN')selected @endif>EN - 絶滅危惧</option>
+                    <option value="VU" @if ($taxon->iucn && $taxon->iucn->status == 'VU')selected @endif>VU - 危急</option>
+                    <option value="NT" @if ($taxon->iucn && $taxon->iucn->status == 'NT')selected @endif>NT - 準絶滅危惧</option>
+                    <option value="LC" @if ($taxon->iucn && $taxon->iucn->status == 'LC')selected @endif>LC - 低危険種</option>
+                    <option value="DD" @if ($taxon->iucn && $taxon->iucn->status == 'DD')selected @endif>DD - データ不足</option>
                 </select>
                 @endif
             </td>
