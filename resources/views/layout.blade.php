@@ -13,7 +13,7 @@
             display: inline-block;
         }
 
-        .EX, .EW, .CR, .EN, .VU, .NT, .LC, .DD {
+        .EX, .EW, .CR, .EN, .VU, .NT, .LC, .DD, .CD {
             color: white;
             padding: 5px 10px;
             text-align: center;
@@ -93,6 +93,11 @@
             border: grey 1px solid;
         }
 
+        .CD {
+            color: black;
+            background: rgb(228, 211, 84);
+        }
+
         img.tree {
             width: 20px;
             height: 15px;
@@ -147,6 +152,7 @@
         @yield('content')
     </div>
     <script src="/js/app.js"></script>
+    <script src="/js/app2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"> </script>
 </body>
 

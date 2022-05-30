@@ -1,10 +1,10 @@
 //get_en();
 //get_jp();
 get_status();
-//get_images();
+get_images();
 //get_thumbnail();
-//get_wikipedia();
-//get_wikipedia_en();
+get_wikipedia();
+get_wikipedia_en();
 
 $("[name=edit_jp]").change(function() {
     const value = $(this).val();
