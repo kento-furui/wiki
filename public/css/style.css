@@ -1,0 +1,127 @@
+tr td span {
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.EX, .EW, .CR, .EN, .VU, .NT, .LC, .DD, .CD {
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.number {
+    margin-right: 5px;
+    padding: 5px 10px;
+    display: inline-block;
+    border: grey 1px solid;
+}
+
+.species {
+    background-color: LightBlue;
+}
+.genus {
+    background-color: LemonChiffon;
+}
+
+.family {
+    background-color: LavenderBlush;
+}
+
+.order {
+    background-color: Lavender;
+}
+
+.class {
+    background-color: HoneyDew;
+}
+
+.phylum {
+    background-color: PeachPuff;
+}
+
+.kingdom {
+    background-color: PowderBlue;
+}
+.EX {
+    color: red;
+    background: black;
+}
+
+.EW {
+    color: white;
+    background: black;
+}
+
+.CR {
+    background: Maroon;
+    border: maroon 1px solid;
+}
+
+.EN {
+    background: Coral;
+    border: coral 1px solid;
+}
+
+.NT {
+    background: darkgreen;
+    border: darkgreen 1px solid;
+}
+
+.LC {
+    background: DarkCyan;
+    border: darkcyan 1px solid;
+}
+
+.VU {
+    background: GoldenRod;
+    border: goldenrod 1px solid;
+}
+
+.DD {
+    color: black;
+    border: grey 1px solid;
+}
+
+.CD {
+    color: black;
+    background: rgb(228, 211, 84);
+}
+
+img.tree {
+    width: 20px;
+    height: 15px;
+    object-fit: cover;
+}
+
+table tr td {
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+table tr th {
+    vertical-align: middle;
+}
+
+table#taxa tr td img {
+    width: 98px;
+    /*height: 68px;
+    object-fit: cover;*/
+}
+
+.mw-editsection {
+    display: none;
+}
+
+.infobox {
+    border: 1px solid #a2a9b1;
+    background-color: #f8f9fa;
+    color: black;
+    margin: 0.5em 0 0.5em 1em;
+    padding: 0.2em;
+    float: right;
+    clear: right;
+    text-align: left;
+    font-size: 88%;
+    line-height: 1.5em;
+}

@@ -2,7 +2,7 @@
     <table class="table table-hover" id="taxa">
         @foreach ($taxa as $taxon)
         <tr onclick="location.href='/taxon/{{ $taxon->taxonID }}'">
-            <td>
+            <td width="100px">
                 @if ($taxon->eol && !empty($taxon->eol->img))
                 <img src="{{ $taxon->eol->img }}" id="{{ $taxon->EOLid }}" class="thumb">
                 @else
@@ -30,7 +30,7 @@
             </td>
             <td>{{ $taxon->taxonomicStatus }}</td>
             <td><div class='number {{ $taxon->taxonRank }}'>{{ $taxon->taxonRank }}</div></td>
-            <td>
+            <td width="100px">
                 @if ($taxon->iucn)
                 <div class="{{ $taxon->iucn->status }}" style="display: block">{{ $taxon->iucn->status }}</div>
                 @elseif ($taxon->taxonRank == 'species')
