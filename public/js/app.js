@@ -37,8 +37,24 @@ const fetchImages = async (element) => {
             img.src = dataObject.eolThumbnailURL;
             img.addEventListener("click", async () => {
                 update(id, { img: dataObject.eolThumbnailURL });
-                let thumb = document.querySelector("#thumb");
-                thumb.src = dataObject.eolThumbnailURL;
+                document.querySelector("#thumb").src = dataObject.eolThumbnailURL;
+            });
+            await fetch('/api/image/store', {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    EOLid: id,
+                    title: dataObject.title,
+                    width: dataObject.width,
+                    height: dataObject.height,
+                    mediaURL: dataObject.mediaURL,
+                    identifier: dataObject.identifier,
+                    eolMediaURL: dataObject.eolMediaURL,
+                    description : dataObject.description,
+                    eolThumbnailURL: dataObject.eolThumbnailURL,
+                }),
             });
             container.appendChild(img);
         }

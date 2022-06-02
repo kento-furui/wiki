@@ -41,7 +41,8 @@ class UpdateEol extends Command
     {
         $file = file('aaa.csv');
         foreach ($file as $f) {
-            list($jp, $latin) = explode(',', trim($f));
+            //list($jp, $latin) = explode(',', trim($f));
+            list($latin, $jp) = explode(',', trim($f));
             $taxon = Taxon::where('canonicalName', $latin)->first();
             if ($taxon) {
                 if (!$taxon->eol) {

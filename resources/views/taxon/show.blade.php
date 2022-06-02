@@ -2,6 +2,7 @@
 @section('title', $taxon->canonicalName)
 @section('content')
 <a href="/">index</a>
+<a href="/taxon/rand">rand</a>
 <h1>
     {{ $taxon->canonicalName }}
     {{ $taxon->eol ? $taxon->eol->jp : null }}

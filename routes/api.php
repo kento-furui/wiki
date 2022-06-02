@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EolController;
 use App\Http\Controllers\IucnController;
+use App\Http\Controllers\ImageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,5 +18,5 @@ use App\Http\Controllers\IucnController;
 */
 
 Route::post('/iucn/store', [IucnController::class, 'store']);
-Route::get('/eol/image/{eol}', [EolController::class, 'image']);
+Route::post('/image/store/', [ImageController::class, 'store']);
 Route::post('/eol/update/{eol}', [EolController::class, 'update']);

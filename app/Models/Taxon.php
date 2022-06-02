@@ -19,6 +19,11 @@ class Taxon extends Model
         return $this->hasOne(Eol::class, 'EOLid', 'EOLid');
     }
 
+    public function images()
+    {
+        return $this->hasMany(Image::class, 'EOLid', 'EOLid');
+    }
+
     public function iucn()
     {
         return $this->hasOne(Iucn::class, 'taxonID', 'taxonID');
