@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Image;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ImageController extends Controller
 {
@@ -22,5 +23,19 @@ class ImageController extends Controller
         $image->save();
 
         return response()->json($image);
+    }
+
+    public function preferred(Request $request)
+    {
+        DB::table('images')
+        ->where('EOLid', $request->EOLid)
+        ->update(['preferred' => null]);
+
+        DB::table('images')
+        ->where('EOLid', $request->EOLid)
+        ->where('identifier', $request->identifier)
+        ->update(['preferred' => 1]);
+
+        return response()->json($request);
     }
 }

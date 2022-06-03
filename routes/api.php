@@ -20,3 +20,4 @@ use App\Http\Controllers\ImageController;
 Route::post('/iucn/store', [IucnController::class, 'store']);
 Route::post('/image/store/', [ImageController::class, 'store']);
 Route::post('/eol/update/{eol}', [EolController::class, 'update']);
+Route::post('/image/preferred/', [ImageController::class, 'preferred']);

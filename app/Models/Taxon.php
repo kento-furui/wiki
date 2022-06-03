@@ -43,4 +43,8 @@ class Taxon extends Model
     {
         return $this->hasMany(Taxon::class, 'parentNameUsageID');
     }
+
+    public function image()
+    {
+        return $this->hasOne(Image::class, 'EOLid', 'EOLid');
 }

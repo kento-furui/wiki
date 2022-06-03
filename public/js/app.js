@@ -8,6 +8,19 @@ async function update(id, body) {
     });
 }
 
+async function preferred(id, identifier) {
+    await fetch('/api/image/preferred', {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            EOLid: id,
+            identifier: identifier,
+        }),
+    });
+}
+
 async function store(id, value) {
     await fetch(`/api/iucn/store`, {
         method: "POST",
@@ -33,10 +46,11 @@ const fetchImages = async (element) => {
         const container = document.querySelector("#images");
         for (const dataObject of data.taxonConcept.dataObjects) {
             let img = document.createElement("img");
-            img.style.height = "68px";
+            img.style.marginRight = '2px';
+            img.id = dataObject.identifier;
             img.src = dataObject.eolThumbnailURL;
             img.addEventListener("click", async () => {
-                update(id, { img: dataObject.eolThumbnailURL });
+                preferred(id, dataObject.identifier);
                 document.querySelector("#thumb").src = dataObject.eolThumbnailURL;
             });
             await fetch('/api/image/store', {

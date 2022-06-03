@@ -100,7 +100,9 @@ class TaxonController extends Controller
             }
         }
 
-        return view('taxon.show', compact('taxon', 'tree', 'status'));
+        $image = $taxon->images()->where("preferred", 1)->first();
+
+        return view('taxon.show', compact('taxon', 'tree', 'status', 'image'));
     }
 
     public function sumall(Taxon $taxon, IucnService $service)

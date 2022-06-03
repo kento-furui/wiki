@@ -9,8 +9,10 @@ class PageController extends Controller
 {
     public function index(Request $request)
     {
-        $taxa = Taxon::whereIn('taxonomicStatus', ['valid', 'accepted']);
-        $taxa = $taxa->paginate(15)->withQueryString();
+        $taxa = Taxon::whereIn('taxonomicStatus', ['valid', 'accepted'])
+        ->where('taxonRank', 'phylum')
+        ->get();
+
         return view('page.index', compact('taxa'));
     }
 }

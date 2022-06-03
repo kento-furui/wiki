@@ -20,11 +20,10 @@ class ImagesCommand extends Command
     public function handle()
     {
         $taxa = Taxon::whereIn('taxonomicStatus', ['valid', 'accepted'])
-        //->where('canonicalName', 'LIKE', $this->argument("char") . "%")
         ->where('EOLid', '>', $this->argument('eol'))
         ->doesntHave('images')
         ->orderBy('EOLid')
-        ->limit(1000)
+        ->limit(10000)
         ->get();
 
         foreach ($taxa as $taxon) {
