@@ -48,15 +48,20 @@ class TaxonController extends Controller
 
     public function rand()
     {
-        $taxa = Taxon::whereIn('taxonomicStatus', ['valid', 'accepted'])
-            ->where('taxonRank', 'species')
-            //->where('taxonRank', 'genus')
-            ->doesntHave('iucn')
+        $taxon = Taxon::whereIn('taxonomicStatus', ['valid', 'accepted'])
+            //->where('taxonRank', 'species')
+            //->where('taxonRank', 'class')
+            //->doesntHave('iucn')
+            ->doesntHave('images')
+            ->has('eol')
             ->inRandomOrder()
-            ->limit(20)
-            ->get();
+            ->limit(1)
+            ->first();
+        
+        $tree = array();
+        $status = array();
 
-        return view('taxon.rand', compact('taxa'));
+        return view('taxon.show', compact('taxon', 'tree', 'status'));
     }
 
     public function recurse(Taxon $taxon)

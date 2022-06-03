@@ -1,7 +1,6 @@
 <?php
 
-use App\Http\Controllers\EolController;
-use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\TaxonController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [TaxonController::class, 'index']);
+
 //Route::get('/login', [AuthController::class, 'index'])->name('login');
 //Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 //Route::post('/login', [AuthController::class, 'login'])->name('log_user_in');
@@ -29,4 +29,5 @@ Route::get('/taxon/recurse/{taxon}', [TaxonController::class, 'recurse']);
 Route::get('/taxon/extinct/{taxon}', [TaxonController::class, 'extinct']);
 Route::get('/taxon/represent/{taxon}', [TaxonController::class, 'represent']);
 
+Route::resource('page', PageController::class);  
 Route::resource('taxon', TaxonController::class);
