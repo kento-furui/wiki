@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Eol extends Model
 {
     use HasFactory;
-    protected $keyType = 'string';
     protected $primaryKey = 'EOLid';
 
     public $timestamps = false;

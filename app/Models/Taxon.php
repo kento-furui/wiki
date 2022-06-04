@@ -46,5 +46,6 @@ class Taxon extends Model
 
     public function image()
     {
-        return $this->hasOne(Image::class, 'EOLid', 'EOLid');
+        return $this->hasOne(Image::class, 'EOLid', 'EOLid')->ofMany('preferred', 'max');
+    }
 }

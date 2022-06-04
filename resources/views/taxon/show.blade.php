@@ -16,7 +16,7 @@
         <tr>
             <th width="90px">画像</th>
             <td>
-                <img src="{{ $image ? $image->eolThumbnailURL : null }}" id="thumb">
+                <img src="" id="thumb">
             </td>
         </tr>
         <tr>
