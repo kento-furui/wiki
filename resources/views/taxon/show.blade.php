@@ -16,7 +16,7 @@
         <tr>
             <th width="90px">画像</th>
             <td>
-                <img src="" id="thumb">
+                <img src="{{ $taxon->image ? $taxon->image->eolThumbnailURL : null }}" id="thumb">
             </td>
         </tr>
         <tr>

@@ -3,11 +3,7 @@
         @foreach ($taxa as $taxon)
         <tr onclick="location.href='/taxon/{{ $taxon->taxonID }}'">
             <td width="100px">
-                @if ($taxon->eol && !empty($taxon->eol->img))
-                <img src="{{ $taxon->eol->img }}" id="{{ $taxon->EOLid }}" class="thumb">
-                @else
-                <input type="hidden" name="noimg" value="{{ $taxon->EOLid }}" />
-                @endif
+                <img src="{{ $taxon->image ? $taxon->image->eolThumbnailURL : '/img/noimage.png' }}" id="{{ $taxon->EOLid }}" class="thumb">
             </td>
             <td><a href="/taxon/{{ $taxon->taxonID }}">{{ $taxon->canonicalName }}</a><br>
                 {!! $taxon->number ? $taxon->number->nodes() : null !!}
