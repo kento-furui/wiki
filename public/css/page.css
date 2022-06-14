@@ -28,13 +28,17 @@ tr td span {
     position: absolute;
 }
 
-.overlay {
+.child a .overlay {
     top: 143px;
     height: 57px;
-    color: antiquewhite;
     padding: 0 1%;
     position: absolute;
+    color: antiquewhite;
     background-color: rgba(47, 52, 53, 0.6);
+}
+
+.child a img {
+    object-fit: cover;
 }
 
 .thumb {
@@ -152,8 +156,17 @@ table#taxa tr td img {
     object-fit: cover;*/
 }
 
+#wikipedia a {
+    color: rgb(21, 144, 251);
+}
+
 .mw-editsection {
     display: none;
+}
+
+div.tright, div.floatright, table.floatright {
+    clear: right;
+    float: right;
 }
 
 .infobox {

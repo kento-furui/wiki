@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\PageController;
 use App\Http\Controllers\TaxonController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [TaxonController::class, 'index']);
+//Route::get('/', [TaxonController::class, 'index']);
 
 //Route::get('/login', [AuthController::class, 'index'])->name('login');
 //Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
@@ -29,5 +28,8 @@ Route::get('/taxon/recurse/{taxon}', [TaxonController::class, 'recurse']);
 Route::get('/taxon/extinct/{taxon}', [TaxonController::class, 'extinct']);
 Route::get('/taxon/represent/{taxon}', [TaxonController::class, 'represent']);
 
-Route::resource('page', PageController::class);  
-Route::resource('taxon', TaxonController::class);
+Route::get('/page', [TaxonController::class, 'search']);
+Route::get('/page/{taxon}', [TaxonController::class, 'page']);
+Route::get('/tree/{taxon}', [TaxonController::class, 'tree']);
+Route::get('/media/{taxon}', [TaxonController::class, 'media']);
+Route::get('/article/{taxon}', [TaxonController::class, 'article']);

@@ -159,27 +159,3 @@ const fetchStatus = async (row) => {
         //console.error(err);
     }
 };
-
-const fetchWikipedia = async (row) => {
-    if (row.value == "") return false;
-    const value = row.value;
-    const url = `https://ja.wikipedia.org/w/api.php?format=json&action=parse&prop=text&page=${value}&formatversion=2&redirects&origin=*`;
-    try {
-        const response = await fetch(url);
-        const data = await response.json();
-        if (data.parse == undefined) return false;
-        let text = data.parse.text;
-        text = text.replaceAll(
-            'href="/wiki/',
-            'target="_blank" href="//ja.wikipedia.org/wiki/'
-        );
-        text = text.replaceAll(
-            'href="/w/',
-            'target="_blank" style="color:red" href="//ja.wikipedia.org/w/'
-        );
-        document.querySelector("#japanese").innerHTML = text;
-        //console.log(text);
-    } catch (err) {
-        console.error(err);
-    }
-};

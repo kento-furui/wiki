@@ -23,7 +23,7 @@ class ImagesCommand extends Command
         ->where('EOLid', '>', $this->argument('eol'))
         ->doesntHave('images')
         ->orderBy('EOLid')
-        ->limit(10000)
+        ->limit(50000)
         ->get();
 
         foreach ($taxa as $taxon) {

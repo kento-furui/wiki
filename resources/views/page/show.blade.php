@@ -37,12 +37,17 @@
             <div class="col-1" id="thumbnail">
                 <img src="{{ $taxon->image ? $taxon->image->eolThumbnailURL : '/img/noimage.png' }}" width="100%">
             </div>
-            <div class="col-11" id="names">
+            <div class="col-5" id="names">
                 <h4 style="color: whitesmoke">{{ $taxon->scientificName }}</h4>
                 <h5 style="color: lightgrey">{{ $taxon->eol ? $taxon->eol->jp : null }}</h5>
             </div>
+            <div class="col-6" id="nav">
+                <a class="btn btn-primary" href="/page/{{ $taxon->taxonID }}">Page</a>
+                <a class="btn btn-info" href="/tree/{{ $taxon->taxonID }}">Tree</a>
+                <a class="btn btn-info" href="/media/{{ $taxon->taxonID }}">Media</a>
+                <a class="btn btn-info" href="/article/{{ $taxon->taxonID }}">Article</a>
+            </div>
         </div>
-       
         <div class="row">
             <div class="col-6" id="table" style="overflow: hidden">
                 <table class="table" style="color: antiquewhite;">
@@ -129,7 +134,7 @@
                 <h5>{!! $taxon->image ? $taxon->image->description : null !!}</h5>
             </div>
         </div>
-        <h2>Images</h2>
+        <h2>Images <small style="font-size: 80%">{{ count($taxon->images) }}</small></h2>
         <div class="row" id="thumbnail">
             @foreach ($taxon->images as $image)
                 <div class="col-1">
@@ -138,7 +143,7 @@
                 </div>
             @endforeach
         </div>
-        <h2>Children {{ count($taxon->children) }}</h2>
+        <h2>Children <small style="font-size: 80%">{{ count($taxon->children) }}</small></h2>
         <div class="row" id="children">
             @foreach ($taxon->children as $child)
                 <div class="col-3 child">
