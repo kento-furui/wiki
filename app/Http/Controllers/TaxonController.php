@@ -57,7 +57,7 @@ class TaxonController extends Controller
             ->inRandomOrder()
             ->limit(1)
             ->first();
-        
+
         $tree = array();
         $status = array();
 
@@ -70,7 +70,7 @@ class TaxonController extends Controller
         $this->_recurse($taxon);
         return view('taxon.recurse', ['taxon' => $taxon, 'taxa' => $this->taxa]);
     }
-    
+
     private function _recurse(Taxon $taxon)
     {
         foreach ($taxon->children as $c) {
@@ -123,7 +123,7 @@ class TaxonController extends Controller
 
     private function _extinct(Taxon $taxon)
     {
-        if (! $taxon->iucn) {
+        if (!$taxon->iucn) {
             $taxon->iucn = new Iucn;
             $taxon->iucn->taxonID = $taxon->taxonID;
         }
@@ -174,18 +174,27 @@ class TaxonController extends Controller
     {
         $tree = $this->_tree($taxon);
 
+        $nodes = array();
         $status = array();
         foreach ($taxon->children as $c) {
             if ($c->iucn) {
-                if (array_key_exists($c->iucn->status, $status)) {
-                    $status[$c->iucn->status]++;
+                $key = $c->iucn->status;
+                if (array_key_exists($key, $status)) {
+                    $status[$key]++;
                 } else {
-                    $status[$c->iucn->status] = 1;
+                    $status[$key] = 1;
                 }
             }
+
+            $key = $c->taxonRank;
+            if (array_key_exists($key, $nodes)) {
+                $nodes[$key]++;
+            } else {
+                $nodes[$key] = 1;
+            }
         }
-  
-        return view('page.show', compact('taxon', 'tree', 'status'));
+
+        return view('page.show', compact('taxon', 'tree', 'nodes', 'status'));
     }
 
     public function tree(Taxon $taxon)
@@ -200,10 +209,16 @@ class TaxonController extends Controller
         return view('page.media', compact('taxon', 'tree'));
     }
 
-    public function article(Taxon $taxon)
+    public function ja(Taxon $taxon)
     {
         $tree = $this->_tree($taxon);
-        return view('page.article', compact('taxon', 'tree'));
+        return view('page.ja', compact('taxon', 'tree'));
+    }
+
+    public function en(Taxon $taxon)
+    {
+        $tree = $this->_tree($taxon);
+        return view('page.en', compact('taxon', 'tree'));
     }
 
     private function _tree(Taxon $taxon)

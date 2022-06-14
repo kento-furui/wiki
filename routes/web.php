@@ -29,7 +29,8 @@ Route::get('/taxon/extinct/{taxon}', [TaxonController::class, 'extinct']);
 Route::get('/taxon/represent/{taxon}', [TaxonController::class, 'represent']);
 
 Route::get('/page', [TaxonController::class, 'search']);
+Route::get('/ja/{taxon}', [TaxonController::class, 'ja']);
+Route::get('/en/{taxon}', [TaxonController::class, 'en']);
 Route::get('/page/{taxon}', [TaxonController::class, 'page']);
 Route::get('/tree/{taxon}', [TaxonController::class, 'tree']);
 Route::get('/media/{taxon}', [TaxonController::class, 'media']);
-Route::get('/article/{taxon}', [TaxonController::class, 'article']);
