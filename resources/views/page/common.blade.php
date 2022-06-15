@@ -9,11 +9,14 @@
     <div class="col-1" id="thumbnail">
         <img src="{{ $taxon->image ? $taxon->image->eolThumbnailURL : '/img/noimage.png' }}" width="100%">
     </div>
-    <div class="col-5" id="names">
-        <h4 style="color: whitesmoke; margin-bottom: 0">{{ $taxon->scientificName }}</h4>
-        <h5 style="color: whitesmoke">{{ $taxon->eol ? $taxon->eol->jp : null }}</h5>
+    <div class="col-7" id="names">
+        {{ $taxon->taxonRank }}<br>
+        <h4 style="color: whitesmoke; margin-bottom: 0">
+            {{ $taxon->scientificName }}
+            {{ $taxon->eol ? $taxon->eol->jp : null }}
+        </h4>
     </div>
-    <div class="col-6" id="nav">
+    <div class="col-4" id="nav">
         <a class="btn {{ $app == 'page'  ? 'btn-primary' : 'btn-info' }}" href="/page/{{ $taxon->taxonID }}">Page</a>
         <a class="btn {{ $app == 'tree'  ? 'btn-primary' : 'btn-info' }}" href="/tree/{{ $taxon->taxonID }}">Tree</a>
         <a class="btn {{ $app == 'media' ? 'btn-primary' : 'btn-info' }}" href="/media/{{ $taxon->taxonID }}">Media</a>
@@ -21,3 +24,4 @@
         <a class="btn {{ $app == 'en'    ? 'btn-primary' : 'btn-info' }}" href="/en/{{ $taxon->taxonID }}">ENG</a>
     </div>
 </div>
+<hr>

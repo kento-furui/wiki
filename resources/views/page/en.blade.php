@@ -5,21 +5,9 @@
 @section('content')
     @include('page.common', ['app' => 'en'])
     <div class="row">
-        <div class="col-12" id="table" style="overflow: hidden">
-            <table class="table" style="color: antiquewhite;">
-                <tr>
-                    <td>
-                        {{ $taxon->taxonRank }}
-                        <h5>{{ $taxon->canonicalName }}</h5>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    <div class="row">
         <div class="col-12" id="wikipedia"></div>
     </div>
-    @include('page.children')
+    @include('page.children', ['app' => 'en'])
     <input type="hidden" id="EOLid" value="{{ $taxon->EOLid }}" />
     <input type="hidden" id="en" value="{{ $taxon->canonicalName }}" />
     <script>

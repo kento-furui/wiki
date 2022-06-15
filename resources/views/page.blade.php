@@ -14,7 +14,7 @@
     <div class="container" style="padding: 1%">
         <div class="row">
             <div class="col-12">
-                <form method="GET" action="/page">
+                <form method="GET" action="/">
                     <div class="row">
                         <div class="col-10">
                             <input class="form-control" type="text" name="search" value="{{ isset($request) ? $request->search : null }}">

@@ -5,7 +5,7 @@
             @if ($child->iucn)
                 <span class="{{ $child->iucn->status }}">{{ $child->iucn->status }}</span>
             @endif
-            <a href="/page/{{ $child->taxonID }}">
+            <a href="/{{ $app }}/{{ $child->taxonID }}">
                 <img src="{{ $child->image ? $child->image->eolMediaURL : '/img/noimage.png' }}" width="100%"
                     height="200px">
                 <div class="overlay">

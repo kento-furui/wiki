@@ -17,6 +17,8 @@ use App\Http\Controllers\ImageController;
 |
 */
 
+Route::get('/ranks/{taxon}', [TaxonController::class, 'ranks']);
+
 Route::post('/iucn/store', [IucnController::class, 'store']);
 Route::post('/image/store/', [ImageController::class, 'store']);
 Route::post('/eol/update/{eol}', [EolController::class, 'update']);

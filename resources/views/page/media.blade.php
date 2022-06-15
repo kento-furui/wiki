@@ -5,18 +5,6 @@
 @section('content')
     @include('page.common', ['app' => 'media'])
     <div class="row">
-        <div class="col-12" id="table" style="overflow: hidden">
-            <table class="table" style="color: antiquewhite;">
-                <tr>
-                    <td>
-                        {{ $taxon->taxonRank }}
-                        <h5>{{ $taxon->canonicalName }}</h5>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    <div class="row">
         @foreach ($taxon->images as $image)
             <div class="col-3">
                 <a href="{{ $image->eolMediaURL }}" data-lightbox="image" data-title="{{ $image->title }}">
@@ -26,5 +14,5 @@
             </div>
         @endforeach
     </div>
-    @include('page.children')
+    @include('page.children', ['app' => 'media'])
 @endsection
