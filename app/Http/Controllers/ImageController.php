@@ -8,10 +8,12 @@ use Illuminate\Support\Facades\DB;
 
 class ImageController extends Controller
 {
-    public function store(Request $request)
+    public function update(Request $request, $id)
     {
-        $image = new Image;
-        $image->EOLid = $request->EOLid;
+        if (!$image = Image::find($id)) {
+            $image = new Image;
+            $image->EOLid = $id;
+        }
         $image->title = $request->title;
         $image->width = $request->width;
         $image->height = $request->height;
@@ -23,19 +25,5 @@ class ImageController extends Controller
         $image->save();
 
         return response()->json($image);
-    }
-
-    public function preferred(Request $request)
-    {
-        DB::table('images')
-        ->where('EOLid', $request->EOLid)
-        ->update(['preferred' => null]);
-
-        DB::table('images')
-        ->where('EOLid', $request->EOLid)
-        ->where('identifier', $request->identifier)
-        ->update(['preferred' => 1]);
-
-        return response()->json($request);
     }
 }

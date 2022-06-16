@@ -7,7 +7,7 @@
 </div>
 <div class="row">
     <div class="col-1" id="thumbnail">
-        <img src="{{ $taxon->image ? $taxon->image->eolThumbnailURL : '/img/noimage.png' }}" width="100%">
+        <img src="{{ $taxon->image ? $taxon->image->eolThumbnailURL : '/img/noimage.png' }}" width="98px">
     </div>
     <div class="col-7" id="names">
         {{ $taxon->taxonRank }}<br>

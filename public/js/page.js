@@ -53,7 +53,7 @@ const fetchMaps = async (element) => {
         const response = await fetch(url);
         const data = await response.json();
         if (data.taxonConcept.dataObjects == undefined) return false;
-        const container = document.querySelector("#images");
+
         for (const dataObject of data.taxonConcept.dataObjects) {
             let p = document.createElement("p");
             let div = document.createElement("div");
@@ -63,7 +63,7 @@ const fetchMaps = async (element) => {
             img.style.width = "100%";
             img.src = dataObject.eolMediaURL;
             p.innerHTML = dataObject.description;
-            
+
             div.appendChild(img);
             div.appendChild(p);
             

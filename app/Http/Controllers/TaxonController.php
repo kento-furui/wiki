@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Eol;
+use App\Models\Image;
 use App\Models\Iucn;
 use App\Models\Taxon;
-use App\Services\IucnService;
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
+use Illuminate\Database\Eloquent\Builder;
 
 class TaxonController extends Controller
 {
@@ -35,7 +34,7 @@ class TaxonController extends Controller
         $ranks = array();
         $status = array();
         $tree = $this->_tree($taxon);
-        
+
         foreach ($taxon->children as $child) {
             if ($child->iucn) {
                 $key = $child->iucn->status;
@@ -81,6 +80,50 @@ class TaxonController extends Controller
         return view('page.en', compact('taxon', 'tree'));
     }
 
+    public function extinct(Taxon $taxon)
+    {
+        if (!$taxon->iucn) {
+            $taxon->iucn = new Iucn;
+            $taxon->iucn->taxonID = $taxon->taxonID;
+        }
+        $taxon->iucn->status = "EX";
+        $taxon->iucn->save();
+
+        foreach ($taxon->children as $c) {
+            $this->extinct($c);
+        }
+
+        return redirect('/page/' . $taxon->taxonID);
+    }
+
+    public function represent(Taxon $taxon)
+    {
+        $me = $taxon;
+    
+        if ($taxon->image) {
+            $image = $taxon->image;
+
+            while ($taxon->parent) {
+                $taxon = $taxon->parent;
+                if (!$taxon->image) {
+                    $taxon->image = new Image;
+                    $taxon->image->EOLid = $taxon->EOLid;
+                }
+                $taxon->image->title = $image->title;
+                $taxon->image->width = $image->width;
+                $taxon->image->height = $image->height;
+                $taxon->image->mediaURL = $image->mediaURL;
+                $taxon->image->identifier = $image->identifier;
+                $taxon->image->description = $image->description;
+                $taxon->image->eolMediaURL = $image->eolMediaURL;
+                $taxon->image->eolThumbnailURL = $image->eolThumbnailURL;
+                $taxon->image->save();
+            }
+        }
+
+        return redirect('/page/' . $me->taxonID);
+    }
+
     private function _tree(Taxon $taxon)
     {
         $me = $taxon;
@@ -89,21 +132,5 @@ class TaxonController extends Controller
             $me = $tree[] = $me->parent;
         }
         return $tree;
-    }
-
-    public function ranks(Taxon $taxon)
-    {
-        $ranks = array();
-
-        foreach ($taxon->children as $c) {
-            $key = $c->taxonRank;
-            if (array_key_exists($key, $this->ranks)) {
-                $ranks[$key]++;
-            } else {
-                $ranks[$key] = 1;
-            }
-        }
-
-        return response()->json($ranks);
     }
 }

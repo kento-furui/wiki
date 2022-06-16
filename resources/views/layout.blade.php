@@ -8,6 +8,7 @@
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
     <title>@yield('title')</title>
     <link rel="stylesheet" href="/css/page.css">
+    <link rel="stylesheet" href="/lightbox2/dist/css/lightbox.min.css">
 </head>
 
 <body>
@@ -28,6 +29,7 @@
         </div>
         @yield('content')
     </div>
+    <script src="/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
 </body>
 
 </html>

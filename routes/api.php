@@ -17,9 +17,9 @@ use App\Http\Controllers\ImageController;
 |
 */
 
-Route::get('/ranks/{taxon}', [TaxonController::class, 'ranks']);
+Route::post('/image/update/{id}', [ImageController::class, 'update']);
 
-Route::post('/iucn/store', [IucnController::class, 'store']);
-Route::post('/image/store/', [ImageController::class, 'store']);
-Route::post('/eol/update/{eol}', [EolController::class, 'update']);
-Route::post('/image/preferred/', [ImageController::class, 'preferred']);
+// Route::post('/iucn/store', [IucnController::class, 'store']);
+// Route::post('/image/store/', [ImageController::class, 'store']);
+// Route::post('/eol/update/{eol}', [EolController::class, 'update']);
+// Route::post('/image/preferred/', [ImageController::class, 'preferred']);
