@@ -19,9 +19,9 @@ class Taxon extends Model
         return $this->hasOne(Eol::class, 'EOLid', 'EOLid');
     }
 
-    public function images()
+    public function image()
     {
-        return $this->hasMany(Image::class, 'EOLid', 'EOLid');
+        return $this->hasOne(Image::class, 'EOLid', 'EOLid');
     }
 
     public function iucn()
@@ -42,10 +42,5 @@ class Taxon extends Model
     public function children()
     {
         return $this->hasMany(Taxon::class, 'parentNameUsageID');
-    }
-
-    public function image()
-    {
-        return $this->hasOne(Image::class, 'EOLid', 'EOLid')->ofMany('preferred', 'max');
     }
 }

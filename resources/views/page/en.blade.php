@@ -1,4 +1,4 @@
-@extends('page')
+@extends('layout')
 
 @section('title', $taxon->canonicalName)
 
@@ -8,11 +8,14 @@
         <div class="col-12" id="wikipedia"></div>
     </div>
     @include('page.children', ['app' => 'en'])
-    <input type="hidden" id="EOLid" value="{{ $taxon->EOLid }}" />
     <input type="hidden" id="en" value="{{ $taxon->canonicalName }}" />
     <script>
-        const fetchWikipedia = async (row) => {
-            if (row.value == "") return false;
+        fetchWiki( document.querySelector('#en') );
+
+        async function fetchWiki(row) 
+        {
+            if (row == undefined) return false;
+
             const lang = row.id;
             const value = row.value;
             const url =
@@ -36,7 +39,5 @@
                 console.error(err);
             }
         };
-
-        fetchWikipedia(document.querySelector('#en'));
     </script>
 @endsection

@@ -43,43 +43,62 @@ async function store(id, value) {
     });
 } 
 
-const fetchImages = async (element) => {
+const fetchMaps = async (element) => {
     if (element == null) return false;
     if (element.value == undefined) return false;
+    const page = 1;
     const id = element.value;
-    const url = `https://eol.org/api/pages/1.0/${id}.json?details=true&images_per_page=30`;
+    const url = `https://eol.org/api/pages/1.0/${id}.json?details=true&maps_per_page=16&images_page=${page}`;
     try {
         const response = await fetch(url);
         const data = await response.json();
         if (data.taxonConcept.dataObjects == undefined) return false;
         const container = document.querySelector("#images");
         for (const dataObject of data.taxonConcept.dataObjects) {
+            let p = document.createElement("p");
+            let div = document.createElement("div");
             let img = document.createElement("img");
-            img.style.marginRight = '2px';
-            img.id = dataObject.identifier;
-            img.src = dataObject.eolThumbnailURL;
-            img.addEventListener("click", async () => {
-                preferred(id, dataObject.identifier);
-                document.querySelector("#thumb").src = dataObject.eolThumbnailURL;
-            });
-            await fetch('/api/image/store', {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({
-                    EOLid: id,
-                    title: dataObject.title,
-                    width: dataObject.width,
-                    height: dataObject.height,
-                    mediaURL: dataObject.mediaURL,
-                    identifier: dataObject.identifier,
-                    eolMediaURL: dataObject.eolMediaURL,
-                    description : dataObject.description,
-                    eolThumbnailURL: dataObject.eolThumbnailURL,
-                }),
-            });
-            container.appendChild(img);
+
+            div.className = "col-3";
+            img.style.width = "100%";
+            img.src = dataObject.eolMediaURL;
+            p.innerHTML = dataObject.description;
+            
+            div.appendChild(img);
+            div.appendChild(p);
+            
+            document.querySelector("#media").appendChild(div);
+        }
+    } catch (err) {
+        console.error(err);
+    }
+};
+
+const fetchImages = async (element) => {
+    if (element == null) return false;
+    if (element.value == undefined) return false;
+    const page = 1;
+    const id = element.value;
+    const url = `https://eol.org/api/pages/1.0/${id}.json?details=true&images_per_page=16&images_page=${page}`;
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        if (data.taxonConcept.dataObjects == undefined) return false;
+        const container = document.querySelector("#images");
+        for (const dataObject of data.taxonConcept.dataObjects) {
+            let p = document.createElement("p");
+            let div = document.createElement("div");
+            let img = document.createElement("img");
+
+            div.className = "col-3";
+            img.style.width = "100%";
+            img.src = dataObject.eolMediaURL;
+            p.innerHTML = dataObject.description;
+            
+            div.appendChild(img);
+            div.appendChild(p);
+            
+            document.querySelector("#media").appendChild(div);
         }
     } catch (err) {
         console.error(err);
@@ -159,3 +178,34 @@ const fetchStatus = async (row) => {
         //console.error(err);
     }
 };
+
+const fetchWikipedia = async (row) => {
+    if (row == undefined) return false;
+    
+    const lang = row.id;
+    const value = row.value;
+    const url =
+        `https://${lang}.wikipedia.org/w/api.php?format=json&action=parse&prop=text&page=${value}&formatversion=2&redirects&origin=*`;
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        if (data.parse == undefined) return false;
+        let text = data.parse.text;
+        text = text.replaceAll(
+            'href="/wiki/',
+            `target="_blank" href="//${lang}.wikipedia.org/wiki/`
+        );
+        text = text.replaceAll(
+            'href="/w/',
+            `target="_blank" style="color:red" href="//${lang}.wikipedia.org/w/`
+        );
+        document.querySelector("#wikipedia").innerHTML = text;
+        //console.log(text);
+    } catch (err) {
+        console.error(err);
+    }
+};
+
+fetchImages( document.querySelector('#EOLid') );
+fetchWikipedia( document.querySelector('#ja') );
+fetchWikipedia( document.querySelector('#en') );

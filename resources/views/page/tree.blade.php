@@ -1,4 +1,4 @@
-@extends('page')
+@extends('layout')
 
 @section('title', $taxon->canonicalName)
 

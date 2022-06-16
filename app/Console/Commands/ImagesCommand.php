@@ -21,7 +21,7 @@ class ImagesCommand extends Command
     {
         $taxa = Taxon::whereIn('taxonomicStatus', ['valid', 'accepted'])
         ->where('EOLid', '>', $this->argument('eol'))
-        ->doesntHave('images')
+        ->doesntHave('image')
         ->orderBy('EOLid')
         ->limit(50000)
         ->get();
@@ -34,7 +34,7 @@ class ImagesCommand extends Command
 
     public function getImages($id)
     {
-        $url = "https://eol.org/api/pages/1.0/$id.json?details=true&images_per_page=30";
+        $url = "https://eol.org/api/pages/1.0/$id.json?details=true&images_per_page=1";
         $response = @file_get_contents($url);
         $json = json_decode($response);
         if (!isset($json->taxonConcept->dataObjects)) return false;

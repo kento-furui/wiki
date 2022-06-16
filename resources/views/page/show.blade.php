@@ -1,4 +1,4 @@
-@extends('page')
+@extends('layout')
 
 @section('title', $taxon->canonicalName)
 
@@ -77,15 +77,6 @@
         <h4>{{ $taxon->image ? $taxon->image->title : null }}</h4>
         <h5>{!! $taxon->image ? $taxon->image->description : null !!}</h5>
     </div>
-</div>
-<h2>Images <small style="font-size: 80%">{{ count($taxon->images) }}</small></h2>
-<div class="row" id="thumbnail">
-    @foreach ($taxon->images as $image)
-    <div class="col-1">
-        <img src="{{ $image->eolThumbnailURL }}" title="{{ $image->description }}" width="100%" class="thumb"
-            id="{{ $image->identifier }}">
-    </div>
-    @endforeach
 </div>
 @include('page.children', ['app' => 'page'])
 <input type="hidden" id="EOLid" value="{{ $taxon->EOLid }}" />
