@@ -42,14 +42,15 @@ class ImagesCommand extends Command
         foreach ($json->taxonConcept->dataObjects as $do) {
             $image = new Image;
             $image->EOLid = $id;
-            isset($do->title) ? $image->title = $do->title : null;
-            isset($do->width) ? $image->width = $do->width : null;
-            isset($do->height) ? $image->height = $do->height : null;
-            isset($do->mediaURL) ? $image->mediaURL = $do->mediaURL : null;
-            isset($do->identifier) ? $image->identifier = $do->identifier : null;
-            isset($do->eolMediaURL) ? $image->eolMediaURL = $do->eolMediaURL : null;
-            isset($do->description) ? $image->description = $do->description : null;
-            isset($do->eolThumbnailURL) ? $image->eolThumbnailURL = $do->eolThumbnailURL : null;
+            $image->title = isset($do->title) ? $do->title : null;
+            $image->width = isset($do->width) ? $do->width : null;
+            $image->height = isset($do->height) ? $do->height : null;
+            $image->mediaURL = isset($do->mediaURL) ? $do->mediaURL : null;
+            $image->identifier = isset($do->identifier) ? $do->identifier : null;
+            $image->eolMediaURL = isset($do->eolMediaURL) ? $do->eolMediaURL : null;
+            $image->description = isset($do->description) ? $do->description : null;
+            $image->eolThumbnailURL = isset($do->eolThumbnailURL) ? $do->eolThumbnailURL : null;
+            $image->dataObjectVersionID = isset($do->dataObjectVersionID) ? $do->dataObjectVersionID : null;
             try {
                 $image->save();
             } catch(Exception $e) {

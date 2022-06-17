@@ -14,6 +14,9 @@
         <h4 style="color: whitesmoke; margin-bottom: 0">
             {{ $taxon->scientificName }}
             {{ $taxon->eol ? $taxon->eol->jp : null }}
+            @if ($taxon->iucn)
+            <span class="{{ $taxon->iucn->status }}">{{ $taxon->iucn->status }}</span>
+            @endif
         </h4>
     </div>
     <div class="col-4" id="nav">

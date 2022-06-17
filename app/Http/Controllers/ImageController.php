@@ -22,6 +22,7 @@ class ImageController extends Controller
         $image->description = $request->description;
         $image->eolMediaURL = $request->eolMediaURL;
         $image->eolThumbnailURL = $request->eolThumbnailURL;
+        $image->dataObjectVersionID = $request->dataObjectVersionID;
         $image->save();
 
         return response()->json($image);

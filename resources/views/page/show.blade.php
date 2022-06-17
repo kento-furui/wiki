@@ -8,24 +8,10 @@
         <div class="col-6" id="table" style="overflow: hidden">
             <table class="table" style="color: antiquewhite;">
                 <tr>
-                    <th style="width:1%">Status</th>
-                    <td>
-                        @if ($taxon->iucn)
-                            <span class="{{ $taxon->iucn->status }}">{{ $taxon->iucn->status }}</span>
-                        @else
-                            @foreach ($status as $key => $val)
-                                <span class="{{ $key }}">{{ $key }} {{ $val }}</span>
-                            @endforeach
-                        @endif
-                    </td>
+                    <td colspan=2 id="status">Counting...</td>
                 </tr>
                 <tr>
-                    <th style="width:1%">Ranks</th>
-                    <td>
-                        @foreach ($ranks as $key => $val)
-                            <div class="ranks">{{ $val }} {{ $key }}</div>
-                        @endforeach
-                    </td>
+                    <td colspan=2 id="ranks">Counting...</td>
                 </tr>
                 <tr>
                     <th style="width:1%">Source</th>
@@ -49,7 +35,7 @@
                 </tr>
                 <tr>
                     <th>Parent</th>
-                    <td><a href="/page/{{ $taxon->parentNameUsageID }}">{{ $taxon->parentNameUsageID }}</a></td>
+                    <td><a class="btn btn-primary" href="/page/{{ $taxon->parentNameUsageID }}">{{ $taxon->parentNameUsageID }}</a></td>
                 </tr>
                 <tr>
                     <th>Status</th>
@@ -71,9 +57,8 @@
                 <tr>
                     <th>Admin</th>
                     <td>
-                        <a href="javascript:void()" class="btn btn-danger" onclick="next()">Next</a>
                         <a href="/extinct/{{ $taxon->taxonID }}" class="btn btn-danger" onclick="return confirm('Extinct?')">Extinct</a>
-                        <a href="/represent/{{ $taxon->taxonID }}" class="btn btn-danger" onclick="return confirm('Represent?')">Represent</a>
+                        <a href="/represent/{{ $taxon->taxonID }}" class="btn btn-danger">Represent</a>
                     </td>
                 </tr>
             </table>
@@ -84,18 +69,60 @@
         </div>
     </div>
     @include('page.children', ['app' => 'page'])
+    <a href="javascript:void(0)" class='btn btn-primary' onclick="next()">Next</a>
     <div id="images"></div>
     <input type="hidden" id="EOLid" value="{{ $taxon->EOLid }}" />
+    <input type="hidden" id="taxonID" value="{{ $taxon->taxonID }}" />
     <script>
-        let page = 1;
-        const element = document.querySelector('#EOLid'); 
-        fetchImg( element );
+        ranks( document.querySelector('#taxonID') );
+        status( document.querySelector('#taxonID') );
 
+        async function ranks(element) {
+            const id = element.value;
+            try {
+                const response = await fetch(`/api/taxon/ranks/${id}`);
+                const json = await response.json();
+                //consol.log(json);
+                document.querySelector('#ranks').innerHTML = '';
+                for (const key in json) {
+                    let div = document.createElement('div');
+                    div.className = 'ranks';
+                    div.style.marginRight = '5px';
+                    div.innerHTML = json[key] + ' ' + key;
+                    document.querySelector('#ranks').appendChild(div);
+                }
+            } catch (err) {
+                document.querySelector('#ranks').innerHTML = 'Too many to count.';
+            }
+        }
+
+        async function status(element) {
+            const id = element.value;
+            try {
+                const response = await fetch(`/api/taxon/status/${id}`);
+                const json = await response.json();
+                //consol.log(json);
+                document.querySelector('#status').innerHTML = '';
+                for (const key in json) {
+                    let span = document.createElement('span');
+                    span.className = key;
+                    span.style.marginRight = '5px';
+                    span.innerHTML = key + ' ' + json[key];
+                    document.querySelector('#status').appendChild(span);
+                }
+            } catch (err) {
+                document.querySelector('#status').innerHTML = 'Too many to count.';
+            }
+        }
+
+        let page = 1;
         function next() {
             page++;
-            document.querySelector("#images").innerHTML = '';
-            fetchImg( element );
+            document.querySelector('#images').innerHTML = '';
+            fetchImg( document.querySelector('#EOLid') );
         }
+
+        fetchImg( document.querySelector('#EOLid') );
 
         async function fetchImg(element) {
             if (element == null) return false;
@@ -111,6 +138,7 @@
                 for (const dataObject of data.taxonConcept.dataObjects) {
                     //console.log(dataObject);
                     let img = document.createElement("img");
+                    img.style.margin = '2px';
                     img.src = dataObject.eolThumbnailURL;
                     img.id = dataObject.dataObjectVersionID;
                     img.addEventListener('click', async function() {

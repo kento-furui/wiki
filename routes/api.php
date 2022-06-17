@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EolController;
 use App\Http\Controllers\IucnController;
 use App\Http\Controllers\ImageController;
+use App\Http\Controllers\TaxonController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,9 @@ use App\Http\Controllers\ImageController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+
+Route::get('/taxon/ranks/{taxon}', [TaxonController::class, 'ranks']);
+Route::get('/taxon/status/{taxon}', [TaxonController::class, 'status']);
 
 Route::post('/image/update/{id}', [ImageController::class, 'update']);
 
