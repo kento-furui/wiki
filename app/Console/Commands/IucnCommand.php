@@ -4,7 +4,6 @@ namespace App\Console\Commands;
 
 use App\Models\Iucn;
 use App\Models\Taxon;
-
 use Exception;
 use Illuminate\Console\Command;
 

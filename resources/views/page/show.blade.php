@@ -5,14 +5,18 @@
 @section('content')
     @include('page.common', ['app' => 'page'])
     <div class="row">
+        <div class="col-1">Contains</div>
+        <div class="col-11">
+            @if ($taxon->number)
+                @foreach (json_decode($taxon->number->json) as $key => $val)
+                    <div class="ranks">{{ number_format($val) }} {{ $key }}</div>
+                @endforeach
+            @endif
+        </div>
+    </div>
+    <div class="row">
         <div class="col-6" id="table" style="overflow: hidden">
             <table class="table" style="color: antiquewhite;">
-                <tr>
-                    <td colspan=2 id="status">Counting...</td>
-                </tr>
-                <tr>
-                    <td colspan=2 id="ranks">Counting...</td>
-                </tr>
                 <tr>
                     <th style="width:1%">Source</th>
                     <td>{{ $taxon->source }}</td>
@@ -35,13 +39,13 @@
                 </tr>
                 <tr>
                     <th>Parent</th>
-                    <td><a class="btn btn-primary" href="/page/{{ $taxon->parentNameUsageID }}">{{ $taxon->parentNameUsageID }}</a></td>
+                    <td><a class="btn btn-primary"
+                            href="/page/{{ $taxon->parentNameUsageID }}">{{ $taxon->parentNameUsageID }}</a></td>
                 </tr>
                 <tr>
                     <th>Status</th>
                     <td>{{ $taxon->taxonomicStatus }}</td>
                 </tr>
-
                 <tr>
                     <th>Dataset</th>
                     <td>{{ $taxon->datasetID }}</td>
@@ -64,8 +68,16 @@
             </table>
         </div>
         <div class="col-6" id="image">
-            <img src="{{ $taxon->image ? $taxon->image->eolMediaURL : '/img/noimage.png' }}" width="100%" id="preferred">
-            <h4>{{ $taxon->image ? $taxon->image->title : null }}</h4>
+            @if ($taxon->image)
+                <a href="{{ $taxon->image->eolMediaURL }}" data-lightbox="image"
+                    data-title="{{ $taxon->image->title }}">
+                    <img src="{{ $taxon->image->eolMediaURL }}" width="100%" id="preferred">
+                </a>
+                <h4>{!! $taxon->image->title !!}</h4>
+            @else
+                <img src="/img/noimage.png" width="100%">
+            @endif
+
         </div>
     </div>
     @include('page.children', ['app' => 'page'])
@@ -74,55 +86,56 @@
     <input type="hidden" id="EOLid" value="{{ $taxon->EOLid }}" />
     <input type="hidden" id="taxonID" value="{{ $taxon->taxonID }}" />
     <script>
-        ranks( document.querySelector('#taxonID') );
-        status( document.querySelector('#taxonID') );
+        // ranks( document.querySelector('#taxonID') );
+        // status( document.querySelector('#taxonID') );
 
-        async function ranks(element) {
-            const id = element.value;
-            try {
-                const response = await fetch(`/api/taxon/ranks/${id}`);
-                const json = await response.json();
-                //consol.log(json);
-                document.querySelector('#ranks').innerHTML = '';
-                for (const key in json) {
-                    let div = document.createElement('div');
-                    div.className = 'ranks';
-                    div.style.marginRight = '5px';
-                    div.innerHTML = json[key] + ' ' + key;
-                    document.querySelector('#ranks').appendChild(div);
-                }
-            } catch (err) {
-                document.querySelector('#ranks').innerHTML = 'Too many to count.';
-            }
-        }
+        // async function ranks(element) {
+        //     const id = element.value;
+        //     try {
+        //         const response = await fetch(`/api/taxon/ranks/${id}`);
+        //         const json = await response.json();
+        //         //consol.log(json);
+        //         document.querySelector('#ranks').innerHTML = '';
+        //         for (const key in json) {
+        //             let div = document.createElement('div');
+        //             div.className = 'ranks';
+        //             div.style.marginRight = '5px';
+        //             div.innerHTML = json[key] + ' ' + key;
+        //             document.querySelector('#ranks').appendChild(div);
+        //         }
+        //     } catch (err) {
+        //         document.querySelector('#ranks').innerHTML = 'Too many to count.';
+        //     }
+        // }
 
-        async function status(element) {
-            const id = element.value;
-            try {
-                const response = await fetch(`/api/taxon/status/${id}`);
-                const json = await response.json();
-                //consol.log(json);
-                document.querySelector('#status').innerHTML = '';
-                for (const key in json) {
-                    let span = document.createElement('span');
-                    span.className = key;
-                    span.style.marginRight = '5px';
-                    span.innerHTML = key + ' ' + json[key];
-                    document.querySelector('#status').appendChild(span);
-                }
-            } catch (err) {
-                document.querySelector('#status').innerHTML = 'Too many to count.';
-            }
-        }
+        // async function status(element) {
+        //     const id = element.value;
+        //     try {
+        //         const response = await fetch(`/api/taxon/status/${id}`);
+        //         const json = await response.json();
+        //         //consol.log(json);
+        //         document.querySelector('#status').innerHTML = '';
+        //         for (const key in json) {
+        //             let span = document.createElement('span');
+        //             span.className = key;
+        //             span.style.marginRight = '5px';
+        //             span.innerHTML = key + ' ' + json[key];
+        //             document.querySelector('#status').appendChild(span);
+        //         }
+        //     } catch (err) {
+        //         document.querySelector('#status').innerHTML = 'Too many to count.';
+        //     }
+        // }
 
         let page = 1;
+
         function next() {
             page++;
             document.querySelector('#images').innerHTML = '';
-            fetchImg( document.querySelector('#EOLid') );
+            fetchImg(document.querySelector('#EOLid'));
         }
 
-        fetchImg( document.querySelector('#EOLid') );
+        fetchImg(document.querySelector('#EOLid'));
 
         async function fetchImg(element) {
             if (element == null) return false;

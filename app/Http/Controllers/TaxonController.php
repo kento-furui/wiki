@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Image;
 use App\Models\Iucn;
+use App\Models\Number;
 use App\Models\Taxon;
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Builder;
@@ -31,29 +32,14 @@ class TaxonController extends Controller
 
     public function show(Taxon $taxon)
     {
-        $ranks = array();
-        $status = array();
         $tree = $this->_tree($taxon);
+        return view('page.show', compact('taxon', 'tree',));
+    }
 
-        foreach ($taxon->children as $child) {
-            if ($child->iucn) {
-                $key = $child->iucn->status;
-                if (array_key_exists($key, $status)) {
-                    $status[$key]++;
-                } else {
-                    $status[$key] = 1;
-                }
-            }
-
-            $key = $child->taxonRank;
-            if (array_key_exists($key, $ranks)) {
-                $ranks[$key]++;
-            } else {
-                $ranks[$key] = 1;
-            }
-        }
-
-        return view('page.show', compact('taxon', 'tree', 'ranks', 'status'));
+    public function map(Taxon $taxon)
+    {
+        $tree = $this->_tree($taxon);
+        return view('page.map', compact('taxon', 'tree'));
     }
 
     public function tree(Taxon $taxon)
@@ -79,6 +65,41 @@ class TaxonController extends Controller
         $tree = $this->_tree($taxon);
         return view('page.en', compact('taxon', 'tree'));
     }
+
+    // public function sum(Taxon $taxon)
+    // {
+    //     $temp = array();
+    //     foreach ($taxon->children as $c) {
+    //         $key = $c->taxonRank;
+    //         if (array_key_exists($key, $temp)) {
+    //             $temp[$key]++;
+    //         } else {
+    //             $temp[$key] = 1;
+    //         }
+
+    //         if ($c->number) {
+    //             $json = json_decode($c->number->json);
+    //             foreach ($json as $key => $val) {
+    //                 if (array_key_exists($key, $temp)) {
+    //                     $temp[$key] += $val;
+    //                 } else {
+    //                     $temp[$key] = $val;
+    //                 }
+    //             }
+    //         }
+    //     }
+
+    //     if (!$taxon->number) {
+    //         $number = new Number;
+    //         $number->taxonID = $taxon->taxonID;
+    //     } else {
+    //         $number = Number::find($taxon->taxonID);
+    //     }
+    //     $number->json = json_encode($temp);
+    //     $number->save();
+
+    //     return redirect('/page/' . $taxon->taxonID);
+    // }
 
     public function extinct(Taxon $taxon)
     {
@@ -125,52 +146,52 @@ class TaxonController extends Controller
         return redirect('/page/' . $me->taxonID);
     }
 
-    public $ranks = array();
-    public $status = array();
+    // public $ranks = array();
+    // public $status = array();
 
-    public function ranks(Taxon $taxon)
-    {
-        $this->_ranks($taxon);
-        return response()->json( $this->ranks );
-    }
+    // public function ranks(Taxon $taxon)
+    // {
+    //     $this->_ranks($taxon);
+    //     return response()->json( $this->ranks );
+    // }
 
-    public function status(Taxon $taxon)
-    {
-        $this->_status($taxon);
-        return response()->json( $this->status );
-    }
+    // public function status(Taxon $taxon)
+    // {
+    //     $this->_status($taxon);
+    //     return response()->json( $this->status );
+    // }
 
-    private function _status(Taxon $taxon)
-    {
-        //if ($depth > 100) return;
+    // private function _status(Taxon $taxon)
+    // {
+    //     //if ($depth > 100) return;
 
-        foreach ($taxon->children as $c) {
-            if ($c->taxonRank == 'species' && $c->iucn) {
-                $key = $c->iucn->status;
-                if (array_key_exists($key, $this->status)) {
-                    $this->status[$key]++;
-                } else {
-                    $this->status[$key] = 1;
-                }
-            }
-            $this->_status($c);
-        }
-    }
+    //     foreach ($taxon->children as $c) {
+    //         if ($c->taxonRank == 'species' && $c->iucn) {
+    //             $key = $c->iucn->status;
+    //             if (array_key_exists($key, $this->status)) {
+    //                 $this->status[$key]++;
+    //             } else {
+    //                 $this->status[$key] = 1;
+    //             }
+    //         }
+    //         $this->_status($c);
+    //     }
+    // }
 
-    private function _ranks(Taxon $taxon)
-    {
-        //if ($depth > 100) return;
+    // private function _ranks(Taxon $taxon)
+    // {
+    //     //if ($depth > 100) return;
 
-        foreach ($taxon->children as $c) {
-            $key = $c->taxonRank;
-            if (array_key_exists($key, $this->ranks)) {
-                $this->ranks[$key]++;
-            } else {
-                $this->ranks[$key] = 1;
-            }
-            $this->_ranks($c);
-        }
-    }
+    //     foreach ($taxon->children as $c) {
+    //         $key = $c->taxonRank;
+    //         if (array_key_exists($key, $this->ranks)) {
+    //             $this->ranks[$key]++;
+    //         } else {
+    //             $this->ranks[$key] = 1;
+    //         }
+    //         $this->_ranks($c);
+    //     }
+    // }
 
     private function _tree(Taxon $taxon)
     {

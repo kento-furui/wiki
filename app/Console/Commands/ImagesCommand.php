@@ -21,6 +21,7 @@ class ImagesCommand extends Command
     {
         $taxa = Taxon::whereIn('taxonomicStatus', ['valid', 'accepted'])
         ->where('EOLid', '>', $this->argument('eol'))
+        //->where('taxonRank', $this->argument('eol'))
         ->doesntHave('image')
         ->orderBy('EOLid')
         ->limit(50000)

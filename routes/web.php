@@ -23,6 +23,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [TaxonController::class, 'index']);
 Route::get('/ja/{taxon}', [TaxonController::class, 'ja']);
 Route::get('/en/{taxon}', [TaxonController::class, 'en']);
+Route::get('/sum/{taxon}', [TaxonController::class, 'sum']);
+Route::get('/map/{taxon}', [TaxonController::class, 'map']);
 Route::get('/page/{taxon}', [TaxonController::class, 'show']);
 Route::get('/tree/{taxon}', [TaxonController::class, 'tree']);
 Route::get('/media/{taxon}', [TaxonController::class, 'media']);

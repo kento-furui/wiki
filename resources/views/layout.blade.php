@@ -8,7 +8,9 @@
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
     <title>@yield('title')</title>
     <link rel="stylesheet" href="/css/page.css">
+    <link rel="stylesheet" href="/v6.14.1-dist/ol.css">
     <link rel="stylesheet" href="/lightbox2/dist/css/lightbox.min.css">
+    <script src="/v6.14.1-dist/ol.js"></script>
 </head>
 
 <body>
