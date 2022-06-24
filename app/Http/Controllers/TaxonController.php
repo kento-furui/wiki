@@ -48,6 +48,12 @@ class TaxonController extends Controller
         return view('page.tree', compact('taxon', 'tree'));
     }
 
+    public function taxon(Taxon $taxon)
+    {
+        $tree = $this->_tree($taxon);
+        return view('page.taxon', compact('taxon', 'tree'));
+    }
+
     public function media(Taxon $taxon)
     {
         $tree = $this->_tree($taxon);
@@ -114,7 +120,7 @@ class TaxonController extends Controller
             $this->extinct($c);
         }
 
-        return redirect('/page/' . $taxon->taxonID);
+        return redirect('/taxon/' . $taxon->taxonID);
     }
 
     public function represent(Taxon $taxon)
@@ -143,7 +149,7 @@ class TaxonController extends Controller
             }
         }
 
-        return redirect('/page/' . $me->taxonID);
+        return redirect('/taxon/' . $me->taxonID);
     }
 
     // public $ranks = array();

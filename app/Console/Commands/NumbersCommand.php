@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use App\Models\Taxon;
 use App\Models\Number;
 use Illuminate\Console\Command;
+use Illuminate\Database\Eloquent\Builder;
 
 class NumbersCommand extends Command
 {
@@ -25,20 +26,53 @@ class NumbersCommand extends Command
         ->where('taxonID', '>', $this->argument('taxonID'))
         //->where('taxonRank', $this->argument('taxonID'))
         ->has('children')
-        ->doesntHave('number')
+        ->whereHas('number', function(Builder $query) {
+            $query->whereNull('status');
+        })
         ->orderBy('taxonID')
-        //->limit(10000)
+        ->limit(50000)
         ->get();
 
         foreach ($taxa as $taxon) {
             echo $taxon->taxonID . " " . $taxon->canonicalName . "\n";
-            $this->getNumber($taxon->taxonID);
+
+            $this->ranks = array();
+
+            $this->status($taxon);
+
+            if (empty($this->ranks)) continue;
+
+            if (!$taxon->number) {
+                $taxon->number = new Number;
+                $taxon->number->taxonID = $taxon->taxonID;
+            }
+            $taxon->number->status = json_encode($this->ranks);
+            $taxon->number->save();
+
+            echo $taxon->number->status . "\n";
         }
     }
 
-    public function sum(Taxon $taxon)
+    public function status(Taxon $taxon)
+    {
+        foreach ($taxon->children as $c) {
+            if ($c->taxonRank == "species" && $c->iucn) {
+                $key = $c->iucn->status;
+                if (array_key_exists($key, $this->ranks)) {
+                    $this->ranks[$key]++;
+                } else {
+                    $this->ranks[$key] = 1;
+                }
+            }
+            $this->status($c);
+        }
+    }
+
+    public function sum($taxonID)
     {
         $temp = array();
+        $taxon = Taxon::find($taxonID);
+
         foreach ($taxon->children as $c) {
             $key = $c->taxonRank;
             if (array_key_exists($key, $temp)) {
@@ -64,7 +98,7 @@ class NumbersCommand extends Command
         $number->json = json_encode($temp);
         $number->save();
 
-        return redirect('/page/' . $taxon->taxonID);
+        echo $number->json; 
     }
 
     public function getNumber($taxonID)
@@ -74,7 +108,7 @@ class NumbersCommand extends Command
         $this->ranks = array();
 
         $this->_ranks($taxon);
-        
+
         $number = new Number;
         $number->taxonID = $taxonID;
         $number->json = json_encode($this->ranks);

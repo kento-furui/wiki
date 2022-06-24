@@ -27,6 +27,7 @@ Route::get('/sum/{taxon}', [TaxonController::class, 'sum']);
 Route::get('/map/{taxon}', [TaxonController::class, 'map']);
 Route::get('/page/{taxon}', [TaxonController::class, 'show']);
 Route::get('/tree/{taxon}', [TaxonController::class, 'tree']);
+Route::get('/taxon/{taxon}', [TaxonController::class, 'taxon']);
 Route::get('/media/{taxon}', [TaxonController::class, 'media']);
 Route::get('/extinct/{taxon}', [TaxonController::class, 'extinct']);
 Route::get('/represent/{taxon}', [TaxonController::class, 'represent']);

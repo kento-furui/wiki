@@ -20,7 +20,7 @@ class ImagesCommand extends Command
     public function handle()
     {
         $taxa = Taxon::whereIn('taxonomicStatus', ['valid', 'accepted'])
-        ->where('EOLid', '>', $this->argument('eol'))
+        ->where('EOLid', '>=', $this->argument('eol'))
         //->where('taxonRank', $this->argument('eol'))
         ->doesntHave('image')
         ->orderBy('EOLid')
