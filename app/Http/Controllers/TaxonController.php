@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Eol;
 use App\Models\Image;
 use App\Models\Iucn;
 use App\Models\Number;
@@ -71,41 +72,6 @@ class TaxonController extends Controller
         $tree = $this->_tree($taxon);
         return view('page.en', compact('taxon', 'tree'));
     }
-
-    // public function sum(Taxon $taxon)
-    // {
-    //     $temp = array();
-    //     foreach ($taxon->children as $c) {
-    //         $key = $c->taxonRank;
-    //         if (array_key_exists($key, $temp)) {
-    //             $temp[$key]++;
-    //         } else {
-    //             $temp[$key] = 1;
-    //         }
-
-    //         if ($c->number) {
-    //             $json = json_decode($c->number->json);
-    //             foreach ($json as $key => $val) {
-    //                 if (array_key_exists($key, $temp)) {
-    //                     $temp[$key] += $val;
-    //                 } else {
-    //                     $temp[$key] = $val;
-    //                 }
-    //             }
-    //         }
-    //     }
-
-    //     if (!$taxon->number) {
-    //         $number = new Number;
-    //         $number->taxonID = $taxon->taxonID;
-    //     } else {
-    //         $number = Number::find($taxon->taxonID);
-    //     }
-    //     $number->json = json_encode($temp);
-    //     $number->save();
-
-    //     return redirect('/page/' . $taxon->taxonID);
-    // }
 
     public function extinct(Taxon $taxon)
     {

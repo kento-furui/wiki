@@ -200,3 +200,7 @@ table.noprint {
     font-size: 88%;
     line-height: 1.5em;
 }
+
+.infobox a {
+    color:blue;
+}

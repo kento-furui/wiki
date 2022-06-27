@@ -18,12 +18,11 @@ use App\Http\Controllers\TaxonController;
 |
 */
 
-Route::get('/taxon/ranks/{taxon}', [TaxonController::class, 'ranks']);
-Route::get('/taxon/status/{taxon}', [TaxonController::class, 'status']);
+Route::post('/eol/update/{eol}', [EolController::class, 'update']);
 
+Route::get('/image/store/{id}', [ImageController::class, 'store']);
 Route::post('/image/update/{id}', [ImageController::class, 'update']);
 
 // Route::post('/iucn/store', [IucnController::class, 'store']);
 // Route::post('/image/store/', [ImageController::class, 'store']);
-// Route::post('/eol/update/{eol}', [EolController::class, 'update']);
 // Route::post('/image/preferred/', [ImageController::class, 'preferred']);

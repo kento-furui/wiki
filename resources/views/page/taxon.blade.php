@@ -30,41 +30,61 @@
         <div class="row" id="tree">
             <div class="col-12">
                 @foreach (array_reverse($tree) as $t)
-                    <a style="color: antiquewhite" href="/taxon/{{ $t->taxonID }}">{{ $t->canonicalName }}</a> >
+                    <a style="color: antiquewhite"
+                        href="/taxon/{{ $t->taxonID }}">{{ $t->eol && !empty($t->eol->jp) ? $t->eol->jp : $t->canonicalName }}</a>
+                    >
                 @endforeach
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
-                <h5>{{ $taxon->taxonRank }}</h5>
-                <h4 style="color: whitesmoke; margin-bottom: 2%">
-                    {{ $taxon->scientificName }}<br>
-                    {{ $taxon->eol ? $taxon->eol->jp : null }}<br>
-                    {{ $taxon->eol ? $taxon->eol->en : null }}
-                    @if ($taxon->iucn)
-                        <span class="{{ $taxon->iucn->status }}">{{ $taxon->iucn->status }}</span>
-                    @endif
-                </h4>
-                <div style="margin-bottom: 1%">
-                    @if ($taxon->number && !empty($taxon->number->status))
-                        @foreach (json_decode($taxon->number->status) as $key => $val)
-                            <span class="{{ $key }}">{{ $key }} {{ $val }}</span>
-                        @endforeach
-                    @endif
-                </div>
-                <div>
-                    @if ($taxon->number && !empty($taxon->number->json))
-                        @foreach (json_decode($taxon->number->json) as $key => $val)
-                            <div class="ranks">{{ number_format($val) }} {{ $key }}</div>
-                        @endforeach
-                    @endif
-                </div>
-                <div>
-                    <a href="/taxon/{{ $taxon->parentNameUsageID }}" class="btn btn-danger">Parent</a>
-                    <a href="/extinct/{{ $taxon->taxonID }}" class="btn btn-danger"
-                        onclick="return confirm('Extinct?')">Extinct</a>
-                    <a href="/represent/{{ $taxon->taxonID }}" class="btn btn-danger">Represent</a>
-                </div>
+            <div class="col-6" style="overflow-x: hidden">
+                <table class="table" style="color: antiquewhite">
+                    <tr>
+                        <td>{{ $taxon->taxonRank }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ $taxon->scientificName }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ $taxon->taxonID }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ $taxon->EOLid }}</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="jp" size="80" id="{{ $taxon->EOLid }}" value="{{ $taxon->eol ? $taxon->eol->jp : null }}"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="en" size="80" id="{{ $taxon->EOLid }}" value="{{ $taxon->eol ? $taxon->eol->en : null }}"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @if ($taxon->number && !empty($taxon->number->status))
+                                @foreach (json_decode($taxon->number->status) as $key => $val)
+                                    <span class="{{ $key }}">{{ $key }} {{ $val }}</span>
+                                @endforeach
+                            @elseif ($taxon->iucn)
+                                <span class="{{ $taxon->iucn->status }}">{{ $taxon->iucn->status }}</span>
+                            @endif
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @if ($taxon->number && !empty($taxon->number->json))
+                                @foreach (json_decode($taxon->number->json) as $key => $val)
+                                    <div class="ranks">{{ number_format($val) }} {{ $key }}</div>
+                                @endforeach
+                            @endif
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/taxon/{{ $taxon->parentNameUsageID }}" class="btn btn-danger">Parent</a>
+                            <a href="/extinct/{{ $taxon->taxonID }}" class="btn btn-danger"
+                                onclick="return confirm('Extinct?')">Extinct</a>
+                            <a href="/represent/{{ $taxon->taxonID }}" class="btn btn-danger">Represent</a>
+                        </td>
+                </table>
             </div>
             <div class="col-6">
                 @if ($taxon->image)
@@ -83,26 +103,16 @@
                         <tr>
                             <td>
                                 <a href="/taxon/{{ $child->taxonID }}">
-                                    <img src="{{ $child->image ? $child->image->eolThumbnailURL : '/img/noimage.png' }}"
-                                        style="max-width: 98px">
+                                    @if ($child->image)
+                                        <img src="{{ $child->image->eolThumbnailURL }}">
+                                    @else
+                                        <img src="/img/noimage.png" id="{{ $child->EOLid }}" class="noimage" width="98px">
+                                    @endif
                                 </a>
                             </td>
-                            <td>{{ $child->taxonID }}</td>
+                            <td>{{ $child->taxonID }}</a></td>
                             <td>{{ $child->EOLid }}</td>
-                            <td>
-                                {{ $child->scientificName }}<br>
-                                @if ($child->number && !empty($child->number->status))
-                                    @foreach (json_decode($child->number->status) as $key => $val)
-                                        <span style="border: 1px white solid; padding:5px">{{ $key }} {{ $val }}</span>
-                                    @endforeach
-                                    <br>
-                                @endif
-                                @if ($child->number && !empty($child->number->json))
-                                    @foreach (json_decode($child->number->json) as $key => $val)
-                                        <span style="border: 1px white solid; padding:5px">{{ $key }} {{ $val }}</span>
-                                    @endforeach
-                                @endif
-                            </td>
+                            <td>{{ $child->canonicalName }}</td>
                             <td>{{ $child->eol ? $child->eol->jp : null }}</td>
                             <td>{{ $child->eol ? $child->eol->en : null }}</td>
                             <td>{{ $child->taxonRank }}</td>
@@ -129,11 +139,57 @@
         fetchWiki(document.querySelector('#ja'));
         fetchWiki(document.querySelector('#en'));
         fetchImg(document.querySelector('#EOLid'));
+        saveImg(document.querySelectorAll('.noimage'));
+
+        document.querySelector(".jp").addEventListener("change", (e) => {
+            const id = e.target.id;
+            const body = {
+                jp: e.target.value
+            }
+            update(id, body);
+            e.target.replaceWith(e.target.value);
+        });
+
+        document.querySelector(".en").addEventListener("change", (e) => {
+            const id = e.target.id;
+            const body = {
+                en: e.target.value
+            }
+            update(id, body);
+            e.target.replaceWith(e.target.value);
+        });
+
+        async function update(id, body) {
+            await fetch(`/api/eol/update/${id}`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(body),
+            });
+        }
 
         function next() {
             page++;
             document.querySelectorAll('.thumbnail').forEach(e => e.remove());
             fetchImg(document.querySelector('#EOLid'));
+        }
+
+        async function saveImg(elements) {
+            for (let e of elements) {
+                try {
+                    const id = e.id;
+                    const url = `/api/image/store/${id}`;
+                    const response = await fetch(url);
+                    const data = await response.json();
+                    console.log(data);
+                    if (data.eolThumbnailURL != undefined) {
+                        e.src = data.eolThumbnailURL;
+                    }
+                } catch(err) {
+                    console.error(err);
+                }
+            }
         }
 
         async function fetchImg(element) {

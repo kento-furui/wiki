@@ -14,12 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/login', [AuthController::class, 'index'])->name('login');
-//Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
-//Route::post('/login', [AuthController::class, 'login'])->name('log_user_in');
-//Route::get('/register', [AuthController::class, 'register'])->name('register');
-//Route::post('/register', [AuthController::class, 'store'])->name('store_new_user');
-
 Route::get('/', [TaxonController::class, 'index']);
 Route::get('/ja/{taxon}', [TaxonController::class, 'ja']);
 Route::get('/en/{taxon}', [TaxonController::class, 'en']);
