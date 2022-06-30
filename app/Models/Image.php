@@ -11,4 +11,5 @@ class Image extends Model
     protected $primaryKey = 'EOLid';
 
     public $timestamps = false;
+    public $incrementing = false;
 }

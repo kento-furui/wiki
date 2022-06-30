@@ -23,7 +23,7 @@
         <a class="btn {{ $app == 'page'  ? 'btn-primary' : 'btn-info' }}" href="/page/{{ $taxon->taxonID }}">Page</a>
         <a class="btn {{ $app == 'tree'  ? 'btn-primary' : 'btn-info' }}" href="/tree/{{ $taxon->taxonID }}">Tree</a>
         <a class="btn {{ $app == 'media' ? 'btn-primary' : 'btn-info' }}" href="/media/{{ $taxon->taxonID }}">Media</a>
-        <a class="btn {{ $app == 'map'   ? 'btn-primary' : 'btn-info' }}" href="/map/{{ $taxon->taxonID }}">Map</a>
+        <a class="btn {{ $app == 'taxon' ? 'btn-primary' : 'btn-info' }}" href="/taxon/{{ $taxon->taxonID }}">Taxon</a>
         <a class="btn {{ $app == 'ja'    ? 'btn-primary' : 'btn-info' }}" href="/ja/{{ $taxon->taxonID }}">JPN</a>
         <a class="btn {{ $app == 'en'    ? 'btn-primary' : 'btn-info' }}" href="/en/{{ $taxon->taxonID }}">ENG</a>
     </div>

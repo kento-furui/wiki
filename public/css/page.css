@@ -28,6 +28,7 @@ tr td span {
     margin-bottom: 5px;
     padding: 5px 10px;
     display: inline-block;
+    color: antiquewhite;
     border: whitesmoke 1px solid;
 }
 
@@ -147,6 +148,7 @@ tr td span {
 }
 
 .CD {
+    color: black;
     background: rgb(228, 211, 84);
 }
 
@@ -199,4 +201,8 @@ table.noprint {
     text-align: left;
     font-size: 88%;
     line-height: 1.5em;
+}
+
+.infobox a {
+    color:blue;
 }
