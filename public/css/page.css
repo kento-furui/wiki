@@ -1,11 +1,13 @@
 body {
-    color: antiquewhite;
     background-color: black;
 }
 
 a {
-    color: antiquewhite;
     text-decoration: none;
+}
+
+h2, h3 {
+    color: antiquewhite;
 }
 
 h4, h5 {
@@ -186,7 +188,8 @@ div.tright, div.floatright, table.floatright {
     float: right;
 }
 
-table.noprint {
+table.noprint,
+table.ambox {
     display: none;
 }
 
@@ -203,6 +206,9 @@ table.noprint {
     line-height: 1.5em;
 }
 
-.infobox a {
-    color:blue;
+#wikipedia,
+#wikipedia_ja,
+#wikipedia_en,
+#wikispecies {
+    background-color: antiquewhite;
 }

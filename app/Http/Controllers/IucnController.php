@@ -18,6 +18,13 @@ class IucnController extends Controller
         $response = @file_get_contents($url);
         $json = json_decode($response);
 
+        if (isset($json->result[0]->category)) {
+            $taxon->iucn = new Iucn;
+            $taxon->iucn->taxonID = $taxonID;
+            $taxon->iucn->status = $json->result[0]->category;
+            $taxon->iucn->save();
+            return response()->json($taxon->iucn);
+        }
 
         return response()->json($json);
     }

@@ -18,8 +18,9 @@ use App\Http\Controllers\ImageController;
 
 Route::get('/iucn/store/{id}', [IucnController::class, 'store']);
 Route::get('/image/store/{id}', [ImageController::class, 'store']);
+Route::get('/cname/{lang}/{eol}', [EolController::class, 'cname']);
 
-Route::post('/eol/update/{eol}', [EolController::class, 'update']);
+Route::post('/eol/update/{id}', [EolController::class, 'update']);
 Route::post('/image/update/{id}', [ImageController::class, 'update']);
 
 // Route::post('/iucn/store', [IucnController::class, 'store']);

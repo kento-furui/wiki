@@ -1,5 +1,5 @@
 <div class="row" id="tree">
-    <div class="col-12">
+    <div class="col-12" style="color: whitesmoke">
         @foreach (array_reverse($tree) as $t)
         <a style="color: antiquewhite" href="/{{ $app }}/{{ $t->taxonID }}">{{ $t->canonicalName }}</a> >
         @endforeach
@@ -9,9 +9,9 @@
     <div class="col-1" id="thumbnail">
         <img src="{{ $taxon->image ? $taxon->image->eolThumbnailURL : '/img/noimage.png' }}" width="98px">
     </div>
-    <div class="col-7" id="names">
+    <div class="col-7" id="names" style="color: whitesmoke">
         {{ $taxon->taxonRank }}<br>
-        <h4 style="color: whitesmoke; margin-bottom: 0">
+        <h4 style="margin-bottom: 0">
             {{ $taxon->scientificName }}
             {{ $taxon->eol ? $taxon->eol->jp : null }}
             @if ($taxon->iucn)

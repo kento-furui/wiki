@@ -31,16 +31,22 @@ class TaxonController extends Controller
         return view('page.index', compact('taxa', 'request'));
     }
 
+    public function rand()
+    {  
+        $taxa = Taxon::whereIn('taxonomicStatus', ['valid', 'accepted'])
+        ->where('taxonRank', 'species')
+        ->doesntHave('iucn')
+        ->inRandomOrder()
+        ->limit(16)
+        ->get();
+
+        return view('page.rand', compact('taxa'));
+    }
+
     public function show(Taxon $taxon)
     {
         $tree = $this->_tree($taxon);
         return view('page.show', compact('taxon', 'tree',));
-    }
-
-    public function map(Taxon $taxon)
-    {
-        $tree = $this->_tree($taxon);
-        return view('page.map', compact('taxon', 'tree'));
     }
 
     public function tree(Taxon $taxon)
