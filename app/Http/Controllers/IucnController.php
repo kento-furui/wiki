@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class IucnController extends Controller
 {
-    public function store(Request $request)
+    public function store($taxonID)
     {
         $iucn = new Iucn;
         $iucn->taxonID = $request->id;

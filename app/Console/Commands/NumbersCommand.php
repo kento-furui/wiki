@@ -21,12 +21,10 @@ class NumbersCommand extends Command
     public function handle()
     {
         $taxa = Taxon::whereIn('taxonomicStatus', ['valid', 'accepted'])
-            //->where('taxonID', '>', $this->argument('taxonID'))
-            ->where('taxonRank', 'genus')
+            ->where('taxonID', '>', $this->argument('taxonID'))
             ->has('number')
             ->has('children')
             ->orderBy('taxonID')
-            //->limit(50000)
             ->get();
 
         foreach ($taxa as $taxon) {

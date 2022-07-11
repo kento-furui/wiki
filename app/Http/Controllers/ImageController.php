@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\DB;
 
 class ImageController extends Controller
 {
+<<<<<<< HEAD
     public function store(Request $request)
     {
         $image = new Image;
@@ -21,6 +22,30 @@ class ImageController extends Controller
         $image->eolMediaURL = $request->eolMediaURL;
         $image->eolThumbnailURL = $request->eolThumbnailURL;
         $image->dataObjectVersionID = $request->dataObjectVersionID;
+=======
+    public function store($id)
+    {
+        $url = "https://eol.org/api/pages/1.0/$id.json?details=true&images_per_page=1";
+        $response = @file_get_contents($url);
+        $json = json_decode($response);
+        if (!isset($json->taxonConcept->dataObjects)) {
+            return response()->json($json);
+        }
+
+        $do = $json->taxonConcept->dataObjects[0];
+        
+        $image = new Image;
+        $image->EOLid = $id;
+        $image->title = isset($do->title) ? $do->title : null;
+        $image->width = isset($do->width) ? $do->width : null;
+        $image->height = isset($do->height) ? $do->height : null;
+        $image->mediaURL = isset($do->mediaURL) ? $do->mediaURL : null;
+        $image->identifier = isset($do->identifier) ? $do->identifier : null;
+        $image->eolMediaURL = isset($do->eolMediaURL) ? $do->eolMediaURL : null;
+        $image->description = isset($do->description) ? $do->description : null;
+        $image->eolThumbnailURL = isset($do->eolThumbnailURL) ? $do->eolThumbnailURL : null;
+        $image->dataObjectVersionID = isset($do->dataObjectVersionID) ? $do->dataObjectVersionID : null;
+>>>>>>> 8ef591c4c99783a32d26693be76a0d5674b06f5e
         $image->save();
 
         return response()->json($image);
