@@ -1,11 +1,9 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EolController;
 use App\Http\Controllers\IucnController;
 use App\Http\Controllers\ImageController;
-use App\Http\Controllers\TaxonController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,11 +16,8 @@ use App\Http\Controllers\TaxonController;
 |
 */
 
-Route::post('/eol/update/{eol}', [EolController::class, 'update']);
-
-Route::get('/image/store/{id}', [ImageController::class, 'store']);
+Route::post('/iucn/store', [IucnController::class, 'store']);
+Route::post('/image/store/', [ImageController::class, 'store']);
+Route::post('/eol/update/{id}', [EolController::class, 'update']);
+Route::post('/iucn/update/{id}', [IucnController::class, 'update']);
 Route::post('/image/update/{id}', [ImageController::class, 'update']);
-
-// Route::post('/iucn/store', [IucnController::class, 'store']);
-// Route::post('/image/store/', [ImageController::class, 'store']);
-// Route::post('/image/preferred/', [ImageController::class, 'preferred']);

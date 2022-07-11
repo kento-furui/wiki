@@ -4,27 +4,39 @@
 
 @section('content')
     @include('page.common', ['app' => 'page'])
-    <div class="row">
-        <div class="col-1">Status</div>
-        <div class="col-11">
-            @if ($taxon->number && !empty($taxon->number->status))
-                @foreach (json_decode($taxon->number->status) as $key => $val)
-                    <span class="{{ $key }}">{{ $key }} {{ $val }}</span>
-                @endforeach
-            @endif
-        </div>
-    </div>
-    <hr>
-    <div class="row">
-        <div class="col-1">Contains</div>
-        <div class="col-11">
-            @if ($taxon->number && !empty($taxon->number->json))
-                @foreach (json_decode($taxon->number->json) as $key => $val)
-                    <div class="ranks">{{ number_format($val) }} {{ $key }}</div>
-                @endforeach
-            @endif
-        </div>
-    </div>
+    <table class="table">
+        <tr>
+            <td>
+                @if ($taxon->number && !empty($taxon->number->json))
+                    @foreach (json_decode($taxon->number->json) as $key => $val)
+                        <div class="ranks">{{ number_format($val) }} {{ $key }}</div>
+                    @endforeach
+                @endif
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @if ($taxon->number && !empty($taxon->number->status))
+                    @foreach (json_decode($taxon->number->status) as $key => $val)
+                        @if (!empty($val))
+                            <span class="{{ $key }}">{{ $key }} {{ $val }}</span>
+                        @endif
+                    @endforeach
+                @endif
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @if ($taxon->number && !empty($taxon->number->node))
+                    @foreach (json_decode($taxon->number->node) as $key => $val)
+                        @if (!empty($val))
+                            <div class="ranks">{{ strtoupper($key) }} {{ number_format($val) }}</div>
+                        @endif
+                    @endforeach
+                @endif
+            </td>
+        </tr>
+    </table>
     <div class="row">
         <div class="col-6" id="table" style="overflow: hidden">
             <table class="table" style="color: antiquewhite;">
@@ -51,7 +63,8 @@
                 <tr>
                     <th>Parent</th>
                     <td>
-                        <a class="btn btn-primary" href="/page/{{ $taxon->parentNameUsageID }}">{{ $taxon->parentNameUsageID }}</a>
+                        <a class="btn btn-primary"
+                            href="/page/{{ $taxon->parentNameUsageID }}">{{ $taxon->parentNameUsageID }}</a>
                     </td>
                 </tr>
                 <tr>

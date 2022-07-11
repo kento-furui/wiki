@@ -2,10 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Eol;
-use App\Models\Image;
 use App\Models\Iucn;
-use App\Models\Number;
+use App\Models\Image;
 use App\Models\Taxon;
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Builder;
@@ -31,16 +29,24 @@ class TaxonController extends Controller
         return view('page.index', compact('taxa', 'request'));
     }
 
+    public function rand()
+    {  
+        $taxa = Taxon::whereIn('taxonomicStatus', ['valid', 'accepted'])
+        ->where('taxonRank', 'species')
+        //->where('taxonRank', 'genus')
+        ->doesntHave('iucn')
+        //->doesntHave('image')
+        ->inRandomOrder()
+        ->limit(16)
+        ->get();
+
+        return view('page.rand', compact('taxa'));
+    }
+
     public function show(Taxon $taxon)
     {
         $tree = $this->_tree($taxon);
         return view('page.show', compact('taxon', 'tree',));
-    }
-
-    public function map(Taxon $taxon)
-    {
-        $tree = $this->_tree($taxon);
-        return view('page.map', compact('taxon', 'tree'));
     }
 
     public function tree(Taxon $taxon)

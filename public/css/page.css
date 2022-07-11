@@ -1,11 +1,13 @@
 body {
-    color: antiquewhite;
     background-color: black;
 }
 
 a {
-    color: antiquewhite;
     text-decoration: none;
+}
+
+h2, h3 {
+    color: antiquewhite;
 }
 
 h4, h5 {
@@ -28,6 +30,7 @@ tr td span {
     margin-bottom: 5px;
     padding: 5px 10px;
     display: inline-block;
+    color: antiquewhite;
     border: whitesmoke 1px solid;
 }
 
@@ -57,10 +60,6 @@ tr td span {
 
 .thumb {
     cursor: pointer;
-}
-
-.thumb:hover {
-    border: blue 1px solid;
 }
 
 .EX, .EW, .CR, .EN, .VU, .NT, .LC, .DD, .CD {
@@ -147,6 +146,7 @@ tr td span {
 }
 
 .CD {
+    color: black;
     background: rgb(228, 211, 84);
 }
 
@@ -184,7 +184,8 @@ div.tright, div.floatright, table.floatright {
     float: right;
 }
 
-table.noprint {
+table.noprint,
+table.ambox {
     display: none;
 }
 
@@ -201,6 +202,9 @@ table.noprint {
     line-height: 1.5em;
 }
 
-.infobox a {
-    color:blue;
+#wikipedia,
+#wikipedia_ja,
+#wikipedia_en,
+#wikispecies {
+    background-color: antiquewhite;
 }

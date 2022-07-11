@@ -3,13 +3,12 @@
 namespace App\Console\Commands;
 
 use App\Models\Taxon;
-use App\Models\Number;
 use Illuminate\Console\Command;
-use Illuminate\Database\Eloquent\Builder;
 
 class NumbersCommand extends Command
 {
-    public $ranks;
+    public $tmp;
+    public $iucn;
 
     protected $signature = 'numbers:store {taxonID}';
     protected $description = 'Command description';
@@ -22,111 +21,67 @@ class NumbersCommand extends Command
     public function handle()
     {
         $taxa = Taxon::whereIn('taxonomicStatus', ['valid', 'accepted'])
-        //->where('taxonID', $this->argument('taxonID'))
-        ->where('taxonID', '>', $this->argument('taxonID'))
-        //->where('taxonRank', $this->argument('taxonID'))
-        ->has('children')
-        ->whereHas('number', function(Builder $query) {
-            $query->whereNull('status');
-        })
-        ->orderBy('taxonID')
-        ->limit(50000)
-        ->get();
+            //->where('taxonID', '>', $this->argument('taxonID'))
+            ->where('taxonRank', 'genus')
+            ->has('number')
+            ->has('children')
+            ->orderBy('taxonID')
+            //->limit(50000)
+            ->get();
 
         foreach ($taxa as $taxon) {
+            $this->tmp = array();
+            $this->tmp['jp'] = 0;
+            $this->tmp['en'] = 0;
+            $this->tmp['img'] = 0;
+            $this->tmp['iucn'] = 0;
+
+            $this->iucn = array();
+            $this->iucn["EN"] = 0;
+            $this->iucn["DD"] = 0;
+            $this->iucn["LC"] = 0;
+            $this->iucn["VU"] = 0;
+            $this->iucn["NT"] = 0;
+            $this->iucn["CR"] = 0;
+            $this->iucn["CD"] = 0;
+            $this->iucn["EX"] = 0;
+            $this->iucn["EW"] = 0;
+
             echo $taxon->taxonID . " " . $taxon->canonicalName . "\n";
 
-            $this->ranks = array();
+            $this->nodes($taxon);
 
-            $this->status($taxon);
+            if (empty($this->tmp['jp']) && empty($this->tmp['en']) && empty($this->tmp['img']) && empty($this->tmp['iucn'])) continue;
 
-            if (empty($this->ranks)) continue;
-
-            if (!$taxon->number) {
-                $taxon->number = new Number;
-                $taxon->number->taxonID = $taxon->taxonID;
-            }
-            $taxon->number->status = json_encode($this->ranks);
+            $taxon->number->node = json_encode($this->tmp);
+            $taxon->number->status = json_encode($this->iucn);
             $taxon->number->save();
 
-            echo $taxon->number->status . "\n";
+            echo json_encode($this->tmp) . "\n";
+            echo json_encode($this->iucn) . "\n";
         }
     }
 
-    public function status(Taxon $taxon)
+    private function nodes(Taxon $taxon)
     {
         foreach ($taxon->children as $c) {
-            if ($c->taxonRank == "species" && $c->iucn) {
-                $key = $c->iucn->status;
-                if (array_key_exists($key, $this->ranks)) {
-                    $this->ranks[$key]++;
-                } else {
-                    $this->ranks[$key] = 1;
+            if ($c->taxonRank == 'species') {
+                if ($c->eol && !empty($c->eol->jp)) {
+                    $this->tmp['jp']++;
+                }
+                if ($c->eol && !empty($c->eol->en)) {
+                    $this->tmp['en']++;
+                }
+                if ($c->image) {
+                    $this->tmp['img']++;
+                }
+                if ($c->iucn) {
+                    $this->tmp['iucn']++;
+                    $key = $c->iucn->status;
+                    $this->iucn[$key]++;
                 }
             }
-            $this->status($c);
-        }
-    }
-
-    public function sum($taxonID)
-    {
-        $temp = array();
-        $taxon = Taxon::find($taxonID);
-
-        foreach ($taxon->children as $c) {
-            $key = $c->taxonRank;
-            if (array_key_exists($key, $temp)) {
-                $temp[$key]++;
-            } else {
-                $temp[$key] = 1;
-            }
-
-            if ($c->number) {
-                $json = json_decode($c->number->json);
-                foreach ($json as $key => $val) {
-                    if (array_key_exists($key, $temp)) {
-                        $temp[$key] += $val;
-                    } else {
-                        $temp[$key] = $val;
-                    }
-                }
-            }
-        }
-
-        $number = new Number;
-        $number->taxonID = $taxon->taxonID;
-        $number->json = json_encode($temp);
-        $number->save();
-
-        echo $number->json; 
-    }
-
-    public function getNumber($taxonID)
-    {
-        $taxon = Taxon::find($taxonID);
-
-        $this->ranks = array();
-
-        $this->_ranks($taxon);
-
-        $number = new Number;
-        $number->taxonID = $taxonID;
-        $number->json = json_encode($this->ranks);
-        $number->save();
-
-        echo $number->json . "\n";
-    }
-
-    private function _ranks(Taxon $taxon)
-    {
-        foreach ($taxon->children as $c) {
-            $key = $c->taxonRank;
-            if (array_key_exists($key, $this->ranks)) {
-                $this->ranks[$key]++;
-            } else {
-                $this->ranks[$key] = 1;
-            }
-            $this->_ranks($c);
+            $this->nodes($c);
         }
     }
 }
