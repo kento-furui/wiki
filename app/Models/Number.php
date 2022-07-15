@@ -13,4 +13,9 @@ class Number extends Model
 
     public $timestamps = false;
     public $incrementing = false;
+
+    public function taxon()
+    {
+        return $this->hasOne(Taxon::class, 'taxonID', 'taxonID');
+    }
 }

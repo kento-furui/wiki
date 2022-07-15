@@ -3,12 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Iucn;
-use App\Models\Taxon;
 use Illuminate\Http\Request;
 
 class IucnController extends Controller
 {
-    public function store($taxonID)
+    public function store(Request $request)
     {
         $iucn = new Iucn;
         $iucn->taxonID = $request->id;

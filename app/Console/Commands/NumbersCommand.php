@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Models\Taxon;
+use App\Models\Number;
 use Illuminate\Console\Command;
 
 class NumbersCommand extends Command
@@ -11,6 +12,7 @@ class NumbersCommand extends Command
     public $iucn;
 
     protected $signature = 'numbers:store {taxonID}';
+    //protected $signature = 'numbers:store';
     protected $description = 'Command description';
 
     public function __construct()
@@ -20,40 +22,38 @@ class NumbersCommand extends Command
 
     public function handle()
     {
-        $taxa = Taxon::whereIn('taxonomicStatus', ['valid', 'accepted'])
-            ->where('taxonID', '>', $this->argument('taxonID'))
-            ->has('number')
-            ->has('children')
-            ->orderBy('taxonID')
-            ->get();
+        $numbers = Number::where('node', null)
+        ->where('taxonID', '>', $this->argument('taxonID'))
+        ->orderBy('taxonID')
+        ->get();
 
-        foreach ($taxa as $taxon) {
+        foreach ($numbers as $number) {
             $this->tmp = array();
-            $this->tmp['jp'] = 0;
-            $this->tmp['en'] = 0;
-            $this->tmp['img'] = 0;
-            $this->tmp['iucn'] = 0;
+            $this->tmp['JP'] = 0;
+            $this->tmp['EN'] = 0;
+            $this->tmp['IMG'] = 0;
+            $this->tmp['IUCN'] = 0;
 
             $this->iucn = array();
-            $this->iucn["EN"] = 0;
-            $this->iucn["DD"] = 0;
-            $this->iucn["LC"] = 0;
-            $this->iucn["VU"] = 0;
-            $this->iucn["NT"] = 0;
-            $this->iucn["CR"] = 0;
-            $this->iucn["CD"] = 0;
             $this->iucn["EX"] = 0;
             $this->iucn["EW"] = 0;
+            $this->iucn["CR"] = 0;
+            $this->iucn["EN"] = 0;
+            $this->iucn["VU"] = 0;
+            $this->iucn["CD"] = 0;
+            $this->iucn["NT"] = 0;
+            $this->iucn["LC"] = 0;
+            $this->iucn["DD"] = 0;
 
-            echo $taxon->taxonID . " " . $taxon->canonicalName . "\n";
+            echo $number->taxonID . "\n";
 
-            $this->nodes($taxon);
+            $this->nodes($number->taxon);
 
-            if (empty($this->tmp['jp']) && empty($this->tmp['en']) && empty($this->tmp['img']) && empty($this->tmp['iucn'])) continue;
+            if (empty($this->tmp['JP']) && empty($this->tmp['EN']) && empty($this->tmp['IMG']) && empty($this->tmp['IUCN'])) continue;
 
-            $taxon->number->node = json_encode($this->tmp);
-            $taxon->number->status = json_encode($this->iucn);
-            $taxon->number->save();
+            $number->node = json_encode($this->tmp);
+            $number->status = json_encode($this->iucn);
+            $number->save();
 
             echo json_encode($this->tmp) . "\n";
             echo json_encode($this->iucn) . "\n";
@@ -65,16 +65,16 @@ class NumbersCommand extends Command
         foreach ($taxon->children as $c) {
             if ($c->taxonRank == 'species') {
                 if ($c->eol && !empty($c->eol->jp)) {
-                    $this->tmp['jp']++;
+                    $this->tmp['JP']++;
                 }
                 if ($c->eol && !empty($c->eol->en)) {
-                    $this->tmp['en']++;
+                    $this->tmp['EN']++;
                 }
                 if ($c->image) {
-                    $this->tmp['img']++;
+                    $this->tmp['IMG']++;
                 }
                 if ($c->iucn) {
-                    $this->tmp['iucn']++;
+                    $this->tmp['IUCN']++;
                     $key = $c->iucn->status;
                     $this->iucn[$key]++;
                 }

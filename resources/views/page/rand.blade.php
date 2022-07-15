@@ -71,17 +71,10 @@
     </div>
     <script src="/js/taxon.js"></script>
     <script>
-<<<<<<< HEAD
         document.querySelectorAll(".noimage").forEach(e => fetchImg(e));
         document.querySelectorAll(".noiucn").forEach(e => fetchIucn(e));
         document.querySelectorAll(".noen").forEach(e => fetchCname(e, "en"));
         document.querySelectorAll(".nojp").forEach(e => fetchCname(e, "jp"));
-=======
-        saveJpn(document.querySelectorAll('.nojp'));
-        saveEng(document.querySelectorAll('.noen'));
-        saveImg(document.querySelectorAll('.noimage'));
-        saveIucn(document.querySelectorAll('.noiucn'));
->>>>>>> 8ef591c4c99783a32d26693be76a0d5674b06f5e
     </script>
 </body>
 

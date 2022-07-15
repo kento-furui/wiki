@@ -142,7 +142,8 @@ async function fetchImages(element) {
                     },
                     body: JSON.stringify(data.taxon.dataObjects[0]),
                 });
-                document.querySelector("#preferred").src = data.taxon.dataObjects[0].eolMediaURL;
+                location.reload();
+                //document.querySelector("#preferred").src = data.taxon.dataObjects[0].eolMediaURL;
             });
             document.querySelector("#images").appendChild(img);
         }

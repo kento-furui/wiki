@@ -62,7 +62,7 @@
                     @if ($taxon->number && !empty($taxon->number->node))
                         @foreach (json_decode($taxon->number->node) as $key => $val)
                             @if (!empty($val))
-                                <div class="ranks">{{ strtoupper($key) }} {{ number_format($val) }}</div>
+                                <div class="ranks">{{ $key }} {{ number_format($val) }}</div>
                             @endif
                         @endforeach
                     @endif

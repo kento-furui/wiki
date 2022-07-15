@@ -1,7 +1,5 @@
 @extends('layout')
-
 @section('title', $taxon->canonicalName)
-
 @section('content')
     @include('page.common', ['app' => 'page'])
     <table class="table">
@@ -19,7 +17,7 @@
                 @if ($taxon->number && !empty($taxon->number->status))
                     @foreach (json_decode($taxon->number->status) as $key => $val)
                         @if (!empty($val))
-                            <span class="{{ $key }}">{{ $key }} {{ $val }}</span>
+                            <span class="{{ $key }}">{{ $key }} {{ number_format($val) }}</span>
                         @endif
                     @endforeach
                 @endif
@@ -30,7 +28,7 @@
                 @if ($taxon->number && !empty($taxon->number->node))
                     @foreach (json_decode($taxon->number->node) as $key => $val)
                         @if (!empty($val))
-                            <div class="ranks">{{ strtoupper($key) }} {{ number_format($val) }}</div>
+                            <div class="ranks">{{ $key }} {{ number_format($val) }}</div>
                         @endif
                     @endforeach
                 @endif

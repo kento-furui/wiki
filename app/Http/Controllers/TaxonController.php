@@ -97,79 +97,21 @@ class TaxonController extends Controller
 
     public function represent(Taxon $taxon)
     {
-        $me = $taxon;
-    
-        if ($taxon->image) {
+        if ($taxon->image && $taxon->parent) {
             $image = $taxon->image;
-
-            while ($taxon->parent) {
-                $taxon = $taxon->parent;
-                if (!$taxon->image) {
-                    $taxon->image = new Image;
-                    $taxon->image->EOLid = $taxon->EOLid;
-                }
-                $taxon->image->title = $image->title;
-                $taxon->image->width = $image->width;
-                $taxon->image->height = $image->height;
-                $taxon->image->mediaURL = $image->mediaURL;
-                $taxon->image->identifier = $image->identifier;
-                $taxon->image->description = $image->description;
-                $taxon->image->eolMediaURL = $image->eolMediaURL;
-                $taxon->image->eolThumbnailURL = $image->eolThumbnailURL;
-                $taxon->image->dataObjectVersionID = $image->dataObjectVersionID;
-                $taxon->image->save();
-            }
+            $taxon->parent->image->title = $image->title;
+            $taxon->parent->image->width = $image->width;
+            $taxon->parent->image->height = $image->height;
+            $taxon->parent->image->mediaURL = $image->mediaURL;
+            $taxon->parent->image->identifier = $image->identifier;
+            $taxon->parent->image->description = $image->description;
+            $taxon->parent->image->eolMediaURL = $image->eolMediaURL;
+            $taxon->parent->image->eolThumbnailURL = $image->eolThumbnailURL;
+            $taxon->parent->image->dataObjectVersionID = $image->dataObjectVersionID;
+            $taxon->parent->image->save();
         }
-
-        return redirect('/taxon/' . $me->taxonID);
+        return redirect('/taxon/' . $taxon->taxonID);
     }
-
-    // public $ranks = array();
-    // public $status = array();
-
-    // public function ranks(Taxon $taxon)
-    // {
-    //     $this->_ranks($taxon);
-    //     return response()->json( $this->ranks );
-    // }
-
-    // public function status(Taxon $taxon)
-    // {
-    //     $this->_status($taxon);
-    //     return response()->json( $this->status );
-    // }
-
-    // private function _status(Taxon $taxon)
-    // {
-    //     //if ($depth > 100) return;
-
-    //     foreach ($taxon->children as $c) {
-    //         if ($c->taxonRank == 'species' && $c->iucn) {
-    //             $key = $c->iucn->status;
-    //             if (array_key_exists($key, $this->status)) {
-    //                 $this->status[$key]++;
-    //             } else {
-    //                 $this->status[$key] = 1;
-    //             }
-    //         }
-    //         $this->_status($c);
-    //     }
-    // }
-
-    // private function _ranks(Taxon $taxon)
-    // {
-    //     //if ($depth > 100) return;
-
-    //     foreach ($taxon->children as $c) {
-    //         $key = $c->taxonRank;
-    //         if (array_key_exists($key, $this->ranks)) {
-    //             $this->ranks[$key]++;
-    //         } else {
-    //             $this->ranks[$key] = 1;
-    //         }
-    //         $this->_ranks($c);
-    //     }
-    // }
 
     private function _tree(Taxon $taxon)
     {

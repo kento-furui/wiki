@@ -41,7 +41,7 @@ tr td span {
 
 .child span {
     top: 0;
-    left: 12px;
+    right: 12px;
     position: absolute;
 }
 
@@ -52,6 +52,13 @@ tr td span {
     position: absolute;
     color: antiquewhite;
     background-color: rgba(47, 52, 53, 0.6);
+}
+
+.child a .json {
+    position: absolute;
+    color: antiquewhite;
+    padding: 2px;
+    background-color: black;
 }
 
 .child a img {
