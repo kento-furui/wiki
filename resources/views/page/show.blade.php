@@ -81,6 +81,12 @@
                     <th>Annotation</th>
                     <td>{{ $taxon->EOLidAnnotations }}</td>
                 </tr>
+                @if ($taxon->iucn2)
+                <tr>
+                    <th>Category</th>
+                    <td><span class="{{ $taxon->iucn2->category }}">{{ $taxon->iucn2->category }}</span> {{ $taxon->iucn2->population_trend }}</td>
+                </tr>
+                @endif
             </table>
         </div>
         <div class="col-6" id="image">

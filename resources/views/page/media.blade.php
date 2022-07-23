@@ -1,7 +1,5 @@
 @extends('layout')
-
 @section('title', $taxon->canonicalName)
-
 @section('content')
     @include('page.common', ['app' => 'media'])
     <div class="row" style="margin: 1% 0">
@@ -11,7 +9,6 @@
         </div>
     </div>
     <div class="row" id="media"></div>
-    @include('page.children', ['app' => 'media'])
     <input type="hidden" id="EOLid" value="{{ $taxon->EOLid }}" />
     <script>
         let page = 1;
@@ -35,7 +32,7 @@
             if (element.value == undefined) return false;
             const id = element.value;
             const url =
-                `https://eol.org/api/pages/1.0/${id}.json?details=true&images_per_page=16&images_page=${page}`;
+                `https://eol.org/api/pages/1.0/${id}.json?details=true&images_per_page=75&images_page=${page}`;
             try {
                 const response = await fetch(url);
                 const data = await response.json();

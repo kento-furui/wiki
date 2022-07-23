@@ -29,6 +29,11 @@ class Taxon extends Model
         return $this->hasOne(Iucn::class, 'taxonID', 'taxonID');
     }
 
+    public function iucn2()
+    {
+        return $this->hasOne(Iucn2::class, 'id', 'taxonID');
+    }
+
     public function number()
     {
         return $this->hasOne(Number::class, 'taxonID', 'taxonID');

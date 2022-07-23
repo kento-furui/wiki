@@ -164,7 +164,7 @@ img.tree {
 }
 
 table tr td {
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     vertical-align: middle;
 }
 

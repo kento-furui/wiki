@@ -57,10 +57,8 @@
                             </td>
                             <td>{{ $taxon->taxonRank }}</td>
                             <td>
-                                @if ($taxon->taxonRank == 'species' && !$taxon->iucn)
-                                    <input type="hidden" class="noiucn" value="{{ $taxon->canonicalName }}" id="{{ $taxon->taxonID }}">
-                                @elseif ($taxon->iucn)
-                                    {{ $taxon->iucn->status }}
+                                @if ($taxon->iucn2)
+                                    {{ $taxon->iucn2->category }}
                                 @endif
                             </td>
                         </tr>
@@ -72,7 +70,7 @@
     <script src="/js/taxon.js"></script>
     <script>
         document.querySelectorAll(".noimage").forEach(e => fetchImg(e));
-        document.querySelectorAll(".noiucn").forEach(e => fetchIucn(e));
+        //document.querySelectorAll(".noiucn").forEach(e => fetchIucn(e));
         document.querySelectorAll(".noen").forEach(e => fetchCname(e, "en"));
         document.querySelectorAll(".nojp").forEach(e => fetchCname(e, "jp"));
     </script>
